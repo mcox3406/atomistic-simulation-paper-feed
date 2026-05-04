@@ -1,10 +1,9 @@
 name: Daily Paper Feed
 
 on:
-  # Cron disabled until first dry-run looks good. Uncomment to re-enable.
-  # schedule:
-  #   # 8am EDT (12pm UTC)
-  #   - cron: '0 12 * * *'
+  schedule:
+    # 8am EDT (12pm UTC)
+    - cron: '0 12 * * *'
   workflow_dispatch:
     inputs:
       skip_slack:
