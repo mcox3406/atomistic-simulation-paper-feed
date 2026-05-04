@@ -12,9 +12,10 @@ from .llm import InsufficientCreditsError
 CATEGORIES = [
     "MLIPs & Foundation Models",
     "Molecular Dynamics & Sampling",
-    "DFT & Quantum Chemistry",
-    "Materials Discovery & Generative Models",
-    "Methods & Theory",
+    "Electronic Structure",
+    "Generative & Geometric ML for Atoms",
+    "Materials Discovery & High-Throughput",
+    "Atomistic Applications",
 ]
 
 
@@ -43,8 +44,10 @@ class PaperCategorizer:
             if category in result:
                 result[category].append((paper, score, reason))
             else:
-                # Unknown / unmapped categories fall into Methods & Theory as a catch-all
-                result["Methods & Theory"].append((paper, score, reason))
+                # If the LLM emits a string we don't recognize, route to Applications.
+                # These are post-filter atomistic papers, so the most likely garbage
+                # is a system-specific paper the model couldn't pin to a method bucket.
+                result["Atomistic Applications"].append((paper, score, reason))
 
         return result
 
@@ -59,21 +62,27 @@ class PaperCategorizer:
         for idx, (paper, score, reason) in enumerate(papers):
             papers_text += f"{idx + 1}. {paper.title} ({paper.source})\n"
 
-        prompt = f"""Categorize each paper into exactly one of these research areas. Every paper has already passed a strict atomistic-simulation relevance filter, so all five buckets assume that context.
+        prompt = f"""Categorize each paper into exactly one of these six research areas. Every paper has already passed a strict atomistic-simulation relevance filter, so all six buckets assume that context.
 
 {categories_list}
 
 Papers to categorize:
 {papers_text}
 
-Guidelines:
-- "MLIPs & Foundation Models": machine-learned interatomic potentials, neural-network potentials, equivariant GNNs trained on energies/forces, universal / foundation potentials (NequIP, MACE, Allegro, SchNet, GemNet, PaiNN, MatterSim, UMA, eSEN, Orb, GNoME, ANI, AIMNet, etc.); training-data strategies, fine-tuning, transferability studies, benchmarks of ML potentials, downstream applications driven primarily by an MLIP.
-- "Molecular Dynamics & Sampling": classical or ab initio MD, free-energy methods (metadynamics, umbrella sampling, replica exchange, thermodynamic integration, alchemical), enhanced sampling, coarse-graining, Boltzmann generators / learned samplers tied to a potential, path-integral MD, kinetic Monte Carlo applied to dynamics. Use this bucket when the central methodology is the simulation/sampling technique itself, not the potential.
-- "DFT & Quantum Chemistry": density functional theory and exchange-correlation development, GW/BSE, post-Hartree-Fock methods (CCSD, MP2), embedding theories (QM/MM, DMFT), semi-empirical / tight-binding (DFTB, GFN-xTB), automated DFT workflows, methodological papers around codes like VASP, CP2K, Quantum ESPRESSO, ORCA, Psi4, GPAW. Use this when the focus is the electronic-structure method, not its downstream application.
-- "Materials Discovery & Generative Models": crystal structure prediction; polymorph search; generative models that produce 3D atomic configurations of crystals/molecules; high-throughput DFT/MLIP screening; active learning / Bayesian optimization driving atomistic calculations; defect / surface / adsorption studies; batteries, catalysts, MOFs, perovskites — when the focus is discovery or property prediction via atomistic simulation rather than the simulation method itself.
-- "Methods & Theory": atomistic-simulation methods or theory that don't fit cleanly above — e.g. equivariant / geometric architectures whose contribution is the architecture itself but with atomistic validation; new flow-matching or diffusion frameworks for 3D atomic systems; statistical-mechanics theory for simulated ensembles; uncertainty quantification frameworks for atomistic ML. This is NOT a generic-ML catch-all; if the paper isn't atomistic, it shouldn't have made it this far.
+Bucket definitions:
+- "MLIPs & Foundation Models": development, training-data strategies, benchmarks, transferability, or fine-tuning of machine-learned interatomic potentials (NequIP, MACE, Allegro, SchNet, GemNet, PaiNN, MatterSim, UMA, eSEN, Orb, GNoME, ANI, AIMNet, etc.). Application papers that happen to use an MLIP go elsewhere — this bucket is about the potential itself.
+- "Molecular Dynamics & Sampling": classical or ab initio MD, free-energy methods (metadynamics, umbrella sampling, replica exchange, thermodynamic integration, alchemical), enhanced sampling, coarse-graining, learned samplers / Boltzmann generators, path-integral MD, kinetic Monte Carlo. Includes statistical-mechanics theory for simulated ensembles.
+- "Electronic Structure": DFT and exchange-correlation development, GW/BSE, post-Hartree-Fock methods (CCSD, MP2), embedding theories (QM/MM, DMFT), semi-empirical / tight-binding (DFTB, GFN-xTB), automated DFT workflows, methodological work tied to electronic-structure codes (VASP, CP2K, Quantum ESPRESSO, ORCA, Psi4, GPAW).
+- "Generative & Geometric ML for Atoms": generative models for 3D atomic systems (diffusion, flow matching, autoregressive crystal or molecule generation) AND equivariant / geometric architectures whose central contribution is the model itself, not its application.
+- "Materials Discovery & High-Throughput": crystal structure prediction, polymorph search, high-throughput DFT/MLIP screening, active learning or Bayesian optimization campaigns. The contribution is the search and what it found — breadth.
+- "Atomistic Applications": mechanistic and property studies of specific systems — catalysis mechanisms, battery cathodes/electrolytes, defect physics, surface and adsorption studies, MOF / perovskite / 2D-material characterization. The contribution is understanding a specific material or process — depth.
 
-Pick the best single bucket per paper. When two fit, prefer the one that names the dominant technical contribution.
+Seam rules for borderline cases:
+- 4 vs 5 (Generative ML vs Discovery): "Did the paper build a generative model?" vs "Did the paper run a search?". A generative model used as part of a discovery campaign goes to 5 if the paper's pitch is the discovery, 4 if the pitch is the model.
+- 5 vs 6 (Discovery vs Applications): breadth vs depth. Screening many systems → 5. Studying one or a few in detail → 6.
+- 1 vs 6 (MLIPs vs Applications): "Is the contribution the potential or the chemistry?" An MLIP fine-tuned to study a specific catalyst goes to 1 if the paper pitches the potential, 6 if it pitches the chemistry.
+
+Pick the best single bucket per paper.
 
 Respond with a JSON array of category names in the same order as the papers:
 {{"categories": ["Category1", "Category2", ...]}}"""
@@ -101,5 +110,5 @@ Respond with a JSON array of category names in the same order as the papers:
                 raise InsufficientCreditsError("API credit balance is too low to categorize papers")
             print(f"Error categorizing papers: {e}")
 
-        # Fallback: all unclassified -> caught by Methods & Theory in caller
-        return ["Methods & Theory"] * len(papers)
+        # Fallback: all unclassified -> caught by Atomistic Applications in caller
+        return ["Atomistic Applications"] * len(papers)

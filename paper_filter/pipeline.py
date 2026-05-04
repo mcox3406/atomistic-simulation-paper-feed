@@ -149,7 +149,7 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
                     print(f"  {cat}: {len(papers)} papers")
         except InsufficientCreditsError:
             print("ERROR: API credits exhausted during categorization")
-            categorized_papers = {"Methods & Theory": relevant_papers}
+            categorized_papers = {"Atomistic Applications": relevant_papers}
             credits_exhausted = True
     else:
         categorized_papers = {}

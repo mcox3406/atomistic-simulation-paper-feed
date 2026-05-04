@@ -5,25 +5,37 @@ const CATEGORIES = [
   "All",
   "MLIPs & Foundation Models",
   "Molecular Dynamics & Sampling",
-  "DFT & Quantum Chemistry",
-  "Materials Discovery & Generative Models",
-  "Methods & Theory",
+  "Electronic Structure",
+  "Generative & Geometric ML for Atoms",
+  "Materials Discovery & High-Throughput",
+  "Atomistic Applications",
 ]
 
 const CATEGORY_COLORS = {
   "MLIPs & Foundation Models": "#2563eb",
   "Molecular Dynamics & Sampling": "#7c3aed",
-  "DFT & Quantum Chemistry": "#059669",
-  "Materials Discovery & Generative Models": "#d97706",
-  "Methods & Theory": "#475569",
+  "Electronic Structure": "#059669",
+  "Generative & Geometric ML for Atoms": "#db2777",
+  "Materials Discovery & High-Throughput": "#d97706",
+  "Atomistic Applications": "#475569",
 }
 
 const CATEGORY_SHORT = {
   "MLIPs & Foundation Models": "MLIPs",
   "Molecular Dynamics & Sampling": "MD & Sampling",
-  "DFT & Quantum Chemistry": "DFT / QM",
-  "Materials Discovery & Generative Models": "Materials & Gen.",
-  "Methods & Theory": "Methods",
+  "Electronic Structure": "Electronic Structure",
+  "Generative & Geometric ML for Atoms": "Generative ML",
+  "Materials Discovery & High-Throughput": "Discovery & HT",
+  "Atomistic Applications": "Applications",
+}
+
+const CATEGORY_DESCRIPTIONS = {
+  "MLIPs & Foundation Models": "Development, training data, benchmarks, transferability, and fine-tuning of machine-learned interatomic potentials. Application papers that just use an MLIP go elsewhere. This bucket is about the potential itself.",
+  "Molecular Dynamics & Sampling": "Classical and ab initio MD, free-energy methods, enhanced sampling, coarse-graining, learned samplers, path-integral MD, kinetic Monte Carlo. Also statistical-mechanics theory for simulated ensembles.",
+  "Electronic Structure": "DFT and exchange-correlation development, GW/BSE, post-Hartree-Fock methods, embedding theories, semi-empirical / tight-binding, automated DFT workflows, methodological work tied to electronic-structure codes (VASP, CP2K, ORCA, etc.).",
+  "Generative & Geometric ML for Atoms": "Generative models for 3D atomic systems (diffusion, flow matching, autoregressive crystal/molecule generation) and equivariant / geometric architectures whose contribution is the model itself.",
+  "Materials Discovery & High-Throughput": "Crystal structure prediction, polymorph search, high-throughput DFT/MLIP screening, active learning and Bayesian optimization campaigns. The contribution is the search itself, prioritizing breadth over depth.",
+  "Atomistic Applications": "Mechanistic and property studies of specific systems like catalysis, batteries, defects, surfaces, MOFs, perovskites, and 2D materials. The contribution is understanding a specific material or process in depth.",
 }
 
 // Journals that often ship empty/garbled abstracts in their RSS feeds.
@@ -373,6 +385,31 @@ export default function App() {
       </header>
 
       <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '24px' }}>
+        {selectedCategory !== 'All' && CATEGORY_DESCRIPTIONS[selectedCategory] && (
+          <div style={{
+            background: '#fff',
+            borderLeft: `3px solid ${CATEGORY_COLORS[selectedCategory]}`,
+            borderRadius: '8px',
+            padding: '12px 16px',
+            marginBottom: '16px',
+            boxShadow: '0 1px 2px rgba(0,0,0,0.04)',
+          }}>
+            <div style={{
+              fontSize: '12px',
+              color: CATEGORY_COLORS[selectedCategory],
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px',
+              marginBottom: '4px',
+            }}>
+              {selectedCategory}
+            </div>
+            <div style={{ fontSize: '13px', color: '#475569', lineHeight: 1.5 }}>
+              {CATEGORY_DESCRIPTIONS[selectedCategory]}
+            </div>
+          </div>
+        )}
+
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
           <p style={{ margin: 0, color: '#64748b', fontSize: '14px' }}>
             {loading ? 'Loading...' : `${filteredPapers.length} paper${filteredPapers.length !== 1 ? 's' : ''}`}
