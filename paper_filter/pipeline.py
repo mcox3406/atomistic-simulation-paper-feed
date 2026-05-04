@@ -149,9 +149,14 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False):
     print("Posting to Slack...")
     slack_poster.post_papers(categorized_papers, credits_exhausted=credits_exhausted)
 
-    # Export to static JSON for the web frontend (non-blocking)
-    print("Exporting papers to JSON...")
-    save_papers_to_json(categorized_papers)
+    # Export to static JSON for the web frontend (non-blocking).
+    # Skipped in dry-run so the working tree stays clean — especially in --test
+    # mode, which produces a partial dataset that should never be committed.
+    if not dry_run:
+        print("Exporting papers to JSON...")
+        save_papers_to_json(categorized_papers)
+    else:
+        print("Skipping JSON export (dry run)")
 
     # Mark as posted
     if not dry_run:

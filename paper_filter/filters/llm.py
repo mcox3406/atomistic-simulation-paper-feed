@@ -83,28 +83,49 @@ Abstract: {abstract if abstract else "(not available)"}
 IMPORTANT: Some papers are from peer-reviewed journals (JACS, JCIM, JCTC, etc.) whose RSS feeds do not include abstracts. For these papers, evaluate relevance based on the title alone. Since these are established, peer-reviewed journals, give the benefit of the doubt if the title suggests relevance to the lab's research areas - a relevant-sounding title from these journals should score similarly to a paper with a matching abstract.
 """
 
-        prompt = f"""You are a research assistant helping a lab filter academic papers for relevance.
+        prompt = f"""You are a strict filter for an atomistic-simulation paper feed. Your job is to score each paper from 0.0 to 1.0 for fit. Default to caution: a missed paper is cheap, a false positive is expensive.
 
 Lab Focus: {self.lab_description}
 {no_abstract_note}
-Below are {len(papers)} papers. For each paper, assess its relevance to the lab's research focus.
+HARD TEST. A paper qualifies as ATOMISTIC SIMULATION work only if ALL of the following hold:
+  (a) The system being studied is represented as explicit atoms (or coarse-grained beads tied to an atomistic mapping) — not just SMILES, 2D graphs, fingerprints, sequence, or compositional features.
+  (b) The methodology involves at least one of: molecular dynamics; Monte Carlo on atoms; geometry optimization; transition-state / NEB; free-energy methods; classical force fields; semi-empirical / tight-binding; DFT; post-HF; OR the development, training, or benchmarking of a machine-learned interatomic potential / force field used for any of the above.
+  (c) The paper's contribution either advances one of those methods, or applies one of them to learn something about a chemical / material / biological system.
+
+If a paper fails ANY of (a)–(c), score it strictly below 0.5 — no matter how many surface-level keywords match.
+
+Scoring rubric (use these as anchors):
+  - MLIP development, training, benchmarking, or applied MLIP-driven simulation → 0.85–0.95
+  - Classical / ab initio MD methods or applications on real atomic systems → 0.75–0.9
+  - Free-energy / enhanced-sampling method or application → 0.75–0.9
+  - DFT / post-HF / semi-empirical method development; embedding theories → 0.75–0.9
+  - DFT/MLIP-driven CSP, polymorph search, materials discovery with explicit atomistic calculations → 0.75–0.9
+  - Generative model that outputs 3D atomic configurations AND is tied to / validated by a potential → 0.7–0.85
+  - Equivariant / geometric / diffusion / flow-matching method WITH atomistic application or energetic validation → 0.7–0.85
+  - Single-molecule quantum chemistry calculation as a mechanistic study (no MD, no method advance) → 0.4–0.6 (borderline, lean low)
+  - Generative model that outputs only SMILES, compositions, or 2D graphs → 0.2–0.4
+  - Pure ML methodology (architectures, diffusion, equivariance) with no atomistic application or validation → 0.1–0.3
+  - LLM agent / orchestration / "AI-assisted" workflow that does not itself run simulations → 0.05–0.2
+  - High-throughput screening with only descriptors / fingerprints / compositional rules → 0.1–0.3
+  - XRD / diffraction inverse problem, structure refinement without atomistic dynamics → 0.1–0.3
+  - Drug docking / virtual screening of drug-like libraries / ADMET → 0.0–0.2
+  - Retrosynthesis, reaction-outcome, mass spectrometry, AlphaFold-style structure prediction → 0.0–0.2
+  - Protein design or biology paper without explicit atomistic simulation methodology → 0.0–0.2
+
+Below are {len(papers)} papers. For each, give a score 0.0–1.0 with a one-sentence reason that names the methodology and explicitly states whether (a)–(c) are satisfied.
 
 {papers_text}
-
-For each paper, provide:
-1. A relevance score from 0.0 to 1.0 (where 1.0 = highly relevant, 0.0 = not relevant)
-2. A brief one-sentence reason for the score
 
 Respond in JSON format:
 {{
     "scores": [
-        {{"paper": 1, "score": 0.8, "reason": "..."}},
-        {{"paper": 2, "score": 0.3, "reason": "..."}},
+        {{"paper": 1, "score": 0.85, "reason": "..."}},
+        {{"paper": 2, "score": 0.20, "reason": "..."}},
         ...
     ]
 }}
 
-Be selective - only give high scores (>0.6) to papers that are genuinely relevant to the lab's research focus as described above."""
+When uncertain, score lower."""
 
         try:
             response = self.client.messages.create(

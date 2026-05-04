@@ -59,7 +59,7 @@ class PaperCategorizer:
         for idx, (paper, score, reason) in enumerate(papers):
             papers_text += f"{idx + 1}. {paper.title} ({paper.source})\n"
 
-        prompt = f"""Categorize each paper into exactly one of these research areas:
+        prompt = f"""Categorize each paper into exactly one of these research areas. Every paper has already passed a strict atomistic-simulation relevance filter, so all five buckets assume that context.
 
 {categories_list}
 
@@ -67,11 +67,13 @@ Papers to categorize:
 {papers_text}
 
 Guidelines:
-- "MLIPs & Foundation Models": machine-learned interatomic potentials, neural network potentials, equivariant GNNs trained on energies/forces, universal/foundation potentials (NequIP, MACE, Allegro, SchNet, GemNet, PaiNN, MatterSim, UMA, eSEN, Orb, GNoME, ANI, AIMNet); training-data strategies, transferability, benchmarks for ML potentials.
-- "Molecular Dynamics & Sampling": classical or ab initio MD, free-energy methods (metadynamics, umbrella sampling, replica exchange, thermodynamic integration, alchemical), enhanced sampling, coarse-graining, Boltzmann generators, learned samplers, path-integral methods, kinetic Monte Carlo applied to dynamics. Includes biomolecular MD if it's an atomistic-simulation methods paper.
-- "DFT & Quantum Chemistry": density functional theory, exchange-correlation functionals, GW/BSE, post-Hartree-Fock methods (CCSD, MP2), embedding theories, DMFT, semi-empirical/tight-binding, automated DFT workflows, papers using/improving codes like VASP, CP2K, Quantum ESPRESSO, ORCA, Psi4, GPAW.
-- "Materials Discovery & Generative Models": crystal structure prediction, generative models for crystals/molecules, high-throughput screening for materials, active learning / Bayesian optimization for materials, property prediction for materials, defect/surface/adsorption studies, batteries, catalysts, MOFs, perovskites — when the focus is on discovery or property prediction rather than methods.
-- "Methods & Theory": equivariant neural networks, diffusion / flow-matching / normalizing flows applied to atomistic systems, geometric deep learning theory, energy-based models, theoretical statistical mechanics, anything that's a methods/theory contribution that doesn't cleanly fit the other buckets.
+- "MLIPs & Foundation Models": machine-learned interatomic potentials, neural-network potentials, equivariant GNNs trained on energies/forces, universal / foundation potentials (NequIP, MACE, Allegro, SchNet, GemNet, PaiNN, MatterSim, UMA, eSEN, Orb, GNoME, ANI, AIMNet, etc.); training-data strategies, fine-tuning, transferability studies, benchmarks of ML potentials, downstream applications driven primarily by an MLIP.
+- "Molecular Dynamics & Sampling": classical or ab initio MD, free-energy methods (metadynamics, umbrella sampling, replica exchange, thermodynamic integration, alchemical), enhanced sampling, coarse-graining, Boltzmann generators / learned samplers tied to a potential, path-integral MD, kinetic Monte Carlo applied to dynamics. Use this bucket when the central methodology is the simulation/sampling technique itself, not the potential.
+- "DFT & Quantum Chemistry": density functional theory and exchange-correlation development, GW/BSE, post-Hartree-Fock methods (CCSD, MP2), embedding theories (QM/MM, DMFT), semi-empirical / tight-binding (DFTB, GFN-xTB), automated DFT workflows, methodological papers around codes like VASP, CP2K, Quantum ESPRESSO, ORCA, Psi4, GPAW. Use this when the focus is the electronic-structure method, not its downstream application.
+- "Materials Discovery & Generative Models": crystal structure prediction; polymorph search; generative models that produce 3D atomic configurations of crystals/molecules; high-throughput DFT/MLIP screening; active learning / Bayesian optimization driving atomistic calculations; defect / surface / adsorption studies; batteries, catalysts, MOFs, perovskites — when the focus is discovery or property prediction via atomistic simulation rather than the simulation method itself.
+- "Methods & Theory": atomistic-simulation methods or theory that don't fit cleanly above — e.g. equivariant / geometric architectures whose contribution is the architecture itself but with atomistic validation; new flow-matching or diffusion frameworks for 3D atomic systems; statistical-mechanics theory for simulated ensembles; uncertainty quantification frameworks for atomistic ML. This is NOT a generic-ML catch-all; if the paper isn't atomistic, it shouldn't have made it this far.
+
+Pick the best single bucket per paper. When two fit, prefer the one that names the dominant technical contribution.
 
 Respond with a JSON array of category names in the same order as the papers:
 {{"categories": ["Category1", "Category2", ...]}}"""
