@@ -21,14 +21,21 @@ def load_config() -> dict:
         return json.load(f)
 
 
-def run_pipeline(dry_run: bool = False, test_mode: bool = False):
-    """Run the full paper filtering pipeline."""
+def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool = False):
+    """Run the full paper filtering pipeline.
+
+    dry_run: skip ALL side effects (no Slack, no JSON, no history update).
+    no_slack: skip only the Slack post. JSON + history still update.
+              Useful for backfilling a day after a partial-failure run.
+    """
 
     print(f"Starting paper filter pipeline at {datetime.now()}")
     if dry_run:
-        print("DRY RUN MODE - will not post to Slack")
+        print("DRY RUN MODE - no side effects")
     if test_mode:
         print("TEST MODE - limiting to 50 papers after keyword filter")
+    if no_slack and not dry_run:
+        print("NO-SLACK MODE - will write JSON and update history but skip the Slack post")
 
     # Validate required environment variables
     api_key = os.environ.get("ANTHROPIC_API_KEY")
@@ -36,7 +43,7 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False):
         raise ValueError("ANTHROPIC_API_KEY environment variable is required")
 
     webhook_url = os.environ.get("SLACK_WEBHOOK_URL", "")
-    if not webhook_url and not dry_run:
+    if not webhook_url and not dry_run and not no_slack:
         raise ValueError("SLACK_WEBHOOK_URL environment variable is required")
 
     # Load config
@@ -67,7 +74,9 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False):
 
     categorizer = PaperCategorizer(api_key=api_key, model=config.get("model"))
 
-    slack_poster = SlackPoster(webhook_url, dry_run=dry_run)
+    # SlackPoster's dry_run=True suppresses the actual webhook call. Reuse that
+    # for --no-slack so we don't need a parallel code path.
+    slack_poster = SlackPoster(webhook_url, dry_run=dry_run or no_slack)
 
     history = PaperHistory()
 

@@ -6,6 +6,14 @@ on:
   #   # 8am EDT (12pm UTC)
   #   - cron: '0 12 * * *'
   workflow_dispatch:
+    inputs:
+      skip_slack:
+        description: 'Skip the Slack post (still writes JSON + history). Use for backfilling.'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
 
 jobs:
   filter-papers:
@@ -32,7 +40,12 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           OPENREVIEW_USERNAME: ${{ secrets.OPENREVIEW_USERNAME }}
           OPENREVIEW_PASSWORD: ${{ secrets.OPENREVIEW_PASSWORD }}
-        run: python run.py
+        run: |
+          if [ "${{ inputs.skip_slack }}" = "true" ]; then
+            python run.py --no-slack
+          else
+            python run.py
+          fi
 
       - name: Commit history & data files
         run: |

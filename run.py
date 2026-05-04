@@ -82,9 +82,14 @@ if __name__ == "__main__":
         action="store_true",
         help="Mark all current papers as seen without filtering or posting",
     )
+    parser.add_argument(
+        "--no-slack",
+        action="store_true",
+        help="Suppress the Slack post. Still writes JSON, marks history, etc. (for backfilling)",
+    )
     args = parser.parse_args()
 
     if args.sync_history:
         sync_history()
     else:
-        run_pipeline(dry_run=args.dry_run, test_mode=args.test)
+        run_pipeline(dry_run=args.dry_run, test_mode=args.test, no_slack=args.no_slack)
