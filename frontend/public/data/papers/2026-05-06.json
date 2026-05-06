@@ -1,0 +1,620 @@
+[
+  {
+    "id": "52c70ac59d71",
+    "title": "Conditional Diffusion Sampling",
+    "authors": [
+      "Francisco M. Castro-Mac\\'ias",
+      "Pablo Morales-\\'Alvarez",
+      "Saifuddin Syed",
+      "Daniel Hern\\'andez-Lobato",
+      "Rafael Molina",
+      "Jos\\'e Miguel Hern\\'andez-Lobato"
+    ],
+    "abstract": "arXiv:2605.04013v1 Announce Type: cross \nAbstract: Sampling from unnormalized multimodal distributions with limited density evaluations remains a fundamental challenge in machine learning and natural sciences. Successful approaches construct a bridge between a tractable reference and the target distribution. Parallel Tempering (PT) serves as the gold standard, while recent diffusion-based approaches offer a continuous alternative at the cost of neural training. In this work, we introduce Conditional Diffusion Sampling (CDS), a framework that combines these two paradigms. To this end, we derive Conditional Interpolants, a class of stochastic processes whose transport dynamics are governed by an exact, closed-form stochastic differential equation (SDE), requiring no neural approximation. Although these dynamics require sampling from a non-trivial initialization distribution, we show both theoretically and empirically that the cost of this initialization diminishes for sufficiently short diffusion times. CDS leverages this by a two-stage procedure: (1) PT is used to efficiently sample the initial distribution, and then (2) samples are transported via the transport SDE. This combination couples the robust global exploration of PT with efficient local transport. Experiments suggest that CDS has the potential to achieve a superior trade-off between sample quality and density evaluation cost compared to state-of-the-art samplers.",
+    "url": "https://arxiv.org/abs/2605.04013",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Jos\\'e Miguel Hern\\'andez-Lobato",
+    "key_authors": [
+      "Jos\\'e Miguel Hern\\'andez-Lobato"
+    ]
+  },
+  {
+    "id": "a6ab934c025f",
+    "title": "ABC: Any-Subset Autoregression via Non-Markovian Diffusion Bridges in Continuous Time and Space",
+    "authors": [
+      "Gabe Guo",
+      "Thanawat Sornwanee",
+      "Lutong Hao",
+      "Elon Litman",
+      "Stefano Ermon",
+      "Jose Blanchet"
+    ],
+    "abstract": "arXiv:2604.27443v2 Announce Type: replace \nAbstract: Generating continuous-time, continuous-space stochastic processes (e.g., videos, weather forecasts) conditioned on partial observations (e.g., first and last frames) is a fundamental challenge. Existing approaches, (e.g., diffusion models), suffer from key limitations: (1) noise-to-data evolution fails to capture structural similarity between states close in physical time and has unstable integration in low-step regimes; (2) random noise injected is insensitive to the physical process's time elapsed, resulting in incorrect dynamics; (3) they overlook conditioning on arbitrary subsets of states (e.g., irregularly sampled timesteps, future observations). We propose ABC: Any-Subset Autoregressive Models via Non-Markovian Diffusion Bridges in Continuous Time and Space. Crucially, we model the process with one continual SDE whose time variable and intermediate states track the real time and process states. This has provable advantages: (1) the starting point for generating future states is the already-close previous state, rather than uninformative noise; (2) random noise injection scales with physical time elapsed, encouraging physically plausible dynamics with similar time-adjacent states. We derive SDE dynamics via changes-of-measure on path space, yielding another advantage: (3) path-dependent conditioning on arbitrary subsets of the state history and/or future. To learn these dynamics, we derive a path- and time-dependent extension of denoising score matching. Our experiments show ABC's superiority to competing methods on multiple domains, including video generation and weather forecasting.",
+    "url": "https://arxiv.org/abs/2604.27443",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-06",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Stefano Ermon",
+    "key_authors": [
+      "Stefano Ermon"
+    ]
+  },
+  {
+    "id": "37d6f98f76b2",
+    "title": "Building a physics-aware AI ecosystem for solid-state hydrogen storage materials",
+    "authors": [
+      "Seong-Hoon Jang",
+      "Yiwen Yao",
+      "Chuanyu Liu",
+      "Linda Zhang",
+      "Di Zhang",
+      "Xue Jia",
+      "Hung Ba Tran",
+      "Eric Jianfeng Cheng",
+      "Ryuhei Sato",
+      "Yusuke Ohashi",
+      "Toyoto Sato",
+      "Yusuke Hashimoto",
+      "Mark Allendorf",
+      "Nongnuch Artrith",
+      "Marcello Baricco",
+      "Andreas Borgschulte",
+      "Darren P. Broom",
+      "Ang Cao",
+      "Benjamin W. J. Chen",
+      "Lixin Chen",
+      "Ping Chen",
+      "Eun Seon Cho",
+      "Stefano Deledda",
+      "Zhao Ding",
+      "Martin Dornheim",
+      "Michael Felderhoff",
+      "Yaroslav Filinchuk",
+      "George E. Froudakis",
+      "Mingxia Gao",
+      "Thomas Gennett",
+      "Zaiping Guo",
+      "Ikutaro Hamada",
+      "Jason Hattrick-Simpers",
+      "Bj{\\o}rn C. Hauback",
+      "Michael Hirscher",
+      "Torben R. Jensen",
+      "Baohua Jia",
+      "Hyoung Seop Kim",
+      "Takahiro Kondo",
+      "Kentaro Kutsukake",
+      "Xiao-Yan Li",
+      "Tongliang Liu",
+      "Piao Ma",
+      "Jianfeng Mao",
+      "Rana Mohtadi",
+      "Hyunchul Oh",
+      "Mark Paskevicius",
+      "Chris J. Pickard",
+      "Astrid Pundt",
+      "Long Qi",
+      "Anibal Ramirez-Cuesta",
+      "Hiroyuki Saitoh",
+      "Kaihang Shi",
+      "Aloysius Soon",
+      "Chenghua Sun",
+      "Chris Wolverton",
+      "Hiroshi Yabu",
+      "Weijie Yang",
+      "Zhenpeng Yao",
+      "Xuebin Yu",
+      "Jianxin Zou",
+      "Shouyi Hu",
+      "Panpan Zhou",
+      "Xi Lin",
+      "Zhigang Hu",
+      "Zhenhao Zhou",
+      "Pengfei Ou",
+      "Jiayu Peng",
+      "Shin-ichi Orimo",
+      "Hao Li"
+    ],
+    "abstract": "arXiv:2605.03081v1 Announce Type: new \nAbstract: Hydrogen storage remains a central bottleneck for scalable hydrogen energy systems due to the multiscale and coupled nature of the thermodynamics, kinetics, and microstructural evolution of hydrogen storage materials (HSMs). Although artificial intelligence (AI) has accelerated materials discovery, current approaches remain constrained by fragmented data, limited physical consistency, and weak integration with experimental validation. Here, we propose a unified framework that integrates coherent data infrastructure, physics-grounded modeling, and AI-driven inverse design within a closed-loop discovery paradigm. By embedding physical constraints and experimental feedback, this approach enables adaptive, physically consistent optimization, thereby establishing a pathway toward autonomous, digital-twin-enabled discovery of HSMs.",
+    "url": "https://arxiv.org/abs/2605.03081",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Chris J. Pickard",
+    "key_authors": [
+      "Chris J. Pickard"
+    ]
+  },
+  {
+    "id": "69b5000395d7",
+    "title": "Thermodynamic accessibility of Li-Mn-Ti-O cation disordered rock-salt phases",
+    "authors": [
+      "Ronald L. Kam",
+      "Shilong Wang",
+      "Gerbrand Ceder"
+    ],
+    "abstract": "arXiv:2603.17263v2 Announce Type: replace \nAbstract: Disordered rock-salt with Li-excess (DRX) cathode phases within the Li-Mn-Ti-O (LMTO) composition space have recently been extensively studied, as they promise to deliver exceptional energy density at low cost in Li-ion batteries. The continued development of LMTO DRX with improved power density and cycling stability requires optimization of the composition and particle size/morphology, which are determined by synthesis conditions such as annealing temperatures and hold times. These challenges motivate our investigation of the phase diagram of the LMTO rock-salt phase space, with a focus on understanding the stability of DRX by quantifying the order-disorder transition temperature ($T_\\text{disord}$) as a function of composition. We harness first-principles calculations and X-ray diffraction experiments to establish the LMTO phase diagram, which lies within the LiMnO$_2$ -- Li$_2$MnO$_3$ -- Li$_2$TiO$_3$ pseudo-ternary. Our calculations predict that the LMTO phase diagram at elevated temperature ($700 - 1300$ C) is composed of three phases: DRX, orthorhombic LiMnO$_2$, and layered Li$_2$Mn$_\\text{1-y}$Ti$_\\text{y}$O$_3$ ($0 < \\text{y} < 1$). $T_\\text{disord}$ decreases significantly as off-stoichiometry is introduced to the end-point compositions, resulting in a eutectoid phase diagram. Importantly, a significant range of LMTO compositions containing small to moderate fractions of Li-excess and Ti doping (relative to LiMnO$_2$) have $T_\\text{disord}$ spanning $700 - 900$ C. These temperatures are substantially lower than conventional DRX synthesis temperatures ($\\geq 1000$ C), suggesting the promise of decreasing synthesis temperatures for specific DRX compositions. The compositions containing moderate to high fractions of Mn$^{4+}$ instead have much greater $T_\\text{disord}$ and phase separation to layered Li$_2$MnO$_3$ becomes highly favored.",
+    "url": "https://arxiv.org/abs/2603.17263",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-06",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Gerbrand Ceder",
+    "key_authors": [
+      "Gerbrand Ceder"
+    ]
+  },
+  {
+    "id": "2ac1cdb19616",
+    "title": "Scaling Laws and Symmetry, Evidence from Neural Force Fields",
+    "authors": [
+      "Khang Ngo",
+      "Siamak Ravanbakhsh"
+    ],
+    "abstract": "arXiv:2510.09768v2 Announce Type: replace-cross \nAbstract: We present an empirical study in the geometric task of learning interatomic potentials, which shows equivariance matters even more at larger scales; we show a clear power-law scaling behaviour with respect to data, parameters and compute with ``architecture-dependent exponents''. In particular, we observe that equivariant architectures, which leverage task symmetry, scale better than non-equivariant models. Moreover, among equivariant architectures, higher-order representations translate to better scaling exponents. Our analysis also suggests that for compute-optimal training, the data and model sizes should scale in tandem regardless of the architecture. At a high level, these results suggest that, contrary to common belief, we should not leave it to the model to discover fundamental inductive biases such as symmetry, especially as we scale, because they change the inherent difficulty of the task and its scaling laws.",
+    "url": "https://arxiv.org/abs/2510.09768",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-06",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.92,
+    "relevance_reason": "Empirical study of scaling laws and symmetry in neural interatomic potentials (machine-learned force fields); directly addresses MLIP development, training, and benchmarking with explicit focus on equivariance and architecture design for learning atomic interactions—core MLIP methodology (b, c).",
+    "key_authors": []
+  },
+  {
+    "id": "930c3a4be7dd",
+    "title": "Assessing universal MLIP robustness with per-atom uncertainty for simulations of solid-liquid interfaces",
+    "authors": [
+      "Jenna A. Bilbrey",
+      "Jesun S. Firoz",
+      "Sarah I. Allec",
+      "Henry W. Sprueill",
+      "Alexander D. von Rueden",
+      "Benjamin A. Jackson",
+      "Simone Raugei",
+      "Mal-Soon Lee",
+      "Sutanay Choudhury"
+    ],
+    "abstract": "npj Computational Materials, Published online: 05 May 2026; doi:10.1038/s41524-026-02051-8\nAssessing universal MLIP robustness with per-atom uncertainty for simulations of solid-liquid interfaces",
+    "url": "https://www.nature.com/articles/s41524-026-02051-8",
+    "pdf_url": null,
+    "source": "npj Computational Materials",
+    "categories": [],
+    "published": "2026-05-05",
+    "version": null,
+    "added_date": "2026-05-06",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.88,
+    "relevance_reason": "MLIP robustness assessment with uncertainty quantification applied to solid-liquid interface simulations; directly addresses MLIP development and validation for atomistic MD—satisfies all criteria (a)–(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8a3e4ce63bb7",
+    "title": "Discovering Reaction Mechanisms with Transition Path Sampling-Based Active Learning of Machine-Learned Potentials",
+    "authors": [
+      "Ashique Lal",
+      "Rik S. Breebaart",
+      "Peter G. Bolhuis",
+      "Evert Jan Meijer"
+    ],
+    "abstract": "arXiv:2605.03737v1 Announce Type: new \nAbstract: Machine-learned interatomic potentials (MLPs) provide near density functional theory (DFT) accuracy at reduced computational cost, but their reliability depends on representative training data and often deteriorates in transition-state regions governing rare events. We introduce an active-learning framework in which Transition Path Sampling (TPS) serves as a targeted data-generation engine for constructing MLPs accurate in barrier regions. TPS generates ensembles of unbiased reactive trajectories, and a committee-based uncertainty estimate identifies configurations for selective DFT labeling and retraining. Iterating this cycle systematically refines the potential energy surface in dynamically relevant regions, without the need of prior knowledge of the mechanism. Applied to electrochemical CO$_2$ reduction to CO on copper in explicit water, the approach removes nonphysical artifacts present in early models, achieves near-DFT energy and force accuracy, and enables stable long-time sampling of reactive pathways. Extended TPS simulations reveal multiple dynamically accessible protonation mechanisms. This work establishes TPS as an efficient and principled active-learning strategy for reactive molecular simulations at electrochemical interfaces.",
+    "url": "https://arxiv.org/abs/2605.03737",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.88,
+    "relevance_reason": "Active learning of machine-learned interatomic potentials using transition-path sampling (TPS) to generate training data for reactive MD at electrochemical interfaces; combines MLIP development, enhanced sampling (TPS), and MD application—all core atomistic-simulation methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "b59292e84a98",
+    "title": "High-Dimensional Enhanced Sampling via Regularized Path-Dependent McKean--Vlasov Dynamics using Tensor Density Approximation",
+    "authors": [
+      "Liyao Lyu",
+      "Siyu Guo",
+      "Huan Lei"
+    ],
+    "abstract": "arXiv:2605.03080v1 Announce Type: cross \nAbstract: Sampling from high-dimensional Gibbs measures poses a challenge when the energy landscape consists of multiple metastable states. Enhanced-sampling methods mitigate this difficulty by introducing adaptive biasing potentials to facilitate the exploration along prescribed collective variables (CVs), but their scalability is often limited by the dimension of the CV space. Motivated by the Wasserstein-gradient-flow interpretation of adaptive biasing, we propose a regularized path-dependent McKean--Vlasov formulation for high-dimensional enhanced sampling. The formulation replaces the variational regularization of the Wasserstein functional by a direct regularization of the CV marginal density in the McKean--Vlasov drift, avoiding the outer convolution over the CV domain. Furthermore, it replaces the instantaneous law by a weighted path-history measure to improve statistical stability in the small-replica regime. We establish well-posedness of the resulting regularized and path-dependent stochastic dynamics under suitable assumptions. For numerical realization, the history-averaged CV marginal density is approximated using an optimization-free functional hierarchical tensor representation, leading to a scalable density-based adaptive biasing scheme. Numerical experiments on benchmark potentials and molecular systems demonstrate the effectiveness of the proposed method for sampling problems with CV dimensions up to 64.",
+    "url": "https://arxiv.org/abs/2605.03080",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "math.NA",
+      "cs.NA",
+      "physics.comp-ph",
+      "stat.CO"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.88,
+    "relevance_reason": "Enhanced-sampling method (regularized McKean–Vlasov dynamics with tensor-density approximation) applied to high-dimensional molecular systems; directly addresses sampling from Gibbs measures on atomic/molecular configurations with collective variables, demonstrating methodological advance (c) and application to molecular systems (a, b).",
+    "key_authors": []
+  },
+  {
+    "id": "f9ed43fb1a1d",
+    "title": "Energy dissipation at the atomic scale explains how fracture energy depends on crack velocity in silica glass",
+    "authors": [
+      "Marthe Gr{\\o}nlie Guren",
+      "Sigbj{\\o}rn L{\\o}land Bore",
+      "Fran\\c{c}ois Renard",
+      "Henrik Andersen Sveinsson"
+    ],
+    "abstract": "arXiv:2605.03457v1 Announce Type: new \nAbstract: The fracture energy of brittle materials rises with crack velocity, and this effect is typically attributed to surface roughening from path instabilities. Here we show, using molecular dynamics simulations of silica glass with a first-principles machine learned interatomic potential, that the structural fracture energy rises by up to 33 % already below the branching threshold, showing that fracture energy is not a constant material property. This rise in fracture energy is roughly equally partitioned between an increase in the intrinsic surface energy density and nanoscale roughening that increases the real fracture surface area. Results demonstrate that dynamic fracture in silica glass increases the fracture energy not merely by creating more apparent surface, but also by creating a fundamentally different surface at the nanoscale.",
+    "url": "https://arxiv.org/abs/2605.03457",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.86,
+    "relevance_reason": "Classical molecular dynamics with machine-learned interatomic potential (first-principles MLIP) applied to study fracture dynamics in silica glass; explicit-atom system, MD simulation, MLIP application—core atomistic-simulation work.",
+    "key_authors": []
+  },
+  {
+    "id": "f3b6da43f531",
+    "title": "Pretrained Model Representations as Acquisition Signals for Active Learning of MLIPs",
+    "authors": [
+      "Eszter Varga-Umbrich",
+      "Shikha Surana",
+      "Paul Duckworth",
+      "Jules Tilly",
+      "Olivier Peltre",
+      "Zachary Weller-Davies"
+    ],
+    "abstract": "arXiv:2605.03964v1 Announce Type: cross \nAbstract: Training machine learning interatomic potentials (MLIPs) for reactive chemistry is often bottlenecked by the high cost of quantum chemical labels and the scarcity of transition state configurations in candidate pools. Active learning (AL) can mitigate these costs, but its effectiveness hinges on the acquisition rule. We investigate whether the latent space of a pretrained MLIP already contains the information necessary for effective acquisition, eliminating the need for auxiliary uncertainty heads, Bayesian training and fine-tuning, or committee ensembles. We introduce two acquisition signals derived directly from a pretrained MACE potential: a finite-width neural tangent kernel (NTK) and an activation kernel built from hidden latent space features. On reactive-chemistry benchmarks, both kernels consistently outperform fixed-descriptor baselines, committee disagreement, and random acquisition, reducing the data required to reach performance targets by an average of 38% for energy error and 28% for force error. We further show that the pretrained model induces similarity spaces that preserve chemically meaningful structure and provide more reliable residual uncertainty estimates than randomly initialised or fixed-descriptor-based kernels. Our results suggest that pretraining aligns latent-space geometry with model error, yielding a practical and sufficient acquisition signal for reactive MLIP fine-tuning.",
+    "url": "https://arxiv.org/abs/2605.03964",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.82,
+    "relevance_reason": "Active-learning strategy for machine-learned interatomic potentials (MACE) using pretrained latent-space representations to guide MLIP training for reactive chemistry; directly advances MLIP training methodology with atomistic application.",
+    "key_authors": []
+  },
+  {
+    "id": "cfa48c59c764",
+    "title": "[ASAP] Free-Energy Landscapes of HBV Hexamer Closure Reveal Key Structural Features of the Transition",
+    "authors": [
+      "Zixing Fan",
+      "Anna Pavlova",
+      "Diane L. Lynch",
+      "Christophe Chipot",
+      "James C. Gumbart"
+    ],
+    "abstract": "",
+    "url": "http://dx.doi.org/10.1021/acs.jctc.6c00439",
+    "pdf_url": null,
+    "source": "JCTC",
+    "categories": [],
+    "published": "Mon, 04 May 2026 08:50:14 PDT",
+    "version": null,
+    "added_date": "2026-05-06",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.82,
+    "relevance_reason": "Free-energy landscape calculation for HBV hexamer closure using enhanced sampling; from JCTC (peer-reviewed); free-energy methods on atomistic system with explicit 3D coordinates—satisfies all criteria (a)–(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e3e11604f538",
+    "title": "[ASAP] Double-Hybrid Density Functional Theory within the Cluster-in-Molecule Local Correlation Framework for Large Molecular Systems",
+    "authors": [
+      "Zhigang Ni",
+      "Lin Shen",
+      "Shuhua Li"
+    ],
+    "abstract": "",
+    "url": "http://dx.doi.org/10.1021/acs.jctc.6c00150",
+    "pdf_url": null,
+    "source": "JCTC",
+    "categories": [],
+    "published": "Mon, 04 May 2026 09:44:28 PDT",
+    "version": null,
+    "added_date": "2026-05-06",
+    "category": "Electronic Structure",
+    "relevance_score": 0.82,
+    "relevance_reason": "Double-hybrid DFT method development within a local-correlation framework for large systems; from JCTC (peer-reviewed, established quantum-chemistry journal); DFT method advance clearly within scope—satisfies criteria (a)–(c).",
+    "key_authors": []
+  },
+  {
+    "id": "20fa7e085478",
+    "title": "Defect-Engineered Beryllium Dinitride (BeN2) Monolayer with Light-Metal Decoration for Reversible High-Capacity Hydrogen Storage",
+    "authors": [
+      "Wael Othman (Biomedical Engineering",
+      "Biotechnology",
+      "Khalifa University",
+      "Abu Dhabi",
+      "United Arab Emirates",
+      "Healthcare Engineering Innovation Group)",
+      "Ibrahim Alghoul (Physics Department",
+      "United Arab Emirates University",
+      "Al Ain",
+      "United Arab Emirates",
+      "Water",
+      "Energy Research Center",
+      "United Arab Emirates University",
+      "Al Ain",
+      "United Arab Emirates)",
+      "K-F. Aguey-Zinsou (MERLin",
+      "School of Chemistry",
+      "University of Sydney",
+      "NSW",
+      "Australia)",
+      "Nacir Tit (Physics Department",
+      "United Arab Emirates University",
+      "Al Ain",
+      "United Arab Emirates",
+      "Water",
+      "Energy Research Center",
+      "United Arab Emirates University",
+      "Al Ain",
+      "United Arab Emirates)",
+      "Tanveer Hussain (School of Science",
+      "Technology",
+      "University of New England",
+      "Armidale",
+      "New South Wales",
+      "Australia)"
+    ],
+    "abstract": "arXiv:2605.03738v1 Announce Type: new \nAbstract: Hydrogen (H2) possesses the highest gravimetric energy density of any chemical fuel and is the most abundant element in the universe. However, its extremely low volumetric energy density at standard conditions imposes a fundamental materials challenge for safe, efficient, and reversible storage. Here, we report a defect-engineered 2D beryllium dinitride (BeN2) monolayer that enables stable light-metal functionalization for high-capacity H2 storage. A 2 x 2 supercell containing two intrinsic beryllium vacancies accommodates four Li, Na, and K atoms without clustering, exhibiting strong average metal-vacancy binding energies of -3.80, -2.94, and -3.18 eV, respectively. Ab initio molecular dynamics simulations at 400 K confirm the thermal stability of the metal-decorated frameworks and the suppression of metal aggregation. The vacancy-stabilized alkali-metal centers generate localized charge polarization that facilitates the adsorption of up to 20 H2 molecules per supercell, with average adsorption energies of -0.182 eV (Li), -0.191 eV (Na), and -0.171 eV (K), making the adsorption reversible under near-ambient conditions. The corresponding gravimetric H2 storage capacities reach 11.64, 9.82, and 8.49 wt percent, respectively, significantly exceeding the US Department of Energy (DOE) ultimate target of 6.50 wt percent. Moreover, thermodynamic analysis further confirms favorable adsorption-desorption behavior within practical operating windows. These results establish vacancy-defected light-metal decorated BeN2 as a viable design strategy for high-density, reversible H2 storage, providing a scalable framework for engineering polar lightweight materials for energy storage applications.",
+    "url": "https://arxiv.org/abs/2605.03738",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.82,
+    "relevance_reason": "Ab initio molecular dynamics simulations at 400 K on a 2D material with metal-decorated defects for H₂ storage; DFT geometry optimization, adsorption energy calculations, and AIMD thermal-stability testing satisfy (a)–(c) as applied atomistic simulation with clear materials discovery motivation.",
+    "key_authors": []
+  },
+  {
+    "id": "604d78011faa",
+    "title": "Influence of ligand field and correlation on the electronic structure of NiO and CoO from DFT+DMFT calculations",
+    "authors": [
+      "Daniel Mutter",
+      "Frank Lechermann",
+      "Daniel F. Urban",
+      "Christian Els\\\"asser"
+    ],
+    "abstract": "arXiv:2605.03526v1 Announce Type: cross \nAbstract: The intriguing physics and rich application potential of strongly correlated first-row transition metal oxide compounds result from the complex interplay of several factors that influence the electronic structure. To shed light on the effect of composition, structure, and correlation strength, we apply a well-established charge self-consistent combination of density functional theory and dynamical mean field theory, which has proven to give electron binding energies in good agreement to experimentally derived excitation spectra. For paramagnetic NiO and CoO, we analyze the effect of rock-salt and zincblende structures and their different ligand fields on the spectral functions. By varying the value of the interaction parameter U, different correlation strengths among the transition-metal 3d electrons are considered, as well as the effect of additionally accounting for correlations in the oxygen 2p orbitals by a self-interaction-correction pseudopotential scheme.",
+    "url": "https://arxiv.org/abs/2605.03526",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Electronic Structure",
+    "relevance_score": 0.81,
+    "relevance_reason": "DFT+DMFT (density functional theory + dynamical mean field theory) calculation of electronic structure in transition-metal oxides; satisfies (a)–(c) as development and application of an embedding/correlation theory to study atomistic electronic structure and spectral functions.",
+    "key_authors": []
+  },
+  {
+    "id": "5ecffc64cd6c",
+    "title": "On improving experimental binding affinity predictions with synthetic data",
+    "authors": [
+      "Kevin Ryczko",
+      "Phyo Phyo Kyaw Zin",
+      "Jordan Crivelli-Decker",
+      "Ly Le",
+      "Punit K Jha",
+      "Benjamin J. Shields",
+      "Pablo Lemos",
+      "Sasaank Bandi",
+      "Maarten Van Damme",
+      "Martin Ganahl",
+      "Andrea Bortolato"
+    ],
+    "abstract": "The success of deep learning binding affinity prediction models depends critically on expanding experimental data with reliable synthetic data. We extend the Structurally Augmented IC50 Repository (SAIR) with physics-based computations and present two distinct data splits, SAIR-FEP and SAIR-OOD. With SAIR-FEP, we perform $\\approx$80K absolute free energy perturbation calculations (AFEP) and curate two train/test splits to simulate realistic drug discovery scenarios. The free energy of binding and other physics-based computations are then used as either input features. We compare the performance of proteochemometric and state-of-the-art structure-based deep learning models and show that including physics-based features improves predictions, and that the quality of the structure plays a key role in their performance. For SAIR-OOD, we remove SAIR entries that overlap with complexes in public-facing benchmarks and demonstrate that simultaneous training on synthetic and experimental data improves performance on public-facing, experimental benchmarks.",
+    "url": "https://openreview.net/forum?id=aiQyNhZ3s5",
+    "pdf_url": null,
+    "source": "OpenReview: GEM 2026",
+    "categories": [
+      "binding affinity prediction",
+      "protein-ligand interaction",
+      "molecular graphs",
+      "drug discovery",
+      "geometric deep learning"
+    ],
+    "published": "2026-02-05",
+    "version": null,
+    "added_date": "2026-05-06",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.8,
+    "relevance_reason": "Performs ~80K absolute free energy perturbation (FEP) calculations on protein-ligand complexes with explicit 3D atomic structures to augment binding affinity prediction datasets; uses rigorously validated physics-based atomistic free-energy methods and applies them to real systems; satisfies all criteria (a)–(c).",
+    "key_authors": []
+  },
+  {
+    "id": "b004d2126c0c",
+    "title": "From Enhanced Sampling to Human-Readable Representations of Protein Dynamics",
+    "authors": [
+      "Souvik Mondal",
+      "Michael A. Sauer",
+      "Matthias Heyden"
+    ],
+    "abstract": "arXiv:2605.03394v1 Announce Type: new \nAbstract: Understanding protein conformational dynamics is essential for elucidating biological function but remains challenging due to the wide range of timescales and the complexity of collective motions. Enhanced sampling methods overcome timescale limitations of conventional molecular dynamics, yet their effectiveness depends on the choice of collective variables (CVs), which are often difficult to define and may lack physical interpretability. In particular, collective variables derived from machine learning or collective vibrational modes can efficiently capture slow dynamics but are not easily mapped onto intuitive structural descriptors. Here, we present a fully automated framework that transforms enhanced sampling trajectories into human-readable representations of protein dynamics. Our approach combines enhanced sampling along CVs derived from frequency-selective anharmonic mode analysis with a post hoc analysis of biased trajectories using weighted dynamic cross-correlation matrices. From these, we identify residue pairs and domains exhibiting correlated and anti-correlated motions, yielding simple domain-domain distances that serve as physically interpretable CVs. We apply this method to five proteins, including KRAS and HIV-1 protease, and show that it consistently identifies biologically relevant domains and motions without prior system-specific knowledge. Projection onto these distances produces free energy surfaces that reproduce known conformational states with low statistical uncertainty while maximizing independent dynamical information. This workflow enables systematic recasting of complex CVs into simple geometric descriptors without loss of essential dynamics. Its generality and automation make it broadly applicable for interpreting enhanced sampling simulations and generating interpretable conformational ensembles for integration with emerging machine learning approaches.",
+    "url": "https://arxiv.org/abs/2605.03394",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.78,
+    "relevance_reason": "Enhanced sampling MD (metadynamics-like anharmonic modes) applied to protein dynamics; satisfies (a)–(c) with explicit-atom MD, free-energy surface analysis, and mechanistic study. Post-hoc trajectory analysis and CV interpretation are secondary to the core atomistic simulation contribution.",
+    "key_authors": []
+  },
+  {
+    "id": "4559f4029c30",
+    "title": "Gauge-Field-Mediated Symmetry Breaking of Matters Under Electromagnetic Fields and Its Impact on Spin Dynamics",
+    "authors": [
+      "Uiseok Jeong",
+      "Esmaeil Taghizadeh Sisakht",
+      "Angel Rubio",
+      "Carsten A. Ullrich",
+      "Kyeong-Whan Kim",
+      "Noejung Park"
+    ],
+    "abstract": "arXiv:2605.03539v1 Announce Type: new \nAbstract: When a condensed-matter system is subjected to external electromagnetic fields, the gauge-invariant formulation of physical operators must explicitly incorporate the gauge-field contribution. However, in the context of spin-orbit coupling (SOC), this gauge-field term is often regarded as negligible or merely additive compared to the canonical SOC, which is typically localized near atomic cores. Here, we demonstrate that the symmetry breaking and consequent spin dynamics are governed by the gauge-field term, without which the spins remain symmetry-constrained. We perform real-time time-dependent density functional theory calculations to investigate spin-orbit dynamics, focusing on representative cases with mirror, glide, and screw-rotational symmetry. We demonstrate that when the gauge-field term in the time-dependent Hamiltonian perturbs the symmetry of the canonical term, a dynamical spin state gradually develops during the time evolution, beyond the symmetry-frozen states. We suggest that, for nonequilibrium spin-orbit dynamics, the gauge-invariant formulation of SOC is not only formally required but also quantitatively essential, even for a weak external field.",
+    "url": "https://arxiv.org/abs/2605.03539",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Electronic Structure",
+    "relevance_score": 0.78,
+    "relevance_reason": "Real-time time-dependent DFT (TD-DFT) calculations on spin-orbit dynamics in condensed matter satisfy (a)–(c); this is ab initio MD/dynamics methodology applied to understand electronic and spin behavior under external fields, a legitimate atomistic simulation advance.",
+    "key_authors": []
+  },
+  {
+    "id": "a92f837cc9ff",
+    "title": "Flow Sampling: Learning to Sample from Unnormalized Densities via Denoising Conditional Processes",
+    "authors": [
+      "Aaron Havens",
+      "Brian Karrer",
+      "Neta Shaul"
+    ],
+    "abstract": "arXiv:2605.03984v1 Announce Type: new \nAbstract: Sampling from unnormalized densities is analogous to the generative modeling problem, but the target distribution is defined by a known energy function instead of data samples. Because evaluating the energy function is often costly, a primary challenge is to learn an efficient sampler. We introduce Flow Sampling, a framework built on diffusion models and flow matching for the data-free setting. Our training objective is conditioned on a noise sample and regresses onto a denoising diffusion drift constructed from the energy function. In contrast, diffusion models' objective is conditioned on a data sample and regresses onto a noising diffusion drift. We utilize the interpolant process to minimize the number of energy function evaluations during training, resulting in an efficient and scalable method for sampling unnormalized densities. Furthermore, our formulation naturally extends to Riemannian manifolds, enabling diffusion-based sampling in geometries beyond Euclidean space. We derive a closed-form formula for the conditional drift on constant curvature manifolds, including hyperspheres and hyperbolic spaces. We evaluate Flow Sampling on synthetic energy benchmarks, small peptides, large-scale amortized molecular conformer generation, and distributions supported on the sphere, demonstrating strong empirical performance.",
+    "url": "https://arxiv.org/abs/2605.03984",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.78,
+    "relevance_reason": "Diffusion-based sampler (Flow Sampling) for sampling from energy functions, demonstrated on small peptides and molecular conformer generation with explicit energy evaluation; generates 3D atomic configurations tied to a potential, satisfies (a)–(c), but is a sampler rather than a full MD/optimization method.",
+    "key_authors": []
+  },
+  {
+    "id": "97b4f4e5331d",
+    "title": "Integrated learning-assisted design of metal–nitrogen–carbon single-atom catalysts: electronegativity regulates the coupling rules of interfacial valence electrons",
+    "authors": [
+      "Hang Zhang",
+      "Zishan Luo",
+      "Xi Sun",
+      "Yuhang Zhou",
+      "Wenhao Yan",
+      "Jiawei Li",
+      "Tao Zhang",
+      "Hong Cui",
+      "Weizhi Tian",
+      "Rong Feng",
+      "Hongkuan Yuan"
+    ],
+    "abstract": "Chem. Sci., 2026, Advance Article\nHang Zhang, Zishan Luo, Xi Sun, Yuhang Zhou, Wenhao Yan, Jiawei Li, Tao Zhang, Hong Cui, Weizhi Tian, Rong Feng, Hongkuan Yuan\nBy integrating DFT with ensemble learning, this work establishes electronegativity-regulated valence-electron matching rules for M-NnCm-GN SACs, where 10/11-electron coupling controls adsorption energy and guides NRR/OER catalyst design.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/SC/D6SC00422A",
+    "pdf_url": null,
+    "source": "Chemical Science",
+    "categories": [],
+    "published": "2026-05-05T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-06",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.78,
+    "relevance_reason": "DFT integrated with machine learning for single-atom catalyst design; explicit atomistic DFT calculations on metal–nitrogen–carbon structures to predict adsorption and guide NRR/OER catalyst discovery; satisfies (a)–(c) and combines DFT method application with materials discovery.",
+    "key_authors": []
+  },
+  {
+    "id": "63491e310729",
+    "title": "First-principles prediction of chiral-phonon-induced orbital accumulation",
+    "authors": [
+      "A. Pezo",
+      "A. Manchon",
+      "Y. Nii",
+      "K. Ando",
+      "T. Kato"
+    ],
+    "abstract": "arXiv:2605.03486v1 Announce Type: cross \nAbstract: Chiral phonons offer a route to transfer angular momentum without relying on magnetic order, but their electronic response in metals remains poorly understood from perspectives beyond spin-based scenarios. Using first-principles calculations, we show that coherent chiral lattice motion generates orbital accumulation and, through spin-orbit coupling, a smaller accompanying spin accumulation. Our approach evaluates orbital and spin expectation values directly from strain perturbed ab initio Hamiltonians in the long-wavelength limit, where the phonon perturbation is represented by symmetry adapted circular lattice distortions. We show that the response is controlled mainly by orbital character, near-degeneracies, and electron-phonon coupling, rather than by spin-orbit coupling alone. These results identify light transition metals as promising platforms for chiral-phonon-driven orbitronics.",
+    "url": "https://arxiv.org/abs/2605.03486",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 06 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-06",
+    "category": "Electronic Structure",
+    "relevance_score": 0.76,
+    "relevance_reason": "First-principles DFT calculations of strain-perturbed Hamiltonians and orbital/spin accumulation from chiral phonons; satisfies (a)–(c) as ab initio method applied to understand electronic response to lattice perturbation, though not full dynamics—a DFT perturbation / lattice-deformation study of phononic effects.",
+    "key_authors": []
+  }
+]
