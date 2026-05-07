@@ -129,6 +129,8 @@ IMPACT_FACTORS = {
     "Nature Chemical Biology": 14.8,
     "Nature Methods": 48.0,
     "Nature Biotechnology": 46.9,
+    "Nature Materials": 37.2,
+    "Nature Physics": 17.6,
     "npj Computational Materials": 9.7,
     # AAAS
     "Science": 56.9,
@@ -143,6 +145,10 @@ IMPACT_FACTORS = {
     "Analytical Chemistry": 7.4,
     "J. Org. Chem.": 3.6,
     "Org. Lett.": 5.2,
+    "JPCL": 4.8,
+    "JPC A": 2.7,
+    "JPC B": 2.8,
+    "JPC C": 3.3,
     # RSC
     "Digital Discovery": 6.2,
     "Chemical Science": 9.0,
@@ -152,17 +158,32 @@ IMPACT_FACTORS = {
     "RSC Medicinal Chemistry": 3.4,
     "Catalysis Sci. Technol.": 5.0,
     "PCCP": 2.9,
+    "Materials Horizons": 12.2,
     "Lab Chip": 6.1,
     "RSC Chem. Biol.": 5.4,
     "Nanoscale": 5.8,
     # Wiley
     "Angew. Chem.": 16.6,
+    "J. Comp. Chem.": 3.4,
+    "WIREs Comp. Mol. Sci.": 16.8,
     # Cell Press
     "Cell": 64.5,
     "Chem": 23.5,
     "Cell Chemical Biology": 8.6,
     "Patterns": 6.7,
     "iScience": 5.8,
+    # APS
+    "Phys. Rev. Lett.": 8.6,
+    "Phys. Rev. B": 3.2,
+    "Phys. Rev. X": 11.6,
+    "Phys. Rev. Materials": 3.4,
+    # AIP
+    "J. Chem. Phys.": 3.1,
+    # Elsevier
+    "Acta Materialia": 8.3,
+    "Comp. Mat. Sci.": 3.1,
+    # IOP
+    "Modelling Simul. Mater. Sci. Eng.": 1.7,
     # Preprints (always included)
     "arXiv": None,
     "bioRxiv": None,
@@ -198,6 +219,8 @@ class SpringerNatureFetcher(FeedFetcher):
         "Nature Computational Science": "https://www.nature.com/natcomputsci.rss",
         "Nature Machine Intelligence": "https://www.nature.com/natmachintell.rss",
         "Nature Chemistry": "https://www.nature.com/nchem.rss",
+        "Nature Materials": "https://www.nature.com/nmat.rss",
+        "Nature Physics": "https://www.nature.com/nphys.rss",
         "npj Computational Materials": "https://www.nature.com/npjcompumats.rss",
     }
 
@@ -265,22 +288,49 @@ class JournalRSSFetcher(FeedFetcher):
         # AAAS
         "Science": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
         "Science Advances": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
-        # ACS
-        "JACS": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jacsat",
+        # ACS feeds ship without abstracts, so the LLM has only the title to score
+        # on. That lets through "Correction to..." notices and topically adjacent
+        # but non-atomistic work. JCIM and JCTC stay enabled because their scope is
+        # tight enough that title-only scoring still works most of the time. The
+        # rest are disabled; uncomment if you find a fix.
         "JCIM": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jcisd8",
         "JCTC": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jctcce",
-        "ACS Central Science": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=acscii",
-        "ACS Catalysis": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=accacs",
-        # RSC
+        # "JACS": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jacsat",
+        # "ACS Central Science": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=acscii",
+        # "ACS Catalysis": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=accacs",
+        # "JPCL": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jpclcd",
+        # "JPC A": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jpcafh",
+        # "JPC B": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jpcbfk",
+        # "JPC C": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jpccck",
+        # RSC (note: feeds.rsc.org is http-only)
         "Digital Discovery": "http://feeds.rsc.org/rss/dd",
         "Chemical Science": "http://feeds.rsc.org/rss/sc",
         "Chem. Commun.": "http://feeds.rsc.org/rss/cc",
         "PCCP": "http://feeds.rsc.org/rss/cp",
+        # Materials Horizons: ~100/day, mostly biomimetic / soft matter / non-atomistic.
+        # "Materials Horizons": "http://feeds.rsc.org/rss/mh",
         # Wiley
         "Angew. Chem.": "https://onlinelibrary.wiley.com/action/showFeed?jc=15213773&type=etoc&feed=rss",
+        "J. Comp. Chem.": "https://onlinelibrary.wiley.com/feed/1096987X/most-recent",
+        "WIREs Comp. Mol. Sci.": "https://onlinelibrary.wiley.com/feed/17590884/most-recent",
         # Cell Press
         "Chem": "https://www.cell.com/chem/current.rss",
-        "Patterns": "https://www.cell.com/patterns/current.rss",
+        # Patterns: data-science / ML journal, almost never publishes atomistic work.
+        # "Patterns": "https://www.cell.com/patterns/current.rss",
+        # APS. PRL and PRX are very broad (quantum info, particle, optics);
+        # ~99% noise per dry-run. Disabled. PRB and PR Materials are kept since
+        # they carry a meaningful share of DFT / MLIP / electronic-structure work.
+        "Phys. Rev. B": "http://feeds.aps.org/rss/recent/prb.xml",
+        "Phys. Rev. Materials": "http://feeds.aps.org/rss/recent/prmaterials.xml",
+        # "Phys. Rev. Lett.": "http://feeds.aps.org/rss/recent/prl.xml",
+        # "Phys. Rev. X": "http://feeds.aps.org/rss/recent/prx.xml",
+        # AIP
+        "J. Chem. Phys.": "https://pubs.aip.org/rss/site_1000043/LatestOpenIssueArticles_1000024.xml",
+        # Elsevier (ScienceDirect feeds can lag the actual publication date by a few days)
+        "Acta Materialia": "https://rss.sciencedirect.com/publication/science/13596454",
+        "Comp. Mat. Sci.": "https://rss.sciencedirect.com/publication/science/09270256",
+        # IOP
+        "Modelling Simul. Mater. Sci. Eng.": "https://iopscience.iop.org/journal/rss/0965-0393",
     }
 
     def __init__(self, min_impact_factor: float | None = None, max_age_hours: int | None = None):

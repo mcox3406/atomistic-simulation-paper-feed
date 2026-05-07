@@ -1,6 +1,6 @@
 # Atomistic Simulation Paper Feed
 
-A daily feed of papers in computational chemistry, materials science, and atomistic ML. Sources include arXiv, bioRxiv, ChemRxiv, OpenReview workshops, and major journal RSS (Nature/Science families, JACS, JCTC, JCIM, ACS Catalysis, Digital Discovery, Chem. Sci., PCCP, Angew., npj Comp. Mat., Patterns, etc.). A simple keyword pre-filter trims the volume, and Claude then scores each candidate for relevance and assigns it to one of six buckets. Hits are posted to Slack and committed as JSON for the static site.
+A daily feed of papers in computational chemistry, materials science, and atomistic ML. Sources include arXiv, bioRxiv, ChemRxiv, OpenReview workshops, and journal RSS feeds across Nature, Science, ACS (JCTC, JCIM), RSC (Digital Discovery, Chem. Sci., Chem. Commun., PCCP), APS (PRB, PR Materials), AIP (J. Chem. Phys.), Wiley (Angew., J. Comp. Chem., WIREs CMS), Cell Press (Chem), Elsevier (Acta Materialia, Comp. Mat. Sci.), and IOP (Modelling Simul. Mater. Sci. Eng.). A simple keyword pre-filter trims the volume, and Claude then scores each candidate for relevance and assigns it to one of six buckets. Hits are posted to Slack and committed as JSON for the static site.
 
 Live at **[mcox3406.github.io/atomistic-simulation-paper-feed](https://mcox3406.github.io/atomistic-simulation-paper-feed/)**.
 

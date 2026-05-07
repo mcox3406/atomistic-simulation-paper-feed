@@ -11,7 +11,8 @@ from ..models import Paper
 # Journals that don't include abstracts in their RSS feeds
 NO_ABSTRACT_JOURNALS = {
     'JACS', 'JCIM', 'JCTC', 'ACS Central Science',
-    'J. Med. Chem.', 'ACS Catalysis', 'J. Org. Chem.', 'Org. Lett.'
+    'J. Med. Chem.', 'ACS Catalysis', 'J. Org. Chem.', 'Org. Lett.',
+    'JPCL', 'JPC A', 'JPC B', 'JPC C',
 }
 
 

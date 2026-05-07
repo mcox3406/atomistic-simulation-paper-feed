@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .fetchers import ArxivFetcher, BiorxivFetcher, ChemrxivFetcher, JournalRSSFetcher, OpenReviewFetcher, SpringerNatureFetcher
 from .filters import KeywordFilter, LLMFilter, PaperCategorizer
+from .filters.keyword import is_correction_or_erratum
 from .filters.llm import InsufficientCreditsError
 from .history import PaperHistory
 from .key_authors import filter_papers_by_key_authors, get_key_authors_on_paper, load_key_authors
@@ -91,6 +92,14 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
 
     new_papers = history.filter_new(all_papers)
     print(f"After deduplication: {len(new_papers)} new papers")
+
+    # Drop corrections / errata / retraction notices before any other filter:
+    # title-only feeds (ACS, Nature) make these look atomistic-relevant to the LLM.
+    before = len(new_papers)
+    new_papers = [p for p in new_papers if not is_correction_or_erratum(p.title)]
+    skipped = before - len(new_papers)
+    if skipped:
+        print(f"Skipped {skipped} corrections/errata/retractions")
 
     # Key-author papers bypass both keyword and LLM filters.
     key_author_papers, other_papers = filter_papers_by_key_authors(new_papers, key_authors)

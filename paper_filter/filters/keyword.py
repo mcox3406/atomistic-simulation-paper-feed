@@ -23,3 +23,37 @@ class KeywordFilter:
     def filter(self, papers: list[Paper]) -> list[Paper]:
         """Filter papers by keyword match."""
         return [p for p in papers if self.matches(p)]
+
+
+_CORRECTION_PREFIXES = (
+    "correction to",
+    "correction:",
+    "correction.",
+    "erratum to",
+    "erratum:",
+    "erratum.",
+    "retraction notice:",
+    "retraction:",
+    "publisher correction:",
+    "author correction:",
+    "addendum to",
+    "addendum:",
+)
+
+
+def is_correction_or_erratum(title: str) -> bool:
+    """True if this title is a correction/erratum/retraction notice, not a paper.
+
+    Catches ACS "[ASAP] Correction to...", Nature "Publisher Correction:", and
+    generic "Erratum:" / "Retraction:". These are noise: the titles sound
+    atomistic, abstracts are missing, and the LLM scores them high without
+    realizing they aren't real papers.
+    """
+    if not title:
+        return False
+    t = title.strip()
+    # Strip ACS-style square-bracket prefixes ("[ASAP]", "[Article]", etc.).
+    if t.startswith("[") and "]" in t:
+        t = t.split("]", 1)[1].strip()
+    t_lower = t.lower()
+    return any(t_lower.startswith(p) for p in _CORRECTION_PREFIXES)
