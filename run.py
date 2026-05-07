@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from dotenv import load_dotenv
-load_dotenv()  # Load .env file if present
+load_dotenv()
 
 from paper_filter import run_pipeline
 
@@ -42,7 +42,6 @@ def sync_history():
         print(f"  {fetcher.__class__.__name__}: {len(papers)} papers")
         all_papers.extend(papers)
 
-    # Load existing history
     history_file = Path("posted_papers.json")
     if history_file.exists():
         with open(history_file) as f:
@@ -50,7 +49,6 @@ def sync_history():
     else:
         history = {}
 
-    # Add all papers to history
     now = datetime.now().isoformat()
     added = 0
     for paper in all_papers:
@@ -58,7 +56,6 @@ def sync_history():
             history[paper.id] = now
             added += 1
 
-    # Save
     with open(history_file, "w") as f:
         json.dump(history, f)
 

@@ -37,7 +37,6 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     if no_slack and not dry_run:
         print("NO-SLACK MODE - will write JSON and update history but skip the Slack post")
 
-    # Validate required environment variables
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY environment variable is required")
@@ -46,12 +45,10 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     if not webhook_url and not dry_run and not no_slack:
         raise ValueError("SLACK_WEBHOOK_URL environment variable is required")
 
-    # Load config
     config = load_config()
     min_if = config.get("min_impact_factor")
     max_age = config.get("max_age_hours")
 
-    # Initialize components
     openreview_workshops = config.get("sources", {}).get("openreview_workshops", [])
 
     fetchers = [
@@ -80,11 +77,9 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
 
     history = PaperHistory()
 
-    # Load key authors
     key_authors = load_key_authors()
     print(f"Loaded {len(key_authors)} key authors")
 
-    # Fetch all papers
     print("Fetching papers from all sources...")
     all_papers = []
     for fetcher in fetchers:
@@ -94,11 +89,10 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
 
     print(f"Total fetched: {len(all_papers)} papers")
 
-    # Remove already-posted papers
     new_papers = history.filter_new(all_papers)
     print(f"After deduplication: {len(new_papers)} new papers")
 
-    # Separate papers by key authors (these bypass all filtering)
+    # Key-author papers bypass both keyword and LLM filters.
     key_author_papers, other_papers = filter_papers_by_key_authors(new_papers, key_authors)
     if key_author_papers:
         print(f"Papers from key authors (bypass filtering): {len(key_author_papers)}")
@@ -106,16 +100,13 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
             authors_found = get_key_authors_on_paper(paper, key_authors)
             print(f"  - {paper.title[:60]}... ({', '.join(authors_found)})")
 
-    # First-pass: keyword filter (only for non-key-author papers)
     keyword_matches = keyword_filter.filter(other_papers)
     print(f"After keyword filter: {len(keyword_matches)} papers")
 
-    # Limit papers in test mode
     if test_mode and len(keyword_matches) > 50:
         keyword_matches = keyword_matches[:50]
         print(f"TEST MODE: limited to {len(keyword_matches)} papers")
 
-    # Second-pass: LLM relevance scoring (only for non-key-author papers)
     credits_exhausted = False
     if keyword_matches:
         print("Running LLM relevance scoring...")
@@ -129,8 +120,7 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     else:
         relevant_papers = []
 
-    # Add key author papers with a high score (they bypass filtering)
-    # Score of 1.0 and reason indicating key author bypass
+    # Re-attach key-author papers at score 1.0 so they sort to the top.
     for paper in key_author_papers:
         authors_found = get_key_authors_on_paper(paper, key_authors)
         reason = f"Key author: {', '.join(authors_found)}"
@@ -139,7 +129,6 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     if key_author_papers:
         print(f"Total relevant papers (including key authors): {len(relevant_papers)}")
 
-    # Categorize papers by research area
     if relevant_papers:
         print("Categorizing papers by research area...")
         try:
@@ -154,12 +143,11 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     else:
         categorized_papers = {}
 
-    # Post to Slack
     print("Posting to Slack...")
     slack_poster.post_papers(categorized_papers, credits_exhausted=credits_exhausted)
 
     # Export to static JSON for the web frontend (non-blocking).
-    # Skipped in dry-run so the working tree stays clean — especially in --test
+    # Skipped in dry-run so the working tree stays clean, especially in --test
     # mode, which produces a partial dataset that should never be committed.
     if not dry_run:
         print("Exporting papers to JSON...")
@@ -167,7 +155,6 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     else:
         print("Skipping JSON export (dry run)")
 
-    # Mark as posted
     if not dry_run:
         history.mark_posted([p for p, _, _ in relevant_papers])
 

@@ -18,25 +18,22 @@ class PaperHistory:
         if self.history_file.exists():
             with open(self.history_file) as f:
                 data = json.load(f)
-                # Keep only last 30 days
                 cutoff = (datetime.now() - timedelta(days=30)).isoformat()
                 return {pid for pid, date in data.items() if date > cutoff}
         return set()
 
     def _save_history(self):
-        # Load existing to preserve dates
+        # Re-read on save so we preserve original posted-on dates for IDs we already had.
         existing = {}
         if self.history_file.exists():
             with open(self.history_file) as f:
                 existing = json.load(f)
 
-        # Update with new IDs
         today = datetime.now().isoformat()
         for pid in self.posted_ids:
             if pid not in existing:
                 existing[pid] = today
 
-        # Prune old entries
         cutoff = (datetime.now() - timedelta(days=30)).isoformat()
         existing = {k: v for k, v in existing.items() if v > cutoff}
 

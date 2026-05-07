@@ -21,7 +21,6 @@ class SlackPoster:
     def post_papers(self, categorized_papers: dict[str, list[tuple[Paper, float, str]]], credits_exhausted: bool = False):
         """Post categorized papers to Slack."""
 
-        # Count total papers
         total = sum(len(papers) for papers in categorized_papers.values())
 
         if total == 0 and not credits_exhausted:
@@ -36,8 +35,9 @@ class SlackPoster:
             )
             return
 
-        # Build message blocks
-        overflow_messages = []  # Additional messages for categories that overflow
+        # Categories whose paper list overflows Slack's 3000-char block limit
+        # get sent as follow-up messages after the main one.
+        overflow_messages = []
         blocks = [
             {
                 "type": "header",
@@ -57,7 +57,6 @@ class SlackPoster:
             },
         ]
 
-        # Add warning if credits exhausted
         if credits_exhausted:
             blocks.append({
                 "type": "section",
@@ -69,13 +68,11 @@ class SlackPoster:
 
         blocks.append({"type": "divider"})
 
-        # Add each category with papers
         for category in CATEGORIES:
             papers = categorized_papers.get(category, [])
             if not papers:
                 continue
 
-            # Category header
             blocks.append(
                 {
                     "type": "section",
@@ -86,16 +83,13 @@ class SlackPoster:
                 }
             )
 
-            # Paper list - sort by score descending
             papers_sorted = sorted(papers, key=lambda x: x[1], reverse=True)
             paper_lines = []
             for paper, score, reason in papers_sorted:
-                # Escape special characters for Slack mrkdwn
                 title = self._escape_mrkdwn(paper.title)
-                # Append version for arXiv papers (helps identify updated papers)
+                # Show vN for arXiv so updated papers are visibly distinct from the v1 we already posted.
                 if paper.version is not None:
                     title = f"{title} (v{paper.version})"
-                # Format authors
                 authors_str = self._format_authors(paper.authors)
                 pdf_link = f" <{paper.pdf_url}|[pdf]>" if paper.pdf_url else ""
                 if authors_str:
@@ -103,10 +97,8 @@ class SlackPoster:
                 else:
                     paper_lines.append(f"• <{paper.url}|{title}>{pdf_link} ({paper.source})")
 
-            # Split paper lines into chunks respecting Slack's 3000 char limit
             chunks = self._chunk_lines(paper_lines, max_chars=2800)
 
-            # First chunk goes in main message
             blocks.append(
                 {
                     "type": "section",
@@ -117,7 +109,6 @@ class SlackPoster:
                 }
             )
 
-            # Additional chunks get posted as overflow messages later
             for i, chunk in enumerate(chunks[1:], start=2):
                 overflow_messages.append({
                     "blocks": [
@@ -138,10 +129,8 @@ class SlackPoster:
                     ]
                 })
 
-        # Post main message
         self._post_message({"blocks": blocks})
 
-        # Post any overflow messages
         for overflow in overflow_messages:
             self._post_message(overflow)
 
@@ -155,13 +144,11 @@ class SlackPoster:
 
         for line in lines:
             if current_chunk and len(current_chunk) + len(line) + 1 > max_chars:
-                # Start a new chunk
                 chunks.append(current_chunk.rstrip("\n"))
                 current_chunk = line + "\n"
             else:
                 current_chunk += line + "\n"
 
-        # Don't forget the last chunk
         if current_chunk:
             chunks.append(current_chunk.rstrip("\n"))
 
@@ -169,7 +156,6 @@ class SlackPoster:
 
     def _escape_mrkdwn(self, text: str) -> str:
         """Escape special characters for Slack mrkdwn."""
-        # Replace & < > with HTML entities
         text = text.replace("&", "&amp;")
         text = text.replace("<", "&lt;")
         text = text.replace(">", "&gt;")
@@ -179,16 +165,13 @@ class SlackPoster:
         """
         Format author list for Slack display.
 
-        - Bold key authors
-        - If more than max_authors, truncate with ellipsis but keep final author
-        - Key authors are NEVER truncated - they're always shown even if in the
-          middle of a long list
-          e.g., "A1, A2, ..., *KeyAuthor*, ..., LastAuthor"
+        Bold key authors. If the list is longer than max_authors, truncate with
+        ellipses but keep: the first N-1, the last author, and any key authors
+        that would otherwise be hidden in the middle of the list.
         """
         if not authors:
             return ""
 
-        # Format each author, bolding key authors
         def format_author(name: str) -> str:
             escaped = self._escape_mrkdwn(name)
             if is_key_author(name, self.key_authors):
@@ -198,26 +181,17 @@ class SlackPoster:
         if len(authors) <= max_authors:
             return ", ".join(format_author(a) for a in authors)
 
-        # Determine which author indices to show:
-        # 1. First (max_authors - 1) authors
-        # 2. Last author
-        # 3. Any key authors that would otherwise be hidden
-        shown_indices = set(range(max_authors - 1))  # First N-1 (e.g., 0-8)
-        shown_indices.add(len(authors) - 1)  # Last author
-
-        # Add any key authors that would be truncated
+        shown_indices = set(range(max_authors - 1))
+        shown_indices.add(len(authors) - 1)
         for i, author in enumerate(authors):
             if is_key_author(author, self.key_authors):
                 shown_indices.add(i)
 
-        # Build the formatted string, inserting ellipses where there are gaps
         sorted_indices = sorted(shown_indices)
         parts = []
         prev_idx = -1
-
         for idx in sorted_indices:
             if prev_idx >= 0 and idx > prev_idx + 1:
-                # There's a gap - authors were skipped
                 parts.append("...")
             parts.append(format_author(authors[idx]))
             prev_idx = idx
@@ -226,7 +200,7 @@ class SlackPoster:
 
     def _post_message(self, payload: dict):
         """Send a message to Slack (or print if dry_run)."""
-        # Always save payload for debugging/reuse
+        # Dump the most recent payload to disk so failed posts can be replayed manually.
         import json
         with open("slack_payload.json", "w") as f:
             json.dump(payload, f, indent=2)

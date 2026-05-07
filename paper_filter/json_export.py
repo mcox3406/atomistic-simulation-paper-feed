@@ -1,8 +1,8 @@
 """Export papers to static JSON files for the web frontend.
 
 Layout (under frontend/public/data/papers/):
-    YYYY-MM-DD.json   — papers added on that date
-    index.json        — list of {date, count}, newest first
+    YYYY-MM-DD.json   papers added on that date
+    index.json        list of {date, count}, newest first
 """
 
 import json
@@ -74,7 +74,6 @@ def save_papers_to_json(categorized_papers: dict) -> bool:
         print(f"  Failed to write {today_file}: {e}")
         return False
 
-    # Refresh the index by scanning the directory.
     index = []
     for path in sorted(DATA_DIR.glob("*.json"), reverse=True):
         if path.name == "index.json":

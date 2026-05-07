@@ -35,18 +35,17 @@ class PaperCategorizer:
         if not papers:
             return {cat: [] for cat in CATEGORIES}
 
-        # Get categories for all papers
         paper_categories = self._categorize_batch(papers)
 
-        # Group by category
         result = {cat: [] for cat in CATEGORIES}
         for (paper, score, reason), category in zip(papers, paper_categories):
             if category in result:
                 result[category].append((paper, score, reason))
             else:
-                # If the LLM emits a string we don't recognize, route to Applications.
-                # These are post-filter atomistic papers, so the most likely garbage
-                # is a system-specific paper the model couldn't pin to a method bucket.
+                # Unrecognized category strings land here. By this point the paper
+                # has passed the atomistic-simulation filter, so the most likely
+                # garbage is a system-specific paper the model couldn't pin to a
+                # method bucket. Atomistic Applications is the right catch-all.
                 result["Atomistic Applications"].append((paper, score, reason))
 
         return result
@@ -57,7 +56,6 @@ class PaperCategorizer:
         """Categorize a batch of papers."""
         categories_list = "\n".join(f"- {cat}" for cat in CATEGORIES)
 
-        # Format papers
         papers_text = ""
         for idx, (paper, score, reason) in enumerate(papers):
             papers_text += f"{idx + 1}. {paper.title} ({paper.source})\n"
@@ -70,12 +68,12 @@ Papers to categorize:
 {papers_text}
 
 Bucket definitions:
-- "MLIPs & Foundation Models": development, training-data strategies, benchmarks, transferability, or fine-tuning of machine-learned interatomic potentials (NequIP, MACE, Allegro, SchNet, GemNet, PaiNN, MatterSim, UMA, eSEN, Orb, GNoME, ANI, AIMNet, etc.). Application papers that happen to use an MLIP go elsewhere — this bucket is about the potential itself.
+- "MLIPs & Foundation Models": development, training-data strategies, benchmarks, transferability, or fine-tuning of machine-learned interatomic potentials (NequIP, MACE, Allegro, SchNet, GemNet, PaiNN, MatterSim, UMA, eSEN, Orb, GNoME, ANI, AIMNet, etc.). Application papers that happen to use an MLIP go elsewhere; this bucket is about the potential itself.
 - "Molecular Dynamics & Sampling": classical or ab initio MD, free-energy methods (metadynamics, umbrella sampling, replica exchange, thermodynamic integration, alchemical), enhanced sampling, coarse-graining, learned samplers / Boltzmann generators, path-integral MD, kinetic Monte Carlo. Includes statistical-mechanics theory for simulated ensembles.
 - "Electronic Structure": DFT and exchange-correlation development, GW/BSE, post-Hartree-Fock methods (CCSD, MP2), embedding theories (QM/MM, DMFT), semi-empirical / tight-binding (DFTB, GFN-xTB), automated DFT workflows, methodological work tied to electronic-structure codes (VASP, CP2K, Quantum ESPRESSO, ORCA, Psi4, GPAW).
 - "Generative & Geometric ML for Atoms": generative models for 3D atomic systems (diffusion, flow matching, autoregressive crystal or molecule generation) AND equivariant / geometric architectures whose central contribution is the model itself, not its application.
-- "Materials Discovery & High-Throughput": crystal structure prediction, polymorph search, high-throughput DFT/MLIP screening, active learning or Bayesian optimization campaigns. The contribution is the search and what it found — breadth.
-- "Atomistic Applications": mechanistic and property studies of specific systems — catalysis mechanisms, battery cathodes/electrolytes, defect physics, surface and adsorption studies, MOF / perovskite / 2D-material characterization. The contribution is understanding a specific material or process — depth.
+- "Materials Discovery & High-Throughput": crystal structure prediction, polymorph search, high-throughput DFT/MLIP screening, active learning or Bayesian optimization campaigns. The contribution is the search and what it found (breadth).
+- "Atomistic Applications": mechanistic and property studies of specific systems: catalysis mechanisms, battery cathodes/electrolytes, defect physics, surface and adsorption studies, MOF / perovskite / 2D-material characterization. The contribution is understanding a specific material or process (depth).
 
 Seam rules for borderline cases:
 - 4 vs 5 (Generative ML vs Discovery): "Did the paper build a generative model?" vs "Did the paper run a search?". A generative model used as part of a discovery campaign goes to 5 if the paper's pitch is the discovery, 4 if the pitch is the model.
@@ -99,7 +97,8 @@ Respond with a JSON array of category names in the same order as the papers:
             if json_match:
                 data = json.loads(json_match.group())
                 categories = data.get("categories", [])
-                # Validate and pad if needed
+                # Pad short responses with "Other" so unknowns fall through to
+                # the Atomistic Applications catch-all in the caller.
                 while len(categories) < len(papers):
                     categories.append("Other")
                 return categories[:len(papers)]
@@ -110,5 +109,4 @@ Respond with a JSON array of category names in the same order as the papers:
                 raise InsufficientCreditsError("API credit balance is too low to categorize papers")
             print(f"Error categorizing papers: {e}")
 
-        # Fallback: all unclassified -> caught by Atomistic Applications in caller
         return ["Atomistic Applications"] * len(papers)

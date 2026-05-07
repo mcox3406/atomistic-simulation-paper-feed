@@ -59,8 +59,6 @@ class LLMFilter:
 
     def _score_batch(self, papers: list[Paper]) -> list[tuple[Paper, float, str]]:
         """Score a batch of papers."""
-
-        # Format papers for the prompt
         papers_text = ""
         has_no_abstract_papers = False
         for idx, paper in enumerate(papers):
@@ -76,7 +74,6 @@ Abstract: {abstract if abstract else "(not available)"}
 ---
 """
 
-        # Add note about journals without abstracts if applicable
         no_abstract_note = ""
         if has_no_abstract_papers:
             no_abstract_note = """
@@ -88,11 +85,11 @@ IMPORTANT: Some papers are from peer-reviewed journals (JACS, JCIM, JCTC, etc.) 
 Lab Focus: {self.lab_description}
 {no_abstract_note}
 HARD TEST. A paper qualifies as ATOMISTIC SIMULATION work only if ALL of the following hold:
-  (a) The system being studied is represented as explicit atoms (or coarse-grained beads tied to an atomistic mapping) — not just SMILES, 2D graphs, fingerprints, sequence, or compositional features.
+  (a) The system being studied is represented as explicit atoms (or coarse-grained beads tied to an atomistic mapping), not just SMILES, 2D graphs, fingerprints, sequence, or compositional features.
   (b) The methodology involves at least one of: molecular dynamics; Monte Carlo on atoms; geometry optimization; transition-state / NEB; free-energy methods; classical force fields; semi-empirical / tight-binding; DFT; post-HF; OR the development, training, or benchmarking of a machine-learned interatomic potential / force field used for any of the above.
   (c) The paper's contribution either advances one of those methods, or applies one of them to learn something about a chemical / material / biological system.
 
-If a paper fails ANY of (a)–(c), score it strictly below 0.5 — no matter how many surface-level keywords match.
+If a paper fails ANY of (a)-(c), score it strictly below 0.5, no matter how many surface-level keywords match.
 
 Scoring rubric (use these as anchors):
   - MLIP development, training, benchmarking, or applied MLIP-driven simulation → 0.85–0.95
@@ -134,10 +131,7 @@ When uncertain, score lower."""
                 messages=[{"role": "user", "content": prompt}],
             )
 
-            # Parse response
             response_text = response.content[0].text
-
-            # Extract JSON from response
             json_match = re.search(r"\{[\s\S]*\}", response_text)
             if json_match:
                 data = json.loads(json_match.group())
@@ -158,12 +152,12 @@ When uncertain, score lower."""
 
         except Exception as e:
             error_str = str(e)
-            # Check for credit balance error - this should stop the whole pipeline
+            # Credit-balance failures should halt the whole run; everything else
+            # falls through to a neutral 0.5 so a transient API blip isn't fatal.
             if "credit balance is too low" in error_str.lower():
                 raise InsufficientCreditsError("API credit balance is too low to continue scoring")
             print(f"Error scoring batch: {e}")
 
-        # Fallback for other errors: return all papers with neutral score
         return [(p, 0.5, "Error during scoring") for p in papers]
 
     def filter(self, papers: list[Paper]) -> list[tuple[Paper, float, str]]:
