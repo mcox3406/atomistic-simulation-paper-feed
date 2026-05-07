@@ -16,6 +16,8 @@ Adapted from [`lab-paper-feed`](https://github.com/mcox3406/lab-paper-feed).
 4. Trigger the **Daily Paper Feed** workflow manually once, or wait for the 12:00 UTC cron.
 5. For the site: Settings -> Pages -> Source: GitHub Actions. The deploy workflow rebuilds on every successful feed run.
 
+If you forked this repo, `posted_papers.json` carries my existing dedup history (papers already shown here). Reset it before your first run so you don't miss recent papers: `echo '{}' > posted_papers.json`, or run `python run.py --sync-history` to mark currently fetchable papers as seen and start fresh from there.
+
 ## Local dev
 
 Set up a virtualenv, install deps, and run the pipeline against a small slice without posting to Slack:
