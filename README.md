@@ -8,8 +8,8 @@ Live at **[mcox3406.github.io/atomistic-simulation-paper-feed](https://mcox3406.
 
 Adapted from [`lab-paper-feed`](https://github.com/mcox3406/lab-paper-feed).
 
-> [!WARNING]
-> **ChemRxiv fetcher is currently broken.** ChemRxiv migrated to Wiley's Research Exchange Preprints platform on 2026-01-21 ([migration FAQ](https://connect.acspubs.org/chemrxiv-migration-FAQ)), and the old public API at `chemrxiv.org/engage/chemrxiv/public-api/v1/items` now returns HTTP 403. The pipeline still runs (`ChemrxivFetcher` just yields zero papers and logs the error), but ChemRxiv preprints are not being picked up until the new platform exposes a public API. This should be fixed soon.
+> [!NOTE]
+> **ChemRxiv is fetched via Crossref.** The native ChemRxiv API has been Cloudflare-gated since the 2026-01-21 migration to Wiley's Research Exchange Preprints platform, so headless clients get HTTP 403. We route through Crossref's Works API by DOI prefix (`10.26434`) instead. Crossref doesn't carry ChemRxiv abstracts, so titles are scored alone (the LLM is told to be lenient for these).
 
 ## Setup
 

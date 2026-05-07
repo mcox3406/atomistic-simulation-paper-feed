@@ -39,10 +39,13 @@ const CATEGORY_DESCRIPTIONS = {
 }
 
 // Journals that often ship empty/garbled abstracts in their RSS feeds.
+// ChemRxiv is here because we route through Crossref, which does not carry
+// ChemRxiv abstracts.
 const JOURNALS_WITH_ABSTRACT_ISSUES = new Set([
   'JACS', 'JCIM', 'JCTC', 'ACS Central Science', 'ACS Catalysis',
   'JPCL', 'JPC A', 'JPC B', 'JPC C',
   'Digital Discovery', 'Chemical Science', 'Chem. Commun.', 'PCCP',
+  'ChemRxiv',
 ])
 
 function isAbstractMissing(abstract) {
