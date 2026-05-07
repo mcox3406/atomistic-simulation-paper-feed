@@ -8,6 +8,9 @@ Live at **[mcox3406.github.io/atomistic-simulation-paper-feed](https://mcox3406.
 
 Adapted from [`lab-paper-feed`](https://github.com/mcox3406/lab-paper-feed).
 
+> [!WARNING]
+> **ChemRxiv fetcher is currently broken.** ChemRxiv migrated to Wiley's Research Exchange Preprints platform on 2026-01-21 ([migration FAQ](https://connect.acspubs.org/chemrxiv-migration-FAQ)), and the old public API at `chemrxiv.org/engage/chemrxiv/public-api/v1/items` now returns HTTP 403. The pipeline still runs (`ChemrxivFetcher` just yields zero papers and logs the error), but ChemRxiv preprints are not being picked up until the new platform exposes a public API. This should be fixed soon.
+
 ## Setup
 
 1. Add GitHub Actions secrets: `ANTHROPIC_API_KEY`, `SLACK_WEBHOOK_URL`, `OPENREVIEW_USERNAME`, `OPENREVIEW_PASSWORD`.
