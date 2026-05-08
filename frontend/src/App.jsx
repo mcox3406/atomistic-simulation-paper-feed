@@ -48,6 +48,14 @@ const JOURNALS_WITH_ABSTRACT_ISSUES = new Set([
   'ChemRxiv',
 ])
 
+// High-volume venues hidden by default to reduce noise. User can re-enable
+// each one via the source pills.
+const DEFAULT_HIDDEN_SOURCES = new Set([
+  'Comp. Mat. Sci.',
+  'Phys. Rev. Materials',
+  'PCCP',
+])
+
 function isAbstractMissing(abstract) {
   if (!abstract || abstract.trim() === '') return true
   if (abstract.trim().startsWith('<') || abstract.includes('<img')) return true
@@ -219,6 +227,7 @@ export default function App() {
   const [selectedDate, setSelectedDate] = useState(null)
   const [expandedPapers, setExpandedPapers] = useState(new Set())
   const [sortBy, setSortBy] = useState('relevance')
+  const [hiddenSources, setHiddenSources] = useState(() => new Set(DEFAULT_HIDDEN_SOURCES))
 
   const [papers, setPapers] = useState([])
   const [availableDates, setAvailableDates] = useState([])
@@ -262,7 +271,7 @@ export default function App() {
   }, [selectedDate])
 
   const filteredPapers = useMemo(() => {
-    let result = papers
+    let result = papers.filter(p => !hiddenSources.has(p.source))
     if (selectedCategory !== "All") result = result.filter(p => p.category === selectedCategory)
     if (sortBy === 'relevance') {
       result = [...result].sort((a, b) => (b.relevance_score || 0) - (a.relevance_score || 0))
@@ -270,15 +279,36 @@ export default function App() {
       result = [...result].sort((a, b) => new Date(b.published || b.added_date) - new Date(a.published || a.added_date))
     }
     return result
-  }, [papers, selectedCategory, sortBy])
+  }, [papers, selectedCategory, sortBy, hiddenSources])
 
   const categoryCounts = useMemo(() => {
-    const counts = { All: papers.length }
+    const visible = papers.filter(p => !hiddenSources.has(p.source))
+    const counts = { All: visible.length }
     CATEGORIES.slice(1).forEach(cat => {
-      counts[cat] = papers.filter(p => p.category === cat).length
+      counts[cat] = visible.filter(p => p.category === cat).length
     })
     return counts
-  }, [papers])
+  }, [papers, hiddenSources])
+
+  // Count papers per source within the current category selection. Sources are
+  // ordered by descending count so the most prolific venues appear first.
+  const sourceCounts = useMemo(() => {
+    const inCat = selectedCategory === "All"
+      ? papers
+      : papers.filter(p => p.category === selectedCategory)
+    const counts = new Map()
+    inCat.forEach(p => counts.set(p.source, (counts.get(p.source) || 0) + 1))
+    return Array.from(counts.entries()).sort((a, b) => b[1] - a[1])
+  }, [papers, selectedCategory])
+
+  const toggleSource = (source) => {
+    setHiddenSources(prev => {
+      const next = new Set(prev)
+      if (next.has(source)) next.delete(source)
+      else next.add(source)
+      return next
+    })
+  }
 
   const toggleExpand = (paperId) => {
     setExpandedPapers(prev => {
@@ -385,6 +415,62 @@ export default function App() {
               </button>
             ))}
           </div>
+
+          {sourceCounts.length > 0 && (
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginTop: '10px' }}>
+              <span style={{
+                fontSize: '11px',
+                color: '#94a3b8',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px',
+                whiteSpace: 'nowrap',
+                paddingTop: '5px'
+              }}>
+                Sources
+              </span>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', flex: 1 }}>
+                {sourceCounts.map(([source, count]) => {
+                  const active = !hiddenSources.has(source)
+                  return (
+                    <button
+                      key={source}
+                      onClick={() => toggleSource(source)}
+                      title={active ? `Hide ${source}` : `Show ${source}`}
+                      style={{
+                        background: active ? '#0f172a' : '#fff',
+                        color: active ? '#fff' : '#94a3b8',
+                        border: active ? 'none' : '1px solid #e2e8f0',
+                        padding: '4px 10px',
+                        borderRadius: '6px',
+                        fontWeight: 500,
+                        cursor: 'pointer',
+                        fontSize: '11px',
+                        whiteSpace: 'nowrap',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        textDecoration: active ? 'none' : 'line-through',
+                        opacity: active ? 1 : 0.7
+                      }}
+                    >
+                      {source}
+                      <span style={{
+                        background: active ? 'rgba(255,255,255,0.2)' : '#f1f5f9',
+                        color: active ? '#fff' : '#94a3b8',
+                        padding: '1px 6px',
+                        borderRadius: '8px',
+                        fontSize: '10px',
+                        fontWeight: 600
+                      }}>
+                        {count}
+                      </span>
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </header>
 
