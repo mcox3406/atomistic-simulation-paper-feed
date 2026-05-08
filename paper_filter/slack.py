@@ -8,6 +8,14 @@ from .filters.categorizer import CATEGORIES
 from .key_authors import is_key_author, load_key_authors
 from .models import Paper
 
+# High-volume venues suppressed from Slack to keep the daily digest readable.
+# The web frontend still serves them (gated behind a toggle).
+HIGH_VOLUME_SOURCES = frozenset({
+    "Comp. Mat. Sci.",
+    "Phys. Rev. Materials",
+    "PCCP",
+})
+
 
 
 class SlackPoster:
@@ -20,6 +28,17 @@ class SlackPoster:
 
     def post_papers(self, categorized_papers: dict[str, list[tuple[Paper, float, str]]], credits_exhausted: bool = False):
         """Post categorized papers to Slack."""
+
+        # Suppress high-volume venues, but keep key-author hits regardless of source.
+        filtered = {}
+        for cat, papers in categorized_papers.items():
+            kept = [
+                (p, s, r) for p, s, r in papers
+                if p.source not in HIGH_VOLUME_SOURCES or r.startswith("Key author:")
+            ]
+            if kept:
+                filtered[cat] = kept
+        categorized_papers = filtered
 
         total = sum(len(papers) for papers in categorized_papers.values())
 
