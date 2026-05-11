@@ -1,6 +1,6 @@
 # Atomistic Simulation Paper Feed
 
-A daily feed of papers in computational chemistry, materials science, and atomistic ML. Sources include arXiv, bioRxiv, ChemRxiv, OpenReview workshops, and journal RSS feeds across Nature, Science, ACS (JCTC, JCIM), RSC (Digital Discovery, Chem. Sci., Chem. Commun., PCCP), APS (PRB, PR Materials), AIP (J. Chem. Phys.), Wiley (Angew., J. Comp. Chem., WIREs CMS), Cell Press (Chem), Elsevier (Acta Materialia, Comp. Mat. Sci.), and IOP (Modelling Simul. Mater. Sci. Eng.). A simple keyword pre-filter trims the volume, and Claude then scores each candidate for relevance and assigns it to one of six buckets. Hits are posted to Slack and committed as JSON for the static site.
+A daily feed of papers in computational chemistry, materials science, and atomistic ML. Sources include arXiv, bioRxiv, ChemRxiv, OpenReview workshops, and journal RSS feeds across Nature, Science, ACS (JCTC, JCIM), RSC (Digital Discovery, Chem. Sci., Chem. Commun., PCCP), APS (PRB, PR Materials), AIP (J. Chem. Phys.), Wiley (Angew., J. Comp. Chem., WIREs CMS), Cell Press (Chem), Elsevier (Acta Materialia, Comp. Mat. Sci.), and IOP (Modelling Simul. Mater. Sci. Eng.). A simple keyword pre-filter trims the volume, and an LLM (DeepSeek V4 Flash by default; Claude Haiku still supported via `"provider": "anthropic"` in `config.json`) then scores each candidate for relevance and assigns it to one of six buckets. Hits are posted to Slack and committed as JSON for the static site.
 
 Live at **[mcox3406.github.io/atomistic-simulation-paper-feed](https://mcox3406.github.io/atomistic-simulation-paper-feed/)**.
 
@@ -13,8 +13,8 @@ Adapted from [`lab-paper-feed`](https://github.com/mcox3406/lab-paper-feed).
 
 ## Setup
 
-1. Add GitHub Actions secrets: `ANTHROPIC_API_KEY`, `SLACK_WEBHOOK_URL`, `OPENREVIEW_USERNAME`, `OPENREVIEW_PASSWORD`.
-2. Edit `config.json`. The important knobs are `lab_description` (what Claude scores against), `keywords` (cheap pre-filter, never seen by the LLM), `relevance_threshold`, and `min_impact_factor`.
+1. Add GitHub Actions secrets: `DEEPSEEK_API_KEY` (for the default provider), `SLACK_WEBHOOK_URL`, `OPENREVIEW_USERNAME`, `OPENREVIEW_PASSWORD`. Add `ANTHROPIC_API_KEY` only if you set `"provider": "anthropic"` in `config.json`.
+2. Edit `config.json`. The important knobs are `lab_description` (what the scorer matches against), `keywords` (cheap pre-filter, never seen by the LLM), `relevance_threshold`, `min_impact_factor`, and `provider` (`deepseek` or `anthropic`).
 3. Edit `key_authors.json` to flag authors who should bypass the LLM filter.
 4. Trigger the **Daily Paper Feed** workflow manually once, or wait for the 12:00 UTC cron.
 5. For the site: Settings -> Pages -> Source: GitHub Actions. The deploy workflow rebuilds on every successful feed run.

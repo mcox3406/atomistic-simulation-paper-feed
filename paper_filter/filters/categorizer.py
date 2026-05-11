@@ -3,11 +3,10 @@
 import json
 import re
 
-from anthropic import Anthropic
 from tqdm import tqdm
 
 from ..models import Paper
-from .llm import InsufficientCreditsError
+from .llm_client import InsufficientCreditsError, LLMClient
 
 CATEGORIES = [
     "MLIPs & Foundation Models",
@@ -22,11 +21,8 @@ CATEGORIES = [
 class PaperCategorizer:
     """Categorize papers into research areas using LLM."""
 
-    DEFAULT_MODEL = "claude-haiku-4-5-20251001"
-
-    def __init__(self, api_key: str, model: str = None):
-        self.client = Anthropic(api_key=api_key)
-        self.model = model or self.DEFAULT_MODEL
+    def __init__(self, client: LLMClient):
+        self.client = client
 
     def categorize(
         self, papers: list[tuple[Paper, float, str]]
@@ -86,13 +82,7 @@ Respond with a JSON array of category names in the same order as the papers:
 {{"categories": ["Category1", "Category2", ...]}}"""
 
         try:
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=2000,
-                messages=[{"role": "user", "content": prompt}],
-            )
-
-            response_text = response.content[0].text
+            response_text = self.client.complete(prompt, max_tokens=4000)
             json_match = re.search(r"\{[\s\S]*\}", response_text)
             if json_match:
                 data = json.loads(json_match.group())
@@ -103,10 +93,9 @@ Respond with a JSON array of category names in the same order as the papers:
                     categories.append("Other")
                 return categories[:len(papers)]
 
+        except InsufficientCreditsError:
+            raise
         except Exception as e:
-            error_str = str(e)
-            if "credit balance is too low" in error_str.lower():
-                raise InsufficientCreditsError("API credit balance is too low to categorize papers")
             print(f"Error categorizing papers: {e}")
 
         return ["Atomistic Applications"] * len(papers)

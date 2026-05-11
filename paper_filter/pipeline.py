@@ -8,7 +8,7 @@ from pathlib import Path
 from .fetchers import ArxivFetcher, BiorxivFetcher, ChemrxivFetcher, JournalRSSFetcher, OpenReviewFetcher, SpringerNatureFetcher
 from .filters import KeywordFilter, LLMFilter, PaperCategorizer
 from .filters.keyword import is_correction_or_erratum
-from .filters.llm import InsufficientCreditsError
+from .filters.llm_client import InsufficientCreditsError, make_llm_client
 from .history import PaperHistory
 from .key_authors import filter_papers_by_key_authors, get_key_authors_on_paper, load_key_authors
 from .slack import SlackPoster
@@ -38,10 +38,6 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     if no_slack and not dry_run:
         print("NO-SLACK MODE - will write JSON and update history but skip the Slack post")
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise ValueError("ANTHROPIC_API_KEY environment variable is required")
-
     webhook_url = os.environ.get("SLACK_WEBHOOK_URL", "")
     if not webhook_url and not dry_run and not no_slack:
         raise ValueError("SLACK_WEBHOOK_URL environment variable is required")
@@ -49,6 +45,10 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     config = load_config()
     min_if = config.get("min_impact_factor")
     max_age = config.get("max_age_hours")
+
+    provider = config.get("provider", "deepseek")
+    print(f"LLM provider: {provider}")
+    llm_client = make_llm_client(provider=provider, model=config.get("model"))
 
     openreview_workshops = config.get("sources", {}).get("openreview_workshops", [])
 
@@ -64,13 +64,12 @@ def run_pipeline(dry_run: bool = False, test_mode: bool = False, no_slack: bool 
     keyword_filter = KeywordFilter(config["keywords"])
 
     llm_filter = LLMFilter(
-        api_key=api_key,
+        client=llm_client,
         lab_description=config["lab_description"],
         threshold=config.get("relevance_threshold", 0.6),
-        model=config.get("model"),
     )
 
-    categorizer = PaperCategorizer(api_key=api_key, model=config.get("model"))
+    categorizer = PaperCategorizer(client=llm_client)
 
     # SlackPoster's dry_run=True suppresses the actual webhook call. Reuse that
     # for --no-slack so we don't need a parallel code path.

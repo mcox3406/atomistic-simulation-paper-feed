@@ -3,10 +3,12 @@
 import json
 import re
 
-from anthropic import Anthropic
 from tqdm import tqdm
 
 from ..models import Paper
+from .llm_client import InsufficientCreditsError, LLMClient
+
+__all__ = ["LLMFilter", "InsufficientCreditsError"]
 
 # Journals that don't include abstracts in their RSS feeds
 NO_ABSTRACT_JOURNALS = {
@@ -17,28 +19,18 @@ NO_ABSTRACT_JOURNALS = {
 }
 
 
-class InsufficientCreditsError(Exception):
-    """Raised when API credits are depleted."""
-    pass
-
-
 class LLMFilter:
     """Second-pass LLM-based relevance scoring."""
 
-    # Default model - can be overridden via config
-    DEFAULT_MODEL = "claude-haiku-4-5-20251001"
-
     def __init__(
         self,
-        api_key: str,
+        client: LLMClient,
         lab_description: str,
         threshold: float = 0.6,
-        model: str = None,
     ):
-        self.client = Anthropic(api_key=api_key)
+        self.client = client
         self.lab_description = lab_description
         self.threshold = threshold
-        self.model = model or self.DEFAULT_MODEL
 
     def score_papers(self, papers: list[Paper]) -> list[tuple[Paper, float, str]]:
         """Score papers for relevance. Returns (paper, score, reason) tuples."""
@@ -127,13 +119,7 @@ Respond in JSON format:
 When uncertain, score lower."""
 
         try:
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=2000,
-                messages=[{"role": "user", "content": prompt}],
-            )
-
-            response_text = response.content[0].text
+            response_text = self.client.complete(prompt, max_tokens=4000)
             json_match = re.search(r"\{[\s\S]*\}", response_text)
             if json_match:
                 data = json.loads(json_match.group())
@@ -152,12 +138,12 @@ When uncertain, score lower."""
                         )
                 return results
 
+        except InsufficientCreditsError:
+            # Halt the whole run; raised by the client when the provider reports
+            # depleted credits.
+            raise
         except Exception as e:
-            error_str = str(e)
-            # Credit-balance failures should halt the whole run; everything else
-            # falls through to a neutral 0.5 so a transient API blip isn't fatal.
-            if "credit balance is too low" in error_str.lower():
-                raise InsufficientCreditsError("API credit balance is too low to continue scoring")
+            # Transient blips fall through to neutral 0.5 so one bad batch isn't fatal.
             print(f"Error scoring batch: {e}")
 
         return [(p, 0.5, "Error during scoring") for p in papers]
