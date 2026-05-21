@@ -1,0 +1,1190 @@
+[
+  {
+    "id": "f0d7b8fa735a",
+    "title": "Exploring lithium diffusion in LiF with machine learning potentials: from point defects to collective ring diffusion",
+    "authors": [
+      "Paolo De Angelis",
+      "Umberto Raucci",
+      "Francesco Mambretti",
+      "Matteo Fasano",
+      "Eliodoro Chiavazzo",
+      "Pietro Asinari",
+      "Michele Parrinello"
+    ],
+    "abstract": "npj Computational Materials, Published online: 20 May 2026; doi:10.1038/s41524-026-02132-8\nExploring lithium diffusion in LiF with machine learning potentials: from point defects to collective ring diffusion",
+    "url": "https://www.nature.com/articles/s41524-026-02132-8",
+    "pdf_url": null,
+    "source": "npj Computational Materials",
+    "categories": [],
+    "published": "2026-05-20",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Michele Parrinello",
+    "key_authors": [
+      "Michele Parrinello"
+    ]
+  },
+  {
+    "id": "ab83a3785dc1",
+    "title": "Modeling phase separation in polymer-derived carbonitride ceramics through extended machine learning molecular dynamics",
+    "authors": [
+      "Fabien Mortier",
+      "Sylvian Cadars",
+      "Olivier Masson",
+      "Mauro Boero",
+      "Guido Ori",
+      "Yun Wang",
+      "Samuel Bernard",
+      "Assil Bouzid"
+    ],
+    "abstract": "arXiv:2605.20358v1 Announce Type: new \nAbstract: Polymer-derived ceramics combine the thermal stability of ceramics with the versatile properties of carbon domains, but modeling their atomic-scale evolution during processing remains elusive due to the limitations of traditional computational methods. To address this issue, here we develop and apply a machine learning interatomic potential for silicon carbonitride-based (Si-C-N-H) systems, trained on a diversified database of over 9000 configurations -including amorphous models, high-temperature states, surfaces, and crystal structure predictions - to capture the full complexity of these materials. This potential enables large-scale molecular dynamics simulations of 8000-atom systems revealing the atomic-scale evolution of the polymer-derived ceramic during thermal treatment. A key result of this work is the occurrence of a phase separation where carbon domains progressively nucleate from the amorphous SiCN matrix during thermal processing, forming distinct graphene-like sheets while preserving the integrity of the ceramic network. The resulting models reproduce the experimental atomic pair distribution functions with exceptional fidelity, validating our approach and providing microscopic explanations for the material unique combination of ceramic and graphitic properties. In this process, defective 5- and/or 7-member carbon rings, mediate the transformation to stable 6-member aromatic structures. These findings offer new atomic-scale insights into the thermal stability and structural transformation pathways of polymer-derived ceramics, while our methodology opens avenues for studying complex amorphous systems with first-principles accuracy at experimentally relevant scales.",
+    "url": "https://arxiv.org/abs/2605.20358",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn",
+      "cond-mat.mes-hall"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops MLIP and performs MD on Si-C-N-H systems; fully satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "ce66b9b1a9fc",
+    "title": "Dataset-aware entropy-maximized active learning for machine-learned interatomic potentials",
+    "authors": [
+      "Meiyan Wang",
+      "Rishi Rao",
+      "Li Zhu"
+    ],
+    "abstract": "arXiv:2605.20384v1 Announce Type: new \nAbstract: We present an active learning framework for efficiently generating training data for machine-learned interatomic potentials (MLIPs). The method combines local entropy-driven molecular dynamics with global dataset-aware filtering: a per-configuration entropy term biases MD trajectories toward structurally diverse snapshots, while a global entropy measure, the log-determinant of the fingerprint covariance matrix of the entire dataset, selects only those configurations that provide genuinely new information. We employ dual covariance modes (per-atom for disordered structures and per-config for ordered phases) to achieve broad coverage of configuration space. Combined with a pre-trained foundation model (Allegro-OAM-L) and analytical fingerprint gradients from Gaussian overlap matrix eigenvalues, the framework produces high-quality domain-specific potentials with near- or sub-meV/atom accuracy on test data drawn from the same distribution at training-set sizes of order $10^{2}$ to $10^{3}$ entropy-selected DFT-labeled structures. We demonstrate the method on three systems spanning diverse bonding types and pressure-driven phase transitions: carbon (covalent), silicon (covalent/metallic), and NaCl (ionic). In learning curve comparisons against random molecular dynamics sampling at matched training set sizes ($N = 100$ to $800$), evaluated over three independent training-set draws per condition, entropy-driven sampling achieves a factor of approximately $3$ to $10$ lower energy MAE at $N = 800$ on in-distribution holdouts across the three systems, with the magnitude of the gain depending on the bonding type and the size at which the random-MD baseline saturates.",
+    "url": "https://arxiv.org/abs/2605.20384",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Active learning framework for MLIPs; involves atomistic simulations and method development (satisfies all).",
+    "key_authors": []
+  },
+  {
+    "id": "164efba540ad",
+    "title": "Anisotropic Crystallization Kinetics and Interfacial Dynamics of Phase-Change Material Sb$_2$S$_3$ from Machine Learning Force Field Simulations",
+    "authors": [
+      "Souvik Chakraborty",
+      "Wen-Qing Li",
+      "Yun Liu"
+    ],
+    "abstract": "arXiv:2605.20785v1 Announce Type: new \nAbstract: The phase-change material antimony sulfide (Sb$_2$S$_3$) relies on rapid and reversible phase transitions between crystalline and amorphous states, which are critical for their performance in data storage and photonics applications. In this work, a machine learning force field is developed based on the moment tensor potential approach, allowing us to understand the atomistic origin of the structural evolution and crystallization kinetics in Sb$_2$S$_3$ for the first time, by enabling large-scale molecular dynamics simulations (up to 7680 atoms for 40 ns). Sb$_2$S$_3$ shows anisotropic growth rates with the [100] facet exhibiting the fastest growth due to the strong Sb-S covalent bonding along its quasi-1D ribbon-like structure of its crystalline phase. The activation energy for crystal growth is found to be 0.55-0.57 eV, whereas that for diffusion is around 1.16-1.56 eV. The lower activation energy for crystal growth indicates that its heterogeneous crystallization is interface controlled rather than diffusion limited, unlike GST and GeTe with atomic attachment at the solid-liquid interface being energetically favoured over long range atomic transport. These findings provide key insights into the structural, thermodynamic, and kinetic properties of Sb$_2$S$_3$, paving the way for optimizing its functionality including switching speed, reliability, and energy efficiency.",
+    "url": "https://arxiv.org/abs/2605.20785",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Machine learning force field development and MD simulations of Sb2S3 crystallization; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "8dc42670b861",
+    "title": "High-performance linear-scaling electronic structure method via chromatic superposition states",
+    "authors": [
+      "Zhikang Jiang",
+      "Zhizhi Xiao",
+      "Mingfa Tang",
+      "Weiyu Li",
+      "Zhaoru Sun",
+      "Ke Xia",
+      "Youqi Ke"
+    ],
+    "abstract": "arXiv:2605.20918v1 Announce Type: new \nAbstract: We introduce a high-performance linear-scaling electronic structure method that employs chromatic superposition states (CSS) as a low-dimensional, high-fidelity representation, which can be orders of magnitude smaller than the full Hilbert space. Grounded in the system's finite correlation length, the CSS representation aggregates the uncorrelated orbitals into a single basis via a graph-coloring scheme, and is independent of the system size yet accurately preserves all sparse operators in solving the Kohn-Sham equations. The projection onto CSSs is efficiently computed by employing the block-Lanczos Krylov method which features high hardware efficiency and linear-scaling cost, enabling fast calculation of large-scale Kohn-Sham density matrix. We show that this method already outperforms previous linear-scaling density matrix purification method by more than one order of magnitude in computational speed at even small scale, while preserving high accuracy. The practical utility of the CSS method is demonstrated through molecular dynamics simulation of a 10000 $H_2O$, and self-consistent calculation of a 1-million $H_2O$ with modest resources.",
+    "url": "https://arxiv.org/abs/2605.20918",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "New linear-scaling DFT method with demonstration on MD of water; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "fa05ac3a78e8",
+    "title": "Coexisting Ballistic and Diffusive Heat Transport in Micrometer-Scale Molecular Junctions",
+    "authors": [
+      "P. M. Martinez",
+      "O. Mateos-Lopez",
+      "J. C. Cuevas",
+      "J. G. Vilhena"
+    ],
+    "abstract": "arXiv:2605.20517v1 Announce Type: cross \nAbstract: Boltzmann transport theory, the standard framework for predicting thermal conductivity, assumes that every vibrational mode eventually scatters, acquiring a finite lifetime that yields a convergent, length-independent thermal conductivity: Fourier's law. Here we show that this assumption fails in a real molecular system. Through atomistic simulations of Au-alkane-Au single-molecule junctions spanning five orders of magnitude in length (0.5~nm to 4~$\\mu$m), we find that thermal conductivity never converges. Transport is ballistic for up to one hundred nanometers at room temperature, extending nearly two orders of magnitude beyond existing single-molecule measurements. Past this window, conductivity diverges as $L^{1/3}$, the scaling predicted by the Kardar-Parisi-Zhang universality class for momentum-conserving systems. Frequency-resolved decomposition of the heat current reveals the mechanism behind the divergence. Low-frequency acoustic modes never thermalize: protected by momentum conservation, they remain ballistic at every chain length, still carrying 50\\% of the total heat current at $L = 2~\\mu$m. All other modes thermalize collectively as discrete vibrational states merge into scattering-active phonon bands with increasing length. Hence, the diverging conductivity emerges from the boundary between these coexisting transport regimes: as $L$ grows, the onset of scattering shifts progressively toward lower frequencies, suppressing the ballistic channel at a rate that sustains the $L^{1/3}$ divergence, leaving a finite contribution at every length. This coexistence of permanent ballistic and well-behaved diffusive transport, anticipated in abstract one-dimensional lattice models, survives the structural and chemical complexity of real micrometer-sized junctions.",
+    "url": "https://arxiv.org/abs/2605.20517",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Atomistic MD simulations of molecular junctions studying heat transport; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "3d66644481de",
+    "title": "TriForces: Augmenting Atomistic GNNs for Transferable Representations",
+    "authors": [
+      "Ali Ramlaoui",
+      "Alexandre Duval",
+      "Hannah Bull",
+      "Victor Schmidt",
+      "Hugues Talbot",
+      "Fragkiskos D. Malliaros",
+      "Joseph Musielewicz"
+    ],
+    "abstract": "arXiv:2605.20581v1 Announce Type: cross \nAbstract: Machine learning interatomic potentials (MLIPs) achieve excellent accuracy when trained on large Density Functional Theory (DFT) data. To be useful in practice, they must often be adapted to target chemistries using small and expensive task-specific datasets. However, MLIPs transfer inconsistently across domains, with representations that often loose accessible composition and structure information. To address this, we present TriForces, a model-agnostic three-stream framework that separates composition and structure information, combined with self-supervised learning to preserve transferable representations. TriForces improves performance on MatBench and QM9 over baselines without needing DFT labels and enables efficient similar structure retrieval through its learned latent space. On OMat24, in limited-data training regime, TriForces reduces energy MAE by 57% at 20K samples only and improves force MAE across sample sizes. We release pretrained TriForces variants across multiple MLIP architectures with code at https://github.com/Ramlaoui/triforces.",
+    "url": "https://arxiv.org/abs/2605.20581",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLIP development (TriForces) using atomistic GNNs and DFT data; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "4b082f7532a2",
+    "title": "Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models",
+    "authors": [
+      "Luis Barroso-Luque",
+      "Muhammed Shuaibi",
+      "Xiang Fu",
+      "Brandon M. Wood",
+      "Misko Dzamba",
+      "Meng Gao",
+      "Ammar Rizvi",
+      "C. Lawrence Zitnick",
+      "Zachary W. Ulissi"
+    ],
+    "abstract": "arXiv:2410.12771v2 Announce Type: replace \nAbstract: The ability to discover new materials with desirable properties is critical for numerous applications from helping mitigate climate change to advances in next generation computing hardware. AI has the potential to accelerate materials discovery and design by more effectively exploring the chemical space compared to other computational methods or by trial-and-error. While substantial progress has been made on AI for materials data, benchmarks, and models, a barrier that has emerged is the lack of publicly available training data and open pre-trained models. To address this, we present a Meta FAIR release of the Open Materials 2024 (OMat24) large-scale open dataset and an accompanying set of pre-trained models. OMat24 contains over 110 million density functional theory (DFT) calculations focused on structural and compositional diversity. Our EquiformerV2 models achieve state-of-the-art performance on the Matbench Discovery leaderboard and are capable of predicting ground-state stability and formation energies to an F1 score above 0.9 and an accuracy of 20 meV/atom, respectively. We explore the impact of model size, auxiliary denoising objectives, and fine-tuning on performance across a range of datasets including OMat24, MPtraj, and Alexandria. The open release of the OMat24 dataset and models enables the research community to build upon our efforts and drive further advancements in AI-assisted materials science.",
+    "url": "https://arxiv.org/abs/2410.12771",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Large DFT dataset and ML models trained on atomic structures; strong atomistic simulation content.",
+    "key_authors": []
+  },
+  {
+    "id": "4075f823fb3f",
+    "title": "Machine-Learned Force Fields for Lattice Dynamics at Coupled-Cluster Level Accuracy",
+    "authors": [
+      "Sita Sch\\\"onbauer",
+      "Johanna P. Carbone",
+      "Fredrik V. Eriksson",
+      "Florian Libisch",
+      "Andreas Gr\\\"uneis"
+    ],
+    "abstract": "arXiv:2507.06929v2 Announce Type: replace \nAbstract: We investigate Machine-Learned Force Fields (MLFFs) trained on approximate Density Functional Theory (DFT) and Coupled Cluster (CC) level potential energy surfaces for the carbon diamond and lithium hydride solids. We assess the accuracy and precision of the MLFFs by calculating phonon dispersions and vibrational densities of states (VDOS) that are compared to experiment and reference ab initio results. To overcome limitations from long-range effects and the lack of atomic forces in the CC training data, a delta-learning approach based on the difference between CC and DFT results, as well as a charge aware MLFF approach is explored. Compared to DFT, MLFFs trained on CC theory yield higher vibrational frequencies for optical modes, agreeing better with experiment. Furthermore, the MLFFs are used to estimate anharmonic effects on the VDOS of lithium hydride at the level of CC theory.",
+    "url": "https://arxiv.org/abs/2507.06929",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLFF development and application for lattice dynamics with CC-level accuracy; excellent fit.",
+    "key_authors": []
+  },
+  {
+    "id": "22ba52ca8342",
+    "title": "A Neuroevolution Potential for Gallium Oxide: Accurate and Efficient Modeling of Polymorphism and Swift Heavy-Ion Irradiation",
+    "authors": [
+      "Yaohui Gu",
+      "Binbo Li",
+      "Lingyang Jiang",
+      "Yuhui Hu",
+      "Wenqiang Liu",
+      "Lijun Xu",
+      "Pengfei Zhai",
+      "Jie Liu",
+      "Jinglai Duan"
+    ],
+    "abstract": "arXiv:2601.10174v2 Announce Type: replace \nAbstract: Gallium oxide (Ga2O3) is a wide-bandgap semiconductor with promising applications in high-power and high-frequency electronics. However, its complex polymorphic nature poses substantial challenges for fundamental studies, particularly in understanding phase-transformation behaviors under nonequilibrium conditions. Here, we develop a robust, accurate, and computationally efficient machine-learning interatomic potential (MLIP) for Ga2O3 based on the neuroevolution potential (NEP) framework combined with an energy-dependent weighting strategy. The resulting NEP potential demonstrates clear advantages over the state-of-the-art tabGAP potential with respect to both accuracy and computational efficiency. Furthermore, we introduce a physically process-oriented sampling strategy to systematically augment the training dataset, thereby enhancing the MLIP performance for targeted physical phenomena. As a representative application, a dedicated NEP potential is constructed for swift heavy-ion (SHI) irradiation simulations of \\b{eta}-Ga2O3. The simulated results are in quantitative agreement with experimental observations and provide a consistent physical explanation for the reported experimental discrepancies regarding phase transformations in the ion track of \\b{eta}-Ga2O3.",
+    "url": "https://arxiv.org/abs/2601.10174",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLIP (NEP) development and application to Ga2O3 irradiation; strong atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "6ea25052ffce",
+    "title": "SuBMIT: A Software Toolkit for Facilitating Simulations of Coarse-Grained Structure-Based Models of Biomolecules.",
+    "authors": [
+      "Prakash, D. L.",
+      "Banerjee, A.",
+      "Gosavi, S."
+    ],
+    "abstract": "Coarse-grained structure-based models (CG-SBMs; or G[o] models) are simplified potential energy functions of biomolecules or biomolecular complexes that encode their structure. Molecular dynamics simulations of such SBMs have been successfully used to study long time-scale dynamics such as protein and RNA folding, and large conformational transitions of biomolecular complexes. SBMs have several advantages: (1) Their MD simulations are computationally inexpensive, making extensive sampling easily accessible to many researchers. (2) They are easy to modify and can be adapted for the specific biomolecular problem that needs to be investigated. However, the force-fields of SBMs are not usually included in commonly used biomolecular simulation packages resulting in a barrier to their use. Here, we present SuBMIT (Structure Based Models Input Toolkit; https://github.com/sglabncbs/submit), a toolkit for generating coarse-grained SBM input files for performing MD simulations with GROMACS and OpenMM/OpenSMOG. Simulations whose input files can be generated using the different flavors of CG-SBMs present in SuBMIT include the folding and conformational ensembles of proteins with intrinsically disordered regions, 3D-domain-swapping in proteins and the dynamics of RNA-protein assemblies (e.g., simple RNA viruses).",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.05.18.725912v1",
+    "pdf_url": null,
+    "source": "bioRxiv",
+    "categories": [
+      "biophysics"
+    ],
+    "published": "2026-05-20",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Toolkit for coarse-grained SBM (structure-based models) with MD in GROMACS/OpenMM; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "d0a1ee2e9f15",
+    "title": "Molecular Modeling of Triethyl Phosphate: Extension and Validation of the TraPPE Force Field",
+    "authors": [
+      "Geordy Jomon",
+      "Santiago A. Flores Roman",
+      "Andrei L. Kolesnikov",
+      "Gennady Y. Gor"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15003643/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-20",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Extension and validation of a classical force field (TraPPE), clearly atomistic simulation; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "bfe8c5139172",
+    "title": "GAEAM: a new package for optimizing the embedded atom method potentials of solids by using the genetic algorithm",
+    "authors": [
+      "Yang-Yang Zhang",
+      "Yu Cheng",
+      "Shu-Wen Zhang"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11971-11991\nYang-Yang Zhang, Yu Cheng, Shu-Wen Zhang\nIn this work, we present GAEAM, a novel package developed for optimizing the parameters in embedded atom method (EAM) potentials of solids using a genetic algorithm (GA) and global optimization.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00426A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-30T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "GAEAM package for optimizing EAM potentials (satisfies a-c: explicit atoms, force-field development, method advance).",
+    "key_authors": []
+  },
+  {
+    "id": "b47ccbd33153",
+    "title": "Accurate thermophysical properties of water using machine-learned potentials",
+    "authors": [],
+    "abstract": "Simulating water from first principles remains a significant computational challenge due to the slow dynamics of the underlying system. Although machine-learned interatomic potentials (MLPs) can accelerate these simulations, they often fail to achieve the required level of accuracy for reliable uncertainty quantification. In this study, we use MACE—an equivariant graph neural network architecture that has been trained using an extensive RPBE-D3 database—to predict density isobars, diffusion constants, radial distribution functions, and melting points. Although equivariant MACE models are computationally more expensive than simpler architectures, such as kernel-based potentials (KbPs), their significantly lower total energy errors allow for reliable thermodynamic reweighting with minimal bias. Our results are consistent with those of previous studies using KbPs; however, equivariant models can be validated against the ground-truth density functional theory (DFT) ensemble with significantly increased efficiency. These findings establish equivariant MLPs as robust and reliable tools for investigating the thermophysical properties of water with DFT-level accuracy.",
+    "url": "https://pubs.aip.org/aip/jcp/article/164/19/194504/3391667/Accurate-thermophysical-properties-of-water-using",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 20 May 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Application of MACE MLIP to compute thermophysical properties of water; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "a7d1f537e582",
+    "title": "The Dislocation Content of Triple Junctions",
+    "authors": [
+      "Ian S Winter",
+      "R. Daniel Moore",
+      "R. E. Rudd",
+      "T. Oppelstrup",
+      "T. Frolov"
+    ],
+    "abstract": "arXiv:2605.20575v1 Announce Type: new \nAbstract: Triple junctions, line defects formed by the intersection of different grain boundaries, exist within all polycrystalline materials. While it has long been recognized that triple junctions could play an important role in microstructural evolution, there remains much uncertainty regarding their properties. Triple junctions are line defects capable of carrying dislocation content. However, no general method for calculating this content has been established. In this work, we derive the necessary equations to calculate the intrinsic dislocation content of a triple junction whose trichromatic pattern forms a coincidence site lattice. We further show that this approach can be easily applied to facet junctions, and in principle, any type of grain boundary junction for which a coincidence site lattice can be defined. We apply this formalism to atomistic simulations of tungsten to compute the Burgers vectors of a facet junction and a triple junction formed during twin grain nucleation and growth from a free surface. By tracking the evolution of the triple junction's Burgers vector and its core structure, we reveal the sequence of individual line defect reactions responsible for triple-junction-mediated twin growth.",
+    "url": "https://arxiv.org/abs/2605.20575",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Atomistic simulations of tungsten to study triple junctions; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "3fbff044a340",
+    "title": "Hubbard-$U$-corrected electron-phonon interactions in strongly correlated materials via the finite-displacement method",
+    "authors": [
+      "Jiale Chen",
+      "Youyou Tu",
+      "Chengliang Xia",
+      "Jin Zhao",
+      "Hanghui Chen"
+    ],
+    "abstract": "arXiv:2605.20985v1 Announce Type: cross \nAbstract: Although the density functional theory plus Hubbard $U$ correction method (DFT+U) is broadly used to study electronic structure of strongly correlated materials, the extension of this method to electron-phonon $g$ matrices has received limited attention. Here, we implement an algorithm that integrates DFT+U method with the finite-displacement method for the calculations of phonons and electron-phonon $g$ matrices. The Hubbard $U$ corrections are applied not only to electronic and phonon structures, but, more importantly, also to electron-phonon $g$ matrices. We demonstrate our algorithm in two prototypical correlated materials: infinite-layer nickelates LaNiO$_2$ and ruthenium dioxide RuO$_2$. We find that: i) While the Hubbard $U$ corrections weakly increase the electron-phonon interaction of 20% hole-doped LaNiO$_2$, its total electron-phonon coupling remains small and is insufficient to account for the observed superconducting transition temperature of about 10-30 K. Our results contrast with the recent work showing that the full GW corrections yield an elevated electron-phonon coupling of 20% hole-doped LaNiO$_2$ five times larger than its DFT value. We attribute this discrepancy to the differences in the Fermi surface topology between DFT+$U$ and GW methods. ii) The inclusion of Hubbard $U$ corrections eliminates the imaginary phonon modes of RuO$_2$ under strain on the TiO$_2$ substrate and substantially reduces the electron-phonon coupling. Our results alleviate the discrepancy between the reported large theoretical electron-phonon coupling and the low superconducting transition temperature observed experimentally. Our work provides an algorithm that fully includes the Hubbard $U$ corrections on electron-phonon properties of correlated materials, and highlights the importance of Fermi surface shape and correlation effects on phonon spectrum and electron-phonon $g$ matrices.",
+    "url": "https://arxiv.org/abs/2605.20985",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci",
+      "cond-mat.supr-con"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT+U finite-displacement method for phonon and electron-phonon calculations; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "aa8a9f61298c",
+    "title": "Extraction of a structural short-range order descriptor from nanobeam electron diffraction patterns using a transfer learning approach",
+    "authors": [
+      "Junjie Wu",
+      "Timothy J. Rupert"
+    ],
+    "abstract": "arXiv:2601.21091v2 Announce Type: replace \nAbstract: Amorphous solids exhibit structural short-range order despite lacking long-range crystalline order, with this structural descriptor found to be important for determining mechanical properties. Nanobeam electron diffraction offers a potential route for experimental characterization of structural short-range order, yet efforts to date have been primarily qualitative in nature. In this work, machine learning approaches based on transfer learning are used to enable quantitative analysis of nanobeam electron diffraction data from amorphous solids. A ResNet-18 model is trained on simulated diffraction patterns taken from different locations within simulated metallic glasses and amorphous grain boundary complexions in the Cu-Zr alloy system that were created with hybrid molecular dynamics and Monte Carlo simulations. The disorder parameter is found to be a superior target structural descriptor compared to traditional Voronoi indices for this task. The model achieves a low validation mean absolute error across diffraction patterns corresponding to different interaction volumes, demonstrating excellent performance and potential transferability. Testing was performed using other simulated nanobeam electron diffraction data as well as experimental nanobeam electron diffraction patterns, showing that the model can reliably capture spatial variations in local structural state. As a whole, this framework is able to overcome the challenges in the quantitative experimental characterization of structural short-range order, enabling improved characterization of amorphous solids and the exploration of structure-property relationships.",
+    "url": "https://arxiv.org/abs/2601.21091",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses hybrid MD/MC to generate atomistic configurations for training, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "7daafd587ff2",
+    "title": "Benchmark of double-ended transition state search methods for metal-catalysed reactions",
+    "authors": [
+      "Shoubhik R. Maiti",
+      "David Buttar",
+      "Fernanda Duarte"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv-2025-hssg2/v3",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-21",
+    "version": 3,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Benchmark of transition state search methods, an atomistic simulation technique; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "33d6678cf62e",
+    "title": "q-vSZPs: A polarized, adaptive minimal Gaussian basis set for the elements Z = 1−86 designed for efficient mean-field electronic structure calculations",
+    "authors": [
+      "Benedikt Bädorf",
+      "Marcel Müller",
+      "Thomas Froitzheim",
+      "Stefan Grimme"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15003662/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-21",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Development of a basis set for electronic structure calculations on atomistic systems; satisfies (a)-(c) as DFT method development.",
+    "key_authors": []
+  },
+  {
+    "id": "b113edeeb0a8",
+    "title": "[ASAP] Fast Fourier Transform Enables Automated Parametrization of Complex Dihedral Potentials in All-Atom and Coarse-Grained Force Fields",
+    "authors": [
+      "Humberto T. Flores-Trujillo",
+      "Guillermo L. Rodríguez-Segura",
+      "Carlos Amador-Bedolla",
+      "Laura Dominguez"
+    ],
+    "abstract": "",
+    "url": "http://dx.doi.org/10.1021/acs.jcim.6c00123",
+    "pdf_url": null,
+    "source": "JCIM",
+    "categories": [],
+    "published": "Tue, 19 May 2026 08:19:27 PDT",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Automated parametrization of dihedral potentials for all-atom and coarse-grained force fields, core atomistic simulation methodology; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "71bd802ae176",
+    "title": "[ASAP] Pep2MARS: Automated Cyclic Peptide Parameterization for Molecular Dynamics and Compound Design",
+    "authors": [
+      "Junhao Li",
+      "Yue Qian"
+    ],
+    "abstract": "",
+    "url": "http://dx.doi.org/10.1021/acs.jcim.6c00340",
+    "pdf_url": null,
+    "source": "JCIM",
+    "categories": [],
+    "published": "Tue, 19 May 2026 06:18:28 PDT",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Automated cyclic peptide parameterization for molecular dynamics; directly supports atomistic simulation; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "b2ba21e9ddca",
+    "title": "Free Energy Simulations on a Biomimetic Glucose Receptor: Understanding the Selectivity of GluHUT",
+    "authors": [
+      "Ryan Eades",
+      "Marko Hanzevacki",
+      "Adrian John Mulholland",
+      "Anthony P. Davis"
+    ],
+    "abstract": "Chem. Sci., 2026, Accepted Manuscript\nRyan Eades, Marko Hanzevacki, Adrian John Mulholland, Anthony P. Davis\nThe bicyclic glucose receptor GluHUT represents a significant advance in supramolecular chemistry, binding glucose in water with an association constant of approximately 18,000 M -¹, and showing exceptional selectivity. Elucidating...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/SC/D6SC00738D",
+    "pdf_url": null,
+    "source": "Chemical Science",
+    "categories": [],
+    "published": "2026-05-21T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Free energy simulations on a biomimetic glucose receptor; atomistic MD/free-energy method application satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "d0ae6438071c",
+    "title": "Improving Robustness of Fifth-Rung Functionals with Linearized Ladder Correlation",
+    "authors": [
+      "Ella Rianne Ransford",
+      "Kevin Carter-Fenk"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Accepted Manuscript\nElla Rianne Ransford, Kevin Carter-Fenk\nStrong electron correlation effects due to multiconfigurational character remain a consistent challenge for modern density functional theory (DFT). Despite their prominent position atop Jacob’s Ladder at rung 5, double-hybrid functionals...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00232C",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-21T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT functional development (double-hybrid) with explicit electron correlation; satisfies (a)-(c) as method advancement.",
+    "key_authors": []
+  },
+  {
+    "id": "56c8cb2e4c7d",
+    "title": "Ab initio insights into plasmonic and strong-field contributions to H2 dissociation on silver nanoshells",
+    "authors": [
+      "Natalia Koval",
+      "JOSEBA IÑAKI JUARISTI OLIDEN",
+      "Maite Alducin"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Accepted Manuscript\nNatalia Koval, JOSEBA IÑAKI JUARISTI OLIDEN, Maite Alducin\nModeling plasmonic catalysis by applying femtosecond laser pulses of high intensity (1013 -1015 W cm-2), although justified by the time-dependent density functional theory (TDDFT) time-scale limitations, can lead to a...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00674D",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-21T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "TDDFT ab initio dynamics on H2 dissociation on silver nanoshells; satisfies (a)-(c) as atomistic method application.",
+    "key_authors": []
+  },
+  {
+    "id": "9126c64075ca",
+    "title": "High-Throughput Screening of Two-Dimensional Multifunctional Janus M2X2 via Machine Learning Force Fields",
+    "authors": [
+      "haidi wang",
+      "Haonan  Song",
+      "Weiduo Zhu",
+      "Weiwei  Chen",
+      "Zhongjun Li",
+      "Zhao Chen",
+      "Xiaofeng Liu"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Accepted Manuscript\nhaidi wang, Haonan Song, Weiduo Zhu, Weiwei Chen, Zhongjun Li, Zhao Chen, Xiaofeng Liu\nTwo-dimensional (2D) Janus materials possess unique physical properties due to their broken mirror symmetry, yet their large compositional space makes systematic discovery challenging. Here, we perform a high-throughput, data-driven screening...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00867D",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-20T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "MLIP-driven high-throughput screening of 2D materials (satisfies a-c: explicit atoms, MLIP method/application, discovery).",
+    "key_authors": []
+  },
+  {
+    "id": "847840e43ef8",
+    "title": "Cu-induced activation of borophene for efficient hydrogen storage: a combined DFT and AIMD investigation",
+    "authors": [
+      "Ravi Trivedi",
+      "Smita Raut",
+      "Balasaheb J. Nagare"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11908-11919\nRavi Trivedi, Smita Raut, Balasaheb J. Nagare\nCu substrate induces charge transfer and orbital hybridization, transforming borophene from weak physisorption to strong chemisorption for hydrogen storage.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00021E",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-24T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Combined DFT and AIMD study of borophene for hydrogen storage (satisfies a-c: explicit atoms, AIMD/DFT application, materials insight).",
+    "key_authors": []
+  },
+  {
+    "id": "2c2452d14f54",
+    "title": "Consistent GMTKN55 and molecular-crystal accuracy using minimally empirical DFT with XDM(Z) dispersion",
+    "authors": [
+      "Kyle R. Bryenton",
+      "Erin R. Johnson"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11626-11638\nKyle R. Bryenton, Erin R. Johnson\nWe implement and test Z damping paired with the XDM dispersion correction. Simple, minimally empirical density functionals based on physics-guided design can accurately model molecular systems, with insights into outlier analysis for GMTKN55.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00403B",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-16T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT functional development with XDM(Z) dispersion and benchmarking on molecular and crystal systems; satisfies (a)-(c) as atomistic method development.",
+    "key_authors": []
+  },
+  {
+    "id": "ec5b3882f4d2",
+    "title": "Designing transferable transition state guided collective variables via interpretable machine learning models for enhanced sampling: a case study on polymer collapse transition",
+    "authors": [
+      "Saikat Dhibar",
+      "Biman Jana"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11868-11881\nSaikat Dhibar, Biman Jana\nEnhanced sampling methods enable the mechanistic study of complex biophysical processes at atomistic resolution, addressing the key timescale limitations of brute-force molecular dynamics (MD) simulations.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D5CP04134A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-14T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Enhanced sampling method development using ML-designed collective variables for polymer collapse; involves atomistic MD, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "c41b0ba125eb",
+    "title": "Polymorphic Janus ZrSC monolayer: a first-principles study of structural, mechanical, vibrational, and electronic properties",
+    "authors": [
+      "A. O. Orega",
+      "C. Fwalo",
+      "B. D. Mahapane",
+      "R. E. Mapasha"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11652-11662\nA. O. Orega, C. Fwalo, B. D. Mahapane, R. E. Mapasha\nTwo-dimensional Janus materials, characterized by their asymmetric surface composition, offer unique opportunities for tailoring electronic and mechanical properties.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00149A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-02T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "First-principles DFT study of ZrSC monolayer with explicit atoms, satisfying all criteria (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "cfd3982ed551",
+    "title": "Magnetocaloric effect in ${\\mathrm{GdNi}}_{4}\\mathrm{Al}$ under extreme hydrostatic pressures: A $\\mathrm{DFT}+U$ and Monte Carlo study",
+    "authors": [
+      "J. P. C. Felix",
+      "A. F. S. Almeida",
+      "H. Fabrelli",
+      "E. M. Bittar",
+      "C. V. Morais",
+      "M. J. Piotrowski",
+      "V. S. R. de Sousa"
+    ],
+    "abstract": "Author(s): J. P. C. Felix, A. F. S. Almeida, H. Fabrelli, E. M. Bittar, C. V. Morais, M. J. Piotrowski, and V. S. R. de Sousa\nRare-earth compounds, such as Gd-based intermetallics, exhibit strong magnetocaloric effects (MCEs) and emerge as promising candidates for technological applications in magnetic refrigeration and cryogenics. In this work, we conducted a combined experimental and theoretical investigation of the magn…\n[Phys. Rev. B 113, 174429] Published Wed May 20, 2026",
+    "url": "http://link.aps.org/doi/10.1103/hjsw-srz8",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-05-20T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Combined DFT+U and Monte Carlo study of GdNi4Al with explicit atoms, satisfying all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "d1f8519e71cb",
+    "title": "Impact of strong electronic correlations on altermagnets: The case of ${\\mathrm{NiS}}_{2}$",
+    "authors": [
+      "Ina Park",
+      "Turan Birol",
+      "Antoine Georges",
+      "Rafael M. Fernandes"
+    ],
+    "abstract": "Author(s): Ina Park, Turan Birol, Antoine Georges, and Rafael M. Fernandes\nAs a material that undergoes a metal-insulator transition inside the altermagnetic phase, NiS2−xSex provides an ideal framework to elucidate the interplay between electronic correlations and altermagnetism. This work disentangles the impact of static and dynamic correlations on altermagnetic properties by systematically comparing DFT, DFT+U, and DFT+DMFT calculations on NiS2−xSex. The key result is that dynamical correlations not only modify the magnitude of the spin splitting but also promote a sharp asymmetry in the lifetimes of spin-up and spin-down quasiparticles, which is further amplified by multi-orbital Hund’s correlation effects.\n[Phys. Rev. Materials 10, 054415] Published Wed May 20, 2026",
+    "url": "http://link.aps.org/doi/10.1103/pgp6-zlh8",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-05-20T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT+U and DFT+DMFT electronic structure calculations on explicit atomistic system NiS2, satisfying (a)-(c); advances understanding of altermagnetism.",
+    "key_authors": []
+  },
+  {
+    "id": "ae3ef54fd1f5",
+    "title": "All-electron quasiparticle self-consistent  GW  for molecules and periodic systems within the numerical atomic orbital framework",
+    "authors": [],
+    "abstract": "We report an all-electron implementation of the quasiparticle self-consistent GW (QSGW) method for molecular and periodic systems within the framework of numerical atomic orbitals (NAOs), as implemented in the LibRPA software package. Our implementation is based on the space-time formalism, combined with the localized resolution-of-identity approximation to treat two-electron quantities. We found that analytical continuation of the self-energy matrix, in combination with the “Mode B” QSGW scheme, can yield stable self-consistent quasiparticle energy spectra. Systematic benchmark calculations on molecules and crystalline solids (including typical semiconductors and wide-gap insulators) demonstrate that our NAO-based QSGW scheme yields molecular ionization potentials and quasiparticle bandgaps for periodic solids that are consistent with reference results from established implementations. Our work opens the way for large-scale QSGW calculations, taking advantage of the NAO-based low-scaling algorithm previously developed for the G0W0 method.",
+    "url": "https://pubs.aip.org/aip/jcp/article/164/19/194115/3391670/All-electron-quasiparticle-self-consistent-GW-for",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 20 May 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Method development for all-electron QSGW within NAO framework; post-HF method, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "f9cae8214675",
+    "title": "Interacting donor-acceptor pairs as the origin of coupled spin-optical signals in hexagonal boron nitride",
+    "authors": [
+      "Guanjian Hu",
+      "Jijun Huang",
+      "Bing Huang",
+      "Song Li"
+    ],
+    "abstract": "arXiv:2605.20655v1 Announce Type: new \nAbstract: Optically addressable spin defects in hexagonal boron nitride hold promise for room-temperature quantum technologies, but their microscopic identities remain largely unknown. Using first principles calculations, we show that coupled spin optical signals arise from interacting donor acceptor pairs, not the commonly believed isolated defects. Intra and inter pair separations control charge transfer, electronic structure, and spin coupling, thereby greatly modulating zero phonon lines, phonon sidebands, lifetimes, and the sign of optically detected magnetic resonance contrast. Importantly, we identify two distinct charge-state-dependent coupling regimes and extend this picture to correlated defect ensembles, explaining the wide diversity of experimental observations. Our results establish a microscopic framework for coupled defect behavior and provide design principles for spin-active quantum emitters in wide bandgap semiconductors.",
+    "url": "https://arxiv.org/abs/2605.20655",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles DFT calculations on explicit atomic defects in hBN satisfy (a)-(c); scores as DFT application.",
+    "key_authors": []
+  },
+  {
+    "id": "c5ed016b1c27",
+    "title": "A unified framework for automated transition state generation to accelerate mechanistic exploration in organic synthesis",
+    "authors": [
+      "Li-Cheng Xu",
+      "Junyi An",
+      "Weiqi Liu",
+      "Yun-Fei Shi",
+      "Chong-Lei Ji",
+      "Fenglei Cao",
+      "Yuan Qi"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.10001667/v2",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-21",
+    "version": 2,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Automated transition state generation implies DFT/quantum chemistry on explicit atoms; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "72407012b58b",
+    "title": "Computational Identification of Natural Product Modulators Targeting PTPN6 in the Ferroptosis-Immune Axis of Recurrent Spontaneous Abortion: An Integrated Bioinformatic, Molecular Docking and Molecular Dynamics Study",
+    "authors": [
+      "Tasniqul Islam"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15003655/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-21",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Explicitly includes molecular dynamics study, satisfying (a)-(c) with atomistic simulation methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "1bfeb9c7b5e6",
+    "title": "[ASAP] Absolute Binding Free Energy Calculations between the SARS-CoV-2 Main Protease and 130 Drug Leads Using Implicit Ligand Theory",
+    "authors": [
+      "Hong Ha Nguyen",
+      "Bing Xie",
+      "David D. L. Minh"
+    ],
+    "abstract": "",
+    "url": "http://dx.doi.org/10.1021/acs.jcim.6c00077",
+    "pdf_url": null,
+    "source": "JCIM",
+    "categories": [],
+    "published": "Wed, 20 May 2026 04:07:41 PDT",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Absolute binding free energy calculations with implicit ligand theory; involves explicit protein-ligand system and atomistic simulation methods; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "233d0d68a625",
+    "title": "Dipole-field interaction: a missing link to bridge the gap between theoretical and experimental catalysis in single-atom electrocatalysts for CO2 reduction",
+    "authors": [
+      "Ruirui Ren",
+      "Yuhang Wang",
+      "Bo Li",
+      "Jun Fan"
+    ],
+    "abstract": "Chem. Commun., 2026, Advance Article\nRuirui Ren, Yuhang Wang, Bo Li, Jun Fan\nThis work identifies dipole-field interaction as the missing physical link governing activity shifts in CO2RR-to-CO for Fe/Co/Ni-based single atom catalysts under realistic electrochemical conditions.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CC/D6CC01824F",
+    "pdf_url": null,
+    "source": "Chem. Commun.",
+    "categories": [],
+    "published": "2026-05-19T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT calculations on explicit single-atom catalyst models for CO2 reduction satisfy (a)-(c) as an atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "009e7386981e",
+    "title": "Towards the rational design of RsmE small-RNA binders: insights from molecular dynamics simulations",
+    "authors": [
+      "Agustín Ormazábal",
+      "Juliana Palma",
+      "Gustavo Pierdominici-Sottile"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Advance Article\nAgustín Ormazábal, Juliana Palma, Gustavo Pierdominici-Sottile\nMD reveals how RNA loop, stem, and linker jointly control RsmE binding. The loop sets specificity, the stem enhances affinity, and the linker boosts binding via enthalpic and entropic effects, enabling rational design of RNA binders.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP01010E",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-21T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Molecular dynamics simulations on explicit RNA system; satisfies (a)-(c) with MD application.",
+    "key_authors": []
+  },
+  {
+    "id": "d42fd360f9da",
+    "title": "A theoretical study for the performance evaluation of the two-dimensional carbon Kagome lattice as an anode material for lithium-ion batteries",
+    "authors": [
+      "Haoxuan Chen",
+      "Zhenjie Zhao",
+      "Zihao Wang",
+      "Huadong Zeng",
+      "Xinlu Cheng"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Advance Article\nHaoxuan Chen, Zhenjie Zhao, Zihao Wang, Huadong Zeng, Xinlu Cheng\nFirst-principles calculations identify CKL as a promising 2D carbon anode for Li-ion batteries, featuring strong Li adsorption (−2.68 eV), a low diffusion barrier (0.18 eV), high capacity (1115.7 mAh g−1), and moderate open-circuit voltage (1.3 V).",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00574H",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-01T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles DFT calculations on 2D carbon lattice for Li-ion batteries, including adsorption and diffusion barriers; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "7474b99c1da3",
+    "title": "The orientation of interfacial water molecules governs the electrochemical nitrogen reduction reaction on the Mo–N4–C surface",
+    "authors": [
+      "Deewan S. Teja",
+      "Bhabani S. Mallik"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Advance Article\nDeewan S. Teja, Bhabani S. Mallik\nThe nitrogen reduction reaction (NRR) is a sustainable method for NH3 synthesis, but remains challenging due to the competitive hydrogen evolution reaction (HER).",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00140H",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-20T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT calculations of reaction pathways on Mo-N4-C surface, including water orientation effects; satisfies (a)-(c) as atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "45f56621fb5f",
+    "title": "Molecular dynamics study on interfacial heat transport in carbon nanotube/conjugated polymer composites",
+    "authors": [
+      "Xingyu Pan",
+      "Zhenjie Zhang",
+      "Xiyue Gao",
+      "Dongyue Jiang",
+      "Xiaoliang Zhang",
+      "Lujun Pan",
+      "Zeng Fan"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,12062-12074\nXingyu Pan, Zhenjie Zhang, Xiyue Gao, Dongyue Jiang, Xiaoliang Zhang, Lujun Pan, Zeng Fan\nIn this study, we thoroughly investigated how the polymer influences the interfacial thermal conductance (GL) of carbon nanotube (CNT)/conjugated polymer composites.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00421K",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-01T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Molecular dynamics study of heat transport in CNT/polymer composites (satisfies a-c: explicit atoms, MD application, materials insight).",
+    "key_authors": []
+  },
+  {
+    "id": "54eac7664d28",
+    "title": "Energetically quasi-integrable roaming in the ionized CH4 + CO system: nonequilibrium dynamics of acetaldehyde formation",
+    "authors": [
+      "Toshiaki Matsubara"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11680-11689\nToshiaki Matsubara\nAb initio molecular dynamics show that CH3CHO+ formation from ionized CH4⋯CO proceeds via two roaming regimes governed by energy-flow-controlled nonstatistical dynamics, enabling C–C bond formation without a conventional transition state.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00338A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-16T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Ab initio molecular dynamics study of roaming dynamics in ionized CH4+CO; satisfies (a) explicit atoms, (b) AIMD, (c) mechanistic understanding.",
+    "key_authors": []
+  },
+  {
+    "id": "4e3dc28babfc",
+    "title": "Deciphering the hydrophilic behavior and vibrational characteristics of the θ-Al2O3(010) surface",
+    "authors": [
+      "Wanxiang Yang",
+      "Mei Zheng",
+      "Wei Lin"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11848-11855\nWanxiang Yang, Mei Zheng, Wei Lin\nAb initio molecular dynamics simulations combined with spectral characteristic analysis reveal the stable adsorption and dynamic proton transfer behaviors of H2O/OH on the θ-Al2O3(010) surface in an aqueous environment.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP01034B",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-15T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Ab initio MD simulations of water on θ-Al2O3 surface to study hydrophilic behavior; satisfies (a)-(c) as atomistic MD application.",
+    "key_authors": []
+  },
+  {
+    "id": "379097ccdd43",
+    "title": "Electrocoalescence dynamics of two unequal-sized nanodroplets under a direct-current electric field",
+    "authors": [
+      "Yixuan Yun",
+      "Chengyao Shuai",
+      "Jin Wang",
+      "Yiling Liu",
+      "Haidong Lin",
+      "Run Liu",
+      "Si Li",
+      "Duu-Jong Lee"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,12086-12097\nYixuan Yun, Chengyao Shuai, Jin Wang, Yiling Liu, Haidong Lin, Run Liu, Si Li, Duu-Jong Lee\nWe employ molecular dynamics simulations to determine the critical electric field strengths for coalescence and spindle formation of two unequal-sized pure water droplets under DC fields, uncovering the influence of the electric field direction.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00144K",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-13T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Molecular dynamics simulations of nanodroplet electrocoalescence; satisfies (a)-(c) as atomistic MD application.",
+    "key_authors": []
+  },
+  {
+    "id": "352ba387293a",
+    "title": "Mechanically interlocking cyclic star polymers quenches solvent-dependent properties",
+    "authors": [],
+    "abstract": "We simulate star polymers with cyclic arms formed via click reactions and study the effects of solvent quality on the resulting mechanical interlocking complexity and radius of gyration. We find that polymers with sufficiently long arms cyclized in a poor solvent present a higher degree of interlocking among arms with respect to those cyclized in a good solvent. Furthermore, when a polymer cyclized in a poor solvent is moved to a good solvent, its radius of gyration is smaller than that of star polymers cyclized in a good solvent, indicating that cyclization can quench a solvent-dependent property. Importantly, we show that the number of arms—or functionality, f—affects the degree of interlocking in poor solvents. Due to an asymmetric collapse transition, if f is sufficiently small, all arms phase separate to one side of the star’s central core; they can hence all interact with each other, increasing interlocking. When f is large enough, the entire surface of the core is covered by the arms, hindering interactions between faraway arms and decreasing interlocking. We identify a critical grafting density for the transition via a geometric argument, and we set a criterion for the formation of a single mechanically interlocked blob, that is, the arm’s length must be larger than half of the core’s circumference.",
+    "url": "https://pubs.aip.org/aip/jcp/article/164/19/194904/3391673/Mechanically-interlocking-cyclic-star-polymers",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 20 May 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Simulation of star polymers (coarse-grained or atomistic) studying interlocking and solvent effects; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "41aadf1a9acf",
+    "title": "Evaluating Blended Refrigerants for Thermochemical Energy Storage and Circular Refrigerant Recovery using Activated Carbons",
+    "authors": [
+      "H. Lucassen",
+      "A. Luna-Triguero",
+      "J. M. Vicent-Luna"
+    ],
+    "abstract": "arXiv:2605.20446v1 Announce Type: new \nAbstract: The climate crisis demands a rapid shift to sustainable energy technologies and higher efficiency in existing energy systems. Adsorption-based thermochemical energy storage is a promising alternative due to its high energy density and compatibility with renewable heat sources. In this work, we investigate the adsorption behavior of pure refrigerants (R32, R125, R134a, and R600) and their commercial blends (R410A, R407F, R417A, and R417C) in six activated carbons for thermochemical energy storage and circular refrigerant recovery. A multiscale computational workflow combining Monte Carlo simulations, thermodynamic modeling, and breakthrough simulations is developed to predict adsorption, storage, and separation behavior from pure-component adsorption data. The methodology integrates adsorption potential theory (APT), ideal adsorbed solution theory (IAST), and models for the isosteric heat of adsorption. In addition, an in-house computational framework is developed to calculate heats of adsorption and energy storage densities for both pure refrigerants and multicomponent mixtures. Although developed using molecular simulations as a benchmark, the methodology is directly applicable to experimental studies, since it only requires adsorption isotherms of the pure components as input to evaluate the performance of refrigerant blends. The results show that refrigerant blends can achieve higher storage densities than their pure counterparts due to cooperative adsorption and more efficient molecular packing. Furthermore, the activated carbons selectively separate key refrigerant components, highlighting their potential for sustainable refrigerant recovery. Overall, this work provides a general framework for the rational design and screening of next-generation refrigerant blends for adsorption-driven energy storage and separation applications.",
+    "url": "https://arxiv.org/abs/2605.20446",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 21 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Monte Carlo simulations of refrigerants in activated carbons; atomistic representation and simulation (satisfies a-c).",
+    "key_authors": []
+  },
+  {
+    "id": "90e4003b48b7",
+    "title": "Quantum Chemical Microsolvation via Free Energy–Based Solvation Site Identification",
+    "authors": [
+      "Lukas B. Magenheim",
+      "Maren Podewitz"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15003676/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-21",
+    "version": 1,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Combines QM with free-energy-based solvation site identification, likely involving MD or MC; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8939a7a693dd",
+    "title": "Design strategy for TATB-like insensitive high explosives: rational design and high-throughput screening based on fused-ring frameworks",
+    "authors": [
+      "Zujia Lu",
+      "Tingwei Wang",
+      "Cong Li",
+      "Chao Zhang",
+      "Qiyao Yu",
+      "Jianguo Zhang"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11992-12005\nZujia Lu, Tingwei Wang, Cong Li, Chao Zhang, Qiyao Yu, Jianguo Zhang\nMolecular structures of the ten target molecules and their DFT-optimized crystal structures. The interlayer spacing is highlighted in red, with units in Å.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00765A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-30T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT-optimized crystal structures for high explosives screening (satisfies a-c: explicit atoms, DFT application, design).",
+    "key_authors": []
+  },
+  {
+    "id": "d9c95c1ecdc5",
+    "title": "Synergistic Ni–P co-doping in pyrite FeS2 for efficient electrocatalytic nitrate reduction via a dissociative mechanism: a theoretical insight",
+    "authors": [
+      "Haitao Sun",
+      "Jixuan Li",
+      "Xueshi Song",
+      "Yuwei Yan",
+      "Jingxiang Zhao"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11616-11625\nHaitao Sun, Jixuan Li, Xueshi Song, Yuwei Yan, Jingxiang Zhao\nA Ni–P co-doped FeS2 catalyst enables efficient NO3RR via a dissociative mechanism through metal/nonmetal synergy.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP01101B",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-20T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT application to study Ni-P co-doped FeS2 for nitrate reduction; satisfies (a) explicit atoms, (b) DFT, (c) applied mechanistic insight.",
+    "key_authors": []
+  },
+  {
+    "id": "92c599e31522",
+    "title": "Dimensional classification and shape reliability in InxSey clusters and 2D materials: a quasi-molecule perspective from subminimal-basis DFT",
+    "authors": [
+      "A. J. C. Varandas"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11724-11739\nA. J. C. Varandas\nSchematic illustration of dimensional classification “linear, planar, and otherwise” for 2D InxSey clusters, highlighting the robustness of shape topology for stationary points within a subminimal-basis DFT quasi-molecule framework.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00070C",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-14T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Subminimal-basis DFT study of InxSey clusters; satisfies (a) explicit atoms, (b) DFT, (c) structural classification; lower score due to approximate method.",
+    "key_authors": []
+  },
+  {
+    "id": "d4e65766f945",
+    "title": "Synergistic enhancement of hydrogen evolution on MoS2 by sulfur vacancy and transition metal doping: a DFT and machine learning study",
+    "authors": [
+      "Xin Fan",
+      "Xiaocheng Zhou",
+      "Yafei Li"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,11715-11723\nXin Fan, Xiaocheng Zhou, Yafei Li\nRevealing vacancy-dopant synergistic effects in MoS2 for enhanced HER via DFT calculations and machine learning.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00688D",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-14T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT and ML study of vacancy-dopant effects in MoS2 for HER; satisfies (a) explicit atoms, (b) DFT, (c) applied catalyst insight.",
+    "key_authors": []
+  },
+  {
+    "id": "2aa6b987beb9",
+    "title": "Unraveling the effect of transition-metal doping on the structural, electronic, and electrocatalytic HER performance of monolayer HfTe2",
+    "authors": [
+      "Panxing Liao",
+      "Yanshan Li",
+      "Yifan Wang",
+      "Qingyun Yang",
+      "Wen Wang",
+      "Meiqi Chen",
+      "Cai Cheng",
+      "Ling Li",
+      "Ke Liu"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, 28,12006-12012\nPanxing Liao, Yanshan Li, Yifan Wang, Qingyun Yang, Wen Wang, Meiqi Chen, Cai Cheng, Ling Li, Ke Liu\nDFT identifies 6 of 23 dopants with optimal ΔGH for HER on HfTe2; d-band center indicates Fe-, Co-, and Ru-doped HfTe2 are Pt-like catalysts, and dissolution potential confirms Ru-doped HfTe2 is most promising.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D5CP04211A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-04-10T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT study of transition-metal doping in monolayer HfTe2 for HER; satisfies (a)-(c) as atomistic DFT application.",
+    "key_authors": []
+  }
+]
