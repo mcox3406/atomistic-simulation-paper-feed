@@ -1,0 +1,711 @@
+[
+  {
+    "id": "3be35adde77d",
+    "title": "Are Molecules Magical? Non-Stabilizerness in Molecular Bonding",
+    "authors": [
+      "Matthieu Sarkis",
+      "Alexandre Tkatchenko"
+    ],
+    "abstract": "arXiv:2504.06673v3 Announce Type: replace-cross \nAbstract: Isolated atoms as well as molecules at equilibrium are presumed to be simple from the point of view of quantum computational complexity. Here we show that the process of chemical bond formation is accompanied by a marked increase in the quantum complexity of the electronic ground state. By studying the hydrogen dimer H$_{2}$ as a prototypical example, we demonstrate that when two hydrogen atoms form a bond, a specific measure of quantum complexity exhibits a pronounced peak that closely follows the behavior of the binding energy. This measure of quantum complexity, known as magic in the quantum information literature, reflects how difficult it is to simulate the state using classical methods. We show that the observations for H$_{2}$ also hold for a collection of other dimers, including the weakly bonded diatomic helium dimer He$_{2}$. This observation suggests that regions of strong bonding formation or breaking are also regions of enhanced intrinsic quantum complexity. This insight suggests a connection of quantum information measures to chemical reactivity and advocates the use of stretched molecules as a quantum computational resource.",
+    "url": "https://arxiv.org/abs/2504.06673",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-05-25",
+    "category": "Electronic Structure",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alexandre Tkatchenko",
+    "key_authors": [
+      "Alexandre Tkatchenko"
+    ]
+  },
+  {
+    "id": "3efcdbda1409",
+    "title": "Diffusion Domain Expansion: Learning to Coordinate Pre-trained Diffusion Models",
+    "authors": [
+      "Egor Lifar",
+      "Semyon Savkin",
+      "Timur Garipov",
+      "Shangyuan Tong",
+      "Tommi Jaakkola"
+    ],
+    "abstract": "arXiv:2605.23275v1 Announce Type: new \nAbstract: In this paper, we propose Diffusion Domain Expansion (DDE), a method that efficiently extends pre-trained diffusion models to generate larger objects and handle more complex conditioning beyond their original capabilities. Our method employs a compact trainable network designed to coordinate the denoised outputs of pre-trained diffusion models. We demonstrate that the coordinator can be universally simple while being capable of generalizing to domains larger than those observed during its training time. We evaluate DDE on long audio track generation and conditional image generation, demonstrating its applicability across domains. DDE outperforms other approaches to coordinated generation with diffusion models in qualitative and quantitative evaluations.",
+    "url": "https://arxiv.org/abs/2605.23275",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Tommi Jaakkola",
+    "key_authors": [
+      "Tommi Jaakkola"
+    ]
+  },
+  {
+    "id": "feb600083a5c",
+    "title": "S$^3$GNN: Efficient Global Mixing and Local Message Passing for Long-Range Graph Learning",
+    "authors": [
+      "Dai Shi",
+      "Luke Thompson",
+      "Linhan Luo",
+      "Lequan Lin",
+      "Andi Han",
+      "Junbin Gao",
+      "Jos\\'e Miguel Hern\\'andez Lobato"
+    ],
+    "abstract": "arXiv:2605.23467v1 Announce Type: new \nAbstract: Message-passing neural networks (MPNNs) often suffer from an information bottleneck when capturing long-range dependencies, leading to the oversquashing (OSQ) phenomenon. Alongside spatial connectivity enrichment (e.g., rewiring), recent studies have shown that spectral filtering can yield strong long-range learning outcomes, as spectral operators enable global information mixing that alleviates OSQ. These approaches achieve this either by stabilizing the Jacobian energies in deep propagation or by guaranteeing OSQ mitigation under strong theoretical assumptions. We revisit these conclusions and show that the associated Jacobian sensitivity lower bound is generally difficult to achieve in practice. We then propose S$^3$GNN, which mitigates OSQ without such restrictive assumptions by lightweightly reintroducing omitted components with substantially lower computational complexity, while standard stability constraints on feature transformations remain effective under our new dynamics. Extensive experiments across diverse domains (e.g., long-range benchmarks, KGQA, and mesh-based fluid dynamics) demonstrate that S$^3$GNN achieves up to an order-of-magnitude error reduction with up to 50\\% fewer parameters. Our code can be found in https://github.com/EEthanShi/S3-GNN.git.",
+    "url": "https://arxiv.org/abs/2605.23467",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Jos\\'e Miguel Hern\\'andez Lobato",
+    "key_authors": [
+      "Jos\\'e Miguel Hern\\'andez Lobato"
+    ]
+  },
+  {
+    "id": "d99c1128be25",
+    "title": "Quantum-Accurate Conformational Stabilities and Vibrational Dynamics in Molecules and Proteins with Machine-Learned Force Fields",
+    "authors": [
+      "Sergio Su\\'arez-Dou",
+      "Miguel Gallegos",
+      "Kyunghoon Han",
+      "Florian N. Br\\\"unig",
+      "Joshua T. Berryman",
+      "Alexandre Tkatchenko"
+    ],
+    "abstract": "arXiv:2601.09845v2 Announce Type: replace \nAbstract: Biomolecular thermodynamics and spectroscopy depend on relative conformer energies, local curvatures, and collective dipole fluctuations on the potential-energy surface. Conventional molecular mechanics force fields enable large-scale simulations, but their fixed functional forms can misrepresent infrared intensities, mode character, and environment-dependent vibrational response. Here we assess general-purpose machine-learned force fields across small molecules, finite-temperature infrared spectra, gas-phase peptides, and monomeric, oligomeric, and solvated protein assemblies. To enable this analysis, we introduce QVib, a dataset of 293 molecules and 1365 conformers, together with peptide amide-band benchmarks and p53 oligomerization-domain models, to evaluate vibrational transferability from DFT references to experimental spectra. Across these systems, machine-learned force fields substantially improve over molecular mechanics in reproducing DFT-level forces, vibrational frequencies, densities of states, mode eigenvectors, conformational energetics, and experimental infrared spectra. Among models with explicit long-range electrostatics, SO3LR provides the most favourable accuracy-cost balance for the biomolecular systems considered. These results show that machine-learned force-field dynamics can recover collective, environment-dependent vibrational landscapes at near-DFT fidelity, enabling spectroscopically validated biomolecular simulations at force-field-like cost.",
+    "url": "https://arxiv.org/abs/2601.09845",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.bio-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alexandre Tkatchenko",
+    "key_authors": [
+      "Alexandre Tkatchenko"
+    ]
+  },
+  {
+    "id": "1769821605f2",
+    "title": "Relevant Walk Search for Explaining Graph Neural Networks",
+    "authors": [
+      "Ping Xiong",
+      "Thomas Schnake",
+      "Michael Gastegger",
+      "Gr\\'egoire Montavon",
+      "Klaus-Robert M\\\"uller",
+      "Shinichi Nakajima"
+    ],
+    "abstract": "arXiv:2605.23673v1 Announce Type: new \nAbstract: Graph Neural Networks (GNNs) have become important machine learning tools for graph analysis, and its explainability is crucial for safety, fairness, and robustness. Layer-wise relevance propagation for GNNs (GNN-LRP) evaluates the relevance of \\emph{walks} to reveal important information flows in the network, and provides higher-order explanations, which have been shown to be superior to the lower-order, i.e., node-/edge-level, explanations. However, identifying relevant walks by GNN-LRP requires {\\em exponential} computational complexity with respect to the network depth, which we will remedy in this paper. Specifically, we propose {\\em polynomial-time} algorithms for finding top-$K$ relevant walks, which drastically reduces the computation and thus increases the applicability of GNN-LRP to large-scale problems. Our proposed algorithms are based on the \\emph{max-product} algorithm -- a common tool for finding the maximum likelihood configurations in probabilistic graphical models -- and can find the most relevant walks exactly at the neuron level and approximately at the node level. Our experiments demonstrate the performance of our algorithms at scale and their utility across application domains, i.e., on epidemiology, molecular, and natural language benchmarks. We provide our codes under \\href{https://github.com/xiong-ping/rel_walk_gnnlrp}{github.com/xiong-ping/rel\\_walk\\_gnnlrp}.",
+    "url": "https://arxiv.org/abs/2605.23673",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Klaus-Robert M\\\"uller",
+    "key_authors": [
+      "Klaus-Robert M\\\"uller"
+    ]
+  },
+  {
+    "id": "f472e03aaeef",
+    "title": "A Metadynamics-Based Framework for Free Energy Surface Mapping of Multiparticle Diffusion in Crystals",
+    "authors": [
+      "Shunya Yamada",
+      "Kazuaki Toyoura"
+    ],
+    "abstract": "arXiv:2605.23360v1 Announce Type: new \nAbstract: We propose two metadynamics (MetaD)-based methodologies for efficiently mapping free energy surfaces (FESs) of multiple interacting carriers diffusing in crystalline solids. Our approaches circumvent the challenges of high-dimensional collective variables (CVs) by employing replica state exchange MetaD and parallel bias MetaD, both of which decompose the high-dimensional CVs into multiple lower-dimensional ones. As a benchmark, we investigate two-dimensional lithium (Li) diffusion in LixTiS2 across a wide range of Li concentrations. The Li jump frequencies estimated from the obtained FESs exhibit concentration- and temperature-dependent trends consistent with previous kinetic Monte Carlo simulations and nuclear magnetic resonance measurements. Our approaches provide a promising framework for capturing the slow dynamics of diffusive carriers that are typically inaccessible to conventional molecular dynamics simulations.",
+    "url": "https://arxiv.org/abs/2605.23360",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.9,
+    "relevance_reason": "Proposes metadynamics-based methodologies for free energy mapping of Li diffusion in LixTiS2; uses explicit atoms and enhanced sampling, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "7753955c2306",
+    "title": "Fewest-Switches Surface Hopping with Combined Deep Learning Potential and Long Short-Term Memory Network Propagator for Simulating Realistic Photochemical Processes",
+    "authors": [
+      "Zhenxing Zhu",
+      "Diandong Tang",
+      "Lin Shen",
+      "Wei-Hai Fang"
+    ],
+    "abstract": "arXiv:2601.21703v2 Announce Type: replace \nAbstract: Fewest-switches surface hopping (FSSH) is the most popular method for simulating photochemical processes of molecular systems. Recently, we have constructed long short-term memory (LSTM) networks as a propagator for electronic subsystems in FSSH dynamics simulations. The collective results on Tully's three models have been reproduced satisfactorily. In the present work, we develop an extended LSTM-FSSH framework to simulate realistic photochemical reactions. The input features of LSTM as well as the training procedure are redesigned to represent high-dimensional nuclear degrees of freedom in an effective way. Equivariant neural networks are integrated with LSTM to build adiabatic potential energy surfaces in ground and excited states. Photoisomerizations of $\\mathrm{CH_2NH}$ and azobenzene are simulated, showing that our new proposed LSTM-FSSH method can produce excited-state lifetimes and product yields accurately in comparison with conventional FSSH simulations as reference. Only 10 reference trajectories are required for training LSTM networks, and then a trajectory ensemble can be generated with very efficient LSTM-FSSH dynamics simulations to obtain collective results.",
+    "url": "https://arxiv.org/abs/2601.21703",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Surface hopping dynamics with deep learning potentials for realistic photochemical processes; explicit atoms, MD method, and methodological advance, satisfying all conditions.",
+    "key_authors": []
+  },
+  {
+    "id": "5ef1cf23bcf0",
+    "title": "First-principles transition-state tensorial cluster expansion of vacancy diffusion in Ta-W beyond the kinetically-resolved activation approximation",
+    "authors": [
+      "Jacob Jeffries",
+      "Brianna Sebastian-Olazabal",
+      "Enrique Martinez"
+    ],
+    "abstract": "arXiv:2605.23612v1 Announce Type: new \nAbstract: Predicting diffusion in chemically complex alloys remains challenging due to the strong dependence of migration barriers on local atomic environments. Here, we develop a first-principles-informed framework that directly learns environment-dependent migration barriers without relying on reduced kinetic approximations such as the kinetically resolved activation (KRA) model. Migration barriers computed using density functional theory and nudged elastic band calculations are represented via a tensorial cluster expansion including transition states and deployed in on-lattice kinetic Monte Carlo simulations. Applied to the Ta-W system, the framework captures nontrivial composition-dependent diffusion behavior arising from a crossover between solute trapping and percolated low-barrier transport pathways, yielding a maximum in the apparent activation energy near intermediate compositions. This approach establishes a general and scalable route for integrating first-principles transition-state energetics into mesoscale kinetic simulations, enabling predictive multiscale modeling of diffusion in chemically complex materials and providing a pathway for uncovering emergent transport phenomena.",
+    "url": "https://arxiv.org/abs/2605.23612",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops DFT+NEB-based tensorial cluster expansion for vacancy diffusion in Ta-W, coupled with kinetic Monte Carlo; explicit atoms and transition-state search, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "42d18b991ba8",
+    "title": "Voronoi-Based Analysis Linking Microscopic Void Evolution to Macroscopic Swelling in Supercritical CO₂-Saturated Polymers",
+    "authors": [
+      "Chaofan Yao",
+      "Ze Liu",
+      "Shuang Wu",
+      "Linyan Yang",
+      "Lichun Bai"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Accepted Manuscript\nChaofan Yao, Ze Liu, Shuang Wu, Linyan Yang, Lichun Bai\nThis study investigates the expansion behavior of EPDM rubber in supercritical carbon dioxide (scCO₂) through molecular dynamics (MD) simulation, and employs Voronoi analysis to correlate the evolution of microscopic pores...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D5CP03558A",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-25T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Explicitly uses molecular dynamics simulation; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "20c81045b5e7",
+    "title": "Direct Boltzmann inversion method from particle configurations at arbitrary state points",
+    "authors": [
+      "Olivier Coquand",
+      "Davide Paolino",
+      "Ludovic Berthier"
+    ],
+    "abstract": "arXiv:2603.12081v2 Announce Type: replace \nAbstract: We introduce a direct Boltzmann inversion method to infer the interaction potential in particle systems using as input particle configurations generated at an arbitrary state point of the system. Unlike iterative Boltzmann inversion, the proposed method does not require performing a new Monte Carlo simulation at each step of the iteration process. It relies instead on enforcing consistency between two independent estimates of the pair correlation function, respectively obtained from interparticle distances and from pairwise forces. As a result, the approach is computationally inexpensive and straightforward to implement. Because it relies on the sole expression of interparticle forces, our method naturally applies to any state point, including when the density is large and alternative methods may fail. Here we present the basic principles of the method and benchmark its performance on a diverse set of test potentials studied using computer simulations. Practical aspects and detailed implementation of the method are also discussed. Owing to its simplicity and generality, the method should be broadly applicable, from the construction of coarse-grained interaction potentials to the inference of effective interactions in non-equilibrium systems.",
+    "url": "https://arxiv.org/abs/2603.12081",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Direct Boltzmann inversion from particle configurations; method for inferring potentials, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "a34ea54c9b22",
+    "title": "Drift-React: One-step Generation of Reaction Pathways via SE(3) Drifting Fields",
+    "authors": [
+      "R\\'emi Schlama",
+      "Philippe Schwaller"
+    ],
+    "abstract": "arXiv:2605.22990v1 Announce Type: new \nAbstract: Mapping reaction pathways and transition states (TS) is fundamental to chemistry but computationally expensive at scale. The minimum energy pathway (MEP) dictates reaction rates and mechanisms, yet recovering it via electronic-structure methods requires thousands of costly force evaluations. Recent generative models accelerate TS identification but rely on iterative inference and only predict isolated saddle-point snapshots, missing the continuous reaction trajectory. We introduce Drift-React, an $\\mathrm{SE}(3)$-equivariant generative framework that predicts complete reaction pathways in a single forward pass from only reactant and product geometries. By shifting distribution evolution to training via a Sinkhorn-weighted drifting field, Drift-React eliminates both the iterative force evaluations of NEB-style methods and the sequential ODE/SDE integration of diffusion and flow matching models. Evaluated on the Transition1x and Halo8 datasets, our one-step model generates physically consistent MEPs that accurately capture energetic bottlenecks and enable arbitrary-resolution sampling along the reaction coordinate. For isolated TS prediction, Drift-React matches the sub-{\\AA}ngstr\\\"om accuracy of state-of-the-art iterative models while delivering orders-of-magnitude acceleration, clearing a major computational bottleneck for large-scale reaction network exploration.",
+    "url": "https://arxiv.org/abs/2605.22990",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.85,
+    "relevance_reason": "Generative model for reaction pathways using SE(3) equivariance; predicts 3D atomic configurations tied to energetics, satisfying (a)-(c) for atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "0f7771ff07a1",
+    "title": "Intrinsic Point Defects and Frenkel Pair Formation in Photovoltaic Absorber Zn$_3$P$_2$: Regulating $p$-type Conductivity through Growth and Annealing Conditions",
+    "authors": [
+      "Nico Kawashima",
+      "Silvana Botti"
+    ],
+    "abstract": "arXiv:2605.23479v1 Announce Type: new \nAbstract: This study investigates the ground-state energetics and thermodynamics of intrinsic point defects in zinc phosphide Zn$_3$P$_2$ using \\emph{ab initio} density functional theory combined with an extensive potential energy landscape search. Our analysis reveals that the defect chemistry is dominated by zinc vacancies $V_\\mathrm{Zn}$ and zinc interstitials Zn$_i$, with equilibrium concentrations significantly surpassing those of other intrinsic species. Notably, we find that phosphorus interstitials P$_i$, previously suggested to be significant, possess high formation energies and likely exist only in negligible quantities. The characteristic $p$-type conductivity of undoped Zn$_3$P$_2$ is shown to be a direct consequence of zinc vacancies, which act as shallow acceptors and pull the Fermi level toward the valence band. Furthermore, we identify a positive binding energy between $V_\\mathrm{Zn}$ and Zn$_i$, leading to the formation of electrically benign Frenkel pairs that partially compensate the intrinsic p-type conductivity. Our results suggest that achieving $n$-type conductivity is fundamentally limited by these thermodynamic constraints. We conclude that hole densities can be optimized through phosphorus-rich growth conditions and high-temperature annealing, and suggest that future photovoltaic strategies should prioritize interface engineering over bulk $n$-type doping.",
+    "url": "https://arxiv.org/abs/2605.23479",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses DFT and potential energy landscape search to study intrinsic point defects in Zn3P2; explicit atoms and energetics, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "0709fa065f55",
+    "title": "Transition-state lattice modes and the breakdown of adiabatic tunneling for hydrogen and deuterium in bcc Nb",
+    "authors": [
+      "P. Graham Pritchard",
+      "James M. Rondinelli"
+    ],
+    "abstract": "arXiv:2605.23212v1 Announce Type: cross \nAbstract: Interstitial hydrogen and deuterium in body-centered-cubic metals constitute archetypal quantum tunneling systems. Their relevance has been renewed by the connection between hydrogenic tunneling in Nb and defect-induced decoherence in superconducting qubits, motivating a predictive microscopic theory. Existing theoretical treatments invoke an adiabatic separation between the light interstitial and the host lattice, an assumption whose validity has not been rigorously established for hydrogenic species. Here, we show that the experimentally measured tunnel splittings of O-trapped H and D in bcc Nb are quantitatively reproduced only within a five-dimensional (5D) Lattice-Renormalized Born-Oppenheimer (LRBO) framework. This approach treats three interstitial modes and two judiciously selected lattice modes, which includes a transition-state mode, on equal quantum footing. By recasting nested Born-Oppenheimer hierarchies within this same formalism and benchmarking against modern \\textit{ab initio} potential energy surfaces, we show that adiabatic separation of the light particle from lattice dynamics is satisfied only in the positive-muon ($\\mu^{+}$) mass limit. In contrast, tunneling for H and D is fundamentally a collective, nonadiabatic process mediated by anharmonic lattice couplings. Finally, we show that the breakdown of adiabaticity can be anticipated from simple energy estimates involving the ground-state light-particle energy evaluated at a small number of fixed lattice configurations, providing a practical criterion for assessing the validity of adiabatic tunneling theories in other systems.",
+    "url": "https://arxiv.org/abs/2605.23212",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses DFT potential surfaces and LRBO framework for quantum tunneling; satisfies (a)-(c) as atomistic method application.",
+    "key_authors": []
+  },
+  {
+    "id": "24c8d38dc33c",
+    "title": "Why is the strength of an elastomeric polymer network so low?",
+    "authors": [
+      "Shaswat Mohanty",
+      "Jose Blanchet",
+      "Zhigang Suo",
+      "Wei Cai"
+    ],
+    "abstract": "arXiv:2502.11339v2 Announce Type: replace-cross \nAbstract: Experiments have long shown that a polymer network of covalent bonds commonly ruptures at a stress that is orders of magnitude lower than the strength of the covalent bonds. Here we investigate this large reduction in strength by coarse-grained molecular dynamics simulations. We show that the network ruptures by sequentially breaking a small fraction of bonds, and that each broken bond lies on the minimum \"shortest path\". The shortest path is the path of the fewest bonds that connect two monomers at the opposite ends of the network. As the network is stretched, the minimum shortest path straightens and bears high tension set by covalent bonds, while most strands off the path deform by entropic elasticity. After a bond on the minimum shortest path breaks, the process repeats for the next minimum shortest path. As the network is stretched and bonds are broken, the scatter in lengths of the shortest paths first narrows, causing stress to rise, and then broadens, causing stress to decline. This sequential breaking of a small fraction of bonds causes the network to rupture at a stress that is orders of magnitude below the strength of the covalent bonds.",
+    "url": "https://arxiv.org/abs/2502.11339",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Coarse-grained molecular dynamics simulations of polymer network failure; satisfies (a)-(c) as atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "d053e7939e2a",
+    "title": "[ASAP] Molecular Modeling of Protein–Peptide Complexes Mimicking Factor Xa–Prothrombin Using AlphaFold-Multimer and Molecular Dynamics Simulations for Functional Prediction",
+    "authors": [
+      "Dejvid Veizaj",
+      "David A. Poole",
+      "III",
+      "Ka Lei Cheung",
+      "Jos V. Flier",
+      "Pieter H. Reitsma",
+      "Daniël Verhoef",
+      "Daan P. Geerke",
+      "Mettine H.A. Bos"
+    ],
+    "abstract": "",
+    "url": "http://dx.doi.org/10.1021/acs.jcim.5c02774",
+    "pdf_url": null,
+    "source": "JCIM",
+    "categories": [],
+    "published": "Sat, 23 May 2026 09:51:37 PDT",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Explicitly uses molecular dynamics simulations on atomic protein-peptide system, satisfying all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "96dcb260fe68",
+    "title": "Computational Design of Zinc Single‐Atom Catalysts in Lantern Organic Framework",
+    "authors": [
+      "Lam H. Nguyen",
+      "Thanh N. Truong"
+    ],
+    "abstract": "Journal of Computational Chemistry, Volume 47, Issue 14, 30 May 2026.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.70404?af=R",
+    "pdf_url": null,
+    "source": "J. Comp. Chem.",
+    "categories": [],
+    "published": "Sun, 24 May 2026 23:40:20 -0700",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Computational design of zinc single-atom catalysts using DFT or atomistic simulations; clearly satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8daa61208e7d",
+    "title": "Starting from the amorphous ground state: linking landscape thermodynamics to slow dynamics and crossover",
+    "authors": [
+      "Anshul D. S. Parmar",
+      "Simon G. Kellers",
+      "Andreas Heuer"
+    ],
+    "abstract": "arXiv:2307.10143v2 Announce Type: replace-cross \nAbstract: A microscopic understanding of low-temperature thermodynamics and its relation to dynamical features such as a fragile-to-strong crossover (FSC) remains a central challenge in glass physics. Using swap Monte Carlo combined with a full potential-energy-landscape (PEL) analysis of a non-network-forming model, we obtain equilibrium data deep into the glassy regime and identify a finite system size that simultaneously reproduces bulk behaviour for $T \\gtrsim T_g/2$ and allows complete sampling of the PEL down to its lowest-energy amorphous states. This enables the direct computation of the configurational entropy over the full temperature range of the finite system without relying on liquid-state thermodynamic integration. We find a pronounced depletion of low-energy states relative to the Gaussian regime of the PEL, which governs the low-temperature curvature of the configurational entropy. Numerically, the apparent activation energy of the diffusivity closely follows the temperature dependence of the mean inherent structure energy and exhibits a gradual crossover towards Arrhenius-like behaviour. This correlation is consistent with a trap-model description of the PEL, in which the FSC emerges naturally as a consequence of the depletion of low-energy states and thus of the lower bound of the PEL. We further argue, as illustrated analytically for a simple binomial model of the PEL, that the observability of a FSC depends on whether the depletion regime is reached within the accessible temperature window.",
+    "url": "https://arxiv.org/abs/2307.10143",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses swap Monte Carlo and potential-energy-landscape analysis on atomic model; satisfies (a)-(c) as classical atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "29f3f44c6bdf",
+    "title": "Phase-dependent electronic structure of two-dimensional Ag layers at the graphene/SiC interface",
+    "authors": [
+      "Sawani Datta",
+      "Boyang Zheng",
+      "Arpit Jain",
+      "Kathrin K\\\"uster",
+      "Joshua A. Robinson",
+      "Vincent H. Crespi",
+      "Ulrich Starke"
+    ],
+    "abstract": "arXiv:2605.23855v1 Announce Type: new \nAbstract: Intercalation at the graphene/SiC interface provides a controlled route to stabilize atomically thin layers with properties distinct from their bulk counterparts. In this platform, the structure and stability of the intercalated phase depend sensitively on the defect landscape of the starting substrate. For intercalated two-dimensional silver at the graphene/SiC interface, two phases have been observed: a phase epitaxial to the SiC lattice, Ag$_{(1)}$, readily obtained following the conventional intercalation method under ultra-high-vacuum conditions and extensively characterized, and a more densely packed phase, called Ag$_{(2)}$, which has remained largely unexplored. Here we report an in situ ultra-high-vacuum preparation method of the second phase intercalated at the graphene/SiC interface; this phase previously was prepared via high-pressure confinement heteroepitaxy. Low-energy electron diffraction shows that Ag$_{(2)}$ is rotated by 30 degree relative to the SiC lattice and forms supercells, in contrast to the $(1\\times 1)$ epitaxial relation of Ag$_{(1)}$ with SiC. High-resolution angle-resolved photoemission spectroscopy reveals a more rich Ag$_{(2)}$ band dispersion compared to the Ag$_{(1)}$. In density functional theory calculations, by defining the unfolding entropy which, in a quantified way, finds that the band structure of Ag$_{(2)}$ is more suitable to be unfolded to the SiC primitive cell, and the resulting unfolded band dispersion is in great agreement with the experimental data. We further show that the different intercalated Ag phases tune the electronic properties of the overlying quasi-free-standing graphene layer differently: compared with Ag$_{(1)}$, Ag$_{(2)}$ yields an $\\sim$1.75 times higher charge carrier density and modifies the charge-plasmon interaction of the graphene layer, indicating a change in effective screening at the interface.",
+    "url": "https://arxiv.org/abs/2605.23855",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses DFT calculations to study electronic structure of Ag layers; satisfies (a)-(c) as atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "d88c7444e2f5",
+    "title": "Correction Scheme for Molecular Total Energies From Quantum Phase Estimation Under Limited Qubit Resources",
+    "authors": [
+      "Nobuki Inoue",
+      "Hisao Nakamura"
+    ],
+    "abstract": "Journal of Computational Chemistry, Volume 47, Issue 14, 30 May 2026.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.70400?af=R",
+    "pdf_url": null,
+    "source": "J. Comp. Chem.",
+    "categories": [],
+    "published": "Sun, 24 May 2026 23:51:40 -0700",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Proposes a correction scheme for molecular total energies using quantum phase estimation, an atomistic quantum chemistry method; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "b7c5e1d6b2ad",
+    "title": "Energy-Guided Generative Modeling for Low-Energy Molecular Structure Discovery",
+    "authors": [
+      "Guikun Xu",
+      "Xiaohan Yi",
+      "Ziqiao Meng",
+      "Peilin Zhao",
+      "Yatao Bian"
+    ],
+    "abstract": "arXiv:2512.22597v2 Announce Type: replace-cross \nAbstract: Exploring molecular energy landscapes and identifying ground-state conformations are central challenges in computational chemistry. However, generating diverse low-energy conformers from molecular graphs remains expensive with traditional physics-based pipelines. Existing learning-based approaches remain fragmented: generative models capture conformational diversity but often lack reliable energy calibration, whereas deterministic predictors focus on a single structure and fail to represent ensemble variability. Here we introduce EnFlow, to our knowledge, the first energy-guided generative framework that couples flow-based conformer generation with explicit energy landscape modeling for joint conformational ensemble generation and ground-state identification. By integrating generative dynamics with a learned energy model, EnFlow guides sampling toward low-energy regions of the conformational landscape, improving structural fidelity under extremely few sampling steps while enabling energy-based ranking of generated conformations. Experiments on GEOM-QM9 and GEOM-Drugs show that EnFlow achieves strong performance in conformer generation and ground-state identification while requiring only 1--2 ODE sampling steps. Single-point GFN2-xTB evaluations further show that the learned energy scores preserve physically meaningful energetic rankings of generated conformations. These results support explicit energy landscape modeling as an effective strategy for low-energy molecular structure discovery through joint modeling of conformational ensembles and their associated energies.",
+    "url": "https://arxiv.org/abs/2512.22597",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.8,
+    "relevance_reason": "Energy-guided flow-based generative model for 3D conformer generation; validated with GFN2-xTB, tied to potential, outputs explicit atomic coordinates, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "143e970f8c55",
+    "title": "Medium-Throughput Evaluation of Transport and Optical Responses in Altermagnets",
+    "authors": [
+      "Fu Li",
+      "Bo Zhao",
+      "Vikrant Chaudhary",
+      "Shengqiao Wang",
+      "Chen Shen",
+      "Hao Wang",
+      "Hongbin Zhang"
+    ],
+    "abstract": "arXiv:2604.17071v2 Announce Type: replace \nAbstract: Altermagnets provide a promising platform for unconventional transport and optical responses beyond conventional ferromagnets and antiferromagnets. In this work, we develop a medium-throughput first-principles workflow to evaluate transport and optical properties in approximately 150 known altermagnetic compounds collected from the MAGNDATA database. By combining density functional theory, Wannier interpolation, and symmetry analysis, we investigate representative linear and nonlinear responses, including the anomalous Hall effect, magneto-optical Kerr effect, and bulk photovoltaic effect. We find that these responses are strongly constrained by magnetic symmetry and further shaped by spin-orbit coupling, band structure, and inversion symmetry breaking. Representative examples include a finite anomalous Hall response in metallic VNb3S6, giant Kerr rotation in insulating CaIrO3, and large shift current in non-centrosymmetric CuFeS2. These results establish a symmetry-guided route for identifying experimentally accessible fingerprints and functional transport properties in altermagnetic materials.",
+    "url": "https://arxiv.org/abs/2604.17071",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.8,
+    "relevance_reason": "Applies DFT, Wannier interpolation to compute transport properties in altermagnets; satisfies (a)-(c) as an atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "3c086d2fa0d9",
+    "title": "Formulation Optimization: Machine Learning and Molecular Dynamics for Accelerated Discovery",
+    "authors": [
+      "Alex K. Chew",
+      "Eric M. Collins",
+      "Mohammad Atif Faiz Afzal",
+      "Mayank Misra",
+      "Douglas J. Grzetic",
+      "David J. Giesen",
+      "Anand Chandrasekaran",
+      "Mathew D. Halls"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15003813/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-05-24",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.8,
+    "relevance_reason": "Title explicitly mentions Molecular Dynamics for formulation optimization, directly relevant atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "43a87f7f5ad4",
+    "title": "A unified ensemble-allosteric framework reconciles gain- and loss-of-function disease mutations in the IP3 receptor",
+    "authors": [
+      "Zhu, Y.",
+      "Rahman, T."
+    ],
+    "abstract": "Missense mutations in multidomain signalling proteins often produce divergent functional phenotypes despite preserved structural integrity, posing a fundamental challenge for interpreting human genetic variation. This problem is exemplified by the type 1 inositol 1,4,5-trisphosphate receptor, IP3R1, the principal neuronal IP3-gated Ca2+ release channel and a recurrent locus of pathogenic variation in ITPR1-associated ataxias and neurodevelopmental disorders. Although disease mutations cluster within the N-terminal suppression domain (SD) and IP3-binding core (IBC), how neighbouring substitutions can drive either gain- or loss-of-function remains unresolved. Here, we establish a unified ensemble-allosteric framework for IP3R1 channelopathy by integrating mutational constraint analysis, ensemble structural modelling, adaptive molecular dynamics, Markov state modelling and dynamical network analysis. We show that pathogenic variants preferentially occupy a stability-preserving regime, perturbing local sequence-structure compatibility without inducing global structural collapse. Thus, disease arises not from loss of fold, but from corruption of the conformational and allosteric logic that links ligand recognition to channel gating. The IP3-binding pocket forms a discrete multistate ensemble whose populations, physicochemical properties and kinetic connectivity are selectively remodelled by mutation. The loss-of-function variant R269W disrupts a cationic IP3-coordinating site, enriches non-permissive binding-pocket states and diverts conformational exchange through indirect kinetic routes. By contrast, the gain-of-function variant R36C preserves local pocket competence but weakens suppressor-domain restraint by rerouting long-range communication through extended, less efficient allosteric pathways. These findings reconcile opposing disease phenotypes within a single mechanistic model, showing that pathogenic variation can be encoded in altered ensemble probabilities and information flow rather than in static structural lesions.",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.05.22.727127v1",
+    "pdf_url": null,
+    "source": "bioRxiv",
+    "categories": [
+      "biophysics"
+    ],
+    "published": "2026-05-24",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses adaptive molecular dynamics and Markov state modeling on IP3 receptor, satisfying atomistic simulation criteria (a-c).",
+    "key_authors": []
+  },
+  {
+    "id": "e8221931c6c4",
+    "title": "Strain Modulated Hydrogen Storage Aspects, Optoelectronic, and Thermoelectric Energy Harvesting in a Newly Synthesized BaSiH6",
+    "authors": [
+      "Usman Saeed",
+      "Samia  Shahzadi",
+      "A. Ibrahim",
+      "Safdar Nazir"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Accepted Manuscript\nUsman Saeed, Samia Shahzadi, A. Ibrahim, Safdar Nazir\nHydrogen is widely acknowledged as a highly effective potential solution to meet the steadily increasing demand for clean and environmentally friendly energy, where hydridosilicates emerge as an efficient hydrogen storage...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00648E",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-25T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Likely uses DFT calculations for hydrogen storage properties (atomistic simulation), though abstract is brief.",
+    "key_authors": []
+  },
+  {
+    "id": "cd546790ca82",
+    "title": "PES‐trotter: A Cross‐Platform Open‐Source Application for the Analysis of Molecular Processes on 3D Potential‐Energy Landscapes",
+    "authors": [
+      "Erwan Privat",
+      "Ajay Mohan Singh Rawat",
+      "Bernardo Ballotta",
+      "Antonino Polimeno",
+      "Sergio Rampino"
+    ],
+    "abstract": "Journal of Computational Chemistry, Volume 47, Issue 14, 30 May 2026.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.70397?af=R",
+    "pdf_url": null,
+    "source": "J. Comp. Chem.",
+    "categories": [],
+    "published": "Sun, 24 May 2026 23:56:32 -0700",
+    "version": null,
+    "added_date": "2026-05-25",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.75,
+    "relevance_reason": "Introduces a cross-platform application for analyzing potential-energy landscapes from molecular processes; likely involves atomistic simulations and satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "45a4ef459c94",
+    "title": "Ambiguity in B-Site cation ordering: A Case study of the double perovskite Ca$_2$CoNbO$_6$",
+    "authors": [
+      "Svetlana A. Artiukova",
+      "Ivan V. Yatsyk",
+      "Ruslan G. Batulin",
+      "Yulia A. Deeva",
+      "Tatiana I. Chupakhina",
+      "Vladislav V. Bazhal",
+      "Alexandr I. Balitskiy",
+      "Rushana M. Eremina",
+      "Dina I. Fazlizhanova"
+    ],
+    "abstract": "arXiv:2605.23558v1 Announce Type: new \nAbstract: The ordering of cations in the B sublattice remains a challenging issue in double perovskites. In this work, a combined experimental and theoretical approach was employed to investigate the Co/Nb distribution in Ca$_2$CoNbO$_6$ and its influence on magnetic and transport properties. The density functional theory, supported by magnetic susceptibility measurements, indicates that Co adopts a high-spin Co$^{3+}$ state. No long-range magnetic ordering was observed down to low temperatures; however, the presence of short-range correlations points to the partial disorder in the Co/Nb sublattice. This interpretation is further supported by electron paramagnetic resonance, which also reveals slight oxygen nonstoichiometry. Electrical transport follows a small-polaron hopping mechanism with an activation energy of 0.25 eV. The Seebeck coefficient reaches 0.4 mV/K at 600 K.",
+    "url": "https://arxiv.org/abs/2605.23558",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Combines DFT and experiments to investigate B-site cation ordering in double perovskite; uses explicit atomistic calculations, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "735fc08bc9b9",
+    "title": "Glass-like anomalies and unconventional thermoelectric transport in chimney ladder crystals",
+    "authors": [
+      "Srinivas V. Mandyam",
+      "Weicen Dong",
+      "Xiaoxian Yan",
+      "Binru Zhao",
+      "Yasong Wu",
+      "Chunhao Su",
+      "Elen Duverger-Nedellec",
+      "Junfa Lin",
+      "Tianlong Xia",
+      "Zhiying Zhao",
+      "Xi Chen",
+      "Jiong Yang",
+      "Jie Ma",
+      "Hui Xing",
+      "F. Malte Grosche",
+      "Matteo Baggioli"
+    ],
+    "abstract": "arXiv:2503.03155v3 Announce Type: replace \nAbstract: Nowotny chimney ladder (NCL) crystals present physical properties in between the contrasting paradigms of ideal crystal and amorphous solid, making them promising candidates for thermoelectric applications due to their inherently low thermal conductivity. In this work, we report an extensive experimental characterization of the thermodynamic and thermoelectric transport properties of a large class of NCL materials, focusing on the intermetallic compound Ru$_2$Sn$_{3}$. We show that, despite their ordered crystalline structure, the heat capacity of these NCL compounds deviates from the Debye model at low temperatures and exhibits a boson-peak-like glassy anomaly in the range of $8$-$14$ K. By combining experimental measurements with density functional theory (DFT) and \\emph{ab initio} molecular dynamics (AIMD) simulations, we attribute the microscopic origin of this glassy behavior to extremely low-energy optical phonons that universally emerge from the chimney ladder sublattice structure. Crucially, their coupling to acoustic phonons induces hybridization and avoided crossings, leading to strongly modified acoustic modes that directly contribute to the anomaly as well, similar to the case of other thermoelectric materials such as clathrates. Additionally, the measured thermal conductivity and the thermoelectric response present distinct anomalous glass-like features that strongly correlate with the dynamics of the low-lying optical phonons revealed by simulations. In particular, the electric resistivity displays an extended linear in $T$ behavior and an anomalously large $T^2$ contribution at low temperature. We propose a simple theoretical framework, based on electrons scattering with overdamped phononic modes, that qualitative explains both these features.",
+    "url": "https://arxiv.org/abs/2503.03155",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Combines experiments with DFT and AIMD simulations to explain glassy anomalies; satisfies (a)-(c) as atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "224418f20b08",
+    "title": "High-Efficiency Deep Blue Single-Gaussian Europium(II) Emitters and their Emitter-Host Interactions",
+    "authors": [
+      "Mahmoud Soleimani",
+      "Paulius Imbrasas",
+      "Jan-Michael Mewes",
+      "Felix Kaden",
+      "Stephanie Anna Buchholtz",
+      "Karl Leo",
+      "Sebastian Schellhammer",
+      "Carsten Rothe",
+      "Sebastian Reineke"
+    ],
+    "abstract": "arXiv:2604.06470v2 Announce Type: replace-cross \nAbstract: Eu(II) complexes are attractive emitters for deep-blue organic light-emitting diodes (OLEDs) due to their narrow, parity-allowed 4f-5d emission; however, their implementation in vacuum-processed OLEDs has remained limited. Here, we introduce a new molecular design concept for Eu(II) emitters, in which a crown-ether ligand is combined with carborate anions to define the coordination environment and improve steric shielding of the europium center. Based on this design, we present two emitters that combine narrow deep-blue photoluminescence with quantum yields approaching 90% and sufficient thermal stability for vacuum deposition. As the excited state dynamics of this emitter class are different from most conventional OLED emitters and the pathway to maximum luminescence efficiency in thin films is not fully established, we study interactions between Eu(II) complexes and the host environment, based on density functional theory and time-resolved experiments. We identify steric shielding of the Eu(II) core and energetic confinement of the excited 5d electron, defined by molecular design as key factors governing efficient luminescence, providing a roadmap for rational design of Eu(II) emitters. Together, these results establish a basis for higher-efficiency and deeper blue OLEDs incorporating Eu(II) emitters.",
+    "url": "https://arxiv.org/abs/2604.06470",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.app-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 25 May 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-05-25",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Uses DFT to study Eu(II) emitter-host interactions; satisfies (a)-(c) as atomistic simulation application.",
+    "key_authors": []
+  }
+]
