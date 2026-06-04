@@ -1,0 +1,1664 @@
+[
+  {
+    "id": "10c46887202d",
+    "title": "Turbulence teaches equivariance to neural networks",
+    "authors": [
+      "Ryley McConkey",
+      "Julia Balla",
+      "Jeremiah Bailey",
+      "Ali Backour",
+      "Elyssa Hofgard",
+      "Tommi Jaakkola",
+      "Abigail Bodner",
+      "Tess Smidt"
+    ],
+    "abstract": "arXiv:2602.04695v2 Announce Type: replace-cross \nAbstract: We show that the rotational nature of turbulence affects how neural networks learn mappings between quantities governed by the Navier-Stokes equations. We train super-resolution models at different wall-normal locations in a turbulent channel flow, where anisotropy varies naturally, and test their generalization to new coordinate frames, new anisotropy regimes, and a higher Reynolds number. Our findings inform both the design of equivariant machine learning models for turbulence and our understanding of how turbulence shapes what those models learn. First, mappings that better respect the rotational symmetries of the Navier-Stokes equations generalize better to new flows. Coordinate-frame generalization is therefore a key part of the broader generalization problem, since turbulent flows contain a wide range of local orientations. Second, turbulence itself partially teaches equivariance to learned mappings, an effect we call implicit data augmentation. The effect strengthens with dataset size and with isotropy, since a more isotropic dataset samples more orientations under which the Navier-Stokes equations are covariant. Implicit augmentation is also scale-dependent, with smaller scales exhibiting lower equivariance error. This scale-dependency is consistent with Kolmogorov's hypothesis of local isotropy. Third, enforcing equivariance as an architectural inductive bias is the limit of these effects: an exactly equivariant network outperforms unconstrained CNNs on all generalization tests, with roughly an order of magnitude fewer parameters. We expect these effects to apply broadly to learned mappings between tensorial flow quantities, making them relevant to most machine learning applications in turbulence.",
+    "url": "https://arxiv.org/abs/2602.04695",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.flu-dyn",
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Tommi Jaakkola, Tess Smidt",
+    "key_authors": [
+      "Tommi Jaakkola",
+      "Tess Smidt"
+    ]
+  },
+  {
+    "id": "14e474f258a5",
+    "title": "Derivative Informed Learning of Exchange-Correlation Functionals",
+    "authors": [
+      "Eike S. Eberhard",
+      "Luca A. Thiede",
+      "Abdul Aldossary",
+      "Andreas Burger",
+      "Nicholas Gao",
+      "Vignesh Bhethanabotla",
+      "Al\\'an Aspuru-Guzik",
+      "Stephan G\\\"unnemann"
+    ],
+    "abstract": "arXiv:2606.04279v1 Announce Type: new \nAbstract: Machine-learned (ML) exchange-correlation (XC) functionals aim to replace human-designed density functional approximations by learning directly from reference data, but they still do not consistently outperform traditional $\\mathcal{O}(N^4)$-scaling hybrid functionals. We study a hybrid-distillation setting in which $\\mathcal{O}(N^3)$-scaling ML-XC functionals are trained to reproduce B3LYP/def2-SVP targets. We introduce Derivative Informed XC-Loss (DI-Loss), a loss that incorporates additional information from the reference hybrid functional by supervising first and second derivatives of the energy on the Grassmannian of admissible density matrices. Rather than only matching the self-consistent fixed point, DI-Loss aligns the local first- and second-order response of the learned functional with that of the target functional. Across four evaluated architectures, DI-Loss consistently improves the main energy metrics. Averaged uniformly across architectures, the total-energy MAE decreases by 66% relative to energy and density supervision alone. The density-sensitive mean-field energy metric $E_\\rho$ improves from $1.2$ to $0.8$ mEh on average, while dipole and $\\mathcal{L}_2$ density errors do not improve uniformly. We further show that densities from the distilled functionals reduce hybrid-functional SCF iterations by up to 50%. In downstream TDDFT calculations, Hessian supervision improves excited-state predictions, with XCdiff reducing the mean excitation-energy MAE by 19 - 35%.",
+    "url": "https://arxiv.org/abs/2606.04279",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "quant-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Al\\'an Aspuru-Guzik",
+    "key_authors": [
+      "Al\\'an Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "11f0d3e019a3",
+    "title": "Reconciling Causality and Non-Equilibrium Thermodynamics with Hamiltonian Causal Models",
+    "authors": [
+      "Dario Rancati",
+      "Max Welling",
+      "Francesco Locatello"
+    ],
+    "abstract": "arXiv:2606.04822v1 Announce Type: new \nAbstract: Causal modeling of physical temporal phenomena must handle interventions that act along trajectories, nonstationary induced laws, path-dependent effects, and feedback mediated by dynamics, all challenging in standard causal models. We introduce Hamiltonian Causal Models (HCMs), a trajectory-level framework in which observed variables interact with local environments and interventions act as controls of Hamiltonian mechanisms. HCMs separate immutable equations of motion from intervenable mechanisms and define causal effects as discrepancies between interventional path laws. A key motivation for HCMs is their natural interface with non-equilibrium thermodynamics. Entropy production quantifies the irreversibility of a process and is a central causal observable: it is estimable from data and witnesses causal effects along the system's evolution that are invisible to endpoint and cumulative versions of the standard average treatment effect. As in physics, cause and effect are not primitives of the relation between two random variables but arise from the non-invertibility of the thermodynamic arrow. With this, our paper reconciles the language of statistical causal models and non-stationary thermodynamics, offering new tools to describe causality in a wide range of physical systems.",
+    "url": "https://arxiv.org/abs/2606.04822",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Max Welling",
+    "key_authors": [
+      "Max Welling"
+    ]
+  },
+  {
+    "id": "b9cb9c1bc635",
+    "title": "Data-driven exploration of AB2X4 (X = O, S, Se, Te) spinel chemical space",
+    "authors": [
+      "Panyalak Detrattanawichai",
+      "Zhenzhu Li",
+      "Hyunsoo Park",
+      "Kinga O. Mastej",
+      "Aron Walsh"
+    ],
+    "abstract": "Panyalak Detrattanawichai, Zhenzhu Li, Hyunsoo Park, Kinga O. Mastej, Aron Walsh\nThe crystal structure of the mineral spinel is adopted by hundreds of known materials. We use machine learning to explore how many spinels remain to be discovered.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/DD/D6DD00064A",
+    "pdf_url": null,
+    "source": "Digital Discovery",
+    "categories": [],
+    "published": "2026-04-16T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Aron Walsh",
+    "key_authors": [
+      "Aron Walsh"
+    ]
+  },
+  {
+    "id": "efc16a7d42c7",
+    "title": "RAISE: a self-driving laboratory for interfacial property formulation discovery",
+    "authors": [
+      "Mohammad Nazeri",
+      "Sheldon Mei",
+      "Jeffrey Watchorn",
+      "Alex Zhang",
+      "Erin Ng",
+      "Tao Wen",
+      "Abhijoy Mandal",
+      "Kevin Golovin",
+      "Alán Aspuru-Guzik",
+      "Frank Gu"
+    ],
+    "abstract": "Mohammad Nazeri, Sheldon Mei, Jeffrey Watchorn, Alex Zhang, Erin Ng, Tao Wen, Abhijoy Mandal, Kevin Golovin, Alán Aspuru-Guzik, Frank Gu\nRAISE is the first autonomous closed-loop system linking formulations to surface wettability to discover formulations from user-defined goals.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/DD/D5DD00531K",
+    "pdf_url": null,
+    "source": "Digital Discovery",
+    "categories": [],
+    "published": "2026-03-30T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alán Aspuru-Guzik",
+    "key_authors": [
+      "Alán Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "9d4c3db85ff4",
+    "title": "Origins of the selectivity of late transition metals of Group 9 and Group 10 for oxidative addition of C–H vs. C–Cl bonds",
+    "authors": [
+      "Yehao Qiu",
+      "Alistair J. Sterling",
+      "Kevin K. Ikeda",
+      "Alexander Zech",
+      "Matthias Loipersberger",
+      "Diptarka Hait",
+      "Martin Head-Gordon",
+      "John F. Hartwig"
+    ],
+    "abstract": "Chem. Sci., 2026, 17,10441-10455\nYehao Qiu, Alistair J. Sterling, Kevin K. Ikeda, Alexander Zech, Matthias Loipersberger, Diptarka Hait, Martin Head-Gordon, John F. Hartwig\nThe selectivity of Pd, Pt, Rh, and Ir complexes for the oxidative additions of carbon–hydrogen vs. carbon–halogen bonds is controlled by differences in thermodynamics, electronic properties, and degrees of distortions in the transition states.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/SC/D6SC00090H",
+    "pdf_url": null,
+    "source": "Chemical Science",
+    "categories": [],
+    "published": "2026-04-08T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Martin Head-Gordon",
+    "key_authors": [
+      "Martin Head-Gordon"
+    ]
+  },
+  {
+    "id": "27a287644b59",
+    "title": "FragmentFlow: Scalable Transition State Generation for Large Molecules",
+    "authors": [
+      "Ron Shprints",
+      "Peter Holderrieth",
+      "Juno Nam",
+      "Rafael Gomez-Bombarelli",
+      "Tommi Jaakkola"
+    ],
+    "abstract": "Transition states (TSs) are central to understanding and quantitatively predicting chemical reactivity and reaction mechanisms. Although traditional TS generation methods are computationally expensive, recent generative modeling approaches have enabled chemically meaningful TS prediction for relatively small molecules. However, these methods fail to generalize to practically relevant reaction substrates because of distribution shifts induced by increasing molecular sizes. Furthermore, TS geometries for larger molecules are not available at scale, making it infeasible to train generative models from scratch on such molecules. To address these challenges, we introduce FragmentFlow: a divide-and-conquer approach that trains a generative model to predict TS geometries for the reactive core atoms, which define the reaction mechanism. The full TS structure is then reconstructed by re-attaching substituent fragments to the predicted core. By operating on reactive cores, whose size and composition remain relatively invariant across molecular contexts, FragmentFlow mitigates distribution shifts in generative modeling. Evaluated on a new curated dataset of reactions involving reactants with up to 33 heavy atoms, FragmentFlow correctly identifies 90% of TSs while requiring 30% fewer saddle-point optimization steps than classical initialization schemes. These results point toward scalable TS generation for high-throughput reactivity studies.",
+    "url": "https://openreview.net/forum?id=rhZeVAXGSq",
+    "pdf_url": "https://openreview.net/pdf/cea392902aa617d4b86f7f2677597e24257bc0da.pdf",
+    "source": "OpenReview: ICLR 2026 Workshop FM4Science Poster",
+    "categories": [
+      "Transition states",
+      "flow matching",
+      "generative modeling",
+      "chemical reactions",
+      "small molecules"
+    ],
+    "published": "2026-02-09",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Rafael Gomez-Bombarelli, Tommi Jaakkola",
+    "key_authors": [
+      "Rafael Gomez-Bombarelli",
+      "Tommi Jaakkola"
+    ]
+  },
+  {
+    "id": "0c5639828fcf",
+    "title": "(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting Models",
+    "authors": [
+      "Maksim Zhdanov",
+      "Ana Lucic",
+      "Max Welling",
+      "Jan-Willem van de Meent"
+    ],
+    "abstract": "We introduce Mosaic, a probabilistic weather forecasting model that addresses two sources of spectral degradation in ML-based weather prediction: (1) training to predict the ensemble mean deterministically and (2) compressive encoding creating an information bottleneck. Mosaic combines learned functional perturbations for ensemble forecasting with block-sparse attention, a hardware-aligned formulation that shares keys and values across spatially adjacent queries, enabling each block to dynamically attend to the most relevant regions. By capturing arbitrarily long-range dependencies at linear cost, Mosaic processes high-resolution weather data without compression. Mosaic at 1.5° resolution matches or outperforms models trained on 0.25° data and achieves state-of-the-art results among 1.5° models on key upper-air variables, with individual ensemble members exhibiting near-perfect spectral alignment across all resolved frequencies.",
+    "url": "https://openreview.net/forum?id=u0KcfOaRc7",
+    "pdf_url": "https://openreview.net/pdf/0c9e01455eb8489f5bb2a082953c06f7031bca49.pdf",
+    "source": "OpenReview: ICLR 2026 Workshop FM4Science Poster",
+    "categories": [
+      "sparse attention",
+      "weather forecasting",
+      "uncertainty quantification"
+    ],
+    "published": "2026-02-08",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Max Welling",
+    "key_authors": [
+      "Max Welling"
+    ]
+  },
+  {
+    "id": "7fb6cf323851",
+    "title": "Zatom-1: A Multimodal Flow Foundation Model for 3D Molecules and Materials",
+    "authors": [
+      "Alex Morehead",
+      "Miruna Cretu",
+      "Antonia Panescu",
+      "Rishabh Anand",
+      "Maurice Weiler",
+      "Ty Perez",
+      "Samuel M Blau",
+      "Steven Farrell",
+      "Wahid Bhimji",
+      "Anubhav Jain",
+      "Hrushikesh Sahasrabuddhe",
+      "Pietro Lio",
+      "Tommi Jaakkola",
+      "Rafael Gomez-Bombarelli",
+      "Rex Ying",
+      "N. Benjamin Erichson",
+      "Michael W. Mahoney"
+    ],
+    "abstract": "General-purpose 3D chemical modeling encompasses molecules and materials, requiring both generative and predictive capabilities. However, most existing AI approaches are optimized for a single domain (molecules or materials) and a single task (generation or prediction), which limits representation sharing and transfer. We introduce Zatom-1, the first end-to-end, fully open-source foundation model that unifies generative and predictive learning of 3D molecules and materials. Zatom-1 is a Transformer trained with a multimodal flow matching objective that jointly models discrete atom types and continuous 3D geometries. This approach supports scalable pretraining with predictable gains as model capacity increases, while enabling fast and stable sampling. We use joint generative pretraining as a universal initialization for downstream multi-task prediction of properties, energies, and forces. Empirically, Zatom-1 matches or outperforms specialized baselines on both generative and predictive benchmarks, while reducing the generative inference time by more than an order of magnitude. Our experiments demonstrate positive predictive transfer between chemical domains from joint generative pretraining: modeling materials during pretraining improves molecular property prediction accuracy.",
+    "url": "https://openreview.net/forum?id=60PQ9fQFew",
+    "pdf_url": "https://openreview.net/pdf/98ba04db3894418a6a9647cd15ee3fbbb66a5230.pdf",
+    "source": "OpenReview: ICLR 2026 Workshop FM4Science Poster",
+    "categories": [
+      "Foundation Model",
+      "Scientific Machine Learning",
+      "Chemistry",
+      "3D Molecules",
+      "3D Materials"
+    ],
+    "published": "2026-02-02",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Anubhav Jain, Tommi Jaakkola, Rafael Gomez-Bombarelli",
+    "key_authors": [
+      "Anubhav Jain",
+      "Tommi Jaakkola",
+      "Rafael Gomez-Bombarelli"
+    ]
+  },
+  {
+    "id": "3280fcf01f48",
+    "title": "Enforcing Constraints in Molecular and Crystalline Generative Models via Physics-Constrained Flow Matching",
+    "authors": [
+      "Pengfei Cai",
+      "Utkarsh Utkarsh",
+      "Nofit Segal",
+      "Akshay Subramanian",
+      "Katharina Jager",
+      "Elton Pan",
+      "Alan Edelman",
+      "Christopher Vincent Rackauckas",
+      "Rafael Gomez-Bombarelli"
+    ],
+    "abstract": "Pretrained flow-based generative models for molecules and crystals often violate hard geometric constraints at inference time, despite being trained on valid data. Herein, we extend Physics-Constrained Flow Matching (PCFM) to atomistic generative models and demonstrate it in two representative settings: (i) enforcing bond length, aromatic planarity, E/Z double bond stereochemistry, and R/S tetrahedral chirality constraints for conformer sampling, and (ii) enforcing lattice system constraints in crystal structure prediction. On GEOM-DRUGS, PCFM enforces bond length bounds and aromatic planarity while preserving ET-Flow recall and precision, and improves stereochemical pass rates by up to $14.5$%. On MP-20, conditional lattice correction with PCFM reduces unit cell mismatches and increases FlowMM's crystal structure match rate to $74.3$%. Overall, PCFM turns pretrained flow matching models into constrained samplers for molecular and crystalline generation, without finetuning or architectural changes, with broader applications to molecular and materials design currently underway.",
+    "url": "https://openreview.net/forum?id=QVQjDmIFg0",
+    "pdf_url": "https://openreview.net/pdf/d00d53fdc43aec50a161f12c03ffdf8a254cfcad.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "Generative models",
+      "flow matching",
+      "constraints",
+      "molecular conformer generation",
+      "crystal structure prediction"
+    ],
+    "published": "2026-02-02",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Rafael Gomez-Bombarelli",
+    "key_authors": [
+      "Rafael Gomez-Bombarelli"
+    ]
+  },
+  {
+    "id": "8318a012fa0f",
+    "title": "Boltzmann Generators for Condensed Matter via Riemannian Flow Matching",
+    "authors": [
+      "Emil Hoffmann",
+      "Leon Klein",
+      "Frank Noe",
+      "Jutta Rogal",
+      "Maximilian Schebek"
+    ],
+    "abstract": "Sampling equilibrium distributions is fundamental to statistical mechanics. While flow matching has emerged as a state-of-the-art paradigm for generative modeling, its potential for scalable equilibrium sampling in condensed-phase systems remains largely unexplored.\nWe address this by incorporating the periodicity inherent to these systems into continuous normalizing flows using Riemannian flow matching.\nThe high computational cost of exact density estimation intrinsic to continuous normalizing flows is mitigated by using Hutchinson's trace estimator, utilizing a crucial bias-correction step based on cumulant expansion to render the stochastic estimates suitable for rigorous thermodynamic reweighting.\nOur approach is validated on monatomic ice, demonstrating the ability to train on systems of unprecedented size  and obtain highly accurate free energy estimates without the need for traditional multistage estimators.",
+    "url": "https://openreview.net/forum?id=FTIxxfPLSG",
+    "pdf_url": "https://openreview.net/pdf/a625d30bbbd3b62c935f55477a69d88586456136.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Spotlight",
+    "categories": [
+      "flow-matching",
+      "boltzmann-generators",
+      "condensed-matter",
+      "normalizing-flows",
+      "equilibrium-sampling"
+    ],
+    "published": "2026-02-02",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Frank Noe",
+    "key_authors": [
+      "Frank Noe"
+    ]
+  },
+  {
+    "id": "8e1df3c25609",
+    "title": "A Comparative Study of Molecular Dynamics Approaches for Simulating Ionic Conductivity in Solid Lithium Electrolytes",
+    "authors": [
+      "Dounia Shaaban Kabakibo",
+      "Félix Therrien",
+      "Yoshua Bengio",
+      "Michel Côté",
+      "Hongyu Guo",
+      "Homin Shin",
+      "Alex Hernández-García"
+    ],
+    "abstract": "Accurate prediction of ionic conductivity is critical for the design of high-performance solid-state electrolytes in next-generation batteries. We benchmark molecular dynamics (MD) approaches for computing ionic conductivity in 21 lithium solid electrolytes for which experimental ionic conductivity has been previously reported in the literature. In particular, we compare simulations driven by density functional theory (DFT) and by universal machine-learning interatomic potentials (uMLIPs), namely a MACE foundation model. We find comparable performance between DFT and MACE, despite MACE on one GPU more than 350 times faster than DFT on a 64-CPU node. The framework developed here is designed to enable systematic comparisons with additional uMLIPs and fine-tuned models in future work.",
+    "url": "https://openreview.net/forum?id=EdQKhJVNNg",
+    "pdf_url": "https://openreview.net/pdf/8d8e2c298fc4281df42e1415223be919c6f96340.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "Solid-state",
+      "batteries",
+      "electrolytes",
+      "ionic conductivity",
+      "molecular dynamics",
+      "energy storage",
+      "crystal",
+      "inorganics."
+    ],
+    "published": "2026-02-02",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Yoshua Bengio",
+    "key_authors": [
+      "Yoshua Bengio"
+    ]
+  },
+  {
+    "id": "717f2a2b81c3",
+    "title": "FragmentFlow: Scalable Transition State Generation for Large Molecules",
+    "authors": [
+      "Ron Shprints",
+      "Peter Holderrieth",
+      "Juno Nam",
+      "Rafael Gomez-Bombarelli",
+      "Tommi Jaakkola"
+    ],
+    "abstract": "Transition states (TSs) are central to understanding and quantitatively predicting chemical reactivity and reaction mechanisms. Although traditional TS generation methods are computationally expensive, recent generative modeling approaches have enabled chemically meaningful TS prediction for relatively small molecules. However, these methods fail to generalize to practically relevant reaction substrates because of distribution shifts induced by increasing molecular sizes. Furthermore, TS geometries for larger molecules are not available at scale, making it infeasible to train generative models from scratch on such molecules. To address these challenges, we introduce FragmentFlow: a divide-and-conquer approach that trains a generative model to predict TS geometries for the reactive core atoms, which define the reaction mechanism. The full TS structure is then reconstructed by re-attaching substituent fragments to the predicted core. By operating on reactive cores, whose size and composition remain relatively invariant across molecular contexts, FragmentFlow mitigates distribution shifts in generative modeling. Evaluated on a new curated dataset of reactions involving reactants with up to 33 heavy atoms, FragmentFlow correctly identifies 90% of TSs while requiring 30% fewer saddle-point optimization steps than classical initialization schemes. These results point toward scalable TS generation for high-throughput reactivity studies.",
+    "url": "https://openreview.net/forum?id=zzuac6k3Ec",
+    "pdf_url": "https://openreview.net/pdf/bc0ce54e31e3cfa067ab5e8d0511c782f008d4d2.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "Flow matching",
+      "transition state",
+      "distribution shift",
+      "chemical reactions",
+      "generative modeling"
+    ],
+    "published": "2026-02-01",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Rafael Gomez-Bombarelli, Tommi Jaakkola",
+    "key_authors": [
+      "Rafael Gomez-Bombarelli",
+      "Tommi Jaakkola"
+    ]
+  },
+  {
+    "id": "cfda120f3530",
+    "title": "Reasoning-to-Simulation: An Agentic Framework for Discovery of Electrolyte Materials",
+    "authors": [
+      "Jurģis Ruža",
+      "Rafael Gomez-Bombarelli"
+    ],
+    "abstract": "The discovery of novel metal-ion battery electrolytes is hindered by the vast combinatorial space of solvent-salt formulations and by the complexity of physics-based validation. We propose an agentic framework that leverages Large Language Models (LLMs) as autonomous orchestrators for closed-loop materials discovery. Our system features a Discovery Agent that performs multi-generational composition optimization and a Molecular Dynamics (MD) simulation Assistant that translates natural language prompts into executable liquid electrolyte molecular dynamics simulations. By integrating generative reasoning with automated simulation verification, our framework enables an autonomous \"reasoning-to-simulation\" cycle that identifies high-performance electrolytes. This work demonstrates the ability of agentic LLMs to bridge the gap between chemical intuition and rigorous computational materials science by discovering a high-performance liquid electrolyte solvent formulation with computationally measured 106 mS/cm ionic conductivity.",
+    "url": "https://openreview.net/forum?id=MEXl18VhBL",
+    "pdf_url": "https://openreview.net/pdf/837f62f17b0f4210dbc1260e813b7fd1ebabd467.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "LLM",
+      "large language models",
+      "agentic AI",
+      "materials discovery",
+      "materials optimization",
+      "agents",
+      "battery materials"
+    ],
+    "published": "2026-02-01",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Rafael Gomez-Bombarelli",
+    "key_authors": [
+      "Rafael Gomez-Bombarelli"
+    ]
+  },
+  {
+    "id": "eb71dd9123c1",
+    "title": "SynReason: Enhancing Synthesis Reasoning via Reinforcement Learning Experimental Feedback",
+    "authors": [
+      "Elton Pan",
+      "Thorben Prein",
+      "Juno Nam",
+      "Xiaochen Du",
+      "Soojung Yang",
+      "Pengfei Cai",
+      "Jennifer L.M. Rupp",
+      "Rafael Gomez-Bombarelli",
+      "Elsa Olivetti"
+    ],
+    "abstract": "Materials discovery efforts have produced millions of candidate inorganic compounds, yet identifying practical synthesis routes remains a major bottleneck. While the reasoning capabilities of LLMs are promising, their reasoning traces can result in poor synthesis prediction accuracy due to a misalignment with experimental data. We introduce Reinforcement Learning Experimental Feedback (RLEF), a simple\nRL post-training approach that samples multiple candidate completions per prompt, scores them with an experimental alignment reward, followed by group-normalized advantages and regularized updates with a KL penalty to a reference model. We demonstrate our method on materials precursor recommendation task: given a target composition, generate a ranked list of precursor sets that match experimental syntheses. Using RLEF, we develop SYNREASON, a synthesis planning LLM model that is capable of chemical reasoning. Across different model sizes, RLEF redefines the accuracy–speed Pareto front. A 4B model post-trained with RLEF outperforms even base models that are 8× larger across all Top-K metrics. Interestingly, contrary to other RL post-training methods, RLEF shortens reasoning traces (instead of lengthening) while simultaneously improving performance. This reasoning compression suggests that RLEF induces more selective and task-relevant chemical reasoning in LLMs.",
+    "url": "https://openreview.net/forum?id=1kLMpYT9AW",
+    "pdf_url": "https://openreview.net/pdf/87f713abfc1fd454281717311b031194a2de95fc.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "Reasoning",
+      "Reinforcement Learning",
+      "Experimental Feedback",
+      "LLMs"
+    ],
+    "published": "2026-01-30",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Rafael Gomez-Bombarelli",
+    "key_authors": [
+      "Rafael Gomez-Bombarelli"
+    ]
+  },
+  {
+    "id": "5660853aa4e0",
+    "title": "Learning Hamiltonian Flow Maps: Mean Flow Consistency for Large-Timestep Molecular Dynamics",
+    "authors": [
+      "Winfried Ripken",
+      "Michael Plainer",
+      "Gregor Lied",
+      "Thorben Frank",
+      "Oliver T. Unke",
+      "Stefan Chmiela",
+      "Frank Noe",
+      "Klaus Robert Muller"
+    ],
+    "abstract": "Simulating the long-time evolution of Hamiltonian systems is limited by the small timesteps required for stable numerical integration. To overcome this constraint, we introduce a framework to learn *Hamiltonian Flow Maps* by predicting the *mean* phase-space evolution over a chosen time span $\\Delta t$, enabling stable large-timestep updates far beyond the stability limits of classical integrators. To this end, we impose a *Mean Flow* consistency condition for time-averaged Hamiltonian dynamics. Unlike prior approaches, this allows training on independent phase-space samples without access to future states, avoiding expensive trajectory generation. Validated across diverse Hamiltonian systems, our method in particular improves upon molecular dynamics simulations using machine-learned force fields (MLFF). Our models maintain comparable training and inference cost, but support significantly larger integration timesteps while trained directly on widely-available *trajectory-free* MLFF datasets.",
+    "url": "https://openreview.net/forum?id=GyYTRfQEsP",
+    "pdf_url": "https://openreview.net/pdf/e9d3d43f77bf974137c0a8ddcee82418c5da39ee.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Spotlight",
+    "categories": [
+      "Hamiltonian Mechanics",
+      "Molecular Dynamics",
+      "Integration",
+      "Flow Maps",
+      "Mean Flow"
+    ],
+    "published": "2026-01-30",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Frank Noe, Klaus Robert Muller",
+    "key_authors": [
+      "Frank Noe",
+      "Klaus Robert Muller"
+    ]
+  },
+  {
+    "id": "8e4319b97283",
+    "title": "Global Plane Waves From Local Gaussians: Periodic Charge Densities in a Blink",
+    "authors": [
+      "Jonas Elsborg",
+      "Felix Aertebjerg",
+      "Luca Thiede",
+      "Alan Aspuru-Guzik",
+      "Tejs Vegge",
+      "Arghya Bhowmik"
+    ],
+    "abstract": "We introduce ELECTRAFI, a fast, end-to-end differentiable model for predicting periodic charge densities in crystalline materials. ELECTRAFI constructs anisotropic Gaussians in real space and exploits their closed-form Fourier transforms to analytically evaluate plane-wave coefficients via the Poisson summation formula. This formulation delegates non-local and periodic behavior to analytic transforms, enabling reconstruction of the full periodic charge density with a single inverse FFT. By avoiding explicit real-space grid probing, periodic image summation, and spherical harmonic expansions, ELECTRAFI matches or exceeds state-of-the-art accuracy across periodic benchmarks while being up to $633\\times$ faster than the strongest competing method, reconstructing crystal charge densities in a fraction of a second. When used to initialize DFT calculations, ELECTRAFI reduces total DFT compute cost by up to $\\sim$20 \\%, whereas slower models negate savings due to high inference times. Our results show that accuracy and inference cost jointly determine end-to-end DFT speedups, and motivate our focus on efficiency.",
+    "url": "https://openreview.net/forum?id=dVZ7XgwcJ2",
+    "pdf_url": "https://openreview.net/pdf/69aa75f4d59507b7c8b7e6de69711c31f8aebcba.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "charge density",
+      "gnn",
+      "periodic",
+      "materials",
+      "crystals",
+      "dft"
+    ],
+    "published": "2026-01-27",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alan Aspuru-Guzik",
+    "key_authors": [
+      "Alan Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "1f2cb8be3491",
+    "title": "MutaGen: Implicitly Guided Protein Evolution from Ranked Feedback via Pair-Based Discrete Flow Matching",
+    "authors": [
+      "Itamar Chinn",
+      "Paolo L.B. Fischer",
+      "Michael A Sun",
+      "Tim Holtgrefe",
+      "Ilan Mitnikov",
+      "Mo Zhou",
+      "David Magrefty",
+      "Sara Zantou",
+      "Josephine K. Carscadden",
+      "Kaiyi Jiang",
+      "Young Joon Kim",
+      "Jen Ben Arye",
+      "Jonathan S. Gootenberg",
+      "Omar Abudayyeh",
+      "Regina Barzilay"
+    ],
+    "abstract": "Machine learning-directed evolution (MLDE) aims at democratizing protein engineering, enabling optimization of any protein with any assay at accessible cost by drastically reducing the screening of thousands of protein sequences. In this work, we introduce a novel discrete flow-matching (DFM) method, MutaGen, trained to iteratively mutate protein sequences towards high-fitness regions of the protein fitness landscape, without relying on noisy in-silico fitness predictions. Training minimizes a token-level cross-entropy flow-matching loss to learn a vector field of improvement from ranked sequence pairs alone. Across realistic screening budgets, MutaGen enables multi-mutational protein optimization with minimal data (as low as 20 sequences per round of evolution) while bypassing the need for an explicit fitness predictor. We validate our approach on standard in silico benchmarks (GFP and AAV)  and experimentally in a four-round campaign on NanoLuc, achieving an >80-fold increase in luminescence over the wild-type.",
+    "url": "https://openreview.net/forum?id=jJNBVoYpO3",
+    "pdf_url": "https://openreview.net/pdf/5adf3d519283a6f667741278c4701041b2eec78e.pdf",
+    "source": "OpenReview: GEM 2026",
+    "categories": [
+      "Protein engineering",
+      "directed evolution",
+      "discrete flow matching",
+      "machine learning–guided protein evolution"
+    ],
+    "published": "2026-02-06",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Regina Barzilay",
+    "key_authors": [
+      "Regina Barzilay"
+    ]
+  },
+  {
+    "id": "cb936dbd45bf",
+    "title": "Accelerating Protein Molecular Dynamics Simulation with DeepJump",
+    "authors": [
+      "Allan Dos Santos Costa",
+      "Manvitha Ponnapati",
+      "Dana Rubin",
+      "Tess Smidt",
+      "JOSEPH JACOBSON"
+    ],
+    "abstract": "Unraveling the dynamical motions of biomolecules is essential for bridging their structure and function, yet it remains a major computational challenge. Molecular dynamics (MD) simulation provides a detailed depiction of biomolecular motion, but its high-resolution temporal evolution comes at significant computational cost, limiting its applicability to timescales of biological relevance. Deep learning approaches have emerged as promising solutions to overcome these computational limitations by learning to predict long-timescale dynamics. However, generalizable kinetics models for proteins remain largely unexplored, and the fundamental limits of achievable acceleration while preserving dynamical accuracy are poorly understood. In this work, we fill this gap with DeepJump, an Euclidean-Equivariant Flow Matching-based model for predicting protein conformational dynamics across multiple temporal scales. We train DeepJump on trajectories of the diverse proteins of mdCATH, systematically studying our model's performance in generalizing to long-term dynamics of fast-folding proteins and characterizing the trade-off between computational acceleration and prediction accuracy. We demonstrate the application of DeepJump to ab initio folding, showcasing prediction of folding pathways and native states. Our results demonstrate that DeepJump achieves significant $\\approx$1000$\\times$ computational acceleration while effectively recovering long-timescale dynamics, providing a stepping stone for enabling routine simulation of proteins.",
+    "url": "https://openreview.net/forum?id=R4zMVuLzHY",
+    "pdf_url": "https://openreview.net/pdf/30c8420235ba277df54d8a2e01779120ee43e539.pdf",
+    "source": "OpenReview: GEM 2026",
+    "categories": [
+      "protein",
+      "folding",
+      "dynamics",
+      "molecular dynamics acceleration",
+      "equivariant deep learning",
+      "flow matching"
+    ],
+    "published": "2026-02-06",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Tess Smidt",
+    "key_authors": [
+      "Tess Smidt"
+    ]
+  },
+  {
+    "id": "a89bd899cb04",
+    "title": "Autoregressive Boltzmann Generators",
+    "authors": [
+      "Danyal Rehman",
+      "Charlie B. Tan",
+      "Yoshua Bengio",
+      "Joey Bose",
+      "Alexander Tong"
+    ],
+    "abstract": "Efficient sampling of molecular systems at thermodynamic equilibrium is a hallmark challenge in statistical physics. This challenge has driven the development of Boltzmann Generators (BGs), which allow rapid generation of uncorrelated equilibrium samples by combining a generative model with exact likelihoods and an importance sampling correction. However, modern BGs predominantly rely on normalizing flows (NFs), which either suffer from limited expressivity due to strict invertibility constraints (discrete time) or computationally expensive likelihoods (continuous time). In this paper, we propose Autoregressive Boltzmann Generators (ArBG), a novel autoregressive modelling framework that overcomes these limitations by departing from the flow-based BG paradigm. ArBG circumvents the topological constraints of flows and enables sequential inference-time interventions, while offering enhanced scalability by leveraging architectures effective in Large Language Models. We empirically demonstrate that ArBG leads to significant improvements over flow-based models across all benchmarks, but particularly in larger peptide systems such as the 10-residue Chignolin. Furthermore, we introduce Robin, a 132 million parameter transferable model trained with the ArBG framework which improves over the previous state-of-the-art, reducing the zero-shot energy error, $\\mathcal{E}$-$\\mathcal{W}_2$, on 8-residue systems by over $60$\\%.",
+    "url": "https://openreview.net/forum?id=tyQ3hBeY7L",
+    "pdf_url": "https://openreview.net/pdf/c2f386a2516fb8eebdbfab7a8c7bf13b719fe10b.pdf",
+    "source": "OpenReview: GEM 2026",
+    "categories": [
+      "Boltzmann Generators",
+      "AI for Science",
+      "Molecules",
+      "Peptides"
+    ],
+    "published": "2026-02-02",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Yoshua Bengio",
+    "key_authors": [
+      "Yoshua Bengio"
+    ]
+  },
+  {
+    "id": "be5ec6ba8c27",
+    "title": "Robust Stochastic Gradient Posterior Sampling with Lattice Based Discretisation",
+    "authors": [
+      "Zier Mensch",
+      "Lars Holdijk",
+      "Samuel Duffield",
+      "Maxwell Aifer",
+      "Patrick J. Coles",
+      "Max Welling",
+      "Miranda C. N. Cheng"
+    ],
+    "abstract": "Stochastic-gradient MCMC methods enable scalable Bayesian posterior sampling but often suffer from sensitivity to minibatch size and gradient noise. To address this, we propose Stochastic Gradient Lattice Random Walk (SGLRW), an extension of the Lattice Random Walk discretization. Unlike conventional Stochastic Gradient Langevin Dynamics (SGLD), SGLRW introduces stochastic noise only through the off-diagonal elements of the update covariance; this yields greater robustness to minibatch size while retaining asymptotic correctness. Furthermore, as comparison we analyze a natural analogue of SGLD utilizing gradient clipping. Experimental validation on Bayesian regression and classification demonstrates that SGLRW remains stable in regimes where SGLD fails, including in the presence of heavy-tailed gradient noise, and matches or improves predictive performance.",
+    "url": "https://openreview.net/forum?id=xYjHt1qoCp",
+    "pdf_url": "https://openreview.net/pdf/9205b710b5c2b5c7686561fee6789faed08a4ca0.pdf",
+    "source": "OpenReview: ICLR 2026 DeLTa Workshop Poster",
+    "categories": [
+      "Stochastic Gradient",
+      "SGLD",
+      "Bayesian",
+      "Lattice Random Walk",
+      "SGLRW"
+    ],
+    "published": "2026-02-09",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Max Welling",
+    "key_authors": [
+      "Max Welling"
+    ]
+  },
+  {
+    "id": "8293834ed853",
+    "title": "RFG: Test-Time Scaling for Diffusion Large Language Model Reasoning with Reward-Free Guidance",
+    "authors": [
+      "Tianlang Chen",
+      "Minkai Xu",
+      "Jure Leskovec",
+      "Stefano Ermon"
+    ],
+    "abstract": "Diffusion Large Language Models (dLLMs) have shown great potential in language modeling, yet enhancing their capacity for complex reasoning remains a critical challenge. For autoregressive language models, this is typically addressed by guiding the reasoning process step by step using Process Reward Models (PRMs), which necessitate dense annotation for intermediate steps. However, this approach cannot be applied to dLLMs, since their intermediate generations are partially masked, non-sequential states rather than complete prefixes. Here we propose Reward-Free Guidance (RFG), a training-free framework that guides the reasoning trajectory of dLLMs without explicit process reward models. We provide theoretical justification that a process reward for partially masked states can be parameterized by the log-likelihood ratio of a policy and a reference model, which can be instantiated with off-the-shelf dLLM checkpoints without additional training. Extensive experiments demonstrate that RFG consistently outperforms various state-of-the-art post-trained dLLM baselines, achieving absolute accuracy gains of up to 9.2%.",
+    "url": "https://openreview.net/forum?id=GYMp3lmZFL",
+    "pdf_url": "https://openreview.net/pdf/fe8685138cdfa74e15b3fac9bb1f1700441b3832.pdf",
+    "source": "OpenReview: ICLR 2026 DeLTa Workshop Poster",
+    "categories": [
+      "diffusion large language model",
+      "test-time scaling"
+    ],
+    "published": "2026-02-03",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Stefano Ermon",
+    "key_authors": [
+      "Stefano Ermon"
+    ]
+  },
+  {
+    "id": "f6d0cdb75989",
+    "title": "Discrete Adjoint Schrödinger Bridge Sampler",
+    "authors": [
+      "Wei Guo",
+      "Yuchen Zhu",
+      "Xiaochen Du",
+      "Juno Nam",
+      "Yongxin Chen",
+      "Rafael Gomez-Bombarelli",
+      "Guan-Horng Liu",
+      "Molei Tao",
+      "Jaemoo Choi"
+    ],
+    "abstract": "Learning discrete neural samplers is challenging due to the lack of gradients and combinatorial complexity. While stochastic optimal control (SOC) and Schrödinger bridge (SB) provide principled solutions, efficient SOC solvers like adjoint matching (AM), which excel in continuous domains, remain unexplored for discrete spaces. We bridge this gap by revealing that the core mechanism of AM is state-space agnostic, and introduce **discrete ASBS**, a unified framework that extends AM and adjoint Schrödinger bridge sampler (ASBS) to discrete spaces. Theoretically, we analyze the optimality conditions of the discrete SB problem and its connection to SOC, identifying a necessary cyclic group structure on the state space to enable this extension. Empirically, discrete ASBS achieves competitive sample quality with significant advantages in training efficiency and scalability.",
+    "url": "https://openreview.net/forum?id=6gVec6LNtu",
+    "pdf_url": "https://openreview.net/pdf/96d409097dc40c26e96bf26c02e71b08b8d9678e.pdf",
+    "source": "OpenReview: ICLR 2026 DeLTa Workshop Poster",
+    "categories": [
+      "Schrödinger Bridge",
+      "Stochastic Optimal Control",
+      "Neural Sampling",
+      "Adjoint Matching",
+      "Continuous-time Markov Chain"
+    ],
+    "published": "2026-02-03",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Rafael Gomez-Bombarelli",
+    "key_authors": [
+      "Rafael Gomez-Bombarelli"
+    ]
+  },
+  {
+    "id": "e90444e105a2",
+    "title": "A Diffusive Classification Loss for Learning Energy-based Generative Models",
+    "authors": [
+      "RuiKang OuYang",
+      "Louis Grenioux",
+      "José Miguel Hernández-Lobato"
+    ],
+    "abstract": "Score-based generative models have recently achieved remarkable success. While they are usually parameterized by the score, an alternative way is to use a series of time-dependent energy-based models (EBMs), where the score is obtained from the negative input-gradient of the energy. Crucially, EBMs can be leveraged not only for generation, but also for tasks such as compositional sampling or building Boltzmann Generators via Monte Carlo methods. However, training EBMs remains challenging. Direct maximum likelihood is computationally prohibitive due to the need for nested sampling, while score matching, though efficient, suffers from mode blindness. To address these issues, we introduce the Diffusive Classification (DiffCLF) objective, a simple method that avoids blindness while remaining computationally efficient. DiffCLF reframes EBM learning as a supervised classification problem across noise levels, and can be seamlessly combined with standard score-based objectives. We validate the effectiveness of DiffCLF by comparing the estimated energies against ground truth in analytical Gaussian mixture cases, and by applying the trained models to tasks such as model composition and Boltzmann Generator sampling. Our results show that DiffCLF enables EBMs with higher fidelity and broader applicability than existing approaches.",
+    "url": "https://openreview.net/forum?id=7YSISbLvB0",
+    "pdf_url": "https://openreview.net/pdf/5acede33d970a203f9b1e2f2324da05b8a447999.pdf",
+    "source": "OpenReview: ICLR 2026 DeLTa Workshop Poster",
+    "categories": [
+      "Energy-based Models",
+      "Diffusion Models",
+      "Stochastic Interpolants"
+    ],
+    "published": "2026-01-30",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: José Miguel Hernández-Lobato",
+    "key_authors": [
+      "José Miguel Hernández-Lobato"
+    ]
+  },
+  {
+    "id": "b8e58298bb8c",
+    "title": "Non-covalent Interactions at cm$^{-1}$ Accuracy: Data Efficient Physics-Informed Distillation for Machine Learning Interatomic Potentials",
+    "authors": [
+      "Yulin Shen",
+      "Shahzad Akram",
+      "Louis Primeau",
+      "Gen Zu",
+      "Konstantinos D. Vogiatzis",
+      "Yang Zhang",
+      "Adrian Del Maestro"
+    ],
+    "abstract": "arXiv:2606.05127v1 Announce Type: new \nAbstract: Foundation models in atomistic machine learning encode interaction physics across diverse atomic environments, but whether that structure can be transferred when building specialist potentials at quantum-chemical accuracy remains open. Here we show that knowledge distillation from a pretrained universal machine-learning interatomic potential (MLIP), followed by coupled-cluster fine-tuning with single and double excitations and perturbative triples [CCSD(T)], transfers not only low-cost labels but a physically meaningful prior on interaction length scales, anisotropy, and the repulsive-dispersive balance, which CCSD(T) data then sharpens to quantum-chemical accuracy. For He--benzene, fine-tuning with 30% of the CCSD(T) data outperforms direct training using the full 80%; a 60% reduction in the high-fidelity compute budget. A symmetry-adapted perturbation theory (SAPT)-informed adaptive short-range/long-range architecture further lowers the validation MAE from 0.75 1/cm to 0.49 1/cm. Across a circumarene series of polycyclic aromatic hydrocarbons (PAHs), swapping the MLIP teacher under an otherwise identical pipeline changes the coronene error by an order of magnitude while leaving the larger PAHs stable, direct evidence that distillation transfers physical structure, not labels alone. Together, these results identify the choice of pretrained teacher as a primary design axis for data-efficient quantum-chemical-accuracy potentials, alongside architecture and training protocol.",
+    "url": "https://arxiv.org/abs/2606.05127",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops data-efficient distillation for MLIPs with CCSD(T) fine-tuning; clearly satisfies (a)-(c) as MLIP development.",
+    "key_authors": []
+  },
+  {
+    "id": "05ac2bf87c9b",
+    "title": "Stein Kernelized Molecular Dynamics for Active Learning of Interatomic Potentials",
+    "authors": [
+      "Joanna Zou",
+      "Fraser Birks",
+      "Dallas Foster",
+      "Youssef Marzouk"
+    ],
+    "abstract": "arXiv:2606.04100v1 Announce Type: cross \nAbstract: Machine learning interatomic potentials (MLIPs) enable efficient and accurate atomistic simulations but depend critically on the quality and diversity of the training data. We introduce Stein kernelized molecular dynamics (SKMD), an enhanced sampling method that uses interacting particle dynamics to acquire informative training configurations for the active learning and fine-tuning of MLIPs. SKMD corresponds to a stochastic variant of Stein variational gradient descent that is adapted for molecular dynamics by incorporating asynchronous particle updates and a kernel of global atomic descriptors, which provides a symmetry-aware measure of configurational similarity. Unlike other enhanced samplers used in molecular dynamics, SKMD preserves the Boltzmann distribution as the asymptotic distribution of the dynamics. This property enforces a balance between the exploration of diverse configurations and attraction toward high-probability regions of the energy landscape. We further propose an approach to efficient online data acquisition using an adaptive stopping criterion that selects non-redundant training data over the course of simulation. We demonstrate SKMD for the active learning of a neural network model of the M\\\"uller-Brown potential and the fine-tuning of a MACE interatomic potential for alanine dipeptide. Compared to active learning baselines, our method achieves higher model accuracy in fewer training iterations with the same number of acquired training samples.",
+    "url": "https://arxiv.org/abs/2606.04100",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Enhanced sampling active learning for MLIPs using Stein kernelized MD; satisfies (a)-(c) with atomistic MD and MLIP development.",
+    "key_authors": []
+  },
+  {
+    "id": "522321dd9c48",
+    "title": "Advancing Cation–π Interaction Modeling: Development of Novel Force Field Models",
+    "authors": [
+      "Richa Khatiwada",
+      "Sunil Kumar",
+      "Pengfei Li"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15004290/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-06-04",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Clearly force field development for cation-π interactions, satisfying (a)-(c) with classical force field methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "f957cd9b25c7",
+    "title": "Neural-network Deep Potential models for lithium adsorption on C-N-O-modified carbon materials",
+    "authors": [
+      "Sergey Sozykin",
+      "Valery  Beskachko"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Accepted Manuscript\nSergey Sozykin, Valery Beskachko\nMachine-learned interatomic potentials are developed for C-N-O-Li systems that are relevant to lithium-ion battery anode materials. The training database has been constructed from calculations derived from spin-polarized density functional theory,...",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP00570E",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-06-04T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops neural-network interatomic potentials (Deep Potential) for Li-C-N-O systems with DFT data; explicit atoms, MLIP development (a-c satisfied).",
+    "key_authors": []
+  },
+  {
+    "id": "c070ab8045f7",
+    "title": "Digital discovery of large-scale optoelectronic materials via MPNICE machine-learning force fields",
+    "authors": [
+      "Hadi Abroshan",
+      "H. Shaun Kwak",
+      "David J. Giesen",
+      "John L. Weber",
+      "Mathew D. Halls"
+    ],
+    "abstract": "Phys. Chem. Chem. Phys., 2026, Advance Article\nHadi Abroshan, H. Shaun Kwak, David J. Giesen, John L. Weber, Mathew D. Halls\nMPNICE enables high-throughput screening of OLED materials by decoupling expensive DFT from geometry optimization. It provides a robust framework for sampling conformational ensembles, bridging the gap between static calculations and experiments.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/CP/D6CP01027J",
+    "pdf_url": null,
+    "source": "PCCP",
+    "categories": [],
+    "published": "2026-05-27T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLIP (MPNICE) development and application for OLED materials; explicit atoms, MD sampling, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "c1944b491cda",
+    "title": "ReaxFF molecular dynamics study of the early oxidation behavior and mechanisms of grain boundaries in polycrystalline nickel",
+    "authors": [],
+    "abstract": "Publication date: 25 July 2026\nSource: Computational Materials Science, Volume 272\nAuthor(s): Bo Song, Zhihong Li, Min Zheng, Xingchun Wei, Zengfeng Gao, Zongxiao Zhu, Weihua Chen",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626003472?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "ReaxFF molecular dynamics study of oxidation at grain boundaries; explicit atomistic simulation satisfying (a)–(c).",
+    "key_authors": []
+  },
+  {
+    "id": "06d11e0f33cf",
+    "title": "Electron-Ion Path Integral Monte Carlo with Hard Core",
+    "authors": [
+      "Riccardo Fantoni"
+    ],
+    "abstract": "arXiv:2606.04667v1 Announce Type: cross \nAbstract: We performed numerical (restricted) path integral Monte Carlo experiments on metallic Hydrogen from first principles. We study a quantum two component plasma where one component is made of pointwise particles of negative unitary charge and the other is made of charged hard spheres of positive unitary charge. We study both the additive mixture and a nonadditive mixture where we only keep a hard core between unlike species. We specialize to the case of the electron-proton plasma with a 1:1 ratios between the molar fraction of the two species. We measured thermodynamic and structural properties of the plasma. From an analysis of the structure we see a transition from a metallic Hydrogen phase, to a molecular Hydrogen phase as the temperature is lowered. As expected at high density the correlations are diminished.",
+    "url": "https://arxiv.org/abs/2606.04667",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph",
+      "physics.comp-ph",
+      "physics.plasm-ph",
+      "quant-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses path integral Monte Carlo to simulate electron-proton plasma; satisfies (a)-(c) as atomistic simulation method application.",
+    "key_authors": []
+  },
+  {
+    "id": "30d32f512c18",
+    "title": "Mechanical bistability and hysteresis in graphene-CNT hybrid systems: from atomistic simulations to macroscale structural responses",
+    "authors": [
+      "Mingda Ding",
+      "Nanami Sakurai",
+      "Man Shen",
+      "Taiki Inoue",
+      "Takahisa Matsuzaki",
+      "Takuo Mizuno",
+      "Kento Suzuki",
+      "John Isaac Enriquez",
+      "Harry Handoko Halim",
+      "Yuji Hamamoto",
+      "Yuta Nishina",
+      "Hiroshi Y. Yoshikawa",
+      "Yoshitada Morikawa",
+      "Yoshihiro Kobayashi"
+    ],
+    "abstract": "arXiv:2606.04504v1 Announce Type: new \nAbstract: Hybrid systems composed of graphene (Gr) and carbon nanotubes (CNTs), such as films and aerogels, have attracted broad attention for applications in electronics, mechanics, energy, and environmental science. Since the microstructures of Gr-CNT hybrids strongly affect their properties, it is essential to establish mechanical principles that govern these structures. In this study, we investigated the structural stability and mechanical behavior of Gr-CNT hybrid systems by combining molecular dynamics (MD) simulations and nanoindentation experiments. MD simulations of stacked Gr-CNT structures, in which two Gr layers confine CNTs between them, identified the energetically stable configurations and their governing parameters, i.e., intertube spacing, CNT diameter, and wall number. Specifically, under certain conditions, the structures exhibit mechanical bistability with two stable configurations: adhesion and separation of the Gr layers, arising from the competition between interlayer van der Waals attraction and elastic deformation of Gr and CNTs. Simulated loading--unloading curves display hysteresis and energy dissipation related to the stable configurations. In addition, reduced graphene oxide (rGO)-CNT hybrid films were experimentally fabricated as macroscopic assemblies of the unit structures modeled in the simulations. Atomic force microscopy-based nanoindentation measurements on the rGO-CNT films exhibit clear hysteresis and higher dissipation energy compared with pure rGO, in good agreement with the simulation results. These results provide valuable insights into Gr-CNT hybrid systems and offer guidance for designing microstructures with enhanced properties for advanced applications.",
+    "url": "https://arxiv.org/abs/2606.04504",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Molecular dynamics simulations of graphene-CNT hybrids combined with experiments; explicit atoms and MD method, satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "7ed2a074d957",
+    "title": "SLUSCHI-UP: A Web Infrastructure for SLUSCHI Melting-Temperature Calculations Using Universal Machine-Learning Interatomic Potentials",
+    "authors": [
+      "Qi-Jun Hong"
+    ],
+    "abstract": "arXiv:2606.04973v1 Announce Type: new \nAbstract: Melting temperature is a critical property for high-temperature materials design, but first-principles melting calculations based on finite-temperature molecular dynamics can require substantial computational resources. The SLUSCHI method reduces this cost by using small-cell solid--liquid coexistence simulations and statistical analysis of many short molecular-dynamics trajectories. Here I present SLUSCHI-UP, a deployed web service for atomistic melting-temperature estimation that couples the SLUSCHI workflow to selectable pretrained universal machine-learning interatomic potentials (uMLIPs) and asynchronous GPU execution. Users submit a crystal structure through a Materials Project identifier or POSCAR input, select a uMLIP backend, and launch a queued melting calculation without local installation of simulation software. The current production interface supports mace-mpa-0-medium, Allegro-OAM-L, and DPA-3.2-5M-OMat24, while beta deployments expose additional models. On the compact MeltBench-10 validation set, the three production backends produce raw coexistence mean absolute errors in the range of approximately 178--327 K. Across the broader set of materials tested so far in MeltBench, the current deployed-job snapshot contains 119 raw uMLIP entries, and PBE-corrected Allegro-OAM-L predictions reach a mean absolute error of approximately 166 K. These values should be interpreted as screening-level infrastructure validation rather than a definitive ranking of uMLIPs. The results demonstrate that SLUSCHI-UP provides a practical, provenance-aware deployment layer between fast scalar melting-temperature predictors and much more expensive first-principles coexistence calculations, while retaining the usual limitations of uMLIP transferability, finite-size sampling, and high-temperature trajectory stability.",
+    "url": "https://arxiv.org/abs/2606.04973",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Satisfies (a)-(c); uses universal MLIPs for atomistic melting MD simulations via SLUSCHI method.",
+    "key_authors": []
+  },
+  {
+    "id": "837ceedfbeba",
+    "title": "Exchange-mediated exciton splitting and linear dichroism in monolayer transition metal dichalcogenide induced by ferroelectric substrates",
+    "authors": [
+      "Sudipta Kundu",
+      "Felipe H. da Jornada"
+    ],
+    "abstract": "arXiv:2606.05093v1 Announce Type: cross \nAbstract: Valley-polarized excitons in two-dimensional transition metal dichalcogenides (TMDs) offer a promising platform for quantum applications, yet the addressability and decoherence of these states remain fundamental challenges. Here, by developing a first-principles electrostatic embedding approach and performing large-scale GW plus Bethe-Salpeter equation calculations, we reveal novel excitons that emerge in TMD monolayers when supported by a ferroelectric twisted bilayer hBN substrate. We predict two competing low-energy excitons whose ordering depends on the dielectric environment: optically dark, charge-transfer excitons, and quasi-one-dimensional Wannier excitons with linear optical dichroism. The spatial localization of Wannier excitons, together with intervalley exchange interactions in monolayer TMDs, splits valley-degenerate excitons by about 3~meV without external magnetic fields. Our ab initio calculations clarify the role of the interfacial twist angle and the spatial localization of fringe fields, establishing design rules for engineering long-lived two-level systems in TMD monolayers supported by ferroelectric substrates.",
+    "url": "https://arxiv.org/abs/2606.05093",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Satisfies (a)-(c); first-principles GW/BSE calculations on explicit TMD atomic structures with method development.",
+    "key_authors": []
+  },
+  {
+    "id": "db2bacd906d0",
+    "title": "Data-efficient machine-learning of complex Fe-Mo intermetallics using domain knowledge of chemistry and crystallography",
+    "authors": [
+      "Mariano Forti",
+      "Alesya Malakhova",
+      "Yury Lysogorskiy",
+      "Wenhao Zhang",
+      "Jean-Claude Crivello",
+      "Jean-Marc Joubert",
+      "Ralf Drautz",
+      "Thomas Hammerschmidt"
+    ],
+    "abstract": "arXiv:2507.19660v2 Announce Type: replace \nAbstract: Atomistic simulations of multi-component systems require accurate descriptions of interatomic interactions to resolve details in the energy of competing phases. A particularly challenging case are topologically close-packed (TCP) phases with close energetic competition of numerous different site occupations even in binary systems like Fe-Mo. In this work, machine learning (ML) models are presented that overcome this challenge by using features with domain knowledge of chemistry and crystallography. The resulting data-efficient ML models need only a small set of training data of simple TCP phases $A$15, $\\sigma$, $\\chi$, $\\mu$, $C$14, $C$15, $C$36 with 2-5 WS to reach robust and accurate predictions for the complex TCP phases $R$, $M$, $P$, $\\delta$ with 11-14 WS. Several ML models with kernel-ridge regression, multi-layer perceptrons, and random forests, are trained on less than 300 DFT calculations for the simple TCP phases in Fe-Mo. The performance of these ML models is shown to improve systematically with increased utilization of domain knowledge. The convex hulls of the $R$, $M$, $P$ and $\\delta$ phase in the Fe-Mo system are predicted with uncertainties of 20-25 meV/atom and show very good agreement with DFT verification. Complementary X-ray diffraction experiments and Rietveld analysis are carried out for an Fe-Mo R-phase sample. The measured WS occupancy is in excellent agreement with the predictions of our ML model using the Bragg Williams approximation at the same temperature.",
+    "url": "https://arxiv.org/abs/2507.19660",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "MLIP development for Fe-Mo intermetallics using DFT training data; satisfies (a)-(c) with explicit atoms and atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "fb6f449aa74b",
+    "title": "Percolation Criticality of Amorphous-Amorphous Transitions in Compressed Glasses",
+    "authors": [
+      "Julien Perradin",
+      "Simona Ispas",
+      "Ricardo V. Paredes",
+      "Anwar Hasmy",
+      "Bernard Hehlen"
+    ],
+    "abstract": "arXiv:2606.04748v1 Announce Type: cross \nAbstract: The low-to-high-density transition in compressed silica glass is investigated using percolation theory. Large-scale molecular dynamics simulations of SiO$_2$ glasses, with system sizes of up to 10$^6$ atoms and pressures ranging from 0 to 35 GPa, were carried out to investigate the emergence of structural motifs and their growth to system-spanning length scales under compression. On this basis, we introduced long-range descriptors that complement conventional local and medium-range structural measures. The results reveal critical percolation transitions of SiO$_Z$-SiO$_Z$ clusters with increasing coordination number $Z$. The critical exponents slightly deviate from the standard (random) correlation, a behavior that seems to be more pronounced for higher coordinated polyhedra than for tetrahedra, suggesting a possible rigidity percolation mechanism. SiSi$_z$-SiSi$_z$ clusters were also analyzed using the non-bonded approach. Bonded and non-bonded approaches complement each other in a particularly illuminating way for describing pressure-induced structural transformations and common mechanisms shared by bonded glasses, such as SiO$_2$, and non-bonded glasses, such as amorphous ice.",
+    "url": "https://arxiv.org/abs/2606.04748",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Large-scale molecular dynamics simulations of SiO2 glasses; explicit atoms and dynamics, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "d6c9a53a68d3",
+    "title": "Loss of the Central Region Reshapes the Dynamic Landscape of the Cellular Prion Protein and Its Plasma Membrane Interaction",
+    "authors": [
+      "Rigoli, M.",
+      "Faccioli, P.",
+      "Biasini, E."
+    ],
+    "abstract": "Prion diseases are fatal neurodegenerative disorders driven by the conversion of the cellular prion protein (PrP) into a misfolded, pathogenic conformer. Beyond serving as a substrate for prion propagation, PrP is also thought to mediate neurotoxic signaling. Within this framework, the central region of PrP has emerged as a critical regulatory element. Notably, deletion of residues 105-125 ({Delta}CR) leads to spontaneous neurodegeneration in vivo and induces abnormal ionic currents in cultured cells and primary neurons, indicating that this region is essential for controlling the toxicity of the N-terminal domain. Current models propose that the N-terminus functions as a toxic effector whose activity is modulated by the C-terminal domain. This intramolecular interplay is likely central to the physiological role of PrP, and its disruption may contribute to neurodegeneration. Here, we investigated how deletion of the central region affects the structure and dynamics of full-length PrP. We generated membrane-bound models of full-length, diglycosylated wild-type (WT) PrP and the neurotoxic {Delta}CR mutant, and compared their conformational dynamics using molecular dynamics simulations. The two proteins exhibited markedly distinct behaviours. WT PrP adopted a more compact conformational ensemble of the N-terminal domain, consistent with stabilizing interactions between the flexible N-terminus and the globular C-terminal domain. In contrast, the {Delta}CR variant displayed more extended conformations and a substantial redistribution of intramolecular contacts, including the loss of specific interactions between the disordered N-terminal tail and the globular domain. This altered structural organization was accompanied by an increased propensity of the N-terminal domain to approach the membrane surface in the mutant. Our results provide a molecular model in which the central region engages intramolecular interaction networks that ultimately help regulate N-terminal residence at the plasma membrane, offering mechanistic insight into how CR deletion shifts the conformational ensemble toward membrane-associated states that may be associated with neurotoxic activity.",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.05.15.725371v2",
+    "pdf_url": null,
+    "source": "bioRxiv",
+    "categories": [
+      "biochemistry"
+    ],
+    "published": "2026-06-03",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "MD simulations of prion protein with membrane; satisfies (a)-(c) with explicit atoms and MD.",
+    "key_authors": []
+  },
+  {
+    "id": "f038a8cd0464",
+    "title": "First-principles calculation of the superconducting ${T}_{c}$ in superhard B-C-N metals",
+    "authors": [
+      "Adam D. Smith",
+      "Yogesh K. Vohra",
+      "Cheng-Chien Chen"
+    ],
+    "abstract": "Author(s): Adam D. Smith, Yogesh K. Vohra, and Cheng-Chien Chen\nWe perform first-principles electron-phonon calculations to evaluate the superconducting transition temperature ${T}_{c}$ for ternary superhard metals ${\\mathrm{B}}_{2}{\\mathrm{C}}_{3}\\mathrm{N}$ and ${\\mathrm{B}}_{4}{\\mathrm{C}}_{5}{\\mathrm{N}}_{3}$. An ambient-pressure ${T}_{c}$ of $∼40\\phantom{\\r…\n[Phys. Rev. B 113, 214509] Published Wed Jun 03, 2026",
+    "url": "http://link.aps.org/doi/10.1103/k8ss-6lpq",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-06-03T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "First-principles DFT electron-phonon calculation of superconducting Tc; satisfies (a) explicit atoms, (b) DFT method, (c) application to predict property.",
+    "key_authors": []
+  },
+  {
+    "id": "1c9a02c8541a",
+    "title": "Implementation of analytical excited state gradients for open-shell systems in time-dependent density functional theory plus tight binding (TDDFT+TB) method",
+    "authors": [],
+    "abstract": "Excited state potential energy surfaces are essential for understanding molecular behavior in excited states, including electronic transitions, reaction dynamics, and other photochemical and photophysical properties. When excited state minima or reaction dynamics are of interest, the gradients of the total excited state energy are required. Time-dependent density functional theory (TDDFT) is a widely used method, as it provides reasonably accurate excited state energies compared to experiment; however, its computational cost scales unfavorably with molecule size. To address this limitation, methods that maintain TDDFT accuracy while reducing the computational cost are needed. The time-dependent density functional theory plus tight binding (TDDFT+TB) method offers comparable accuracy to TDDFT with significantly improved efficiency. Previously, Havenridge et al. implemented TDDFT+TB analytical excited state gradients for closed-shell molecules. This was achieved using a Lagrangian-based approach by taking analytical derivatives of the excitation energies with respect to nuclear coordinates. In this study, we extend this implementation to handle open-shell molecular systems. Our unrestricted TDDFT+TB analytical gradient implementation follows the framework of the unrestricted TDDFT analytical gradient code in the Amsterdam Density Functional engine within the Amsterdam Modeling Suite. Building on the existing closed-shell implementation, we focus on key modifications to the coupling matrix and the incorporation of spin indices in the gradient expressions required for open-shell systems. We validate the method through calculations on various molecular systems, comparing gradient accuracy, emission energies, and computational cost to demonstrate that it delivers reliable results for open-shell molecular excited states with improved efficiency compared to the standard TDDFT method.",
+    "url": "https://pubs.aip.org/aip/jcp/article/164/21/214117/3393558/Implementation-of-analytical-excited-state",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 03 Jun 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Method development for analytical excited state gradients in TDDFT+TB, a semi-empirical quantum chemistry method that operates on explicit atoms; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "24f72d90608a",
+    "title": "Topology-Aware Neural Graph Operator (TANGO) for Material Constitutive Laws",
+    "authors": [
+      "Arman Moussavi",
+      "Sinan Keten"
+    ],
+    "abstract": "This work introduces TANGO (Topology-Aware Neural Graph Operator), a graph-based operator learning framework for predicting nonlinear mechanical response in disordered material networks. TANGO represents material networks as graphs, exemplified with polymer gels where nodes encode polymer chains or crosslinkers and edges distinguish chemical bonds from physical entanglements. Strain-conditioned, attention-based message passing propagates topological and local structural information, producing graph embeddings that a decoder maps to continuous stress-strain functions. Trained on coarse-grained molecular dynamics simulations of polymer networks, TANGO accurately predicts full stress-strain curves, recovers key mechanical properties (elastic modulus, ultimate strength, work to failure), and generalizes to unseen chain lengths. Inference is over five orders of magnitude faster than simulations, enabling high-throughput evaluation of network designs. These results demonstrate that topology-aware operator learning can efficiently capture nonlinear, connectivity-dependent mechanics in disordered materials, bridging graph representation learning and constitutive modeling.",
+    "url": "https://openreview.net/forum?id=Qxs3Jb2Vhe",
+    "pdf_url": "https://openreview.net/pdf/a4d94ceb3356c44ad026b2cffc8c318919d6248d.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "graph neural networks",
+      "neural operator learning",
+      "constitutive modeling",
+      "polymer networks",
+      "coarse-grained molecular dynamics",
+      "disordered materials"
+    ],
+    "published": "2026-02-02",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Neural operator trained on CG-MD simulations; directly uses atomistic simulation data.",
+    "key_authors": []
+  },
+  {
+    "id": "ca882a4ab9be",
+    "title": "Energy-Weighted Flow Matching: Unlocking Continuous Normalizing Flows for Efficient and Scalable Boltzmann Sampling",
+    "authors": [
+      "Niclas Dern",
+      "Lennart Redl",
+      "Sebastian Pfister",
+      "Marcel Kollovieh",
+      "David Lüdke",
+      "Stephan Günnemann"
+    ],
+    "abstract": "Sampling from unnormalized target distributions, e.g. Boltzmann distributions $\\mu_{\\text{target}}(x) \\propto \\exp(-E(x)/T)$, is fundamental to many scientific applications yet computationally challenging due to complex, high-dimensional energy landscapes. Existing approaches applying modern generative models to Boltzmann distributions either require large datasets of samples drawn from the target distribution or, when using only energy evaluations for training, cannot efficiently leverage the expressivity of advanced architectures like continuous normalizing flows that have shown promise for molecular sampling. To address these shortcomings, we introduce Energy-Weighted Flow Matching (EWFM), a novel training objective enabling continuous normalizing flows to model Boltzmann distributions using only energy function evaluations. Our objective reformulates conditional flow matching via importance sampling, allowing training with samples from arbitrary proposal distributions. Based on this objective, we develop two algorithms: iterative EWFM (iEWFM), which progressively refines proposals through iterative training, and annealed EWFM (aEWFM), which additionally incorporates temperature annealing for challenging energy landscapes. On benchmark systems, including challenging 55-particle Lennard-Jones clusters, our algorithms demonstrate sample quality competitive with established energy-only methods while requiring up to three orders of magnitude fewer energy evaluations.",
+    "url": "https://openreview.net/forum?id=JYP1FWXqxO",
+    "pdf_url": "https://openreview.net/pdf/ebb52e2b92f665c54566afd1776e49bbac2e6f33.pdf",
+    "source": "OpenReview: ICLR 2026 DeLTa Workshop Poster",
+    "categories": [
+      "Boltzmann generators",
+      "Flow Matching",
+      "Unnormalised densities",
+      "Boltzmann distributions"
+    ],
+    "published": "2026-02-08",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Energy-Weighted Flow Matching for Boltzmann sampling; uses energy evaluations on Lennard-Jones clusters (explicit atoms); satisfies (a)-(c) as it develops a method for atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "bfa18a41dab5",
+    "title": "An Algebraic-Diagrammatic Construction for Vertex Corrections to the $GW$ Self-Energy",
+    "authors": [
+      "Antoine Marie",
+      "Johannes T\\\"olle",
+      "Pierre-Fran\\c{c}ois Loos"
+    ],
+    "abstract": "arXiv:2606.04285v1 Announce Type: new \nAbstract: The $G3W2$ approximation -- the second-order self-energy beyond $GW$ -- is known to violate some fundamental analytic properties of the self-energy. In particular, its lack of positive semi-definiteness leads to unphysical features such as negative spectral functions. In this work, we reformulate the $G3W2$ approximation within the algebraic-diagrammatic construction (ADC) framework. The resulting ADC-$G3W2$ formalism enforces the same analytic form as the exact self-energy, namely a sum-over-state representation, and, consequently, guarantees positive semi-definiteness. Starting from the $GW$ self-energy, we construct a hierarchy of ADC-based approximations of increasing sophistication, including ADC-2SOSEX, ADC(3)-$G3W2$, and a full ADC-$G3W2$ scheme. These methods can be interpreted as nonperturbative resummations of vertex corrections to the self-energy, yielding Hermitian effective Hamiltonians whose diagonalization provides quasiparticle and satellite energies. This establishes a formal bridge between many-body perturbation theory formulated in terms of the screened interaction $W$ and conventional ADC schemes based on the bare Coulomb interaction. The performance of these ADC-based approximations is gauged for valence ionization potentials and benchmarked against their parent method.",
+    "url": "https://arxiv.org/abs/2606.04285",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Develops ADC-based vertex corrections for GW self-energy, a post-HF method; satisfies (a)-(c) as electronic structure method advancement.",
+    "key_authors": []
+  },
+  {
+    "id": "e7a4f95e1a1e",
+    "title": "Quaternion Dirac--Coulomb--Breit Integral Transformation for Relativistic Four-Component Correlated Electronic Structure Theory",
+    "authors": [
+      "Martijn Oele",
+      "Rajat Majumder",
+      "Shiv Upadhyay",
+      "Tianyuan Zhang",
+      "Ryan A Beck",
+      "Agam Shayit",
+      "Lucas Visscher",
+      "Xiaosong Li"
+    ],
+    "abstract": "arXiv:2606.04316v1 Announce Type: new \nAbstract: High-accuracy correlated four-component relativistic electronic structure methods are typically formulated in terms of integrals over molecular orbital (MO). Consequently, an efficient and scalable strategy is required to deal with the complexity of transforming relativistic two-electron integrals from the atomic orbital (AO) to the MO basis. The transformation bottleneck is particularly acute for approaches that include Breit interaction integrals, whose computational and memory demands further exacerbate the transformation cost. To overcome this challenge, we develop a quaternion-based, AO-driven direct integral transformation scheme. The method operates on scalar AO integrals and combines quaternion density-based contractions with direct Cauchy-Schwarz screening to systematically exploit integral locality. As a result, the proposed framework substantially lowers the practical computational scaling and provides an efficient, memory-conscious, and highly parallelizable pathway for the routine inclusion of relativistic Dirac-Coulomb-Breit integrals in large-scale four-component correlated calculations.",
+    "url": "https://arxiv.org/abs/2606.04316",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Presents quaternion-based integral transformation for relativistic correlated methods; satisfies (a)-(c) as post-HF method development.",
+    "key_authors": []
+  },
+  {
+    "id": "824ed43e20fd",
+    "title": "Variational low-energy subspaces for chemically accurate excited states",
+    "authors": [
+      "Clemens Giuliani",
+      "Rocco Martinazzo",
+      "Giuseppe Carleo",
+      "Riccardo Rossi"
+    ],
+    "abstract": "arXiv:2606.05148v1 Announce Type: new \nAbstract: Accurate electronic excited states are essential for photochemistry, spectroscopy and non-adiabatic molecular dynamics, but high-level calculations often scale steeply and require prior knowledge of the target state's character or symmetry. Here we show that variational excited-state optimization can be reformulated as an iterated ground-state-like problem for a low-energy subspace of the electronic Hamiltonian. Applying this variational principle to non-orthogonal Slater determinants leads to EXIDOS, an automatic method for excited state calculations controlled only by the number of states and determinants per state. EXIDOS optimizes multiple excited states simultaneously, without explicit orthogonality constraints or imposed spin and point-group symmetries. Benchmarks against FCI and state-of-the-art quantum chemistry methods show chemical accuracy for a multitude of states in N$_2$ and CO, charge-transfer states in HCl, Rydberg states in NH$_3$, double excitations and extended potential-energy curves in C$_2$, and avoided crossings and conical intersections in ethylene. These results establish EXIDOS as a low-scaling, fully variational route to chemically accurate excited states.",
+    "url": "https://arxiv.org/abs/2606.05148",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.str-el",
+      "quant-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Proposes EXIDOS variational method for excited states, benchmarked on molecules; satisfies (a)-(c) as electronic structure method development.",
+    "key_authors": []
+  },
+  {
+    "id": "a5b9d1bc64c3",
+    "title": "High-density, high-mobility ultrathin spin-polarized two-dimensional electron gas at the polar/polar LaVO$_3$/KTaO$_3$ interface: Insights from first-principles calculations",
+    "authors": [
+      "Arpan Das"
+    ],
+    "abstract": "arXiv:2606.04252v1 Announce Type: new \nAbstract: The emergence of high-mobility two-dimensional electron gases (2DEGs) at oxide interfaces provides a fertile platform for exploring emergent quantum phenomena and next-generation oxide electronics. Here, using first-principles density functional theory (DFT) calculations, we investigate the microscopic origin of the 2DEG formed at the interface between the band insulator KTaO$_3$ (KTO) and the Mott insulator LaVO$_3$ (LVO). Although both constituents are insulating in bulk, the LVO/KTO heterostructure develops robust metallicity at the interface, consistent with experimental observations. Our calculations show that this metallic state originates from an electronic reconstruction driven by the polar discontinuity across the interface. To avoid the polar catastrophe on both the polar LVO film and the polar KTO substrate, electrons are transferred from the outer surfaces toward the interface, leading to hole accumulation in the surface VO$_2$ layer and electron accumulation in the interfacial TaO$_2$ layer. This charge redistribution stabilizes a highly confined and spin-polarized 2DEG localized at the interface. The electronic states forming the 2DEG are predominantly derived from interfacial Ta $5d_{xy}$ orbitals, confining carrier motion to the interfacial plane. Remarkably, the spin-up parabolic band hosting the 2DEG exhibits an exceptionally small effective mass, substantially lower than that of the prototypical LaAlO$_3$/SrTiO$_3$ interface, indicating the potential for enhanced carrier mobility. Furthermore, the calculated interfacial electron density is nearly an order of magnitude larger than that of LaAlO$_3$/SrTiO$_3$, consistent with experiment. These findings identify the LVO/KTO heterostructure as a promising platform for realizing high-density, high-mobility spin-polarized 2DEGs and for engineering correlated oxide interfaces for quantum electronic applications.",
+    "url": "https://arxiv.org/abs/2606.04252",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles DFT calculation of 2DEG at oxide interface; explicit atoms and DFT method, satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "80a9395e6af1",
+    "title": "Why Fe doping kills photoluminescence in CsPbCl$_3$ but not in CsPbBr$_3$: Role of midgap Fe 3$d$ states and electron-phonon coupling",
+    "authors": [
+      "Arpan Das",
+      "Saptarshi Chakraborty"
+    ],
+    "abstract": "arXiv:2606.04714v1 Announce Type: new \nAbstract: Understanding the impact of transition-metal doping on the optoelectronic properties of halide perovskite nanocrystals is essential for their rational design in photonic applications. We establish the microscopic origin of photoluminescence (PL) quenching in Fe-doped CsPbCl$_3$ using spin-polarized density functional theory calculations. The emergence of Fe 3$d$ midgap states creates efficient electron-trapping centres that drive nonradiative recombination, accounting for the reduced PL intensity. Extending this analysis to Fe-doped CsPbX$_3$ (X = Cl, Br), we show experimentally that although PL intensity is suppressed in both systems relative to their pristine counterparts, their high-doping behaviour diverges: CsPbCl$_3$ becomes completely non-emissive, whereas CsPbBr$_3$ retains a finite, saturated PL intensity. Despite this contrast, electronic structure calculations reveal nearly identical midgap states in both materials, indicating that electronic effects alone cannot explain the distinct PL responses. Phonon calculations likewise fail to capture this difference. In contrast, electron-phonon coupling calculations based on the deformation potential approach reveal significantly stronger coupling in Fe-doped CsPbCl$_3$, enabling efficient dissipation of electronic excitation energy into lattice vibrations and leading to complete PL quenching. These results identify electron-phonon coupling as the key factor governing halide-dependent PL quenching and provide a unified microscopic framework for dopant-induced nonradiative processes in halide perovskites.",
+    "url": "https://arxiv.org/abs/2606.04714",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Spin-polarized DFT and phonon calculations for Fe-doped perovskites; explicit atoms and DFT, satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "1e5197b3ba76",
+    "title": "Curvature-driven revival of charge density waves in non-Euclidean space",
+    "authors": [
+      "Zhipeng Song",
+      "Zeyu Liu",
+      "Junde Liu",
+      "Yi Biao",
+      "Anning Yang",
+      "Qian Fang",
+      "Mojun Pan",
+      "Chen Liu",
+      "Jiaou Wang",
+      "Tian Qian",
+      "Chenmin shen",
+      "Hongliang Lu",
+      "Wei Ji",
+      "Hong-Jun Gao",
+      "Xiao Lin"
+    ],
+    "abstract": "arXiv:2606.04728v1 Announce Type: new \nAbstract: Strongly correlated quantum states, such as charge density waves (CDWs), are exquisitely sensitive to Fermi surface topology and lattice symmetry, and are typically quenched by heavy carrier doping. In two-dimensional (2D) systems, however, macroscopic geometric curvature emerges as a novel structural degree of freedom to modulate microscopic quantum coherence. This raises a compelling physical question: can non-Euclidean geometric deformations compete with extreme electronic perturbations to reshape, or even revive, a quenched macroscopic quantum order? Here, by constructing monolayer TiSe$_2$-NbSe$_2$ heterostructure on a BLG/SiC substrate for the first time, we report the curvature-driven revival of a frustrated charge order in a non-Euclidean space. Low-temperature angle-resolved photoemission spectroscopy (ARPES) reveals a massive interfacial charge transfer, which destroys the global Fermi surface nesting and completely suppresses the long-range CDW order in Euclidean flat regions. Strikingly, high-resolution scanning tunneling microscopy (STM) reveals that a novel, non-linear CDW state miraculously survives, remaining strictly localized within morphologically distorted, non-Euclidean nanoscale curved regions. Atomistic simulations unravel the structural origin of this phenomenon, demonstrating that interfacial twist and lattice mismatch spontaneously generate a corrugated superlattice.",
+    "url": "https://arxiv.org/abs/2606.04728",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Atomistic simulations combined with experimental ARPES/STM to study CDW; explicit atoms and simulation method, satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "e5c8302b0724",
+    "title": "Machine learning via artificial neural networks coupled with density functional theory and experiments for thermodynamic optimization of high-entropy alloys for hydrogen storage at room temperature",
+    "authors": [
+      "Shivam Dangwal",
+      "Pranav Kumar",
+      "Yuji Ikeda",
+      "Blazej Grabowski",
+      "Kaveh Edalati"
+    ],
+    "abstract": "arXiv:2606.04803v1 Announce Type: new \nAbstract: High-entropy alloys (HEAs) have received considerable attention for hydrogen storage because of their compositional flexibility; however, designing HEAs with optimal thermodynamics is critical. This study employs machine learning via artificial neural networks (ANN) and density functional theory (DFT) to design a novel AB-type TixNb2-xVCrMnFe (x = 0.5-2.0) high-entropy system for hydrogen storage at ambient temperature (A: Ti, V and Nb, and B: Cr, Mn and Fe). Both ANN and DFT predict that the hydride formation enthalpy decreases to negative values with increasing the titanium content. Two alloys with x > 1.5 are predicted to achieve enthalpies within the -25 to -39 kJ/mol range, making them appropriate for room-temperature hydrogen storage. Experiments demonstrate good agreement with the enthalpy predictions, with the Ti-rich alloys showing reversible hydrogen storage with fast kinetics at room temperature. These results provide a framework for reliable use of data analysis and ab initio calculations to explore high-entropy hydrides as hydrogen storage materials.",
+    "url": "https://arxiv.org/abs/2606.04803",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT calculations coupled with ANN and experiments for hydrogen storage alloys; explicit atoms and DFT, satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "953faa442450",
+    "title": "Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin",
+    "authors": [
+      "Zhilong Song",
+      "Zongmin Zhang",
+      "Lixue Cheng"
+    ],
+    "abstract": "arXiv:2606.05050v1 Announce Type: new \nAbstract: Theoretical heterogeneous catalysis promises rapid catalyst discovery, yet computational and machine-learning predictions often deviate from experiment and stay confined to narrow material families, for want of a faithful, condition-aware catalytic simulator. We present CatDT (Catalysis Digital Twin), a self-evolving multi-agent system that builds an autonomous digital twin of a working catalyst, unifying gas-solid and liquid-solid modeling. From only a bulk crystal and a natural-language reaction description, eight specialized agents and 27 scientific tools predict stable facets, reconstruct working surfaces, enumerate and rank reaction pathways, locate transition states, and compute kinetics in 5-30 min on a single GPU. Two innovations address the hardest steps: UniMech finds dominant pathways for novel materials at over $10^3\\times$ lower cost than exhaustive enumeration by fusing agent-guided proposals with energy-cached graph search, and a memory-augmented reinforcement loop raises barrier-calculation success from 41\\% to 84\\% across 600 catalytic surfaces. Across seven gas-solid benchmarks -- stepped metals, single-atom catalysts, ordered intermetallics, vacancy-rich 2D sulfides and carbides, and a strong-metal--support-interaction (SMSI) interface -- every CatDT prediction lies within 0.5-2 times experiment over four orders of magnitude. For propane dehydrogenation, CatDT independently discovers non-precious candidates rivaling the Pt-based industrial benchmark, with a proposed Ni@ZrO$_2$ SMSI overlayer reaching a simulated TOF of $1.63~\\text{s}^{-1}$ at $\\sim$100\\% selectivity. More broadly, the decisive factor for a faithful catalyst digital twin -- or any multi-stage scientific simulator -- is not raw LLM capability but the engineered harness around it: deterministic tools, persistent memory, and verified self-improvement that compound across models, tools, and runs.",
+    "url": "https://arxiv.org/abs/2606.05050",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Satisfies (a)-(c); applies DFT and transition-state search for heterogeneous catalysis.",
+    "key_authors": []
+  },
+  {
+    "id": "9d7c48ae2f57",
+    "title": "Density-functional theory calculation of hydrogen solubility in cubic silicon carbide at finite temperatures",
+    "authors": [
+      "Jonathan S. Evarts",
+      "Anne Chaka",
+      "Towfiq Ahmed"
+    ],
+    "abstract": "arXiv:2606.05100v1 Announce Type: new \nAbstract: An ab initio framework using density-functional theory has been developed to predict hydrogen solubility in both pristine and defective \\b{eta}-SiC. This study is motivated by the critical need for accurate hydrogen permeation models in fusion reactor designs, where predicting hydrogen permeation through tritium permeation barrier (TPB) materials is essential. Although silicon carbide is one of the leading candidates for TPBs, experimental permeation values vary widely due to differences between ideal single crystals and real, defect-containing materials. First principles calculations are employed to quantify the effects of interstitials, vacancies, and nonstoichiometric (amorphous) structures on hydrogen behavior in \\b{eta}-SiC. Our results show that hydrogen solubility is significantly enhanced in carbon-rich nonstoichiometric amorphous structures and silicon vacancies compared to hydrogen occupying interstitial sites in pure \\b{eta}-SiC.",
+    "url": "https://arxiv.org/abs/2606.05100",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Satisfies (a)-(c); DFT calculations of hydrogen solubility in SiC at finite temperature.",
+    "key_authors": []
+  },
+  {
+    "id": "93252772429c",
+    "title": "From Symmetry to Stability: Structural and Electronic Transformation in Cs$_2$KInI$_6$",
+    "authors": [
+      "Mohammad Bakhsh",
+      "Victor Trinquet",
+      "Rog\\'erio Almeida Gouv\\^ea",
+      "Gian-Marco Rignanese",
+      "Samuel Ponc\\'e"
+    ],
+    "abstract": "arXiv:2602.06893v2 Announce Type: replace \nAbstract: Cs$_2$KInI$_6$ is a promising lead-free halide double perovskite with a calculated direct band gap of 1.94 eV, ideal for solar cell applications. Our first-principles calculations reveal that its cubic phase (Fm$\\bar{3}$m) is dynamically unstable. Using an accelerated machine learning approach, we identify 42 dynamically stable structures and further validate these findings using first-principles calculations on 11 of these. The most stable phase has Cmc$2_1$ symmetry with 20 atoms/unit cell. It lies 13 meV/atom above the convex hull but lacks octahedral cation coordination. The most stable perovskite-like structure has P$\\bar{3}$ symmetry with 10 atoms/unit cell and low octahedral connectivity. Structure-property trade-offs are highlighted, with calculated distortions generally widening the band gap, shifting it from direct to indirect, and flattening the band edges. This work showcases the synergy of genetic algorithms, machine-learned potentials, and first-principles validation for discovering stable, complex materials.",
+    "url": "https://arxiv.org/abs/2602.06893",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT and machine-learned potential screening for stable Cs2KInI6 structures; satisfies (a)-(c) as atomistic structure prediction.",
+    "key_authors": []
+  },
+  {
+    "id": "f8b925d46275",
+    "title": "A Unified Heterogeneous Implementation of Numerical Atomic Orbitals-Based Real-Time TDDFT within the ABACUS Package",
+    "authors": [
+      "Taoni Bao",
+      "Yuanbo Li",
+      "Zichao Deng",
+      "Haotian Zhao",
+      "Denghui Lu",
+      "Yike Huang",
+      "Chao Lian",
+      "Lixin He",
+      "Mohan Chen"
+    ],
+    "abstract": "arXiv:2603.21835v2 Announce Type: replace \nAbstract: We present a unified heterogeneous computing framework for real-time time-dependent density functional theory (RT-TDDFT) based on numerical atomic orbitals (NAOs), implemented in the ABACUS package. We introduce three co-designed abstraction layers, including unified data containers, unified linear algebra operators, and unified grid integration interfaces. These layers collectively accelerate the two most demanding parts of NAO-based RT-TDDFT: explicit real-time wavefunction propagation and real-space grid operations such as Hamiltonian construction and force evaluation under external fields. We validate the method by computing optical properties for systems ranging from finite molecules to periodic solids, showing excellent agreement with standard benchmarks. Performance evaluations on bulk silicon demonstrate that a single GPU can achieve substantial wall-clock speedup over a fully utilized dual-socket CPU node. Furthermore, distributed multi-GPU strong-scaling tests confirm high parallel efficiency over tens of GPUs. This work establishes a high-performance, portable platform for large-scale first-principles simulations of ultrafast electron dynamics.",
+    "url": "https://arxiv.org/abs/2603.21835",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Real-time TDDFT implementation in ABACUS package; satisfies (a)-(c) as atomistic simulation method development.",
+    "key_authors": []
+  },
+  {
+    "id": "4d056c57e72e",
+    "title": "Synergetic electronic spin modulation and asymmetric orbital hybridization at the CoSe2/Fe3Se4 interface inducing a robust SEI for enhanced sodium ion storage",
+    "authors": [
+      "Mingyu Lian",
+      "Yitong Sun",
+      "Di Zhou",
+      "Yijia Zhang",
+      "Qingqing Zhou",
+      "Ying Jiang",
+      "Zhengqing Ye"
+    ],
+    "abstract": "Chem. Sci., 2026, Advance Article\nMingyu Lian, Yitong Sun, Di Zhou, Yijia Zhang, Qingqing Zhou, Ying Jiang, Zhengqing Ye\nMagnetic CoSe2/Fe3Se4 heterostructure with high-spin polarization and Co–Se–Fe asymmetric orbital hybridization lifts Co/Se band centers, thus improving adsorption, reducing diffusion barrier, and promoting the formation of a robust SEI film.",
+    "url": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/SC/D6SC03276A",
+    "pdf_url": null,
+    "source": "Chemical Science",
+    "categories": [],
+    "published": "2026-05-25T00:00:00+01:00",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses DFT for electronic structure and diffusion barriers, satisfying (a)-(c) as an atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "1cbc4faf3885",
+    "title": "Open Materials Generation with Inference-Time Reinforcement Learning",
+    "authors": [
+      "Philipp Höllmer",
+      "Stefano Martiniani"
+    ],
+    "abstract": "Continuous-time generative models for crystalline materials enable inverse materials design by learning to predict stable crystal structures, but incorporating explicit target properties into the generative process remains challenging. Policy-gradient reinforcement learning (RL) provides a principled mechanism for aligning generative models with downstream objectives but typically requires access to the score, which has prevented its application to flow-based models that learn only velocity fields. We introduce Open Materials Generation with Inference-time Reinforcement Learning (OMatG-IRL), a policy-gradient RL framework that operates directly on the learned velocity fields and eliminates the need for the explicit computation of the score. OMatG-IRL leverages stochastic perturbations of the underlying generation dynamics preserving the baseline performance of the pretrained generative model while enabling exploration and policy-gradient estimation at inference time. Using OMatG-IRL, we present the first application of RL to crystal structure prediction (CSP). Our method enables effective reinforcement of an energy-based objective while preserving diversity through composition conditioning, and it achieves performance competitive with score-based RL approaches. Finally, we show that OMatG-IRL can learn time-dependent velocity-annealing schedules, enabling accurate CSP with order-of-magnitude improvements in sampling efficiency and, correspondingly, reduction in generation time.",
+    "url": "https://openreview.net/forum?id=82lQk0jw0c",
+    "pdf_url": "https://openreview.net/pdf/92d7f969fd8ede10d601c23b85ed28ca4bfe176d.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Spotlight",
+    "categories": [
+      "reinforcement learning",
+      "generative models",
+      "inorganic crystals",
+      "materials design",
+      "stochastic interpolants"
+    ],
+    "published": "2026-01-31",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Crystal structure generation using flow matching with energy-based RL; generates 3D atomic configurations and validates with energy evaluators, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "cfb77c3f6286",
+    "title": "Train Separately, Compose at Sampling: Multi-Property Crystal Generation with Orthogonal Flow Guidance",
+    "authors": [
+      "Junjie Guo"
+    ],
+    "abstract": "Multi-property crystal generation is often bottlenecked by data: crystals satisfying multiple constraints jointly are rare, making it impractical to curate training sets or labels for $p(x\\mid c_1,\\ldots,c_m)$. We avoid this joint-data bottleneck by learning reusable, per-property guidance modules from single-property signals only. Starting from a pretrained unconditional base vector field, we fine-tune one flow model per property via an online, RL-style extension of Energy-Weighted Flow Matching (EWFM). Specifically, we sample trajectories from the current flow, score the resulting terminal crystals with fast property evaluators, and convert these scores into threshold-shaped importance weights to reweight the flow-matching objective. This yields property-specific correction fields without differentiable property gradients and any jointly labeled multi-property dataset. In inference, we satisfy new constraint sets by composing these fields (no retraining), and we reduce cross-objective interference by projecting each residual field to be orthogonal to the base flow before aggregation.\n\nOn MP-20, composing stability and band-gap modules improves both objectives simultaneously: the formation-energy success rate increases from $0.754$ to $0.924$ (mean $-3.42 \\rightarrow -4.35$ eV/atom), while the fraction with band gap $>3.0$ eV rises from $0.042$ to $0.157$ (mean $0.58 \\rightarrow 1.19$ eV), with only a modest drop in diversity/coverage, validating that modular per-property fields can be composed to achieve multi-constraint generation without joint data or retraining.",
+    "url": "https://openreview.net/forum?id=PjkeOpfo8c",
+    "pdf_url": "https://openreview.net/pdf/d270c1717278a59971014a24f0426bf82e85921a.pdf",
+    "source": "OpenReview: AI4Mat-ICLR-2026 Poster",
+    "categories": [
+      "Multi-property crystal generation",
+      "Flow matching",
+      "Vector-field composition",
+      "Inverse materials design",
+      "RL-style fine-tuning"
+    ],
+    "published": "2026-01-28",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Multi-property crystal generation via flow guidance with energy-based rewards; generates 3D atomic configurations and uses property evaluators, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "6e19ad9305d4",
+    "title": "Scalable Inference-Time Annealing for Continuous Normalizing Flows",
+    "authors": [
+      "Daniel Peñaherrera",
+      "Rishal Aggarwal",
+      "David Ryan Koes"
+    ],
+    "abstract": "A long standing challenge in computational chemistry and biophysics is efficiently sampling the Boltzmann distribution of molecules. Advances in generative modeling have been proposed to address the limitations of conventional sampling techniques by eliminating the computational cost of simulation. A promising direction is iteratively finetuning diffusion models along a temperature ladder whereby training data is generated via importance sampling during inference-time annealing. Unfortunately, these methods require computing a divergence over the score field to estimate importance weights, rendering them intractable for larger systems. Here we present scalable inference-time annealing (SITA), which retrains flow-based models to generate samples at progressively lower temperatures using an energy-based model to facilitate fast surrogate likelihoods. We demonstrate start-of-the-art performance on both alanine dipeptide and alanine tripeptide while avoiding costly divergence terms and using nearly 2 orders of magnitude fewer energy evaluations.",
+    "url": "https://openreview.net/forum?id=fnRT37nxwq",
+    "pdf_url": "https://openreview.net/pdf/d9c2ed9bfcefd8dbe719a5abfc9be5db6de07fd9.pdf",
+    "source": "OpenReview: GEM 2026",
+    "categories": [
+      "Flows",
+      "EBMs",
+      "Boltzmann Generators",
+      "Annealing",
+      "Molecular Ensembles"
+    ],
+    "published": "2026-02-06",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Flow-based sampling of Boltzmann distribution for alanine peptides, uses explicit atoms and potential; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "65a3c0a85cad",
+    "title": "Floquet Nonadiabatic Dynamics for Light-Matter Interactions: Recent Advances and Emerging Opportunities",
+    "authors": [
+      "Jiayue Han",
+      "Yu Wang",
+      "Vahid Mosallanejad",
+      "Wei Liu",
+      "Wenjie Dou"
+    ],
+    "abstract": "arXiv:2606.04337v1 Announce Type: new \nAbstract: Light-matter interactions provide versatile routes for probing and controlling chemical reactivity, charge transport, and material properties. Time-periodic external fields can reshape electronic states and open new dynamical pathways beyond the field-free Born-Oppenheimer (BO) picture. Floquet nonadiabatic dynamics has consequently emerged as an important framework for describing coupled electron-nuclear dynamics under periodic driving. In this Perspective, we first discuss recent developments in Floquet nonadiabatic dynamics methods for closed and open quantum systems. We then highlight how this framework provides mechanistic insights into electron transfer at molecule-metal interfaces, quantum transport in molecular junctions, carrier dynamics in crystalline solids, and multicolor Floquet engineering. Finally, we outline key conceptual and computational challenges that must be addressed to transform Floquet nonadiabatic dynamics from model-based demonstrations into predictive, first-principles simulations of realistic light-driven processes.",
+    "url": "https://arxiv.org/abs/2606.04337",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Perspective on Floquet nonadiabatic dynamics methods for coupled electron-nuclear simulations; satisfies (a)-(c) as simulation methodology review.",
+    "key_authors": []
+  },
+  {
+    "id": "64bfb7f53962",
+    "title": "\\emph{Ab initio} derivation of the crystal field parameters for lanthanide ions: The f$^1$ case",
+    "authors": [
+      "Dumitru-Claudiu Sergentu",
+      "Gwenha\\\"el Duplaix-Rata",
+      "Ionel Humelnicu",
+      "Boris Le Guennic",
+      "R\\'emi Maurice"
+    ],
+    "abstract": "arXiv:2511.18837v2 Announce Type: replace \nAbstract: The crystal field theory as explained by Abragam and Bleaney in their landmark 1970 book on transition-ion electron paramagnetic resonance remains a cornerstone in the development of luminescence applications and molecular magnets based on the $f$-elements. The modern numerical derivation of the 27 $B_k^q$ Stevens crystal field parameters (CFPs), which describe the splitting of the energy levels of a central ion, is traditionally achieved through the effective Hamiltonian theory and multiconfiguration wavefunction theory calculations, insofar as the lowest $J$ level fully captures the targeted low-energy physics. In this work, we present a novel theoretical approach for determining the CFPs. The procedure resembles the traditional extraction path but crucially accounts for the full $\\ket{J,M_J}$ space of an ion configuration with $L=3$ and $S=\\nicefrac{1}{2}$. By demonstrating the extraction procedure using the simplest case of a Ce$^\\text{III}$ 4f$^1$ ion with a crystal-field split $J \\in \\{\\nicefrac{5}{2}, \\nicefrac{7}{2}\\}$ manifold, it is shown for the first time that a unique set of CFPs describes the splitting and mixing both the $J$ manifolds. In fact, this $J/J^\\prime$ mixing is analogous to the ``spin mixing'' in binuclear transition metal complexes. At the employed level of calculation, we demonstrate that there is no spin-orbit coupling influence on the CFP values, contrary to previous beliefs. This study represents the first step of a larger effort in reviewing the theory and extraction procedures of CFPs in f-element complexes.",
+    "url": "https://arxiv.org/abs/2511.18837",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Ab initio derivation of crystal field parameters for lanthanide ions using multiconfigurational methods; satisfies (a)-(c) as electronic structure method application.",
+    "key_authors": []
+  },
+  {
+    "id": "36ec4bee12ec",
+    "title": "Tunable Rashba Splitting in Janus InXPbP (X = S, Se, Te) Monolayers for Enhanced Photocatalytic Water Splitting",
+    "authors": [
+      "Vuong Van Thanh",
+      "Nguyen Minh Quan",
+      "Nguyen Tuan Hung"
+    ],
+    "abstract": "arXiv:2606.04720v1 Announce Type: new \nAbstract: Janus two-dimensional (2D) materials exhibiting Rashba spin splitting have recently attracted considerable attention owing to their potential applications in spintronic devices and photocatalytic water splitting. In this work, we investigate, using first-principles calculations, the structural, mechanical, electronic, optical, and photocatalytic properties of Janus InXPbP (X = S, Se, Te) monolayers that exhibit significant Rashba effects. Our results demonstrate that all three monolayers are energetically, dynamically, and mechanically stable, as evidenced by cohesive energy calculations, phonon dispersion analysis, and elastic constants. By varying the chalcogen atom (X = S, Se, Te), the Rashba effect in InXPbP can be effectively tuned. Rashba parameters of 0.16 and 0.20 eV\\r{A} are obtained near the conduction-band minimum (CBM) for InSPbP and InSePbP, respectively, whereas InTePbP exhibits giant Rashba spin splitting near both the CBM and valence-band maximum (VBM), with corresponding Rashba parameters of 0.90 and 0.87 eV\\r{A}. Furthermore, the Janus InXPbP monolayers exhibit suitable band gaps of 1.21, 1.27, and 0.76 eV for InSPbP, InSePbP, and InTePbP, respectively, which are favorable for photocatalytic applications. All three monolayers possess suitable band-edge alignments for overall water splitting, yielding solar-to-hydrogen (STH) conversion efficiencies of 21.67%, 26.03%, and 29.83% for InSPbP, InSePbP, and InTePbP, respectively. Our findings not only enrich the family of Janus materials but also suggest that the Janus InXPbP monolayers are promising candidates for spintronic devices and high-performance photocatalytic water-splitting applications.",
+    "url": "https://arxiv.org/abs/2606.04720",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 04 Jun 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "First-principles DFT study of Janus 2D monolayers; explicit atoms, satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "e89fac56a792",
+    "title": "Lyrebird: Toward Robust and Generalizable 3D Molecular Conformer Generation via Equivariant Flows",
+    "authors": [
+      "Vedanth M. Nilabh",
+      "Elias L Mann"
+    ],
+    "abstract": "Recent generative models for 3D molecular conformer generation have made impressive progress, but data and benchmarks are limited and often fail to evaluate usefulness and trustworthiness as computational chemistry tools. We introduce Lyrebird, a general-purpose model for 3D molecular conformer generation built on the ET-Flow (Equivariant Transformer Flow) architecture, and evaluate generalization by training jointly on Butina-split datasets of drug-like molecules from GEOM-Drugs and GEOM-QM9 and macrocyclic peptides from CREMP. Additionally, we introduce a macrocyclic conformer generation benchmark set: MPCONF196GEN, derived from the MPCONF196 energy benchmark set. We also introduce an energy-based benchmark that evaluates both conformer sampling within the lowest-energy basin and the degree of structural relaxation in generated conformers. Lyrebird matches state-of-the-art ML methods and outperforms ETKDGv3 on coverage and matching metrics for drug-like molecules, and improves performance on macrocycles over models only trained on GEOM-Drugs.",
+    "url": "https://openreview.net/forum?id=1SBcUq9Lmr",
+    "pdf_url": "https://openreview.net/pdf/d946ef285c5ccd0ddbc483ab64a6197de6a1334a.pdf",
+    "source": "OpenReview: GEM 2026",
+    "categories": [
+      "Conformer",
+      "benchmarks",
+      "energy",
+      "split",
+      "flow matching",
+      "equivariant",
+      "chemistry",
+      "transformer",
+      "molecules"
+    ],
+    "published": "2026-02-06",
+    "version": null,
+    "added_date": "2026-06-04",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "3D molecular conformer generation using equivariant flows with energy benchmark; produces explicit atomic coordinates validated energetically, satisfying (a)-(c).",
+    "key_authors": []
+  }
+]
