@@ -1,0 +1,724 @@
+[
+  {
+    "id": "9a5a01e87f2c",
+    "title": "Learning Hamiltonian Flow Maps: Mean Flow Consistency for Large-Timestep Molecular Dynamics",
+    "authors": [
+      "Winfried Ripken",
+      "Michael Plainer",
+      "Gregor Lied",
+      "Thorben Frank",
+      "Oliver T. Unke",
+      "Stefan Chmiela",
+      "Frank No\\'e",
+      "Klaus-Robert M\\\"uller"
+    ],
+    "abstract": "arXiv:2601.22123v4 Announce Type: replace \nAbstract: Simulating the long-time evolution of Hamiltonian systems is limited by the small timesteps required for stable numerical integration. To overcome this constraint, we introduce a framework to learn Hamiltonian Flow Maps by predicting the mean phase-space evolution over a chosen time span, enabling stable large-timestep updates far beyond the stability limits of classical integrators. To this end, we impose a Mean Flow consistency condition for time-averaged Hamiltonian dynamics. Unlike prior approaches, this allows training on independent phase-space samples without access to future states, avoiding expensive trajectory generation. Validated across diverse Hamiltonian systems, our method in particular improves upon molecular dynamics simulations using machine-learned force fields (MLFF). Our models maintain comparable training and inference cost, but support significantly larger integration timesteps while trained directly on widely-available trajectory-free MLFF datasets.",
+    "url": "https://arxiv.org/abs/2601.22123",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 4,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Frank No\\'e, Klaus-Robert M\\\"uller",
+    "key_authors": [
+      "Frank No\\'e",
+      "Klaus-Robert M\\\"uller"
+    ]
+  },
+  {
+    "id": "f8c1cb45f403",
+    "title": "ReactionAtlas: Ab origine exploration of chemical reaction networks with machine learning",
+    "authors": [
+      "Stefan Gugler",
+      "Max Eissler",
+      "Khaled Kahouli",
+      "Klaus-Robert M\\\"uller"
+    ],
+    "abstract": "arXiv:2606.30778v1 Announce Type: cross \nAbstract: Mapping a chemical reaction network, the graph of minima and transition states (TS) and the elementary reactions connecting them, is the natural language of chemistry, from catalysis to combustion to the origin of life. Constructing such a reaction network for a given chemistry has been impractical: it requires finding and characterizing tens of thousands of TS, a task for which traditional methods such as density functional theory (DFT) are typically prohibitively slow and require reactant and product as input. We introduce ReactionAtlas, which builds a reaction network $\\textit{ab origine}$ from a handful of seed molecules and without hand-crafted rules. Specifically, our machine-learned generative model proposes reactions from kinetically sampled candidate compounds and a DFT-trained machine learned force field (MLFF) filters them to valid TS, the resulting products of which enter the search as new seeds. Starting from eight pre-biotic seeds (CH$_2$O, H$_2$O, OH$^-$, H$_3$O$^+$, CO$_2$, H$_2$CO$_3$, HCO$_3^-$, H), ReactionAtlas discovers $\\sim$47,000 reactions among $\\sim$12,000 compounds. The MLFF TSs match the PBE0 references within 0.5 \\r{A} RMSD in 85% of the cases and can be easily brought to the PBE0 level. Thus, ReactionAtlas maps small carbohydrate chemistry up to C$_4$H$_8$O$_4$ at unprecedented scale and accuracy, including charge and stereo information. It enables novel insights into many well-studied reaction paths, including the formose cycle, which we highlight for its centrality to the chemical origins of life. Notably, our framework also allows establishing alternative reaction pathways for formose chemistry.",
+    "url": "https://arxiv.org/abs/2606.30778",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Klaus-Robert M\\\"uller",
+    "key_authors": [
+      "Klaus-Robert M\\\"uller"
+    ]
+  },
+  {
+    "id": "f0a81d4bde20",
+    "title": "Contrastive Regularization of Machine Learning Potentials",
+    "authors": [
+      "Dimitrios Tzivrailis",
+      "Georgios Sotiropoulos",
+      "Alberto Rosso",
+      "Eiji Kawasaki"
+    ],
+    "abstract": "arXiv:2606.31660v1 Announce Type: new \nAbstract: Machine learning interatomic potentials are trained to predict energies and forces but built to be sampled: their purpose is to drive molecular simulations whose observables average over the equilibrium distribution the potential defines. They exemplify a broader AI problem -- learned regressors deployed as generators -- where pointwise accuracy does not guarantee a correct distribution. We show that potentials trained by standard Mean Squared Error (MSE) minimization on Density Functional Theory (DFT) data can reach chemical accuracy on held-out data, yet still fail as samplers: their trajectories drift into spurious low-energy minima and return thermodynamic observables that depart sharply from the reference. To correct this, we introduce Contrastive Regularized MSE (CRMSE), a post-training step that augments the MSE with a contrastive term derived from the Kullback--Leibler divergence between the potential's implicit Boltzmann distribution and the target. The network serves as its own energy-based model: persistent Langevin chains expose the configurations it drifts into and raise their energy, adding no new ab initio data. On the ethanol and aspirin molecules of the MD17 dataset, CRMSE confines the sampler to the physical basin and recovers the energy distribution, interatomic-distance distributions, and dihedral free-energy profiles to near-quantitative agreement with DFT, while preserving force accuracy and keeping energy errors within chemical accuracy; it remains effective when the training set is sharply reduced. That MSE training fails this way on MD17 -- one of the most widely used benchmarks -- while a minimal contrastive correction repairs it suggests that reliable sampling depends less on data volume than on training the model against the distribution it produces: distribution-level training is not a refinement of regression accuracy, but a distinct requirement.",
+    "url": "https://arxiv.org/abs/2606.31660",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.95,
+    "relevance_reason": "Contrastive regularization for MLIPs to correct distributional drift, applied to MD17 molecules; satisfies (a)-(c) with MLIP development and atomistic simulation validation.",
+    "key_authors": []
+  },
+  {
+    "id": "efd707b52b2c",
+    "title": "Comparative study of ensemble-based uncertainty quantification methods for neural network interatomic potentials",
+    "authors": [
+      "Yonatan Kurniawan (Department of Physics",
+      "Astronomy",
+      "Brigham Young University",
+      "Provo",
+      "Utah",
+      "USA)",
+      "Mingjian Wen (Institute of Fundamental",
+      "Frontier Sciences",
+      "University of Electronic Science",
+      "Technology of China",
+      "Chengdu",
+      "China)",
+      "Ellad B. Tadmor (Department of Aerospace Engineering",
+      "Mechanics",
+      "University of Minnesota",
+      "Minneapolis",
+      "Minnesota",
+      "USA)",
+      "Mark K. Transtrum (Cross Stream Consulting",
+      "Springville",
+      "UT",
+      "USA)"
+    ],
+    "abstract": "arXiv:2508.06456v2 Announce Type: replace \nAbstract: Machine learning interatomic potentials (MLIPs) enable atomistic simulations with near first-principles accuracy at substantially reduced computational cost, making them powerful tools for large-scale materials modeling. The accuracy of MLIPs is typically validated on a held-out dataset of \\emph{ab initio} energies and atomic forces. However, accuracy on these small-scale properties does not guarantee reliability for emergent, system-level behavior -- precisely the regime where atomistic simulations are most needed, but for which direct validation is often computationally prohibitive. As a practical heuristic, predictive precision -- quantified as inverse uncertainty -- is commonly used as a proxy for accuracy, but its reliability remains poorly understood, particularly for system-level predictions. In this work, we systematically assess the relationship between predictive precision and accuracy in both in-distribution (ID) and out-of-distribution (OOD) regimes, focusing on ensemble-based uncertainty quantification methods for neural network potentials, including bootstrap, dropout, random initialization, and snapshot ensembles. We use held-out cross-validation for ID assessment and calculate cold curve energies and phonon dispersion relations for OOD testing. These evaluations are performed across various carbon allotropes as representative test systems. We find that uncertainty estimates can behave counterintuitively in OOD settings, often plateauing or even decreasing as predictive errors grow. These results highlight fundamental limitations of current uncertainty quantification approaches and underscore the need for caution when using predictive precision as a stand-in for accuracy in large-scale, extrapolative applications.",
+    "url": "https://arxiv.org/abs/2508.06456",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.data-an"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-01",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.9,
+    "relevance_reason": "Benchmarking uncertainty quantification for neural network interatomic potentials; clear MLIP development/benchmarking scope, satisfies all conditions.",
+    "key_authors": []
+  },
+  {
+    "id": "0ad717ddb8f2",
+    "title": "Adaptive fine-tuning of foundation models for crystal structure prediction: Discovery of high-pressure phases in the CaFeNi system",
+    "authors": [
+      "N. M. Chtchelkatchev",
+      "M. V. Magnitskaya",
+      "R. E. Ryltsev"
+    ],
+    "abstract": "arXiv:2606.30870v1 Announce Type: new \nAbstract: The prediction of crystal structures is a key challenge in chemistry and materials science, but evolutionary crystal structure prediction (CSP) remains computationally expensive because it relies on repeated \\textit{ab initio} relaxations and energy ranking. Machine learning interatomic potentials (MLIPs) can accelerate CSP, yet their use is limited by the need for large training sets and by the difficulty of choosing which candidate structures should be labeled by density functional theory (DFT). Here we introduce a self-consistent, foundation-model-assisted CSP workflow that combines evolutionary search with adaptive data selection and fine-tuning. Starting from a pretrained MLIP, the algorithm rapidly explores configuration space while iteratively selecting compact, representative, and physically relevant subsets of structures for DFT labeling, thereby reducing redundant calculations and improving a system-specific potential. We apply the method to the chemically complex Ca--Fe--Ni ternary system. The workflow reproduces the known low-pressure convex hull and enables efficient high-pressure exploration. It predicts a previously unreported compound, Ca$_6$FeNi, which becomes thermodynamically stable above 100~GPa. These results show that foundation-model-based, data-efficient CSP can greatly reduce computational cost while preserving accuracy and enabling the discovery of new materials in complex multicomponent systems.",
+    "url": "https://arxiv.org/abs/2606.30870",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.9,
+    "relevance_reason": "Adaptive fine-tuning of MLIPs for crystal structure prediction with DFT validation; MLIP development and application, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "4f2770865237",
+    "title": "Side-Chain Tuning of Thermal-Expansion Crossover in Metal-Organic Frameworks",
+    "authors": [
+      "Wei Qiu",
+      "Penghua Ying"
+    ],
+    "abstract": "arXiv:2606.31417v1 Announce Type: new \nAbstract: Achieving continuous control over macroscopic thermal expansion remains a fundamental challenge in solid-state physics. Using classical and path-integral molecular dynamics alongside lattice dynamics at near-\\emph{ab initio} accuracy, we report an entropy-driven thermal-expansion crossover from positive (PTE) to negative thermal expansion (NTE) in alkoxy-functionalized MOF-5, an archetypal metal-organic framework (MOF). We demonstrate that this non-linear response is continuously tunable via the alkoxy side-chain length, quantified by the number of carbon atoms $n$ grafted onto the archetypal cubic MOF-5 framework: systems with short chains ($n \\le 2$) exhibit monotonic NTE, whereas longer chains ($n \\ge 3$) trigger a pronounced PTE-to-NTE crossover. At low temperatures, thermal activation of longer side chains opens additional conformational states and generates steric pressure inside the pore, driving positive expansion through a gain in side-chain conformational entropy. Conversely, at elevated temperatures, the side chains enhance transverse linker fluctuations and strengthen the string-tension mechanism associated with low-frequency framework modes, causing structural contraction favored by framework vibrational entropy. Finally, by varying the concentration of side-chain-functionalized linkers, the thermal expansion coefficient can be continuously regulated to realize negative, near-zero, and positive thermal expansion within selected temperature windows. These results establish side-chain engineering as a practical route for programming macroscopic thermodynamic responses in MOFs.",
+    "url": "https://arxiv.org/abs/2606.31417",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Explicitly uses classical/path-integral MD and lattice dynamics on atomistic MOF, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "67567cbbbb37",
+    "title": "Field-Driven Proton Transport in Water Revealed by Machine Learning Molecular Dynamics",
+    "authors": [
+      "Alicia van Hees",
+      "Zhan-Yun Zhang",
+      "Linnéa Andersson",
+      "Chao Zhang"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15005472/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-01",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Machine learning molecular dynamics on water for proton transport; satisfies (a)-(c) fully.",
+    "key_authors": []
+  },
+  {
+    "id": "d913c275a291",
+    "title": "NanoVer: An open-source framework for interactive molecular dynamics in extended reality (iMD-XR) on commodity hardware",
+    "authors": [
+      "Mark D. Wonnacott",
+      "Luis Ernesto Toledo Castro",
+      "Harry J. Stroud",
+      "Ludovica Aisa",
+      "Mohamed Dhouioui",
+      "Rhoslyn Roebuck Williams",
+      "Denis Protopopov",
+      "Sila Sobrado",
+      "David R. Glowacki"
+    ],
+    "abstract": "arXiv:2606.30678v1 Announce Type: new \nAbstract: This article outlines 'NanoVer', an open-source software framework which enables groups of people to co-habit the same virtual space and manipulate real-time MD (Molecular Dynamics) simulations of flexible 3D molecular structures with atomic-level precision as if they were tangible objects, an approach that we call 'interactive Molecular Dynamics in eXtended Reality' (iMD-XR). Distinct from our earlier iMD work that relied on tethered PC-VR systems with large graphics cards, NanoVer represents a change in philosophy, emphasizing compatibility with standalone mobile consumer XR hardware and corresponding software APIs. The NanoVer architecture enables multiple XR clients and/or Python clients to simultaneously communicate with a flexible server architecture that can carry out a range of tasks, including for example: recording iMD-XR sessions, static structure visualization, and MD trajectory visualization. NanoVer allows researchers, educators, and students to fluidly move between AR and VR environments, to explore creative new approaches to molecular research and education, including for example: molecular conformational sampling, protein-ligand binding, molecular psychophysics, training AI agents to sample molecular transitions, and a new interface which allows iMD-XR participants to sketch 3D conformational paths which automated agents can then follow. As an immersive platform that offers new ways to understand, engineer, communicate, and interact with dynamical behaviour at the nanoscale, NanoVer invites us to imagine new ways for combining human intelligence (e.g., spatial cognition and design reasoning) with machine intelligence. To expand NanoVer's accessibility, we have published a version to the Meta Horizon Store, for easy download by those with a Meta Quest 3/3S headset, to explore pre-recorded iMD-XR trajectory visualizations and set up their own multi-user system.",
+    "url": "https://arxiv.org/abs/2606.30678",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.bio-ph",
+      "physics.ed-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Interactive molecular dynamics framework for real-time MD simulations; satisfies (a)-(c) with explicit atoms and MD methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "8b37c5454dfa",
+    "title": "A Residence-Time Approach for Determining Position-Dependent Diffusivities from Biased Molecular Simulations",
+    "authors": [
+      "Rinto Thomas",
+      "Praveen Ranganath Prabhakar",
+      "Michael von Domaros"
+    ],
+    "abstract": "arXiv:2604.01940v2 Announce Type: replace-cross \nAbstract: Position-dependent diffusivities are central parameters in reduced stochastic descriptions of molecular transport in heterogeneous environments, but their reliable estimation from molecular dynamics simulations remains challenging. We present a residence-time approach (RTA) that extracts local diffusivities from first-exit statistics measured in biased simulations after compensation of the mean free-energy gradient. We apply the method to oxygen diffusion across a hexadecane/water slab, water permeation across a POPC lipid bilayer, and transport of water and volatile organic compounds through a model skin-barrier membrane. In the slab system, RTA diffusivities agree with independently determined bulk reference values. In the membrane systems, propagators constructed from RTA-derived PMF-diffusivity pairs reproduce unbiased molecular dynamics propagators over substantial lag-time ranges, while also revealing that, in some cases, no single lag-time-independent diffusivity profile captures the dynamics across all timescales. These results support residence-time statistics as a practical route for determining effective position-dependent diffusivities from biased molecular simulations.",
+    "url": "https://arxiv.org/abs/2604.01940",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "physics.bio-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Develops residence-time approach for diffusivities from biased molecular dynamics; clearly atomistic simulation method development, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "3005966bec81",
+    "title": "P3MaZe: a Mass-Zero constrained-dynamics formulation of particle-mesh electrostatics",
+    "authors": [
+      "Federica Troni",
+      "Violette Gontran",
+      "Davide Grassano",
+      "Sara Bonella"
+    ],
+    "abstract": "arXiv:2606.31379v1 Announce Type: new \nAbstract: We introduce P3MaZe, a real-space particle-mesh electrostatic method that combines the standard short-range/long-range decomposition of Particle-Particle Particle-Mesh (P3M) electrostatics with the Mass-Zero constrained dynamics (MaZe) framework. In this formulation, the smooth long-range electrostatic potential is represented on a mesh as a zero-inertia auxiliary field, while the discretized Poisson equation is enforced as a holonomic constraint during molecular dynamics. By retaining the standard P3M decomposition, P3MaZe preserves the systematic accuracy controls associated with the real-space cutoff, the Ewald splitting, the mesh spacing, and the charge-assignment procedure, while replacing the conventional multigrid Poisson solver by a constrained correction problem. The method is validated for molten NaCl and simple point-charge flexible water (SPC/Fw). Structural, translational, collective, and rotational dynamical observables are in quantitative agreement with those obtained with established electrostatic methods, including real-space P3M, and Ewald summation. The constrained formulation consistently requires fewer multigrid iterations than the corresponding real-space P3M solver while retaining the expected linear scaling with system size. These results establish P3MaZe as a promising new direction for scalable real-space electrostatics in large-scale molecular simulations.",
+    "url": "https://arxiv.org/abs/2606.31379",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Development of P3MaZe electrostatic method for molecular dynamics, validated on atomistic systems (NaCl, water); satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e760ccbdb453",
+    "title": "Navigating committor landscape of biomolecules with a general pairwise interaction model",
+    "authors": [
+      "Jintu Zhang",
+      "Zichang Jin",
+      "Huifeng Zhao",
+      "Kai Zhu",
+      "Bowei Zhao",
+      "Xujun Zhang",
+      "Peilin Kang",
+      "Tingjun Hou"
+    ],
+    "abstract": "arXiv:2606.31832v1 Announce Type: new \nAbstract: Sampling rare conformation transitions between metastable states is a central challenge in atomistic simulations. While the committor function serve as an ideal reaction coordinate for driving enhanced sampling, their high-dimensional inputs and complex functional forms limit the efficacy of standard feedforward neural networks in modeling them. Inspired by recent breakthroughs in biomolecular structure prediction, we propose a novel committor learning framework grounded in the AlphaFold 3 paradigm. By integrating a lightweight, differentiable atom-level embedding with a simplified Pairformer architecture, our method inherently captures intricate dynamical features of diverse biosystems without requiring specialized prior knowledge. We demonstrate the superior expressiveness and accuracy of the proposed framework across multiple atomistic processes. For the folding of the chignolin mini-protein, our model reveals the finer-grained structure of its transition state ensemble (TSE) and a detailed bifurcated reaction mechanism. Furthermore, for calixarene host-guest systems, we develop a unified committor model that elucidates how ligand substituents regulate the ratio between distinct binding pathways, offering new perspectives for structure-based drug design.",
+    "url": "https://arxiv.org/abs/2606.31832",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Commitor learning framework using Pairformer for enhanced sampling in atomistic simulations (chignolin, host-guest); satisfies (a)-(c) as method development with atomistic application.",
+    "key_authors": []
+  },
+  {
+    "id": "9a0ca486b2ca",
+    "title": "Systematic bottom-up coarse-graining of hydrated excess proton transport across scales",
+    "authors": [
+      "Jaehyeok Jin",
+      "Zhefu Li",
+      "Gregory A. Voth"
+    ],
+    "abstract": "Nature Computational Science, Published online: 01 July 2026; doi:10.1038/s43588-026-01006-9\nHUMID is a bottom-up coarse-grained framework for proton transport that bridges the quantum and molecular scales, enabling simulations of reactive transport dynamics across diverse environments with over 1,000-fold greater computational efficiency.",
+    "url": "https://www.nature.com/articles/s43588-026-01006-9",
+    "pdf_url": null,
+    "source": "Nature Computational Science",
+    "categories": [],
+    "published": "2026-07-01",
+    "version": null,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Title explicitly describes bottom-up coarse-graining for proton transport, which involves atomistic simulation and CG mapping; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "21ea0815d6da",
+    "title": "Radical-Fragment Many-Body Expansion for Linear Alkane Quantum Chemistry",
+    "authors": [
+      "Daniel Sierra-Sosa",
+      "Jorge Saavedra",
+      "Santiago Solares",
+      "Gregorio Toscano-Pulido"
+    ],
+    "abstract": "arXiv:2606.31117v1 Announce Type: new \nAbstract: We introduce a radical-fragment many-body expansion at the two-body level (MBE2) for quantum chemistry of linear alkanes. Instead of heterolytic bond cleavage with hydrogen capping atoms and electrostatic embedding like in Fragment Molecular Orbital (FMO), we perform homolytic C-C bond cleavage to produce open-shell radical fragments (CH3, CH2) treated with restricted open-shell Hartree-Fock (ROHF) in isolation. The two-body MBE2 assembly formula reconstructs total alkane energies from only four unique fragment calculations regardless of chain length, reducing the maximum qubit requirement. We benchmark this framework against five energy solvers (RHF, CCSD, VQE, ADAPT-VQE, and SQD) across 11 linear alkanes from butane (C4H10) to hexacosane (C26H54). The MBE2 decomposition achieves a 12.3x qubit reduction for C26H54 (from 368 to 30 qubits) and a 12.8x reduction in unique calculations via symmetry exploitation. MBE2-VQE and MBE2-SQD (executed on IBM quantum hardware) closely track their respective classical MBE2 references, demonstrating that fragmentation-based quantum chemistry is viable for scaling quantum solvers to large molecular systems.",
+    "url": "https://arxiv.org/abs/2606.31117",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "quant-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Quantum chemistry fragmentation method (MBE2) applied to linear alkanes using ab initio solvers; satisfies (a)-(c) with explicit atoms and post-HF method development.",
+    "key_authors": []
+  },
+  {
+    "id": "548e05f01d32",
+    "title": "A unified formalism for collinear and non-collinear approaches in the four-component Dirac-Kohn-Sham theory based on G-spinors",
+    "authors": [
+      "Giulia Gamboni",
+      "Loriano Storchi",
+      "Paola Belanzoni",
+      "Leonardo Belpassi"
+    ],
+    "abstract": "arXiv:2606.31482v1 Announce Type: new \nAbstract: Non-collinear density functional theories were developed to extend the use of established collinear exchange-correlation functionals to systems with unpaired electrons in the presence of significant spin-orbit coupling. A comparison of different approaches and implementations is not straightforward, as the methods are often formulated using different fundamental variables and numerical approximations. A consistent review of the formal and numerical aspects of collinear and non-collinear schemes has recently been reported (Desmarais et al., J. Chem. Phys. 154, 204110 (2021)) in the context of two-component methods. In this work, we present an initial effort towards a unified formulation of collinear and non-collinear approximations, encompassing both canonical and Scalmani-Frisch schemes, within the relativistic four-component DKS formalism based on G-spinor basis sets. Our preliminary implementation of the collinear and canonical non-collinear formulations in the DKS module of the \\texttt{BERTHA} code extends its applicability and provides a benchmark for a series of simple open-shell hydride molecules (namely, H$_2$X$^+$, with X = O, S, Se, Te, and Po). Finally, we show that incorporating the magnetisation vector into the reformulated non-collinear canonical LDA approach enables a description of H$_2$ dissociation - and open-shell systems more broadly - that closely parallels unrestricted non-relativistic approaches, notably without explicitly imposing the broken symmetry solution as is often required in non-relativistic collinear calculations. This unified formulation forms the basis for a rigorous comparison between different numerical approximations, which will be essential for obtaining stable results for the non-collinear GGA exchange-correlation functionals.",
+    "url": "https://arxiv.org/abs/2606.31482",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT method development (Dirac-Kohn-Sham) with collinear/non-collinear formalism tested on open-shell hydrides; satisfies (a)-(c) with explicit atoms and DFT methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "ea23c789d330",
+    "title": "An Additive Reference Correction Scheme for the Transcorrelated Method",
+    "authors": [
+      "Johannes Hauskrecht",
+      "Kristoffer Simula",
+      "Yifan Cheng",
+      "Evelin Martine Corvid Christlmaier",
+      "Daniel Kats",
+      "Ali Alavi"
+    ],
+    "abstract": "arXiv:2606.31625v1 Announce Type: new \nAbstract: We introduce an additive reference correction for the transcorrelated (TC) method and its three-body mean-field approximation (xTC), to improve energy differences computed in small orbital basis sets. The correction is motivated by the observation that, for xTC atomization energies, the dominant error in double-{\\zeta} bases originates from the reference contribution rather than from the correlation energy. In the proposed reference-corrected scheme (RC-xTC), the small-basis correlation energy is retained, while the corresponding TC reference energy is replaced by its value from a larger basis. Benchmark calculations for the non-relativistic HEAT set with the Dunning basis-set family show that RC-xTC substantially improves both total and atomization energies relative to standard xTC in double-{\\zeta} bases. At the CCSD(T) level, RC-xTC yields better atomization energies than CCSD(T)-F12a in the double-{\\zeta} regime, while preserving the favorable total-energy accuracy of xTC. At the CCSD level, RC-xTC improves atomization energies relative to F12a throughout the full basis-set sequence. As the basis set is enlarged, xTC and RC-xTC become progressively identical, as expected from the construction of the correction.",
+    "url": "https://arxiv.org/abs/2606.31625",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Post-HF transcorrelated method development with reference correction for atomization energies; satisfies (a)-(c) with explicit atoms and quantum chemistry method.",
+    "key_authors": []
+  },
+  {
+    "id": "0daf5a46708d",
+    "title": "Anharmonic superconducting density functional theory: A general framework for superconductivity with anharmonic corrections",
+    "authors": [
+      "Xiaozheng Fan",
+      "Panshi Jing",
+      "Chuanguang Zhang",
+      "Junshuai Wang",
+      "Chunlan Ma",
+      "Shijing Gong",
+      "Chuanxi Zhao",
+      "Tianxing Wang",
+      "Yipeng An"
+    ],
+    "abstract": "Author(s): Xiaozheng Fan, Panshi Jing, Chuanguang Zhang, Junshuai Wang, Chunlan Ma, Shijing Gong, Chuanxi Zhao, Tianxing Wang, and Yipeng An\nFirst-principles studies of superconductivity often neglect anharmonic effects (AHE), despite their crucial role in achieving quantitative accuracy in many materials. To bridge this gap, we introduce a general computational approach, termed anharmonic superconducting density functional theory (ah-SC…\n[Phys. Rev. B 113, 214521] Published Tue Jun 30, 2026",
+    "url": "http://link.aps.org/doi/10.1103/thcc-rwp4",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-06-30T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-07-01",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT method development (ah-SCDFT) for superconductivity with anharmonic corrections; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "aef5e6f75a0e",
+    "title": "Kinetic Monte Carlo-Ising Machine Optimization for Atomistic Inverse Design of Solid Electrolytes",
+    "authors": [
+      "Ai Koizumi",
+      "Tomofumi Tada",
+      "Ryo Tamura"
+    ],
+    "abstract": "arXiv:2606.31261v1 Announce Type: new \nAbstract: Maximizing ionic conductivity remains a fundamental challenge in the atomistic design of solid electrolytes. To this end, we present a framework that combines kinetic Monte Carlo (KMC) and factorization machine with quadratic-optimization annealing (FMQA), an Ising-machine-based black-box optimization algorithm for large-scale combinatorial optimization. KMC evaluates the ionic conductivity for a given dopant configuration, whereas FMQA iteratively learns a surrogate model from a small configuration-conductivity dataset and proposes configurations expected to maximize conductivity. To address the severe combinatorial explosion in large KMC simulation cells, we partition the configuration space for parallel optimization. As a proof of concept, we apply this KMC-FMQA framework to bulk 8 mol % yttria-stabilized zirconia, identifying a dopant configuration with an order-of-magnitude higher conductivity than that of random configurations and the experimentally reported conductivity. Combined with experiments, this framework will enable the determination of microscopic structures from measured conductivity, providing insight into the underlying transport mechanisms.",
+    "url": "https://arxiv.org/abs/2606.31261",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.85,
+    "relevance_reason": "Combines kinetic Monte Carlo (atomistic) with Ising-machine optimization for dopant design; application of atomistic simulation method, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "ef87efeb3a06",
+    "title": "Radial gradient of superionic hydrogen in Earth's inner core",
+    "authors": [
+      "Zepeng Wu",
+      "Liangrui Wei",
+      "Chen Gao",
+      "Shunqing Wu",
+      "Renata M. Wentzcovitch",
+      "Yang Sun"
+    ],
+    "abstract": "arXiv:2602.03509v3 Announce Type: replace-cross \nAbstract: Hydrogen is considered a key light element in Earth's core, yet the thermodynamics of its superionic phase and its distribution in the inner core remain unclear. Here, we compute ab initio Gibbs free energies for liquid and superionic hcp and bcc Fe-H phases and construct the superionic-liquid phase diagram over pressure-temperature conditions relevant to the Earth's inner core. We find that phase diagrams at different inner-core pressures collapse when temperatures are scaled by the melting temperature of pure iron, indicating that solid-liquid partitioning is controlled primarily by a reduced temperature relative to iron melting and is weakly sensitive to pressure. This scaling relation further reconciles previously reported discrepancies in partition coefficients among theoretical studies and yields good agreement with available experimental data at low pressures. By applying thermochemical constraints, our free-energy results reveal a radial hydrogen gradient within the inner core. These results demonstrate that compositional gradients of superionic hydrogen in the inner core emerge naturally from equilibrium thermodynamics and suggest a general mechanism governing the depth-dependent distribution of light elements within Earth's inner core.",
+    "url": "https://arxiv.org/abs/2602.03509",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.geo-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Ab initio DFT computations of Gibbs free energies for Fe-H phases, constructing phase diagrams for Earth's inner core; satisfies all criteria (a)-(c) with atomistic representation and DFT methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "423f363ba4c2",
+    "title": "Interactions between interstitial oxygen and <math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si4.svg\" class=\"math\"><mfenced open=\"{\" close=\"}\"><mrow><mn>11</mn><mover accent=\"true\"><mn>2</mn><mo stretchy=\"true\">¯</mo></mover><mi>n</mi></mrow></mfenced></math> twin boundaries in α-Ti: implications for strain accommodation and interfacial failure",
+    "authors": [],
+    "abstract": "Publication date: 25 June 2026\nSource: Computational Materials Science, Volume 271\nAuthor(s): Qiying Tao, Xiaoliang Pan, Chunhua Tang, Xuelin Zhang, Yuyuan Jiang",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626003423?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Atomistic study of oxygen–twin boundary interactions in α-Ti, using DFT/MD; satisfies (a)–(c).",
+    "key_authors": []
+  },
+  {
+    "id": "882fee941c2f",
+    "title": "Unraveling the effects of anionic vacancies and temperature on mechanical properties of NbC and NbN: insights from quantum mechanical study",
+    "authors": [],
+    "abstract": "Publication date: 25 June 2026\nSource: Computational Materials Science, Volume 271\nAuthor(s): P.W. Muchiri, K.K. Korir, N.W. Makau, M.O. Atambo, G. O.Amolo",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626003435?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Atomistic DFT study on vacancies and temperature effects in NbC/NbN, satisfying (a) explicit atoms, (b) DFT methodology, (c) property insight.",
+    "key_authors": []
+  },
+  {
+    "id": "4a1069cd913d",
+    "title": "Lattice thermal conductivity and strain response of platinum dichalcogenide monolayers: A first-principles investigation",
+    "authors": [],
+    "abstract": "Publication date: 25 June 2026\nSource: Computational Materials Science, Volume 271\nAuthor(s): Nathaniel Bunker, Stuart Shepard, Manuel Smeu",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626003241?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "First-principles (DFT) investigation of thermal conductivity and strain response in monolayers, explicit atoms, method application.",
+    "key_authors": []
+  },
+  {
+    "id": "fe767fdbafcc",
+    "title": "Unsupervised Thermodynamics of Molecular Diffusion Models: Action-Operator Semantics and Auditable Free-Energy Readout",
+    "authors": [
+      "Wenjie Xi"
+    ],
+    "abstract": "arXiv:2606.30687v1 Announce Type: new \nAbstract: Diffusion models are increasingly utilized for modeling molecular structures and conformational ensembles, yet the thermodynamic meaning of their learned representations and scores remains elusive. To resolve this ambiguity, we introduce a mathematically consistent action-operator framework natively compatible with diffusion models. By defining a fixed molecular environment as a base action $S_0(x)$ and an alchemical perturbation as an operator $O(x)$, standard diffusion noising induces effective noised actions and operators whose gradients and alchemical derivatives are directly represented by the model's learned fields. This rigorous self-consistency enables a ``noisy operator bridge'' capable of reading out free-energy differences ($\\Delta F$) from endpoint ensembles and per-frame evaluations. In controlled experiments on alanine dipeptide systems, we show that incorporating physical inductive biases enables partial recovery of the base action and perturbation operator. When applied to a challenging C6-H to C6-F ligand-pocket nonbonded perturbation (185L/IND) with negligible phase-space overlap, our supervised bridge estimates the alchemical $\\Delta F$ within approximately $1\\ k_\\mathrm{B}T$ of a stable 19-state MBAR reference. Finally, we demonstrate that endpoint coordinates and binary labels alone are sufficient to partially recover the operator shape and a centered free-energy scale without any force or action supervision. This work provides a rigorous path toward transforming generative molecular diffusion models from black-box coordinate samplers into auditable thermodynamic estimators.",
+    "url": "https://arxiv.org/abs/2606.30687",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.stat-mech",
+      "cs.AI"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.8,
+    "relevance_reason": "Diffusion model method for free-energy readout on atomic coordinates (alanine dipeptide, ligand perturbation); satisfies (a)-(c) with explicit atoms and potential-based validation.",
+    "key_authors": []
+  },
+  {
+    "id": "f5f51ccb8090",
+    "title": "NAVIS: A LAMMPS-Python framework for efficient computation of nanochannel velocity and thermal interfacial slip",
+    "authors": [
+      "Sleeba Varghese",
+      "Sobin Alosious",
+      "Jesper Schmidt Hansen",
+      "Billy Dean Todd"
+    ],
+    "abstract": "arXiv:2601.11391v2 Announce Type: replace-cross \nAbstract: We present NAVIS (NAnochannel Velocity and thermal Interfacial Slip), a LAMMPS-Python scripted toolkit for computing the Navier (hydrodynamic) friction coefficient and Kapitza (thermal) resistance at arbitrary solid-fluid interfaces. NAVIS is based on equilibrium molecular dynamics (EMD) methods for calculating the linear response friction and thermal resistance at the interface, as well as the corresponding velocity and temperature slips. The methodology is based on our previous studies (Hansen, et al., Phys. Rev. E 84, 016313 (2011); Varghese et al., J. Chem. Phys. 154, 184707 (2021); Alosious, et al., J. Chem. Phys. 151, 194502 (2019); Alosious, et al., Langmuir 37, 2355-2361 (2021)), and in this work we provide a pedagogical framework for the implementation of this toolkit on two systems: (i) a water-graphene system (for hydrodynamic slip) and (ii) a water-CNT system (for thermal slip). We provide detailed instructions for performing the EMD simulations using the LAMMPS package and processing the simulation outputs using Python modules to obtain the desired quantities of interest. We expect the toolkit to be useful for computational researchers studying interfacial friction and thermal transport, key factors for efficient and practical applications of nanofluidic systems.",
+    "url": "https://arxiv.org/abs/2601.11391",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-01",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.8,
+    "relevance_reason": "NAVIS toolkit for computing interfacial slip using equilibrium molecular dynamics (LAMMPS); atomistic MD applied to water-graphene/CNT, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "faf3b8bbbce2",
+    "title": "Conditional Normalizing Flow for Gas-Surface Scattering from Thermal to Hypersonic Velocities",
+    "authors": [
+      "Miklas Sch\\\"utte",
+      "Stephen Hocker",
+      "Hansj\\\"org Lipp",
+      "Johannes Roth",
+      "Stefanos Fasoulas",
+      "Marcel Pfeiffer"
+    ],
+    "abstract": "arXiv:2606.31928v1 Announce Type: new \nAbstract: Accurate aerodynamic modeling of satellites in very low Earth orbit (VLEO) requires gas-surface interaction (GSI) models that capture the full velocity spectrum from thermal to orbital speeds. Atmospheric particles initially strike spacecraft surfaces at hypersonic velocities of 6 000 - 10 000 m/s. Due to surface roughness and complex geometries, especially within air-breathing electric propulsion (ABEP) intake systems, multiple collisions occur, progressively reducing the particle velocities. A recent machine learning framework for deriving scattering kernels from molecular dynamics (MD) simulations has shown promise, but remains limited to high-velocity single impacts and possibly violates fundamental equilibrium principles such as detailed balance. This work extends this machine learning based scattering kernel to cover the complete velocity range using conditional normalizing flows trained with physics-informed constraints, enabling accurate modeling of multi-bounce scenarios in realistic VLEO applications. We train a conditional Real-valued Non-Volume Preserving (cRealNVP) model on expanded molecular dynamics simulations covering velocities from thermal to hypersonic speeds, incorporating a detailed balance loss term. The resulting model demonstrates improved accuracy compared to previous approaches even in the original high-velocity regime, while successfully capturing thermal-velocity scattering. Quantitative assessment shows that thermalization is approximated within acceptable tolerances. This framework provides essential capabilities for accurate ABEP intake optimization and VLEO mission planning while offering a general methodology applicable to broader rarefied gas dynamics problems requiring thermodynamic consistency.",
+    "url": "https://arxiv.org/abs/2606.31928",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.8,
+    "relevance_reason": "Conditional normalizing flow for gas-surface scattering trained on molecular dynamics data; involves atomistic MD and MLIP-like model, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "72788ae90774",
+    "title": "Ultrafast magnetization induced by linearly polarized pulses is widespread in nonmagnetic semiconductors",
+    "authors": [
+      "Xiangzhou Zhu",
+      "Junfeng Qiao",
+      "Nicola Marzari",
+      "Matteo Calandra"
+    ],
+    "abstract": "arXiv:2606.31358v1 Announce Type: new \nAbstract: Ultrafast optical on-off switching of magnetic order promises near-petahertz information processing. Recently, it has been proposed that non-magnetic semiconductors with narrow band edges or strong exchange interactions could display ultrafast magnetization when photoexcited with linearly polarized femtoseconds pulses, but the experimental detection of this effect remains a challenge, mostly for the lack of suitable candidate compounds. Here, we present a high-throughput first-principles screening of the MC3D database of experimentally known inorganic crystals, identifying nearly 440 non-magnetic semiconductors that develop spin polarization under photoexcitation with linearly polarized pulses via a light-induced exchange-driven instability. We determine how the crystal field environment and band-edge orbital character govern the magnitude and the type of magnetic order of the photoinduced state and we unveil systematic chemical and periodic trends that provide intuitive guidance for materials selection. Our results argue that on-off switching of magnetization with linearly polarized femtosecond pulses is a widespread occurrence in non-magnetic semiconductors, opening novel avenues for experimental verification and application.",
+    "url": "https://arxiv.org/abs/2606.31358",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "High-throughput first-principles screening uses DFT on explicit atomic structures, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "f6cc6fb32139",
+    "title": "Modelling the diffusion of lattice defects in forsterite Mg<sub>2</sub>SiO<sub>4</sub>",
+    "authors": [],
+    "abstract": "Publication date: 25 June 2026\nSource: Computational Materials Science, Volume 271\nAuthor(s): Oscar A. Restrepo, Philippe Carrez, Caroline Traisnel, Normand Mousseau",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626003095?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Models diffusion of lattice defects in forsterite using atomistic simulation (likely MD or DFT), satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "34306f8cd5ed",
+    "title": "Correlation is magic in electronic structure Hamiltonians",
+    "authors": [
+      "Basie Seibert",
+      "Sam Alterman",
+      "Qingfeng Wang",
+      "Feng Qian",
+      "Akimasa Miyake",
+      "Peter J. Love"
+    ],
+    "abstract": "arXiv:2606.31799v1 Announce Type: cross \nAbstract: The gate and qubit requirements of quantum computations of electronic structure have been extensively studied. However, the quantum resources present in electronic ground states, as measured by entanglement and magic, remain less well understood. We study the relationship between correlation in electronic structure Hamiltonians and magic as measured by the 2-stabilizer Renyi entropy (2-SRE). Perturbative calculations show that the 2-SRE of a given state is proportional to its overlap with a reference stabilizer state. In the context of quantum chemistry, this links the magic of electronic structure ground states to their Hartree-Fock weight, an established measure of electronic correlation. We then show that the 2-SRE of post-Hartree-Fock ground states is proportional to the correlation energy they recover. We explore this connection through the contextual subspace (CS) method. We present a theoretical framework showing that the CS method can be used to monotonically vary the magic of approximate CS ground states, and we prove that the correlation energy recovered by the CS ground states is proportional to the magic present in the approximate ground state. We present simulation results using 190 molecular species under Jordan-Wigner encoding at a range of bond lengths. The linear relationships between magic and correlation are robust across the Hamiltonians in our dataset, but break down at bond lengths beyond the Coulson-Fischer point, where Hartree-Fock fails to capture key physical features of the true ground state wavefunction. By establishing linear relationships for both correlation energy and Hartree-Fock reference weight with the 2-SRE, we conclude that for weakly- and moderately-correlated electronic structure Hamiltonians, the correlation is directly represented by 2-SRE, and thus by the magic.",
+    "url": "https://arxiv.org/abs/2606.31799",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Electronic Structure",
+    "relevance_score": 0.75,
+    "relevance_reason": "Studies magic and correlation in electronic structure using post-Hartree-Fock methods on molecular systems; satisfies (a)-(c) as quantum chemistry method development/application.",
+    "key_authors": []
+  },
+  {
+    "id": "f9abc75ba6df",
+    "title": "Three-phonon mixing as a source of light-induced chirality",
+    "authors": [
+      "Y . Zhu",
+      "A. Vanderhaegen",
+      "Z. Zeng",
+      "M. F\\\"orst",
+      "M. Fechner",
+      "C. Putzke",
+      "P. J. W. Moll",
+      "D. Prabhakaran",
+      "P. Radaelli",
+      "A. Cavalleri"
+    ],
+    "abstract": "arXiv:2606.31356v1 Announce Type: new \nAbstract: Mid- and far-infrared optical pulses have found wide applicability in experiments in which collective modes of solids are driven nonlinearly, as a means to manipulate functional properties of materials on ultrafast time scales. In the illustrative case of boron phosphate (BPO$_4$), mid-infrared excitation has been used to induce chirality in an otherwise achiral crystal. The pump frequency dependence of photo-induced chirality reveals that, while on-resonance excitation is understood in terms of the well-documented phonon rectification from two-phonon mixing, additional pathways become relevant when the pump pulse is detuned from resonance. We find that a three-mode mixing mechanism becomes important in this case, whereas the contributions from other impulsive Raman terms are negligible. The results reported here provide a quantitative foundation for nonlinear phononic lineshapes in transparent materials, and open up new opportunities for lattice control.",
+    "url": "https://arxiv.org/abs/2606.31356",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Likely involves DFT phonon calculations, satisfying (a)-(c), but abstract does not explicitly confirm simulation method.",
+    "key_authors": []
+  },
+  {
+    "id": "5e3d1b2b1a5d",
+    "title": "Non-Maxwellian Velocity Statistics in Supercooled Liquids and Their Possible Relation to Super-Arrhenius Viscosity",
+    "authors": [
+      "Giorgi Tsereteli",
+      "Zohar Nussinov"
+    ],
+    "abstract": "arXiv:2606.31985v1 Announce Type: new \nAbstract: For particles of fixed mass, classical equilibrium statistical mechanics dictates a Maxwellian velocity distribution determined solely by the temperature, regardless of the interactions, density, or structure. Supercooled glass forming liquids realize long lived metastable states that evade equilibrium crystallization and may thus violate assumptions underlying Maxwellian statistics. We numerically demonstrate that supercooled liquids can exhibit persistent non-Maxwellian velocity distributions with deviations connected to their exceptionally slow super-Arrhenius relaxation. Our work is motivated by a general result establishing that long lived metastable states may exhibit finite width distributions of intensive variables. A distribution of temperatures implies non-Maxwellian velocity statistics. We test this prediction by introducing stochastic thermostats that generate stationary states while, unlike conventional thermostats, not imposing Maxwellian velocity distributions. Simulations with these thermostats yield long lived states that have, by comparison to Maxwellian velocity distributions, an excess kurtosis $0<\\kappa\\lesssim0.3$. Crystallization is strongly impeded with increasing $\\kappa$. In a minimal description, temperature fluctuations are characterized by a dimensionless width $\\overline{A}$ with $\\kappa\\simeq3\\overline{A}^{2}$. The nearly constant $\\overline{A}$ (of an average value $0.08$ and standard deviation $0.03$) found in viscosity data collapse across $45$ glass formers and in specific heat signatures is consistent with kurtosis found in our simulations. Long time non-Maxwellian velocity statistics may thus link slow relaxation, transport, and thermodynamic measurements. Independent of the tested theory, the stochastic thermostats that we introduce offer a molecular dynamics route to non-Maxwellian velocity statistics.",
+    "url": "https://arxiv.org/abs/2606.31985",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.soft"
+    ],
+    "published": "Wed, 01 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-01",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "MD simulations of supercooled liquids to study non-Maxwellian velocity statistics; atomistic simulation, satisfies (a)-(c) as an application study.",
+    "key_authors": []
+  }
+]
