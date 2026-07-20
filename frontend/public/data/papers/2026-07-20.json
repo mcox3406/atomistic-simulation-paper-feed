@@ -1,0 +1,506 @@
+[
+  {
+    "id": "ea7384818b59",
+    "title": "Machine learning of electronic structure and atomistic properties from the external potential",
+    "authors": [
+      "Jigyasa Nigam",
+      "Tess Smidt",
+      "Genevi\\`eve Dusson"
+    ],
+    "abstract": "arXiv:2602.15345v2 Announce Type: replace \nAbstract: Electronic structure calculations remain a major bottleneck in atomistic simulations and, not surprisingly, have attracted significant attention in machine learning (ML). Most existing approaches learn a direct map from molecular geometries, typically represented as graphs or encoded local environments, to molecular properties or use ML as a surrogate for electronic structure theory by targeting quantities such as Fock or density matrices expressed in an atomic orbital (AO) basis.\n  Inspired by the Hohenberg-Kohn theorem, in this work, we propose an operator-centered framework in which the external (nuclear) potential, expressed in an AO basis, serves as the model input. From this operator, we construct hierarchical, body-ordered representations of atomic configurations that closely mirror the principles underlying several popular atom-centered descriptors. At the same time, the matrix-valued nature of the external potential provides a natural connection to equivariant message-passing neural networks. In particular, we show that successive products of the external potential provide a scalable route to equivariant message passing and enable an efficient description of long-range effects. We demonstrate that this approach can be used to model molecular properties, such as energies and dipole moments, from the external potential, or learn effective operator-to-operator maps, including mappings to the Fock matrix and the reduced density matrix from which multiple molecular observables can be simultaneously derived.",
+    "url": "https://arxiv.org/abs/2602.15345",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-20",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Tess Smidt",
+    "key_authors": [
+      "Tess Smidt"
+    ]
+  },
+  {
+    "id": "af74546d6151",
+    "title": "Nonadiabatic excited-state dynamics with quantum Monte Carlo-trained machine learning: azomethane as a stringent test",
+    "authors": [
+      "Alfonso Annarelli",
+      "Emiel Slootman",
+      "Claudia Filippi"
+    ],
+    "abstract": "arXiv:2607.16129v1 Announce Type: new \nAbstract: We introduce quantum Monte Carlo (QMC)-trained multi-state machine-learned (ML) force fields for nonadiabatic excited-state dynamics, targeting photochemical processes in which the electronic character changes along the reaction path and a consistent correlated description is required. In this framework, variational Monte Carlo wave functions combine compact selected configuration-interaction expansions with a Jastrow factor that explicitly accounts for dynamical correlation, while neural networks convert the stochastic QMC data into smooth potential energy surfaces for large surface-hopping ensembles. We apply this approach to azomethane, a demanding test case involving torsional relaxation through conical-intersection regions and C--N bond dissociation on the hot ground state. Benchmark calculations support the accuracy of the QMC reference data and show robust force convergence across isomerization and dissociation geometries. The QMC-trained dynamics preserves the expected photoisomerization mechanism, strongly reduces the excessive C--N breaking obtained with complete active space self-consistent field, and predicts a small but non-negligible prompt dissociation component after internal conversion, with a timescale consistent with femtosecond-resolved mass-spectrometry experiments. These results establish QMC-ML as a practical route to nonadiabatic photochemical dynamics with accurate wave-function reference data.",
+    "url": "https://arxiv.org/abs/2607.16129",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.9,
+    "relevance_reason": "QMC-trained ML force fields for nonadiabatic dynamics on azomethane; explicit atomistic simulation, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "583c2d2c8a95",
+    "title": "Tracking electron capture processes in classical molecular dynamics simulations for spectral line broadening in plasmas",
+    "authors": [
+      "D. Gonz\\'alez-Herrero",
+      "G. P\\'erez-Callejo",
+      "R. Florido",
+      "M. A. Gigosos"
+    ],
+    "abstract": "arXiv:2502.04808v3 Announce Type: replace-cross \nAbstract: Plasma spectroscopy is a fundamental tool for diagnosing laboratory and astrophysical plasmas. Accurate interpretation of spectra depends upon precise modeling and comprehension of Stark broadening and other mechanisms affecting spectral lines. In this context, computer simulations have emerged as valuable tools, offering idealized experiments with well-defined conditions. Molecular dynamics simulations, in particular, excel at replicating the particle interactions within the plasma and their impact on the state of a radiating atom or ion. However, these simulations present challenges in tracking electron capture processes, since setting an unambiguous criterion to distinguish between bound and free electrons is not trivial. In this paper we introduce a new algorithm that, within a classical framework, precisely identifies the scenario in which an electron is captured by an ion and then follows a stable orbit around it. The algorithm's applicability extends to emitters with charges Z >= 1. The procedure enables the correct identification of valid time-histories of the electric microfield perturbing the emitting ion, which will be used for subsequent line shape calculations. The ionization balance results obtained from the application of this algorithm are compared with an additional method based on the potential energy of the particles in the simulations and with atomic kinetic simulations. For both methods, we find good agreement, therefore validating the use of this approach.",
+    "url": "https://arxiv.org/abs/2502.04808",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.IM",
+      "physics.atom-ph",
+      "physics.comp-ph",
+      "physics.optics"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-07-20",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Classical MD applied to electron capture in plasmas with explicit atoms; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "c7ba1fdac46a",
+    "title": "A Generalized Framework Based on Enveloping Distribution Sampling for Calculating Geometrical Free-Energy Differences",
+    "authors": [
+      "Domen Pregeljc",
+      "Sereina Riniker"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006291/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-20",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Enveloping distribution sampling is a free-energy method for atomistic simulations; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "f3d039fc5480",
+    "title": "Ab initio time-dependent GW approach for nonequilibrium exciton-phonon coupled dynamics across momentum space",
+    "authors": [
+      "Zhenfa Zheng",
+      "Benran Zhang",
+      "Jiawei Ruan",
+      "Chih-En Hsu",
+      "Zien Zhu",
+      "Supavit Pokawanvit",
+      "Felipe H. da Jornada",
+      "Hung-Chung Hsueh",
+      "Ting Cao",
+      "Mauro Del Ben",
+      "Yang-Hao Chan",
+      "Steven G. Louie",
+      "Zhenglu Li"
+    ],
+    "abstract": "arXiv:2607.15411v1 Announce Type: new \nAbstract: The dynamics of optical excitations in materials generally involves intertwined electron-hole (e-h) and electron-phonon (e-ph) interactions out of equilibrium. However, a full theoretical description of such nonequilibrium dynamics requires a systematic treatment of the coherent excitonic excitations and exciton-phonon interactions across the entire crystal momentum space in real time, which remains a major challenge and out of reach for first-principles approaches. Here, we present a new ab initio time-dependent adiabatic GW methodology that incorporates full finite-momentum e-h and e-ph couplings, enabling real-time simulations of the coherently coupled exciton-phonon dynamics. The excitonic excitations are naturally described by the equation of motion of the interacting single-particle density matrix, whereas their couplings to phonons are formulated within a linear-response framework, hence the simulations can be efficiently carried out within a primitive unit cell. We demonstrate the capabilities of this new approach by investigating the direct-to-indirect exciton transitions in monolayer WSe2 in a pump-probe setup of time-resolved and angle-resolved photoemission spectroscopy. Our results reveal that the phonon-mediated ultrafast intervalley dynamics of excitons of this system is within ~0.5 ps, manifested as in-gap photoemission intensity transfer from the K-valley to the Q-valley. This work establishes a comprehensive and practical nonequilibrium Green's function framework for accurately simulating nonequilibrium and coherent excitations involving coupled excitons and phonons from first principles.",
+    "url": "https://arxiv.org/abs/2607.15411",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Develops ab initio time-dependent GW method for exciton-phonon dynamics, satisfying (a) explicit atoms, (b) first-principles dynamics, (c) method advance.",
+    "key_authors": []
+  },
+  {
+    "id": "a610a8f39401",
+    "title": "exa-PD: A scalable high-performance workflow for multi-element phase diagram construction",
+    "authors": [
+      "Zhuo Ye",
+      "Feng Zhang",
+      "Maxim Moraru",
+      "Weiyi Xia",
+      "Ying Wai Li",
+      "Yongxin Yao",
+      "Cai-Zhuang Wang"
+    ],
+    "abstract": "arXiv:2607.15476v1 Announce Type: new \nAbstract: Exa-PD is a highly parallelizable workflow designed for the construction of multi-element phase diagrams (PDs). It uses standard sampling techniques, molecular dynamics (MD) and Monte Carlo (MC) as implemented in the LAMMPS package, to simultaneously sample multiple phases over a fine temperature-composition mesh for free-energy calculations. Parsl serves as the global workflow engine, coordinating large ensembles of MD and MC tasks to achieve massive parallelization with strong scalability. The resulting free energies of liquid and solid phases are then fed to CALPHAD modeling via the PyCalphad package to construct multi-element PDs.",
+    "url": "https://arxiv.org/abs/2607.15476",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.DC",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses MD and MC in LAMMPS for free-energy calculations in a scalable workflow, satisfying (a) explicit atoms, (b) MD/MC, (c) workflow advance.",
+    "key_authors": []
+  },
+  {
+    "id": "c380efec779c",
+    "title": "Atomistic mechanism of corrosion-induced grain boundary migration in NiCr alloys in molten FLiNaK",
+    "authors": [
+      "Sadia Khan",
+      "Hamdy Arkoub",
+      "Miaomiao Jin"
+    ],
+    "abstract": "arXiv:2607.16167v1 Announce Type: new \nAbstract: Corrosion of Ni-Cr structural alloys in molten fluoride salts is a persistent material degradation problem, yet the atomistic role of grain boundaries in this process remains poorly understood. Here we use reactive molecular dynamics to investigate corrosion of NiCr alloys in molten FLiNaK across four representative grain boundaries ($\\Sigma3(111)$, $\\Sigma11(113)$, $\\Sigma5(012)$, and $\\Sigma5(013)$) and corresponding bulk surfaces. Surface crystallography controls the initial dissolution stage, while grain boundary character governs the spatial localization and longer-time evolution of corrosion. We further identify a corrosion-driven grain boundary migration mechanism in which fluorine localization, preferential chromium dissolution, and vacancy-mediated mobility together drive interfacial motion away from the dealloyed region. The coherent $\\Sigma3(111)$ boundary suppresses these processes, indicating low-energy special boundaries as targets for grain boundary engineering of corrosion-resistant Ni-Cr alloys.",
+    "url": "https://arxiv.org/abs/2607.16167",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses reactive MD to study corrosion-driven grain boundary migration, satisfying (a) explicit atoms, (b) MD, (c) application.",
+    "key_authors": []
+  },
+  {
+    "id": "19a5d3cbbfcc",
+    "title": "Thermo-elastic properties of hydrated epoxy-graphene nanocomposites from ensemble-based molecular dynamics simulations",
+    "authors": [
+      "Maxime Vassaux",
+      "Werner A. M\\\"uller",
+      "James L. Suter",
+      "Alexandros Anastasiou",
+      "Martin Simmons",
+      "David Tilbrook",
+      "Peter V. Coveney"
+    ],
+    "abstract": "arXiv:2607.15301v1 Announce Type: cross \nAbstract: Epoxy-based materials are inherently hygroscopic, absorbing moisture from the environment, which can significantly alter their short and long-term performance. The presence of graphene is often considered as a potential candidate to act as a microscopic barrier, mitigating the adverse effects of hydration on the matrix. This study investigates the impact of hydration on the glass transition and elastic mechanical properties of epoxy resins and their graphene nanocomposites, focusing on water content up to 5 %wt. Using large-ensemble molecular dynamics simulations, we analyze the temperature-driven glass transition and mechanical response of both neat epoxy and epoxy-graphene systems under varying hydration levels. Our results reveal a distinct threshold at 3 %wt water content: below this, hydration primarily reduces the glass transition temperature, while mechanical properties remain unaffected. Beyond 3 %wt, however, the mechanical properties deteriorate, highlighting a non-linear sensitivity to water uptake. Furthermore, we emphasize the critical role of ensemble size in ensuring the reliability of molecular dynamics predictions for such heterogeneous systems. Our simulations demonstrate that ensembles substantially larger than current state-of-the-art standards are necessary to achieve converged distributions of the predicted mechanical properties, particularly in highly heterogeneous hydrated epoxy-graphene nanocomposites. These findings provide novel insights into the hydration behavior of epoxy-based materials and underscore the potential of graphene to enhance their environmental resistance. This work also advances the understanding of structure-property relationships in polymer nanocomposites, offering guidance for the design of more robust materials in humid environments.",
+    "url": "https://arxiv.org/abs/2607.15301",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Satisfies (a)-(c): explicit atomic system in epoxy-graphene nanocomposites, classical MD simulations, applied to study hydration effects on properties.",
+    "key_authors": []
+  },
+  {
+    "id": "93eff0634c09",
+    "title": "An Information-theoretic Collective Variable for Configurational Entropy",
+    "authors": [
+      "Ashley Z. Guo",
+      "Kaelyn Chang",
+      "Nicholas J. Corrente"
+    ],
+    "abstract": "arXiv:2602.22440v2 Announce Type: replace-cross \nAbstract: Entropy governs molecular self-assembly, phase transitions, and material stability, yet remains challenging to quantify and directly control in molecular systems. Here, we demonstrate that the computable information density (CID), a data compression-based information theoretic metric, provides a general per-configuration structural descriptor that tracks configurational entropy changes in molecular dynamics simulations, reflecting both local and long-range structural organization. We validate the CID across systems of increasing complexity, beginning with single-component Lennard-Jones melting before examining binary phase separation, polymer condensation and dispersion, and assembly of amorphous carbon networks at multiple densities. Unlike conventional order parameters, CID requires no a priori knowledge of relevant structural features and captures organizational signatures across a variety of molecular systems and discretization resolutions. By establishing a data compression-based structural complexity metric as a practical proxy for configurational entropy, this framework lays a foundation for future entropy-driven materials design and optimization strategies.",
+    "url": "https://arxiv.org/abs/2602.22440",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-20",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.8,
+    "relevance_reason": "Collective variable for configurational entropy in MD simulations; atomistic simulation methodology, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "9d92e253b67b",
+    "title": "Electronic Structure Calculations from Occupation Numbers on Quantum Computers",
+    "authors": [
+      "Edison X. Salazar",
+      "Juan Felipe Huan Lew-Yee",
+      "Mario Piris"
+    ],
+    "abstract": "arXiv:2607.15425v1 Announce Type: new \nAbstract: We present a quantum-classical algorithm for electronic structure calculations that dramatically reduces the quantum measurement cost of variational quantum eigensolver (VQE) approaches. While conventional VQE methods require measurements scaling as O(M^4) with system size M, the proposed occupation-number VQE (ON-VQE) reduces this cost to O(M/2) by avoiding reduced density matrix (RDM) measurements and relying exclusively on ONs. The method exploits only the diagonal elements of the one-particle RDM in the natural orbital representation, where occupations are obtained directly from computational-basis measurement outcomes. By restricting the variational ansatz to double excitations within orbital subspaces associated with electron pairs, the required measurements can be grouped into a small number of qubit-wise commuting observables, yielding an efficient and scalable measurement strategy. The approach is validated through simulations and executions on quantum hardware for the cubic H$_8$ cluster, demonstrating the feasibility of extracting accurate ONs from quantum measurements and evaluating electronic energies within the natural orbital functional (NOF) framework. Across representative molecular systems, the extracted ONs enable accurate energy evaluation with state-of-the-art NOFs while maintaining a dramatically reduced measurement cost. These results establish a scalable route toward quantum simulation of strongly correlated electronic systems, demonstrating that accurate electronic energies can be obtained from quantum measurements of ONs alone.",
+    "url": "https://arxiv.org/abs/2607.15425",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Quantum algorithm for electronic structure on explicit molecular systems; satisfies (a)-(c) as an ab initio method development.",
+    "key_authors": []
+  },
+  {
+    "id": "10a8dc45ad6d",
+    "title": "$GW$ reduced density matrix from iterated linearized Dyson equation",
+    "authors": [
+      "Fabien Bruneval",
+      "Erik Verzijl",
+      "Arno F\\\"orster",
+      "Mauricio Rodriguez-Mayorga"
+    ],
+    "abstract": "arXiv:2607.15695v1 Announce Type: new \nAbstract: Iterating the Dyson equation with the static part of the self-energy leads to a concise and possibly improved expression of the one-body reduced density matrix from any self-energy approximation. Here we apply the procedure to Hedin's $GW$ approximation. The non-iterated $GW$ based density matrix was already known to yield accurate density matrices for molecular systems. We show that the Dyson-equation-based procedure is equivalent to the so-called variational Z-vector approach applied to the Random-Phase approximation energy functional, but only in the case of a Hartree-Fock mean-field starting point. When a generalized Kohn-Sham scheme is employed instead, the two approaches differ. By comparing the density matrix for a benchmark set of 34 small molecules to coupled-cluster reference values, we conclude that the iterated Dyson equation indeed produces improved density matrices for molecular systems. Interestingly, we observe that the excitation rank of the reference coupled-cluster matters much and that the inclusion of triple excitations (CCSDT) quantitatively changes the conclusions of the benchmark as compared to single and double excitations coupled-cluster (CCSD).",
+    "url": "https://arxiv.org/abs/2607.15695",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "GW method development for density matrices on small molecules; atomistic electronic structure, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8ec1dc8f16e4",
+    "title": "Empowering Neural Network-based Quantum Monte Carlo with Local Pseudopotentials",
+    "authors": [
+      "Weizhong Fu",
+      "Ryunosuke Fujimaru",
+      "Ruichen Li",
+      "Yuzhi Liu",
+      "Xuelan Wen",
+      "Xiang Li",
+      "Kenta Hongo",
+      "Liwei Wang",
+      "Tom Ichibha",
+      "Ryo Maezono",
+      "Ji Chen",
+      "Weiluo Ren"
+    ],
+    "abstract": "arXiv:2505.19909v2 Announce Type: replace \nAbstract: Neural Network-based Quantum Monte Carlo (NNQMC), an emerging method for solving many-body quantum systems with high accuracy, has been mainly applied to small systems due to demanding computation requirements. In this work, we introduce a framework based on local pseudopotentials to break through such limitation, improving the computational efficiency and scalability of NNQMC. The incorporation of local pseudopotentials reduces the number of electrons treated in neural network and also achieves better relative energy accuracy than all electron NNQMC calculations for complex systems. This counterintuitive outcome is made possible by the distinctive characteristics inherent to NNQMC. Notably, by avoiding costly integration terms, this approach is also substantially more efficient than its widely used semilocal counterparts. Our approach enables the reliable treatment of large and challenging systems, such as the $\\text{Fe}_4 \\text{S}_4 (\\text{SCH}_3)_4$ iron-sulfur cluster. Overall, our findings demonstrate that the synergy between NNQMC and local pseudopotentials substantially expands the scope of accurate ab initio calculations.",
+    "url": "https://arxiv.org/abs/2505.19909",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Neural network quantum Monte Carlo with pseudopotentials for molecular systems; explicit atomistic electronic structure, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e44443d09f4f",
+    "title": "Quantum Simulation of Ligand-like Molecules through Sample-based Quantum Diagonalization in Density Matrix Embedding Framework",
+    "authors": [
+      "Ashish Kumar Patra",
+      "Anurag K. S. V.",
+      "Sai Shankar P.",
+      "Ruchika Bhat",
+      "Raghavendra V.",
+      "Rahul Maitra",
+      "Jaiganesh G"
+    ],
+    "abstract": "arXiv:2511.22158v4 Announce Type: replace-cross \nAbstract: The accurate treatment of electron correlation in extended molecular systems remains computationally challenging using classical electronic structure methods. Hybrid quantum-classical algorithms offer a potential route to overcome these limitations; however, their practical deployment on existing quantum computers requires strategies that both reduce problem size and mitigate hardware noise. In this work, we investigate ground-state energy calculations of ligand-like molecules using Sample-based Quantum Diagonalization (SQD) within the Density Matrix Embedding Theory (DMET) framework, focusing on low-symmetry systems with diverse bonding motifs that exhibit subsystem-dependent variations in fragment-environment entanglement. These entanglement-based variations directly influence bath orbital construction, impurity sizes, and the structure of the embedded Hamiltonians, posing nontrivial challenges for both embedding and quantum sampling. By combining DMET fragmentation with SQD-based construction of reduced configuration spaces through quantum sampling and iterative configuration recovery, we perform quantum simulations on IBM's Eagle R3 (IBM Sherbrooke) and IBM's Heron R3 (IBM Boston) superconducting quantum hardware thereby, showing that the entanglement structure across embedding subsystems plays a central role in determining the efficiency and accuracy of the simulations. Despite these complexities, we show that the DMET-SQD framework yields ground-state energies in strong agreement with DMET-FCI benchmarks, achieving chemical accuracy (1 kcal/mol) across all systems studied. These results demonstrate that SQD-based quantum simulations can be robustly extended to low-symmetry, chemically realistic, industry relevant molecules, and highlight the importance of entanglement-aware embedding strategies for scalable quantum electronic structure calculations.",
+    "url": "https://arxiv.org/abs/2511.22158",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 4,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Quantum computing and DMET for ligand molecules; atomistic electronic structure, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "493271e2e2a7",
+    "title": "Unified ab initio quantum-electrodynamical density-functional theory for cavity-modified electron-phonon-photon coupling in solids",
+    "authors": [
+      "Benshu Fan",
+      "I-Te Lu",
+      "Michael Ruggenthaler",
+      "Angel Rubio"
+    ],
+    "abstract": "arXiv:2603.24095v2 Announce Type: replace \nAbstract: Quantum-electrodynamical density-functional theory (QEDFT) provides a first-principles framework for describing materials coupled to quantized electromagnetic fields. While QEDFT has successfully captured cavity-induced modifications of electronic structures in atoms and molecules, a fully self-consistent and accurate framework to simulate and predict the structural, phonon-related, polarization and optical response of periodic solids in optical cavities has remained elusive. Here, we introduce a unified QEDFT approach that combines collective light-matter coupling parameter in the electronic ground state, density functional perturbation theory for phonons, and real-time time-dependent QEDFT for optical excitations. This framework enables ab initio calculations of cavity-modified electronic and phononic dispersions, Born effective charges, dielectric tensors, and both resonant and non-resonant optical absorption spectra. Using wurtzite gallium nitride (GaN) in an optical cavity as a case study, we demonstrate that the quantized vacuum field reshapes electronic, phononic and polarization properties, producing experimentally accessible signatures in the dielectric function and absorption spectra. These results establish QEDFT as a general first-principles platform for predicting and exploring cavity-modified quantum materials.",
+    "url": "https://arxiv.org/abs/2603.24095",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.optics"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Satisfies (a)-(c): explicit atomic solids (GaN), develops QEDFT method (DFT-based), applied to compute cavity-modified properties.",
+    "key_authors": []
+  },
+  {
+    "id": "f7b7e7263e44",
+    "title": "DyneTrion: A Spatio-temporally Coherent Generative Emulator for Protein Dynamics Across Timescales",
+    "authors": [
+      "Kaihui Cheng",
+      "Zhiqiang Cai",
+      "Peng Tu",
+      "Yisong Yao",
+      "Limei Han",
+      "Libo Wu",
+      "Siyu Zhu",
+      "Tzuhsiung Yang",
+      "Yuan Qi"
+    ],
+    "abstract": "arXiv:2607.15309v1 Announce Type: cross \nAbstract: Proteins function through coordinated motion across multiple spatial and temporal scales, underpinning processes such as ligand binding, allostery, and catalysis. However, accessing long-timescale conformational change through molecular dynamics (MD) simulations remains prohibitively expensive for systematic exploration across diverse systems. Here, we present DyneTrion, a generative protein dynamics emulator that jointly enforces geometric symmetry, structural consistency and temporal coherence within a single framework. DyneTrion uses a tri-attention architecture that integrates invariant point attention (IPA) for SE(3)-robust geometric updates, spatial attention anchored to a reference conformation to preserve structural integrity, and temporal attention to model correlated evolution across time frames.\n  Across 100-ns MD trajectory simulation benchmarks, DyneTrion reproduces MD-derived flexibility, ensemble distributions and interaction observables while maintaining stereochemical validity during extrapolation. To evaluate long time-scale generalization, we introduce dynamicPDB, a dataset of over 10,000 proteins with up to 1-$\\mu$s all-atom trajectories at 10-ps resolution and accompanying physical annotations. On microsecond trajectories, DyneTrion preserves free-energy landscapes and metastable-state populations, and it supports large conformational propagation in apo-to-holo transitions and fast folders. Together, DyneTrion provides a scalable path from static structure prediction toward time-resolved, ensemble-faithful protein modeling. The code is publicly available at https://github.com/fudan-generative-vision/DyneTrion",
+    "url": "https://arxiv.org/abs/2607.15309",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "q-bio.QM",
+      "cs.LG"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.8,
+    "relevance_reason": "Generative protein dynamics emulator trained on all-atom MD trajectories, reproduces free-energy landscapes; satisfies (a)-(c) with atomistic representation and MD validation.",
+    "key_authors": []
+  },
+  {
+    "id": "55558469993e",
+    "title": "Exploring the Potential of BY3 (Y = P, As) Monolayers as High-Capacity and Rapid-Diffusion Anodes for Sodium-Ion Batteries",
+    "authors": [
+      "Jakkapat Seeyangnok",
+      "Joongjai Panpranot",
+      "Udomsilp Pinsook"
+    ],
+    "abstract": "arXiv:2607.15514v1 Announce Type: new \nAbstract: The rapid advancement of sodium-ion batteries (SIBs) demands robust anode materials capable of delivering high specific capacities while maintaining rapid ion transport kinetics. In this work, we employ first-principles density functional theory (DFT) to systematically evaluate the two-dimensional BX3 (X = As, P) monolayers as high-performance anode candidates for SIBs. Our calculations reveal that both the BAs3 and BP3 frameworks exhibit excellent mechanical and dynamical stability alongside an intrinsic metallic character. These materials demonstrate a strong thermodynamic affinity for Na adsorption, driven by a synergistic ionic and covalent bonding mechanism that highly favors the H3 hollow site. Furthermore, they facilitate exceptionally fast charge and discharge kinetics, characterized by ultralow optimal Na-ion migration barriers of 0.19 eV and 0.26 eV for BAs3 and BP3, respectively. Crucially, projected density of states (PDOS) analyses confirm that both systems preserve their robust metallic conductivity even at their maximum theoretical sodiation limits (Na120B8X24), ensuring continuous and efficient electron transport throughout the electrochemical cycle. We predict low, stable average open-circuit voltages of 0.15 V for BAs3 and 0.18 V for BP3, alongside ultrahigh theoretical specific capacities of 1365 mAh g-1 and 3875 mAh g-1, respectively, which significantly outperform contemporary 2D SIB anodes. These compelling theoretical findings establish the BX3 monolayers as outstanding, structurally resilient candidates for next-generation, high-energy-density energy storage systems.",
+    "url": "https://arxiv.org/abs/2607.15514",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Applies DFT to compute properties of 2D monolayers as battery anodes, satisfying (a) explicit atoms, (b) DFT calculations, (c) materials application.",
+    "key_authors": []
+  },
+  {
+    "id": "f26ccf6bee83",
+    "title": "Symmetry-Enforced Dirac Fermions and Structural Metastability in Pentagonal Monolayers of Transition-Metal Ditellurides",
+    "authors": [
+      "Manoj Gadtoula",
+      "Clayton Conner",
+      "Avinash Sah",
+      "Ronghao Luo",
+      "Guang Bian"
+    ],
+    "abstract": "arXiv:2607.15580v1 Announce Type: new \nAbstract: The recent synthesis of pentagonal PdTe$_2$ monolayer motivates broader research interests in transition-metal ditellurides whose electronic phases are governed by symmetry and structural reconstruction. The pentagonal phase of transition-metal ditellurides exhibits electronic properties that are dramatically different from those of its hexagonal counterpart due to its lower crystalline symmetry. Using first-principles calculations, we study monolayer $X$Te$_2$ ($X=\\mathrm{Pd},\\mathrm{Pt},\\mathrm{Ni}$) in both hexagonal and pentagonal polymorphs. By constructing a continuous structural interpolation between the hexagonal and pentagonal phases, we show that the semimetal (hex)-to-semiconductor (penta) transition occurs only after an intermediate structural threshold rather than at the onset of symmetry reduction. The gap opening coincides with the formation of Te--Te dimers, which drive the bonding--antibonding splitting of the Te $p$ states and reorganize the band edges. In addition, the nonsymmorphic symmetry of the pentagonal phase enforces band degeneracies at the Brillouin-zone boundary, leading to symmetry-protected two-dimensional (2D) Dirac states. These results establish pentagonal $X$Te$_2$ monolayers as a new class of 2D semiconductors in which symmetry constraints and local bonding collectively shape the unconventional semiconducting electronic structure.",
+    "url": "https://arxiv.org/abs/2607.15580",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses DFT to study electronic structure of 2D monolayers, satisfying (a) explicit atoms, (b) DFT, (c) application.",
+    "key_authors": []
+  },
+  {
+    "id": "a63734a05801",
+    "title": "Interface-Engineered Giant Multistate Resistance Switching in Altermagnetic CrSb Multiferroic Tunnel Junctions",
+    "authors": [
+      "Zhi Yan",
+      "Yuwen Hua",
+      "Yueting Li",
+      "Xujin Zhang",
+      "Jianhua Xiao",
+      "Xiaohong Xu"
+    ],
+    "abstract": "arXiv:2607.15728v1 Announce Type: new \nAbstract: Altermagnets enable spin-split transport without stray magnetic fields, yet converting their momentum-dependent spin splitting into a strong tunnel-junction response requires interface-selected tunneling channels. Here, using density functional theory combined with nonequilibrium Green's function calculations, we demonstrate giant multistate resistance switching in CrSb/$\\alpha$-In$_2$Se$_3$ altermagnetic multiferroic tunnel junctions. The response is governed not by the bulk spin splitting of CrSb alone, but by a symmetry-selected interfacial mechanism in which Cr/Sb terminations and \\textit{h}-BN or graphene insertion layers determine spin-channel matching, while ferroelectric polarization reshapes the electrostatic barrier. Symmetric and asymmetric terminations reverse the correspondence between parallel/antiparallel N\\'eel-vector configurations and high-/low-resistance states, showing that the actual alignment of interfacial Cr moments selects the dominant tunneling channels. Monolayer-In$_2$Se$_3$ junctions exhibit four nonvolatile resistance states, with tunneling magnetoresistance (TMR) and tunneling electroresistance (TER) reaching 1626\\% and 2206\\%, respectively, and increasing to 9576\\% and 4144\\% upon Fermi-level shifting. Finite-bias calculations further reveal robust spin filtering and tunable spin-polarized currents. Extending the barrier to bilayer In$_2$Se$_3$ introduces interlayer polarization coupling, enabling eight resistance states with maximum TMR and TER values of $3.77\\times10^{4}\\%$ and $4.18\\times10^{5}\\%$, respectively. These results establish interface symmetry, spin-channel matching, and ferroelectric barrier reconstruction as design principles for stray-field-free multistate spintronic tunnel devices.",
+    "url": "https://arxiv.org/abs/2607.15728",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses DFT with NEGF for transport in tunnel junctions, satisfying (a) explicit atoms, (b) DFT, (c) application.",
+    "key_authors": []
+  },
+  {
+    "id": "ad68ec31b46b",
+    "title": "Spectral amplification for ground-state energy estimation of electronic structure in first quantization",
+    "authors": [
+      "Alicja Dutkiewicz",
+      "Alec F. White",
+      "Guang Hao Low",
+      "A. Eugene DePrince III",
+      "Matthew P. Harrigan",
+      "Marika Kieferova",
+      "Ryan Babbush",
+      "Dominic W. Berry",
+      "Nicholas C. Rubin"
+    ],
+    "abstract": "arXiv:2607.15358v1 Announce Type: cross \nAbstract: We demonstrate an asymptotic gate complexity improvement in first-quantized ground-state energy estimation of electronic structure Hamiltonians in a plane wave basis by employing the sum-of-squares spectral gap amplification protocol. The improvement relies on identifying a sum-of-squares representation of the Hamiltonian which provides a lower bound certificate and low cost block encoding that leads to a provably lower quantum phase estimation gate cost. This is achieved by using a sum-of-squares operator generated by the total charge density operator resulting in a block encoding normalization improvement of $\\lambda = \\mathcal{O}\\left(\\eta\\Delta^{-1.5}+\\eta^{1.5}\\Delta^{-1} \\right)$ compared to prior work $\\lambda = \\mathcal{O}(\\eta\\Delta^{-2}+\\eta^2\\Delta^{-1})$ where $\\eta$ is the number of electrons and $\\Delta$ is the simulation grid spacing. The asymptotic reduction in block encoding normalization and similar block encoding costs to prior work is demonstrated to reduce resource estimates for materials and chemical systems by a factor of $2 - 44\\times$ corresponding to the lowest cost estimates for ab initio materials simulation.",
+    "url": "https://arxiv.org/abs/2607.15358",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 20 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-20",
+    "category": "Electronic Structure",
+    "relevance_score": 0.75,
+    "relevance_reason": "Quantum algorithm for ground-state energy estimation of electronic structure; atomistic but highly algorithmic, satisfies (a)-(c).",
+    "key_authors": []
+  }
+]
