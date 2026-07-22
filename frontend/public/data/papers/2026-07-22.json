@@ -1,0 +1,444 @@
+[
+  {
+    "id": "c0ade99a368c",
+    "title": "Ab-initio simulation of excited-state potential energy surfaces with transferable deep quantum Monte Carlo",
+    "authors": [
+      "Zeno Sch\\\"atzle",
+      "P. Bern\\'at Szab\\'o",
+      "Alice Cuzzocrea",
+      "Mat\\v{e}j Mezera",
+      "Frank No\\'e"
+    ],
+    "abstract": "arXiv:2503.19847v2 Announce Type: replace \nAbstract: The accurate quantum chemical calculation of excited states is a challenging task, often requiring computationally demanding methods. When entire ground and excited potential energy surfaces (PESs) are desired, for instance to predict the interaction of light excitation and structural changes, one is often forced to use cheaper computational methods at the cost of reduced accuracy. Here we introduce a method for the geometrically transferable optimization of neural network wave functions that leverages weight sharing and dynamical ordering of electronic states. Our method enables the efficient prediction of ground and excited-state PESs and their intersections at the highest accuracy, demonstrating up to two orders of magnitude cost reduction compared to single-point calculations.We validate our approach on four challenging excited-state PESs, namely ethylene, the carbon dimer, the methylenimmonium cation, and a rubredoxin active site model containing 96 electrons, illustrating the potential of transferable deep-learning QMC as a practical framework for studying electronic excitations in molecules.",
+    "url": "https://arxiv.org/abs/2503.19847",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-22",
+    "category": "Electronic Structure",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Frank No\\'e",
+    "key_authors": [
+      "Frank No\\'e"
+    ]
+  },
+  {
+    "id": "af5b3abe5df4",
+    "title": "Data-driven Design of Metal-Organic Frameworks with Tunable Negative Thermal Expansion",
+    "authors": [
+      "Prathami Divakar Kamath",
+      "Francesco Tavani",
+      "Alin Marin Elena",
+      "Th\\'eo Jaffrelot Inizan",
+      "Yen-hsu Lin",
+      "Jian Yin",
+      "Wenqian Xu",
+      "Omar M. Yaghi",
+      "Kristin A. Persson"
+    ],
+    "abstract": "arXiv:2607.18594v1 Announce Type: new \nAbstract: Materials with negative thermal expansion (NTE) are essential for applications requiring precise control of thermal expansion. Owing to their exceptional chemical tunability, flexible architectures, and low-energy lattice vibrations, metal-organic frameworks (MOFs) represent a rich platform for exploring NTE. However, uncovering the structural motifs that govern NTE across the enormous MOF design space remains experimentally challenging, and large-scale first-principles phonon calculations are computationally prohibitive. Here, we comprehensively evaluate the factors influencing NTE in MOFs by utilizing a high-throughput workflow based on MACE-MP-MOF0, a machine learning interatomic potential fine-tuned for MOFs with near-ab initio accuracy, to construct PhononMOFdb, a database of phonons, inelastic neutron scattering spectra, bulk moduli, and heat capacities for over 12,000 MOFs. High-throughput screening of this database reveals that highly porous cubic topology frameworks with heavier, lower-valent metal nodes favor strong NTE, while linker functionalization provides a practical handle for tuning NTE magnitude and sign without compromising mechanical stability. Experimental validation via high-resolution temperature-dependent synchrotron powder X-ray diffraction on the Ce-UiO-66 MOF and its brominated variants confirms the design recipe and yields volumetric NTE coefficients surpassing current records. This work establishes a data-driven strategy for engineering NTE in MOFs, showing how machine learning-accelerated discovery and targeted experimental validation together unlock predictive materials design.",
+    "url": "https://arxiv.org/abs/2607.18594",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Kristin A. Persson",
+    "key_authors": [
+      "Kristin A. Persson"
+    ]
+  },
+  {
+    "id": "08e48ce5ab2f",
+    "title": "Efficient and Accurate Ligand Strain Calculations in Solution with the AIMNet2 Neural Network Potential",
+    "authors": [
+      "Hatice Gokcan",
+      "Olexandr Isayev"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006393/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-21",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Olexandr Isayev",
+    "key_authors": [
+      "Olexandr Isayev"
+    ]
+  },
+  {
+    "id": "aa2e4b875c8a",
+    "title": "Data-Efficient Training of Linear ACE Potentials through Leverage-Guided Subset Selection of ASSYST Structure Pools",
+    "authors": [
+      "Aynour Khosravi",
+      "Marvin Poul",
+      "J\\\"org Neugebauer",
+      "Chad Sinclair"
+    ],
+    "abstract": "arXiv:2607.18524v1 Announce Type: new \nAbstract: The construction of machine-learned interatomic potentials (MLIPs) is often limited by the cost of generating large density-functional-theory (DFT) training datasets. For systematically generated structure pools such as ASSYST, a central practical question is how many configurations must be labeled to achieve reliable accuracy. Here we assess geometry-based, label-free subset selection for training linear Atomic Cluster Expansion (ACE) potentials. Using statistical leverage scores and CUR-type sampling, we compare leverage-guided selection against random, energy-based, and force-based baselines under controlled iterative protocols. Elemental Al provides the primary benchmark, with Cu and Al-Cu alloys used for transfer validation. Leverage-guided subsets recover plateau-level energy and force accuracy using substantially smaller labeled fractions (approximately 30-40%) than random sampling, corresponding to an effective 2-3x reduction in DFT labeling for the systems studied. In alloy tests, defect energetics remain comparable across strategies once sufficient chemical diversity is included, while leverage selection maintains competitive accuracy at reduced training size.\n  These results demonstrate that descriptor-space-guided, label-free subsampling can significantly reduce DFT workload for linear ACE models trained on ASSYST structure pools without degrading defect-level fidelity.",
+    "url": "https://arxiv.org/abs/2607.18524",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops and benchmarks linear ACE MLIPs using DFT data, a clear atomistic simulation method development satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "3871c7efcf28",
+    "title": "Thermodynamics and phase stability of the AlTiCrMoW high-entropy alloy simulated using machine-learned interatomic potentials",
+    "authors": [
+      "Joseph E. Arnold",
+      "Christopher D. Woodgate",
+      "Roohollah Hafizi",
+      "Matthew J. Harris",
+      "Alessandro Mottura",
+      "Gonzalo García Fuentes",
+      "Beñat Gurrutxaga-Lerma"
+    ],
+    "abstract": "Author(s): Joseph E. Arnold, Christopher D. Woodgate, Roohollah Hafizi, Matthew J. Harris, Alessandro Mottura, Gonzalo García Fuentes, and Beñat Gurrutxaga-Lerma\nHigh-entropy alloys (HEAs) possess exceptional mechanical properties and thermal stability, yet their vast compositional space and complex atomic arrangements present significant challenges for property prediction and design. To overcome this, we have trained a machine-learned interatomic potential …\n[Phys. Rev. Materials 10, 073605] Published Tue Jul 21, 2026",
+    "url": "http://link.aps.org/doi/10.1103/5tz1-zg9z",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-07-21T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-07-22",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Uses machine-learned interatomic potentials for MD simulation of HEA; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "c80513d6844d",
+    "title": "Estimating the disjoining pressure of liquid nanofilms from molecular dynamics simulations via implicit treatment of the bulk liquid phase",
+    "authors": [
+      "Jianzhou Wang",
+      "Zufeng Zuo",
+      "Denvid Lau",
+      "Yuzhu Wang",
+      "Pinqiang Mo",
+      "Yukun Ji",
+      "Liyuan Yu",
+      "Yafan Yang"
+    ],
+    "abstract": "arXiv:2606.16500v2 Announce Type: replace \nAbstract: The commonly adopted constant bulk liquid density approximation for estimating disjoining pressure in liquid nanofilms, although justified by the low compressibility of liquids, can introduce significant errors in its evaluation. We hypothesize that the bulk liquid density is a thermodynamic state variable that depends on film thickness and local pressure, and should therefore be determined self-consistently to accurately capture interfacial forces under confinement. A thermodynamically consistent molecular dynamics simulation framework is developed by coupling a surface-tension-based formulation with bulk equations of state obtained from independent simulations. An iterative algorithm is employed to simultaneously determine bulk liquid density, film thickness, and disjoining pressure. The method is applied to water and argon nanofilms, and results are benchmarked against conventional constant-density approaches and alternative computational routes based on chemical potential calculation. The proposed framework provides a computationally efficient and thermodynamically rigorous route for evaluating disjoining pressure without requiring explicit full coexisting system simulations. Incorporating density variations significantly improves the accuracy and consistency of predicted disjoining pressures. For water nanofilms, a 3.6% deviation in density can lead to up to 77% overestimation of disjoining pressure at a thickness of 12 {\\AA}, whereas the effect is weaker but still non-negligible for argon. The proposed framework restores the inverse-cubic scaling with film thickness predicted by Hamaker theory and reduces discrepancies between independent computational methods. Overall, the results demonstrate that self-consistent treatment of bulk thermodynamics is essential for quantitatively reliable evaluation of surface forces in confined fluid systems.",
+    "url": "https://arxiv.org/abs/2606.16500",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-22",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Molecular dynamics simulation of liquid nanofilms to compute disjoining pressure; satisfies all (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "c386dcd914fa",
+    "title": "Alchemical thermodynamic integration for ab initio free-energy calculations in solutions",
+    "authors": [
+      "Liangrui Wei",
+      "Feng Zhang",
+      "Renata M. Wentzcovitch",
+      "Kai-Ming Ho",
+      "Yang Sun"
+    ],
+    "abstract": "arXiv:2607.18750v1 Announce Type: new \nAbstract: We develop an alchemical thermodynamic integration scheme that couples ab initio force calculators on the fly during Monte Carlo and molecular dynamics simulations. The implementation is validated against existing hybrid-Hamiltonian approaches. The scheme yields ab initio free energies of high-pressure Fe-Ni and ambient Li-Na liquid solutions that agree with previous calculations and reproduce the experimentally observed Li-Na miscibility gap. The code has an efficiency comparable to standard ab initio molecular dynamics. These results establish this scheme as a practical alchemical-integration framework for first-principles free-energy calculations in solutions.",
+    "url": "https://arxiv.org/abs/2607.18750",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Develops alchemical thermodynamic integration for ab initio free-energy calculations with MD/MC, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "b9b5c0e74d0a",
+    "title": "Quantifying Ternary Complex Stability Through Binding Free Energy Calculations in the Geometric Route",
+    "authors": [
+      "Benedict Tan",
+      "Alessio Ciulli",
+      "Julien Michel"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006418/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-22",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Binding free energy calculations via geometric route imply atomistic simulations (e.g., MD or alchemical) satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "ae396fe76bae",
+    "title": "ATLAS: A Foundation Neural Sampler for Amorphous Materials",
+    "authors": [
+      "Mouyang Cheng",
+      "Denis Blessing",
+      "Botao Yu",
+      "Gerhard Neumann",
+      "Mingda Li",
+      "Carles Domingo-Enrich",
+      "Yuanqi Du"
+    ],
+    "abstract": "arXiv:2607.19198v1 Announce Type: new \nAbstract: Amorphous materials exhibit exceptional mechanical and functional properties, yet their rugged energy landscapes are notoriously difficult to sample. Below the glass-transition temperature, conventional molecular dynamics and Monte Carlo become inefficient because equilibration relies on rare barrier-crossing events, while data-driven generative models are constrained by scarce and biased reference ensembles. Here, we introduce ATLAS, an efficient sampler that learns a diffusion process to generate Boltzmann-distributed amorphous structures directly from a target energy function. Parameterized by an equivariant graph neural network, ATLAS generalizes across system size, temperature, and composition. By exploiting the time reversal of the diffusion process, it enables efficient estimation of thermodynamic quantities and steering toward target observables. In two-dimensional Kob-Andersen systems, ATLAS reproduces parallel tempering Markov chain Monte Carlo structural distributions, free energies and entropies, achieving below 0.2% free energy error in the low-temperature glass regime with over 500-fold fewer energy evaluations. In Cu-Zr and Cr-Co-Ni metallic glasses, ATLAS recovers experimentally observed short-range-order trends and steers structures toward prescribed order parameters and optimized bulk moduli. Moreover, composition-amortized pretraining outperforms composition-specific training from scratch, reduces inverse-design costs by several hundred-fold, and enables sampling with expensive universal machine learning interatomic potentials. Coupled to a large language model agent, ATLAS searches an eight-element space for high-entropy metallic glasses balancing stiffness and ductility, identifying a converged Pareto frontier within 480 oracle evaluations. Together, these results establish ATLAS as a foundation model for sampling, steering and designing amorphous materials.",
+    "url": "https://arxiv.org/abs/2607.19198",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.85,
+    "relevance_reason": "Develops a diffusion-based generative model (equivariant GNN) for amorphous structures validated against MD and free energies; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "fe7fb7bb2873",
+    "title": "GEqTrain: A Configuration-Driven Framework for Retargeting Equivariant Graph Neural Networks Across 3D Scientific Tasks",
+    "authors": [
+      "Daniele Angioletti",
+      "Marco Nobile",
+      "Vittorio Limongelli"
+    ],
+    "abstract": "arXiv:2607.19083v1 Announce Type: new \nAbstract: Equivariant graph neural networks provide a powerful modeling language for three-dimensional scientific data, but their reuse is often limited by implementations tied to specific tasks, outputs, and training regimes. We present GEqTrain, a configuration-driven framework that separates dataset semantics, model composition, and training objectives. Raw data are mapped to typed node-, edge-, and graph-level fields, while model stacks, losses, and training workflows are assembled declaratively through Hydra configurations. A shared equivariant backbone and training infrastructure can therefore be retargeted to a new task primarily through configuration. We demonstrate this flexibility on three different problems handled within one software stack: coarse-grained-to-atomistic backmapping of biomolecular systems, prediction of NMR chemical shifts in molecular solids, and equivariant generative modeling. Our aim is not to surpass individually optimized task-specific systems, but to show that a shared representation and training infrastructure can achieve competitive accuracy across qualitatively different tasks at the cost of a configuration change. We further introduce GEqDiff, a generative extension based on equivariant flow matching. GEqDiff treats user-defined equivariant fields as first-class generation targets, jointly transporting Cartesian positions and non-scalar node fields spanning representations up to l=3 within a single equivariant flow. We validate this capability on a controlled synthetic benchmark inspired by protein secondary-structure motifs, showing that fields with heterogeneous transformation properties can be reconstructed jointly and with high fidelity. By reducing the software overhead of moving between predictive and generative, scalar and tensorial settings, GEqTrain aims to make equivariant modeling more reproducible, extensible, and reusable.",
+    "url": "https://arxiv.org/abs/2607.19083",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "q-bio.BM"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.85,
+    "relevance_reason": "Equivariant GNN framework for atomistic tasks (backmapping, NMR shifts, generative modeling); satisfies (a)-(c) with explicit atomistic applications.",
+    "key_authors": []
+  },
+  {
+    "id": "7848be2494c7",
+    "title": "Bayesian inference of composition-dependent phase diagrams",
+    "authors": [
+      "Timofei Miryashkin",
+      "Olga Klimanova",
+      "Vladimir Ladygin",
+      "Alexander Shapeev"
+    ],
+    "abstract": "arXiv:2309.01271v2 Announce Type: replace \nAbstract: Phase diagrams serve as a highly informative tool for materials design, encapsulating information about the phases that a material can manifest under specific conditions. In this work, we develop a method in which Bayesian inference is employed to combine thermodynamic data from molecular dynamics (MD), melting point simulations, and phonon calculations, process these data, and yield a temperature-concentration phase diagram. The employed Bayesian framework yields not only the free energies of different phases as functions of temperature and concentration but also the uncertainties of these free energies originating from statistical errors inherent to finite-length MD trajectories. Furthermore, it extrapolates the results of the finite-atom calculations to the infinite-atom limit and facilitates the choice of temperature, chemical potentials, and the number of atoms conducting the next simulation with which will be the most efficient in reducing the uncertainty of the phase diagram. The developed algorithm was successfully tested on two binary systems, Ge-Si and K-Na, in the full range of concentrations and temperatures.",
+    "url": "https://arxiv.org/abs/2309.01271",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-22",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.85,
+    "relevance_reason": "Combines MD, melting simulations, and phonon calculations in Bayesian inference for phase diagrams; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8f2e1671857f",
+    "title": "Vacancy Diffusion Across FeCrAl Alloy Composition Space for Accident-Tolerant Fuel Cladding",
+    "authors": [
+      "Mihai Pitigoi",
+      "Peter Hatton"
+    ],
+    "abstract": "arXiv:2607.18472v1 Announce Type: new \nAbstract: Iron-chromium-aluminium (FeCrAl) alloys are leading candidates for accident-tolerant fuel cladding in light-water reactors, where their superior high-temperature oxidation resistance promises to extend coping times during loss-of-coolant accidents. The in-reactor lifetime of cladding is ultimately governed by radiation-induced microstructural evolution of which point defect transport is the dominant mechanism, however, this remains poorly understood. Here, we use a species-resolved kinetic Monte Carlo (KMC) model for vacancy diffusion in FeCrAl, parameterised by linear surrogate models trained on a database of migration barriers generated through the Hop-Decorate workflow. By sampling compositions spanning the Fe-rich to Cr-rich range of the Fe-Cr-Al system, we map how the local chemical environment controls vacancy hopping and hence macroscopic diffusivity. We find that increasing the Cr content in the alloy progressively decreases global diffusivity of vacancies even though activation energies stay relatively constant. This implies that the higher the Fe content in the alloy, the faster vacancies diffuse, thereby increasing annihilation events with fast-moving interstitials, potentially reducing irradiation induced defects and increasing radiation tolerance. Conversely, we find that Cr-rich alloy compositions stand out with a markedly elevated activation energy and significantly slower diffusion, orders of magnitude lower at accident-relevant temperatures. This indicates suppressed vacancy mobility in Cr-rich $\\alpha'$ phases which are known to form under irradiation.",
+    "url": "https://arxiv.org/abs/2607.18472",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Applies kinetic Monte Carlo for vacancy diffusion in FeCrAl, satisfying (a)-(c) with explicit atomistic representation and simulation method.",
+    "key_authors": []
+  },
+  {
+    "id": "870bd9e9d112",
+    "title": "Stereochemical Vacuum Gap Explains Out-of-Plane Thermal Insulation in MXenes",
+    "authors": [
+      "O. Mateos-Lopez",
+      "J. G. Vilhena",
+      "Isaac Armstrong",
+      "Hendrik Heinz",
+      "Miguel Mu\\~noz Rojo",
+      "Juan Carlos Cuevas"
+    ],
+    "abstract": "arXiv:2607.18963v1 Announce Type: new \nAbstract: Two-dimensional MXenes are promising materials for thermal management and spectral camouflage, combining low out-of-plane thermal conductivity with low infrared emissivity and mechanical robustness. Yet the near-order-of-magnitude spread in experimental out-of-plane thermal conductivity measurements (0.14-0.8 W/mK) and the systematic overestimation by simulations point to a fundamental gap in our understanding of heat transport in these materials. Here, we argue these differences originate in the overlooked role of heterogeneous surface terminations. Using Non-Equilibrium Molecular Dynamics simulations of Ti3C2Tx, we show that this discrepancy arises from a stereochemically induced vacuum gap between adjacent layers, formed when surface terminations of different sizes coexist. Even minor deviations from homogeneous terminations drastically suppress out-of-plane thermal conductivity, bringing simulated values into quantitative agreement with experiment. We also show that thermal conductivity scales strongly with the atomic density, and that introducing bulky surface terminations, including residual water, reduces the thermal conductivity to 0.3 W/mK, an order of magnitude below homogeneous termination values and below the minimum thermal conductivity limit predicted for disordered solids. Thus, we propose a chemistry-driven route to engineer thermal transport in MXenes.",
+    "url": "https://arxiv.org/abs/2607.18963",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses non-equilibrium MD simulations of MXenes to study thermal transport, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "150e49dd4a45",
+    "title": "How Structural Subtleties Modulate Excited‐State Lifetimes in Cyclometalated Cobalt(III) Complexes: Nonadiabatic Molecular Dynamics Study",
+    "authors": [
+      "Hamada Rezk",
+      "Oliver Kühn",
+      "Olga S. Bokareva"
+    ],
+    "abstract": "Journal of Computational Chemistry, Volume 47, Issue 20, July 30, 2026.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.70453?af=R",
+    "pdf_url": null,
+    "source": "J. Comp. Chem.",
+    "categories": [],
+    "published": "Mon, 20 Jul 2026 21:56:06 -0700",
+    "version": null,
+    "added_date": "2026-07-22",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Nonadiabatic molecular dynamics is an atomistic simulation method applied to explicit atomic systems, satisfying all criteria (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "46c205c4d81b",
+    "title": "Interplay between lattice strain and electronic properties in hybrid perovskites: A first-principles study",
+    "authors": [],
+    "abstract": "Publication date: 25 August 2026\nSource: Computational Materials Science, Volume 273\nAuthor(s): Shengjian Qin, Zhihui Zhang, Jiale Meng, Jinjin Zhao",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626004738?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-22",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "First-principles DFT study on hybrid perovskites, satisfying all atomistic simulation criteria (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "6390b364f1b3",
+    "title": "Towards a universal model for spin-orbit coupled Wannier Hamiltonians",
+    "authors": [
+      "Alexander C. Tyner"
+    ],
+    "abstract": "arXiv:2607.18403v1 Announce Type: new \nAbstract: While machine learning interatomic potentials (MLiPs) have matured to revolutionize material science, deep learning models for electronic structure are just beginning to emerge and restricted, almost exclusively, to non-orthogonal basis Hamiltonians. We introduce G(Wa)NN, the first deep-learning model capable of generating the electronic Hamiltonian of solid-state systems in an orthogonal Wannier basis. G(Wa)NN is trained on an unprecedented, diverse dataset of more than 111K Wannier Hamiltonians (150M+ hopping matrices) spanning 69 elements. The combination of optimized inference and linear-scaling methods for orthogonal Hamiltonians unlock transport simulations at massive scales (10K+ atoms). Crucially, the framework supports local finetuning, allowing users to adapt the base model to custom Wannier Hamiltonian datasets. To seamlessly translate these predictions into physical observables, we introduce Tailwater, a Python package providing an API interface to G(Wa)NN alongside a high performance post-processing library. Tailwater enables automated projection of the predicted Hamiltonian into an arbitrary low-energy subspace-directly mirroring familiar Wannier90 workflows-and includes a suite of Kernel Polynomial Method (KPM) functions that exploit the orthogonal basis to achieve strict linear scaling for spectral observables. The Tailwater ecosystem, with the G(Wa)NN model at its core, aims to help bridge the gap between deep learning and macro-scale quantum transport simulations.",
+    "url": "https://arxiv.org/abs/2607.18403",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-22",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Deep learning model for Wannier Hamiltonians, trained on atomistic data and enabling transport simulations; satisfies (a)-(c) as an ML model for electronic structure.",
+    "key_authors": []
+  },
+  {
+    "id": "f626f984d4b1",
+    "title": "Capturing electron correlation at mean-field cost: Assessment of i-DMFT and the underlying correlation conjecture",
+    "authors": [
+      "Paul G. Graf",
+      "Florian Matz",
+      "Lexin Ding",
+      "Julia Liebert",
+      "Markus Penz",
+      "Christian Schilling"
+    ],
+    "abstract": "arXiv:2604.19804v2 Announce Type: replace \nAbstract: Accurately treating strong electron correlation in quantum chemistry typically requires multireference wave-function methods with steep computational scaling. The recently proposed i-DMFT method promises near configuration-interaction accuracy at mean-field cost by invoking an empirical linear relation between correlation energy and entropy (Collins' conjecture), whose validity remains unclear. We systematically assess this relation across a range of di- and polyatomic molecules, including diverse bond types, third-row elements, different types of geometric distortions, and excited states. We find that the conjectured linearity holds for bond-breaking processes dominated by electron redistribution within orbital pairs, but breaks down for heterolytic dissociation and excited states. In simple molecules, i-DMFT provides a reasonable description of total energies, but does not reliably reproduce reduced density matrices or individual energy components. It further degrades in more complex cases such as ethylene. Based on these results, we formulate criteria for the validity of the conjecture and outline implications for entropy-based reduced density matrix functionals.",
+    "url": "https://arxiv.org/abs/2604.19804",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "quant-ph"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-22",
+    "category": "Electronic Structure",
+    "relevance_score": 0.75,
+    "relevance_reason": "Assessment of i-DMFT for electron correlation on explicit molecules; satisfies (a)-(c) as a post-HF method.",
+    "key_authors": []
+  },
+  {
+    "id": "5964527a84b0",
+    "title": "Fragmentation of Virtual Orbitals for Quantum Computing: Reducing Qubit Requirements through Many-Body Expansion",
+    "authors": [
+      "Federico Zahariev",
+      "Vassiliki-Alexandra Glezakou",
+      "Mark S. Gordon"
+    ],
+    "abstract": "arXiv:2510.20950v2 Announce Type: replace-cross \nAbstract: We introduce quantum virtual-orbital fragmentation (Q-FVO), a systematic method for reducing the largest active space in correlated quantum-chemistry calculations. The complete occupied space is retained, the localized virtual space is partitioned into chemically motivated fragments, and the correlation energy is recovered through an inclusion-exclusion many-body expansion. Across six molecular benchmarks, the largest one-body Q-FVO calculations reduce the qubit requirement by 46 to 66 percent, while two-body calculations reduce it by approximately 31 to 42 percent relative to the corresponding unfragmented spaces. Two-body expansions recover most of the correlation energy, with errors of 0.9 to 7.5 kcal/mol; three-body expansions are below 1 kcal/mol for all CCSD tests and remain below 2 kcal/mol at CCSD(T). Illustrative statevector UCCSD calculations also reduce implementation-reported circuit depth while retaining accuracy below 1 kcal/mol. Q-FVO can be nested inside Q-EFMO real-space fragmentation and, in turn, the resulting cluster can be embedded in a Q-EFP environment. The hierarchy therefore reduces quantum-resource growth along three complementary dimensions: environment, molecular fragments, and virtual-orbital space.",
+    "url": "https://arxiv.org/abs/2510.20950",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 22 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-22",
+    "category": "Electronic Structure",
+    "relevance_score": 0.75,
+    "relevance_reason": "Fragmentation method for virtual orbitals in quantum chemistry on molecules; satisfies (a)-(c) as a post-HF method.",
+    "key_authors": []
+  }
+]
