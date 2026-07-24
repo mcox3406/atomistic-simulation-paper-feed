@@ -1,0 +1,703 @@
+[
+  {
+    "id": "6805fa977946",
+    "title": "Approximating committor functions: Objective functions and training data sampling",
+    "authors": [
+      "Thomas Pigeon",
+      "Gabriel Stoltz",
+      "Tony Leli\\`evre"
+    ],
+    "abstract": "arXiv:2607.21425v1 Announce Type: new \nAbstract: Many molecular dynamics simulations aim at studying transitions between two states (from reactants to products). In this context, the committor function (which gives for a given molecular configuration the probability to reach the product state before the reactant state) is a pivotal quantity, in particular because it is the optimal importance function for rare event simulation methods such as importance sampling or splitting techniques. These methods are used to sample the reactive path ensemble, and estimate for example the transition rate. However, learning such a function is generally a challenging task due to the high dimensionality of the configuration space. In this work, after reviewing the existing methodologies to construct approximate committor functions, a new loss function based on the application of It\\={o}'s formula is proposed to learn the committor function with a minimization procedure on the parameters of a neural network. After comparing this novel approach to existing procedures on the M\\\"uller--Brown potential, we introduce a coupling strategy with the Adaptive Multilevel Splitting method to better approximate the committor function using a better sampling of the reactive trajectories. This methodology in which the committor function is iteratively learned only requires initially the knowledge of the reactant and product states.",
+    "url": "https://arxiv.org/abs/2607.21425",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Tony Leli\\`evre",
+    "key_authors": [
+      "Tony Leli\\`evre"
+    ]
+  },
+  {
+    "id": "8b4979bf242e",
+    "title": "A high-dimensional neural network potential for finite-temperature phenomena in NiTi martensite",
+    "authors": [
+      "Petr Jaro\\v{s} (Faculty of Nuclear Science",
+      "Physical Engineering",
+      "Czech Technical University in Prague",
+      "Prague",
+      "Czech Republic)",
+      "Petr Sedl\\'{a}k (Institute of Thermomechanics",
+      "Czech Academy of Sciences",
+      "Prague",
+      "Czech Republic)",
+      "Petr \\v{S}est\\'{a}k (Institute of Thermomechanics",
+      "Czech Academy of Sciences",
+      "Prague",
+      "Czech Republic",
+      "Institute of Physical Engineering",
+      "Brno University of Technology",
+      "Czech Republic",
+      "CEITEC BUT",
+      "Brno University of Technology",
+      "Czech Republic)",
+      "Miroslav \\v{C}ern\\'{y} (Institute of Physical Engineering",
+      "Brno University of Technology",
+      "Czech Republic",
+      "CEITEC BUT",
+      "Brno University of Technology",
+      "Czech Republic)",
+      "J\\\"{o}rg Behler (Lehrstuhl f\\\"{u}r Theoretische Chemie II",
+      "Ruhr-Universit\\\"{a}t Bochum",
+      "Germany",
+      "Research Center Chemical Sciences",
+      "Sustainability",
+      "Research Alliance Ruhr",
+      "Bochum",
+      "Germany)",
+      "Hanu\\v{s} Seiner (Institute of Thermomechanics",
+      "Czech Academy of Sciences",
+      "Prague",
+      "Czech Republic)"
+    ],
+    "abstract": "arXiv:2607.20681v1 Announce Type: new \nAbstract: We present a high-dimensional neural network potential (HDNNP) for the martensitic phase of the NiTi shape-memory alloy trained to density functional theory (DFT) data. A central aspect of this work is the systematic validation of the potential with respect to the underlying DFT reference method for key properties governing structural evolution, including equilibrium crystal structures, elastic constants, generalized-stacking fault energies, and vibrational spectra. The HDNNP accurately describes the relative stability of the B19$^\\prime$ and B33 phases, including subtle energy differences on the order of meV/atom. The predicted stacking-fault energy landscape is strongly anisotropic and reveals a preferential shear pathway, providing atomistic insight into deformation and twinning mechanisms. Finite-temperature molecular dynamics simulations further enable the investigation of unconstrained structural evolution as a function of temperature. Overall, the developed HDNNP provides a robust basis for atomistic simulations of the complex structural and functional behavior of martensitic NiTi systems containing hundreds of thousands of atoms on nanosecond time scales.",
+    "url": "https://arxiv.org/abs/2607.20681",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.95,
+    "relevance_reason": "High-dimensional neural network potential trained to DFT for NiTi; MLIP development and MD simulation, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "43f58a6a31df",
+    "title": "Graph Neural Network Force Fields (GPTFF-mol) for Organic Molecules from Optimization Trajectories (OpenGEM26)",
+    "authors": [
+      "Yifan Huang",
+      "Fankai Xie",
+      "Jiangnan Zheng",
+      "Tenglong Lu",
+      "Sheng Meng",
+      "Miao Liu"
+    ],
+    "abstract": "arXiv:2607.21369v1 Announce Type: new \nAbstract: Density functional theory (DFT) serves as a reliable tool for atomistic molecular simulations, while machine learning potentials have become powerful complements to balance accuracy and efficiency. In this work, we release OpenGEM26 (Open Generated Ensemble of Molecules, 2026), a large-scale dataset comprising 200,000 unique molecules and 4.4 million conformations composed of H, C, N, O, S and Cl with up to ten heavy atoms. All calculations are carried out at the {\\omega}B97X-D/Def2-SVP and Def2-TZVP levels with dispersion corrections, and complete structural optimization trajectories and abundant non-equilibrium structures are recorded. Statistical analyses confirm that this dataset covers a broader conformational space than QM9 in terms of energy, bond lengths and bond angles. A graph neural network-based potential GPTFF-mol is trained using the new dataset, achieving an energy mean absolute error of 16 meV/molecule, which is equivalent to 0.82meV/atom, and superior force prediction performance compared with ANI-2x. Validated by butane rotation and keto-enol tautomerization tests, the model accurately describes molecular dynamical behaviors and reaction barriers at distorted geometries. This work provides a high-quality resource and robust ML potential for efficient simulations of sulfur- and chlorine-containing organic molecules.",
+    "url": "https://arxiv.org/abs/2607.21369",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cs.CE",
+      "physics.comp-ph"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.9,
+    "relevance_reason": "Development and training of a graph neural network force field (GPTFF-mol) using DFT data; satisfies (a)-(c) as MLIP development.",
+    "key_authors": []
+  },
+  {
+    "id": "bae2fcc22dc2",
+    "title": "Stapline: Development of a Force Field Library for Stapled Peptide Residues",
+    "authors": [
+      "Evangelia Notari",
+      "Marie T. J. Bluntzer",
+      "Julien Michel",
+      "Alison N. Hulme"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv-2025-xfcnm/v2",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-23",
+    "version": 2,
+    "added_date": "2026-07-24",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.9,
+    "relevance_reason": "Explicitly develops force field library for stapled peptides; aligns with atomistic simulation, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "f52b3711a67c",
+    "title": "Benchmarking mixed quantum–classical molecular dynamics for electronic strong coupling",
+    "authors": [],
+    "abstract": "Experiments indicate that collective coupling of molecular ensembles to confined optical modes can modify excited-state dynamics and photochemical reactivity. To describe such cavity-induced effects at atomic resolution, semi-classical molecular dynamics approaches have been developed that treat nuclear motion classically while describing the collective light–matter interaction within the Tavis–Cummings framework of quantum electrodynamics. Here, we benchmark mixed quantum–classical approaches, Ehrenfest dynamics, and Fewest-Switches Surface Hopping (FSSH) for simulating nonadiabatic dynamics of electronically strongly coupled carbon monoxide molecules. Their predictions are compared against numerically exact quantum dynamics simulations performed with the multi-configuration time-dependent Hartree method, which treats both electronic and nuclear degrees of freedom quantum mechanically. We find that the semi-classical approaches reproduce the qualitative features of the full quantum dynamics. Quantitative agreement is best achieved with FSSH when a decoherence correction is included. These results demonstrate that mixed quantum–classical methods provide a computationally efficient and quantitatively reliable alternative to fully quantum simulations for investigating nonadiabatic photochemistry under collective electronic strong coupling in systems beyond the reach of exact quantum treatments.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/4/044112/3399127/Benchmarking-mixed-quantum-classical-molecular",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Thu, 23 Jul 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.9,
+    "relevance_reason": "Benchmarks mixed quantum-classical molecular dynamics methods for nonadiabatic dynamics under strong coupling; uses atomistic simulation; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "4d58a7ad390e",
+    "title": "Machine-learned dynamics of surface polarons at reduced oxide surfaces",
+    "authors": [
+      "Luca Leoni",
+      "Cesare Franchini"
+    ],
+    "abstract": "arXiv:2606.13833v2 Announce Type: replace \nAbstract: Reducible oxides exhibit a rich interplay of electronic, structural, and chemical properties that underpins applications in catalysis, photovoltaics, batteries, and energy storage. This interplay is strongly shaped by excess electrons, often introduced by oxygen vacancies, that localize as small polarons and influence charge transport and surface chemistry. At surfaces, these polarons play a central role in charge localization, mobility, and reactivity, yet their finite-temperature dynamics remain difficult to access from first principles due to the long time scales needed to adequately sample polaron's hopping. To overcome this limitation, we extend machine-learning-assisted polaron dynamics to redox-active oxide surfaces, using oxygen-deficient rutile TiO$_2$(110) as a paradigmatic case. By accessing several nanoseconds of dynamics over a range of temperatures, we show that small-polaron mobility at the reduced rutile TiO$_2$(110) surface is suppressed by several orders of magnitude relative to the corresponding bulk material, providing a microscopic interpretation of the lower electron mobilities observed in porous rutile TiO$_2$ compared with single-crystal samples. This suppressed mobility arises from the loss of favourable hopping pathways: surface polaron motion is largely confined to planar inter-row trajectories within the second topmost layers, with only rare interlayer hopping events. These results establish a transferable machine-learning strategy for investigating polaron dynamics in reducible oxides.",
+    "url": "https://arxiv.org/abs/2606.13833",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLIP-driven MD of polarons on TiO2 surface; explicit atomistic simulation with ML force field, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "1a51144fc938",
+    "title": "Thermoelastic anisotropy of lithium niobate from molecular dynamics with a machine-learned interatomic potential",
+    "authors": [],
+    "abstract": "Publication date: 25 August 2026\nSource: Computational Materials Science, Volume 273\nAuthor(s): M.A.N. Dewapriya, J.W. Gillespie",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626004751?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Uses molecular dynamics with a machine-learned interatomic potential to study thermoelastic anisotropy; satisfies (a) explicit atoms, (b) MD and MLIP, (c) application to material property.",
+    "key_authors": []
+  },
+  {
+    "id": "54babe77715a",
+    "title": "Fitting and validation of a hybrid interatomic potential for modeling Fe<math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si137.svg\" display=\"inline\" id=\"d1e1464\" class=\"math\"><msub><mrow></mrow><mrow><mn>50</mn><mo>−</mo><mi>X</mi></mrow></msub></math>Mn<sub>30</sub>Co<sub>10</sub>Cr<sub>10</sub>B<math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si138.svg\" display=\"inline\" id=\"d1e1486\" class=\"math\"><msub><mrow></mrow><mrow><mi>X</mi></mrow></msub></math> (x = 5 and 7 at.%) compositionally complex alloys",
+    "authors": [],
+    "abstract": "Publication date: 25 August 2026\nSource: Computational Materials Science, Volume 273\nAuthor(s): Rodrigo Vargas-Osorio, Nicolás Amigo, Eduardo M. Bringa, Jose Y. Aguilar-Hurtado, Katherine Paredes-Gil",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626004659?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.85,
+    "relevance_reason": "Fitting and validation of a hybrid interatomic potential for atomistic simulation of compositionally complex alloys; satisfies (a) explicit atoms, (b) potential development, (c) advancing method.",
+    "key_authors": []
+  },
+  {
+    "id": "b63161405c2a",
+    "title": "Boltzmann generators for amorphous particle systems",
+    "authors": [
+      "Louis Grenioux",
+      "Leonardo Galliano",
+      "Ludovic Berthier",
+      "Giulio Biroli",
+      "Marylou Gabri\\'e"
+    ],
+    "abstract": "arXiv:2512.16607v2 Announce Type: replace-cross \nAbstract: Sampling configurations in thermodynamic equilibrium is a long-standing challenge in statistical physics. Boltzmann generators address this problem by employing generative models to propose independent configurations, which are then reweighted via importance sampling using exact likelihood evaluations. Recent Boltzmann Generators based on continuous normalizing flows and flow matching have achieved significant success for particle systems and biomolecules. However, these approaches have not been extended to amorphous materials (glasses), for which equilibrium sampling is notoriously slow. Because of their disordered structure, the invariances and geometrical constraints of amorphous materials differ from those of crystals and biomolecules, preventing the direct use of existing generative models. Here, we develop Boltzmann Generators tailored to amorphous materials by building the required equivariances directly into Riemannian stochastic interpolants. Our framework incorporates periodic boundary conditions and particle symmetries using equivariant graph neural networks. Numerical experiments demonstrate that enforcing physical symmetries significantly improves the accuracy of Boltzmann Generators, but also reveal an intrinsic limitation of the continuous-flow formulation: accumulated numerical errors during likelihood integration break time-reversibility, compromising exact thermodynamic reweighting. These results reveal a fundamental challenge for continuous-flow generative models in statistical mechanics and call for alternative approaches that preserve exact thermodynamic consistency.",
+    "url": "https://arxiv.org/abs/2512.16607",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "stat.ML",
+      "cond-mat.stat-mech",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-24",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Boltzmann generators for amorphous particle systems using flow matching and equivariant GNNs; explicit atoms with potential reweighting, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8a824d94469b",
+    "title": "Practical considerations for finite concentration molecular dynamics simulations",
+    "authors": [],
+    "abstract": "Understanding concentrated electrolytes requires a theory that spans local hydration and mesoscale interfacial assembly. We present an integrated workflow—Solvation Characterization via Optimized Probability Ensemble averaging (SCOPE)—that combines (i) enhanced sampling focused on a single Li+ ion, (ii) reweighting of biased trajectories to recover equilibrium microstate probabilities, and (iii) a chemical-potential correction that accounts for the limited reservoir of free water in finite simulation boxes. Applied to LiCl(aq) across 0.5–26M and 283–313 K, this approach reveals a simple organizing principle: solvated ions dominate at low concentrations; contact ion pairs emerge at intermediate strengths; and aggregated Li–xCl clusters become most stable at the solubility limit. The resulting free-energy trends predict temperature-dependent solubility in close agreement with experiment and clarify the role of interfacial nucleation in precipitation. Beyond the simple LiCl(aq) salt considered here, SCOPE offers a transferable strategy for characterizing speciation and phase behavior in concentrated liquid systems where collective coordinates and rare events dominate.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/4/044111/3399126/Practical-considerations-for-finite-concentration",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Thu, 23 Jul 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Molecular dynamics with enhanced sampling and free-energy methods for explicit LiCl system; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "312d068f2489",
+    "title": "Analytical Forces from the Bethe-Salpeter Equation for Large-Scale Excited-State Relaxation",
+    "authors": [
+      "Yu Jin",
+      "Victor Wen-zhe Yu",
+      "Marco Govoni",
+      "Giulia Galli"
+    ],
+    "abstract": "arXiv:2607.20728v1 Announce Type: new \nAbstract: We present an efficient plane-wave implementation of analytical nuclear forces for electronic excited states described by the Bethe-Salpeter equation (BSE). The formulation combines density-matrix perturbation theory with a Lagrangian approach, and avoids both explicit empty-state summations and the response calculations for each atomic displacement, required by conventional approaches based on density functional perturbation theory. Together with GPU acceleration, these advances make BSE forces calculations tractable for solid-state systems containing hundreds of atoms. We demonstrate the method on two point defects with distinct dielectric environments: the nitrogen-vacancy center in diamond, where BSE and time-dependent density functional theory (TDDFT) yield consistent excited-state relaxations, and the carbon-dimer defect in two-dimensional hexagonal boron nitride, where the screened electron-hole interaction included in the BSE stabilizes the localized defect excitation and corrects the relaxation pattern predicted by semilocal TDDFT. These results establish a scalable framework for BSE-level studies of excited-state relaxation and vibronic coupling in heterogeneous condensed systems.",
+    "url": "https://arxiv.org/abs/2607.20728",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Implements analytical forces from BSE for excited-state relaxation; plane-wave DFT on explicit atoms, advancing method, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "2498c6e06bf6",
+    "title": "Revisiting the <i>ab initio</i> lattice stability of Cr with the ${\\mathrm{r}}^{2}\\mathrm{SCAN}$ exchange-correlation functional",
+    "authors": [
+      "Songge Yang",
+      "Zi-Kui Liu",
+      "Yu Zhong"
+    ],
+    "abstract": "Author(s): Songge Yang, Zi-Kui Liu, and Yu Zhong\nThe present study revisits the lattice stability of pure Cr in BCC, FCC, and HCP structures using ab initio calculations with PBE and ${\\mathrm{r}}^{2}\\mathrm{SCAN}$ functionals. A key advance is that ${\\mathrm{r}}^{2}\\mathrm{SCAN}$ directly captures stable antiferromagnetic (AFM) states at equilibr…\n[Phys. Rev. B 114, 014423] Published Thu Jul 23, 2026",
+    "url": "http://link.aps.org/doi/10.1103/p9ck-xm2d",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-07-23T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Ab initio DFT calculations on Cr polymorphs with r2SCAN functional, method benchmarking, explicit atoms, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "cb885bc2bb48",
+    "title": "Cooperative stability, many-body expansion, and σ-aromaticity of (LiH)  n   clusters ( n  = 1–6): A CCSD(T) study at the complete basis set limit",
+    "authors": [],
+    "abstract": "We investigated the energetics and bonding of lithium hydride clusters (LiH)n (n = 1–6) using a composite ab initio scheme inspired by W2 theory to achieve sub-kcal/mol accuracy. This approach combines CCSD(T) results extrapolated to the complete basis set limit with a rigorous treatment of core–valence correlation, scalar relativistic effects, and the diagonal Born–Oppenheimer correction. Our results show that while Hartree–Fock theory captures the primary electrostatic binding, correlation effects are crucial for determining the energetic preference of compact isomers over cyclic rings. A parallel density functional theory study shows that while standard hybrid functionals like B3LYP-D4 and M06-2X exhibit larger deviations, the double-hybrid revDSD-PBEP86-D4 functional closely matches our benchmarks, delivering sub-kcal/mol accuracy. Structural and chemical bonding analyses, including intrinsic bond orbital, nucleus-independent chemical shift, and many-body expansion (MBE) methods, reveal high ionic character and multi-center bonding (3c–2e and 4c–2e) within the (LiH)n clusters. MBE analysis of the interaction energy of the monocyclic clusters with respect to the LiH molecules reveals that the two- and three-body terms are consistently negative (stabilizing), while all higher-order terms are negligible. We find that σ-aromaticity in these systems is predominantly local and bond-centered. As the rings expand, the interior becomes magnetically decoupled from the σ-skeleton, precluding the formation of a global ring current. These results establish definitive benchmarks for the stability of prototypical electron-deficient clusters.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/4/044306/3399134/Cooperative-stability-many-body-expansion-and",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Thu, 23 Jul 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "High-level ab initio CCSD(T) study on lithium hydride clusters, with atomistic representation and method benchmarking; satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e74cb198eded",
+    "title": "Role of Native and Zwitterionic Glycine in Electron Attachment to DNA: From Dipole-Bound to Solvent-Bound Doorway States",
+    "authors": [
+      "Ankita Gogoi",
+      "Jishnu Narayanan S J",
+      "Sujan Mandal",
+      "Achintya Kumar Dutta"
+    ],
+    "abstract": "arXiv:2602.23908v2 Announce Type: replace \nAbstract: Electron attachment to DNA is strongly influenced by its molecular environment, yet the role of amino acids under physiologically relevant conditions remains poorly understood. Here, we investigate the effect of native and zwitterionic glycine on electron attachment to thymine using high-level electron-affinity calculations and QM/MM molecular dynamics simulations. Under micro-solvated conditions, electron attachment occurs through a dipole-bound doorway state that evolves into a valence-bound anion via nonadiabatic coupling. The zwitterionic form of glycine strengthens stabilization of the diffuse electron owing to its larger internal charge separation, whereas the stability of the valence-bound anion is determined by the hydrogen-bonding geometry. Barrier-free proton transfer is observed only for specific binding motifs and substantially stabilizes the thymine-centered anion. In bulk solution, the doorway mechanism persists, with a solvent-bound state replacing the dipole-bound state as the initial electron-trapping state. The larger electrostatic field of zwitterionic glycine delays electron localization on thymine, while permanent proton transfer is observed only in selected native glycine trajectories and is absent throughout the present simulations of zwitterionic glycine. Despite these differences in electron-transfer dynamics, both amino acid forms provide similar stabilization of the thymine-centered anion after solvent reorganization. Our results establish the solvent-bound state as the condensed-phase analogue of the dipole-bound doorway state and reveal how amino acid environments modulate electron attachment pathways in realistic DNA systems.",
+    "url": "https://arxiv.org/abs/2602.23908",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses QM/MM molecular dynamics simulations and electronic structure to study electron attachment; satisfies (a)-(c) with atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "535dfced630f",
+    "title": "Long- and Short-Range Anion Order in SrTiO$_{3-x}$H$_x$ Perovskite Oxyhydrides: DFT+$U$ Sensitivity and HSE06 Cluster Expansion",
+    "authors": [
+      "Tzu-chen Liu",
+      "Chris Wolverton"
+    ],
+    "abstract": "arXiv:2607.20885v1 Announce Type: new \nAbstract: Anion ordering in perovskite oxyhydrides can remain significant even in disordered states, particularly at non-dilute hydrogen concentrations. Nevertheless, hydride substitution poses challenges for accurate simulations based on density functional theory due to configurational complexity and Ti 3$d$ reduction. Here, we develop a cluster expansion (CE) framework for SrTiO$_{3-x}$H$_x$ incorporating HSE06 hybrid-DFT energetics. We first demonstrate that calculated mixing energies and ordering stability are highly sensitive to the choice of DFT+$U$, with maximum variations on the order of 100 meV/anion. We benchmark ordering energetics against HSE06 calculations and identify $U$ = 3.3 eV as an HSE06 proxy, which enables extensive configurational exploration while limiting costly HSE06 calculations to key configurations for efficient learning of ordering energetics. Together, ground-state orderings, correlations between octahedral configurations and structural stability, and MC sampling of CE models all support a strong preference for the O$_4$H$_2$ cis configuration in SrTiO$_{3-x}$H$_x$, in which two hydride ions occupy first-nearest-neighbor anion sites. This cis-type preference was overlooked in previous ATiO$_{3-x}$H$_x$ studies, despite its sizable stabilization of ~200 meV per hydride comparable to reported anion-migration and polaron-formation energies. This study addresses both the previously underexplored sensitivity of CE-based ordering analyses to DFT+$U$ and anion-ordering in perovskite oxyhydrides.",
+    "url": "https://arxiv.org/abs/2607.20885",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT+U and HSE06 cluster expansion for anion ordering in oxyhydrides; explicit atoms and DFT/Monte Carlo, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "c61e1df0b316",
+    "title": "Reactivity of Water Dimer Radical Cations toward Inert Molecules: DFT Approaches for the Realistic Calculation of Ground- and Excited-State Reaction Profiles",
+    "authors": [
+      "Roman Balabin",
+      "Konstantin Chingin",
+      "Huanwen Chen"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006438/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-22",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT approaches for reaction profiles of water dimer radical cations; clearly atomistic quantum chemistry, satisfies all conditions.",
+    "key_authors": []
+  },
+  {
+    "id": "a8227d40ad7f",
+    "title": "SPARC: A Computational Framework for Prediction of Infrared Spectra for Zeolitic Catalyst Systems via Machine Learning of Born Effective Charges and Atomic Velocities",
+    "authors": [
+      "Hairong Cheng",
+      "Huarong Lei",
+      "Princy Jarngal",
+      "Peirong Chen",
+      "Abhishek Khetan"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006513/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-24",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "MLIP/DFT framework for predicting IR spectra from Born effective charges and atomic velocities in zeolites; satisfies (a) explicit atoms, (b) ML/DFT simulation, (c) method development.",
+    "key_authors": []
+  },
+  {
+    "id": "ed01ab83cd7a",
+    "title": "Excited-state Properties Beyond the Excitation Energy from Orbital-Optimized Density Functional Calculations I: Dipole Moments of Rydberg States",
+    "authors": [
+      "Lorenzo Restaino",
+      "Jukka John",
+      "Diego Llorena Prieto",
+      "Yorick L. A. Schmerwitz",
+      "Elvar \\\"Orn J\\'onsson",
+      "Gianluca Levi"
+    ],
+    "abstract": "arXiv:2606.12272v2 Announce Type: replace \nAbstract: Rydberg excited states are challenging to describe due to their highly diffuse character. Orbital-optimized density functional calculations typically provide more accurate values of the excitation energy of Rydberg states than time-dependent density functional theory approaches. However, the reliability of orbital-optimized methods for properties of Rydberg excited states such as the dipole moment remains much less explored, with existing benchmarks largely limited to the lowest excited states. Here, orbital-optimized density functional calculations with a plane-wave basis set are used to compute the dipole moment of several Rydberg states of a set of small molecules. Plane waves provide a flexible representation of diffuse Rydberg orbitals, overcoming limitations of commonly used atomic orbitals basis sets. Due to overconfinement of the Rydberg orbitals, a single-augmented atomic basis set yields a magnitude of the dipole moment that disagrees with the plane-wave calculations, even when the corresponding excitation energy is in good agreement. For the most diffuse states, the orientation of the dipole moment predicted by the atomic orbitals basis set can also be incorrect, and discrepancies with plane waves calculations persist even when extra augmented diffuse functions are added. The generalized gradient approximation functional PBE used in combination with the plane-wave representation of the orbitals gives good agreement with higher-level coupled-cluster calculations performed with sufficiently diffuse basis sets, when the latter are available. The hybrid functional PBE0 further improves the results, while PBE with globally scaled explicit Perdew-Zunger self-interaction correction generally leads to larger errors and an overestimation of the dipole moment, despite restoring the correct asymptotic $-1/r$ dependence of the effective Kohn--Sham potential.",
+    "url": "https://arxiv.org/abs/2606.12272",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Orbital-optimized DFT with plane waves for excited-state properties; involves explicit atoms and DFT method development, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8fa144206daa",
+    "title": "First-principles calculation of electron-phonon spectral functions for defects using phonon interpolation",
+    "authors": [
+      "Zoltan Santha",
+      "Gergo Thiering"
+    ],
+    "abstract": "arXiv:2607.20788v1 Announce Type: new \nAbstract: Point defects in wide-band-gap semiconductors exhibit optical spectra strongly shaped by electron-phonon coupling, but direct first-principles calculation of the corresponding phonon sidebands is often limited by the coarse vibrational spectrum of the largest defect supercells accessible by ab-initio electronic structure codes. In this work, we present a phonon-interpolation method for Huang-Rhys spectral densities and optical lineshape functions on hypercells created by extending the defect-containing supercells on arbitrarily dense phonon $q$-point grids. The method is based on reconstructing the transition-induced force associated with the optical excitation and using this localized force source to couple the defect transition to a densely sampled vibrational continuum. In this formulation, the local defect physics is obtained from ab initio supercell calculations, while the long-wavelength acoustic modes and the detailed structure of the host phonon spectrum are recovered by diagonalizing interpolated dynamical matrices in large hypercells. We demonstrate the method on the negatively charged nitrogen-vacancy centre in diamond between its ground $^{3}A_{2}$ and excited $^{3}E$ states. The transition-force is shown to be strongly localized around the defect, with converged localization measures obtained in a $4\\times4\\times4$ supercell accessible by density functional theory calculations. We interpolate the electron-phonon coupling on hypercells up to $32\\times32\\times32$ corresponding to approximately 17 million atoms, thereby recovering smooth, continuous Huang-Rhys spectral densities with ultrafine spectral resolution. The dominant coupling band is found near 63~meV; the low-energy acoustic contribution follows the expected linear scaling; and we recover the finer van-Hove-related structures in the optical phonon regime observed in experiments.",
+    "url": "https://arxiv.org/abs/2607.20788",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles phonon calculations for defects using DFT and interpolation; explicit atoms and method development, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "3f1629da6351",
+    "title": "Hydrodynamic Backflow for Easing the Fermion Sign in Finite-Temperature Electron Path Integral Simulations",
+    "authors": [
+      "Ingvars Vitenburgs",
+      "Jarvist Moore Frost"
+    ],
+    "abstract": "arXiv:2604.01963v3 Announce Type: replace-cross \nAbstract: Some notable technology systems, such as high-temperature superconductors and materials for controlled nuclear fusion, require an accurate description of finite-temperature quantum matter. Stochastic path integral methods are finite-temperature and numerically exact, but scale poorly with system size due the notorious Fermion sign problem. To somewhat mitigate this, we use a hydrodynamical backflow coordinate transformation. Our first approach was a continuous normalizing flow machine learning optimisation. We found this to roughly halve the statistical uncertainty at medium sign severity. Numerical issues challenged training effectively. Thus, a semi-analytic analogue was developed to estimate the optimal parameters. We do this by using a derived expression dependent on a Bosonic observable. Hence, the calculation of these values does not have a sign problem. The resulting backflow transformations reduce the problem by multiple orders of magnitude in the specific case of a harmonically trapped, two-dimensional, electron gas at finite-temperature. The total energy of the system agrees with previous, backflow untransformed, studies and we calculate energies for up to 32 electrons. The limiting factor is found to be, primarily, the $O(N^3)$ calculation of the Jacobian, stemming from the coordinate transformation of the backflow. A more thorough implementation may further improve this scaling. Even without this, a route for simulating electron systems at currently unreachable regimes is obtained.",
+    "url": "https://arxiv.org/abs/2604.01963",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-07-24",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Develops backflow transformation for path integral Monte Carlo of finite-temperature electron gas; explicit particle representation (a) and simulation methodology (b)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "7fec2379b3ef",
+    "title": "Determination of fundamental properties of nitrogen from first principles. III. Temperature and frequency dependence of the molecular polarizability and magnetic susceptibility",
+    "authors": [
+      "Jakub Lang",
+      "Giovanni Garberoglio",
+      "Micha{\\l} Przybytek",
+      "Micha{\\l} Lesiuk"
+    ],
+    "abstract": "arXiv:2607.21261v1 Announce Type: new \nAbstract: This work is the third part of the series of papers that focus on the theoretical determination of the properties of nitrogen that are relevant in metrology. Here we present first-principles calculations of the temperature and frequency dependence of the molecular polarizability and magnetic susceptibility of the nitrogen molecule (N$_2$). The purely electronic contributions to the static polarizability, Cauchy coefficients (up to sixth order), and isotropic magnetic susceptibility are computed over a range of internuclear distances using a robust composite scheme combining several electronic structure methods. The temperature dependence, evaluated from $50$~K to $2000$~K, is determined using two independent methods: rovibrational averaging and path integral Monte Carlo (PIMC). The polarizabilities obtained from theory agree with the recent high-precision thermometry measurements, wherever the latter are available, but are significantly less accurate. However, the main usefulness of the theoretical data revolves around combining it with the available experimental results to generate semi-empirical estimates of various quantities that have never been measured thus far. As an example, we determine highly accurate semi-empirical estimates of the static polarizability at key reference temperatures, $\\alpha_0(T)=11.735\\,962$~a.u.\\ at $T=303$~K and $\\alpha_0(T)=11.735\\,585$~a.u.\\ at $T=273.16$~K. Furthermore, we report theoretical values for the magnetic susceptibility, highlighting the importance of the paramagnetic contribution, and address a significant discrepancy with the experimental data for this quantity.",
+    "url": "https://arxiv.org/abs/2607.21261",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses path integral Monte Carlo (PIMC) for temperature dependence of molecular properties; satisfies (a)-(c) with atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "444076461422",
+    "title": "Lithium-Projected Phonon Spectral Distributions as Robust Descriptors of Ionic Conductivity in Solid Electrolytes",
+    "authors": [
+      "Gajendra Bohara",
+      "Ramakrishna Podila"
+    ],
+    "abstract": "arXiv:2607.20591v1 Announce Type: new \nAbstract: Lattice dynamics are widely invoked in the design of solid electrolytes, yet phonon information is commonly compressed into a band center or another scalar softness measure. Here we test whether the complete lithium-projected phonon density of states (Li-PDOS) provides a reproducible descriptor of experimental room-temperature ionic conductivity. MatterSim forces and Phonopy were used to generate harmonic total and Li-projected spectra for crystallographically resolved entries in the OBELiX dataset. A composition and structure audit defined a primary cohort of 260 materials (212 train and 48 test), a strict cohort of 241, and an exact-composition cohort of 168. Across 20 independently generated phonon-calculation database comparisons, the mean Wasserstein-1 distance was 0.542 THz for total DOS and 0.731 THz for Li-PDOS, revealing broad agreement but systematic, projection-dependent softening. Higher conductivity was associated with redistribution of normalized Li spectral weight toward low frequencies: in the untouched test set, the Li fractions below 2 and 5 THz had Spearman coefficients of 0.333 and 0.374, while the 5$\\%$ cumulative-frequency quantile had a coefficient of $-0.393$. A Wasserstein kernel on the full Li-PDOS achieved held-out $R^2=0.444$, compared with 0.012 for total DOS and 0.181 for a static composition--structure kernel. The Li model remained stable in the strict ($R^2=0.462$) and exact ($R^2=0.451$) cohorts. Family adjustment attenuated scalar associations, and Li-versus-total whole-spectrum dependence was cohort sensitive. The results therefore support mobile-ion-resolved spectral distributions as useful comparative screening descriptors, not as a universal causal softness law.",
+    "url": "https://arxiv.org/abs/2607.20591",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Uses MatterSim forces and Phonopy for phonon calculations on explicit atoms; application of atomistic simulation to ionic conductivity, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "d06257d0b8cf",
+    "title": "Magnetic ground states of CrPS$_4$ and NiPS$_3$ monolayers from long-range exchange interactions",
+    "authors": [
+      "Balazs Nagyfalusi",
+      "Ritesh Das",
+      "Alvaro Bermejillo-Seco",
+      "Herr S. J. van der Zant",
+      "Yaroslav M. Blanter",
+      "Amador Garcia-Fuente",
+      "Jaime Ferrer"
+    ],
+    "abstract": "arXiv:2607.20631v1 Announce Type: new \nAbstract: We investigate the magnetic properties of monolayer CrPS$_4$ and NiPS$_3$ by combining first-principles calculations, second-principles spin models, and Monte Carlo simulations. Unlike conventional approaches that truncate exchange interactions after only a few shells and determine them by fitting total energies, we extract the magnetic exchange tensors directly from density functional theory using the LKAG formalism and include interactions until numerical convergence is achieved. We show that long-range exchange interactions qualitatively modify the magnetic behavior of both materials. In CrPS$_4$, they destabilize the previously predicted ferromagnetic ground state and stabilize a spin-spiral phase, reducing the critical temperature to about 21\\,K, in agreement with available experiments. The resulting magnetic phase diagram contains multiple collinear and non-collinear phases that can be tuned by temperature and external magnetic fields. In NiPS$_3$, the experimentally observed zigzag antiferromagnetic order only emerges when exchange interactions up to the fifth shell are included. These results demonstrate that quantitatively predictive spin models for thiophosphate monolayers require long-range exchange interactions and provide a predictive framework for accurately describing two-dimensional van der Waals magnets.",
+    "url": "https://arxiv.org/abs/2607.20631",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Combines DFT, spin models, and Monte Carlo for magnetic properties; explicit atoms in DFT calculations, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "2651961d489a",
+    "title": "Machine learning based prediction of optical properties in two-dimensional Mo-W-S-Se-Te transition-metal dichalcogenide alloys through physics-informed sampling",
+    "authors": [
+      "Vivek Chowdhury",
+      "Tarvir Anjum Aditto",
+      "Md. Samrat",
+      "Hafiz Imtiaz",
+      "Ahmed Zubair"
+    ],
+    "abstract": "arXiv:2607.21246v1 Announce Type: new \nAbstract: Two-dimensional transition-metal dichalcogenide (TMD) alloys provide a compositionally tunable platform for controlling the optical and electronic properties. However, systematic prediction of their dielectric response across multicomponent alloy spaces remains challenging owing to the combinatorial cost of first-principles calculations. In this work, we combined ab initio optical-property calculations with a tabular foundation-model regression to predict the real and imaginary components of the frequency-dependent dielectric function for Mo-W-S-Se-Te TMD alloys. A dataset of 99 alloy structures spanning binary, ternary, quaternary, and quinary compositions was generated using density functional theory (DFT). The resulting polarization-dependent dielectric spectra were used to train a tabular prior-fitted network (TabPFN) and evaluated against the conventional Extra Trees and XGBoost models. To accommodate the in-context capacity limit of TabPFN, we introduced a non-uniform, physics-informed energy subsampling strategy that concentrates sampling in the optically active region above the band gap, where interband absorption is strongest. Trained solely on quaternary alloys, our TabPFN reconstructed the dielectric spectra of held-out quaternary compositions with an R2 > 0.98 and a mean absolute error below 0.10 for all four dielectric components, outperforming both baselines while requiring no gradient-based training or hyperparameter tuning. Our model further predicted derived optical quantities, including refractive index, extinction coefficient, and absorption coefficient. Additionally, our model generalized in a zero-shot manner to binary, ternary, and quinary alloys absent from the training set, with quinary predictions achieving an R2 > 0.97.",
+    "url": "https://arxiv.org/abs/2607.21246",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph",
+      "physics.comp-ph",
+      "physics.data-an"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT calculations for TMD alloys combined with ML prediction; satisfies (a)-(c) as application of atomistic DFT. High score for DFT application.",
+    "key_authors": []
+  },
+  {
+    "id": "dd0e7f8bab17",
+    "title": "First-principles prediction of the thermoelectric properties of Sn(S0.2Se0.8) alloys",
+    "authors": [
+      "Min Zhang",
+      "Joseph M. Flitcroft",
+      "Jonathan M. Skelton"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006533/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-24",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT prediction of thermoelectric properties of Sn(S0.2Se0.8) alloys; uses first-principles atomistic calculations, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "d1cbe39a60c5",
+    "title": "Lithium Makes the Difference–Evolution of Lithium Vacancy Disorder during Temperature-Induced Phase Transitions of the Li-Ion Conductor Li4SnS4",
+    "authors": [
+      "Lucas G. Balzat",
+      "Sebastian Bette",
+      "Jakob Blahusch",
+      "Christian Schneider",
+      "Emmanuelle Suard",
+      "Anjali Menakath",
+      "Kristina Gjorgjevikj",
+      "Simon Krause",
+      "Bettina V. Lotsch"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15006470/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-07-23",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Lithium vacancy disorder and phase transitions in solid electrolyte; likely uses DFT/MD, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "2b664901a911",
+    "title": "Calcium complexation in aqueous solution: An x-ray and  ab initio  approach",
+    "authors": [],
+    "abstract": "Understanding the aqueous chemistry of cations in solution is central to modeling ion transport, complexation, and reactivity. Calcium, for example, plays a critical role in biological and environmental systems; however, a fundamental understanding of its coordination in dilute, aqueous solution is lacking. There is still debate regarding the number of water molecules in its first solvation shell. Moreover, studies of Ca2+ coordination in aqueous complexes with ligands other than water are rare. Herein, we apply Ca K-edge x-ray absorption near-edge structure (XANES) and extended x-ray absorption fine structure (EXAFS) spectroscopy combined with ab initio molecular dynamics and time-dependent density functional theory to investigate the coordination environment of aqueous Ca2+. On the one hand, EXAFS spectroscopy is sensitive to bond distances; however, the determination of coordination numbers can be imprecise. XANES spectroscopy, on the other hand, is sensitive to molecular symmetry and therefore to coordination number. We first confirmed that calcium is coordinated, on average, by seven water molecules in dilute aqueous solution. We then extended this approach to examine the coordination environment of aqueous Ca2+ ethylenediaminetetraacetic acid (EDTA) complexes. Notably, a water molecule was present in the first coordination shell of Ca2+, in addition to four O atoms and two N atoms from EDTA4−, such that Ca2+ achieved sevenfold coordination. We conclude that Ca2+ tends to adopt low-symmetry, 7-coordinate complexes in aqueous solution, even in the presence of a hexadentate chelator. Our work lays the groundwork needed to understand Ca coordination in numerous biological and environmental systems.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/4/044305/3399129/Calcium-complexation-in-aqueous-solution-An-x-ray",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Thu, 23 Jul 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Combines ab initio molecular dynamics and TDDFT with experiment to study Ca2+ coordination; satisfies all criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "dfe252f97cb0",
+    "title": "Visualization of Defect Electronic States in Layered Semiconductor CrSBr",
+    "authors": [
+      "Jonathan Brunette",
+      "Joost Aretz",
+      "Kiyoung Jo",
+      "Aljoscha Soll",
+      "Zden\\v{e}k Sofer",
+      "Malte R\\\"osner",
+      "Nathan Guisinger",
+      "Adina Luican-Mayer"
+    ],
+    "abstract": "arXiv:2607.21301v1 Announce Type: cross \nAbstract: Chromium sulfur bromide (CrSBr) is a layered magnetic semiconducting material combining a rich magnetic phase diagram with axis-dependent electronic and optical properties. While defects in CrSBr have been shown to affect magnetic order and excitonic responses, their microscopic nature, atomic structure, and electronic properties are not yet fully understood. In this work, we use scanning tunneling microscopy/spectroscopy (STM/STS) to explore the structure and electronic signatures of two prominent defects in bulk CrSBr. Their structure reflects the symmetries of the underlying lattice, with electronic features near the valence band edge. By comparing experimental data with ab initio simulated STM images, we infer that a common defect corresponds to a b-axis-aligned double sulfur vacancy, in line with findings from a recent growth analysis study. This result advances our understanding of the role of intrinsic defects in shaping the electronic structure of CrSBr.",
+    "url": "https://arxiv.org/abs/2607.21301",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 24 Jul 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT simulated STM images for defect identification; satisfies (a)-(c) as application of atomistic DFT.",
+    "key_authors": []
+  },
+  {
+    "id": "e41bb0b9fe07",
+    "title": "Raman spectroscopy of the van der Waals topological magnet GdGaI",
+    "authors": [
+      "Nan Jiang",
+      "Yijin Zhang",
+      "Yujie Xia",
+      "Tomo Higashihara",
+      "Ryutaro Okuma",
+      "Jun-ichi Yamaura",
+      "Yoshinori Okada",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Tiantian Zhang",
+      "Tomoki Machida",
+      "Yasuhiro Niimi"
+    ],
+    "abstract": "Author(s): Nan Jiang, Yijin Zhang, Yujie Xia, Tomo Higashihara, Ryutaro Okuma, Jun-ichi Yamaura, Yoshinori Okada, Kenji Watanabe, Takashi Taniguchi, Tiantian Zhang, Tomoki Machida, and Yasuhiro Niimi\nWe report polarization-resolved Raman spectroscopy of a van der Waals compound $\\mathrm{GdGaI}$ that is a candidate for excitonic insulators. By combining the symmetry analysis with density functional theory calculations, we identify six Raman-active phonons. The spectra exhibit only the expected an…\n[Phys. Rev. B 114, 065128] Published Tue Jul 21, 2026",
+    "url": "http://link.aps.org/doi/10.1103/n87n-h8p5",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-07-21T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-07-24",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT calculations for phonon identification in GdGaI, explicit atoms and geometry optimization, satisfies (a)-(c).",
+    "key_authors": []
+  }
+]
