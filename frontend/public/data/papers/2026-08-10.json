@@ -1,0 +1,577 @@
+[
+  {
+    "id": "e83d6b0f5a51",
+    "title": "Data-efficient fine-tuning for reaction modelling in explicit solvent",
+    "authors": [
+      "Josef Holownia",
+      "Veronika Juraskova",
+      "Volker L. Deringer",
+      "Fernanda Duarte"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15007217/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Volker L. Deringer",
+    "key_authors": [
+      "Volker L. Deringer"
+    ]
+  },
+  {
+    "id": "72d7064541d5",
+    "title": "Third-order size-consistent Brillouin-Wigner perturbation theory",
+    "authors": [
+      "Zhenling Wang",
+      "Martin Head-Gordon"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15007236/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Martin Head-Gordon",
+    "key_authors": [
+      "Martin Head-Gordon"
+    ]
+  },
+  {
+    "id": "2bbd792e65cc",
+    "title": "How Molecular Generative Models Organize Molecular Identity",
+    "authors": [
+      "Raul Ortega-Ochoa",
+      "Tejs Vegge",
+      "Jens S. Bakander",
+      "Luis Mantilla Calderon",
+      "Alan Aspuru-Guzik",
+      "Tonio Buonassisi"
+    ],
+    "abstract": "arXiv:2608.06956v1 Announce Type: cross \nAbstract: Generative models for matter are often evaluated as samplers over output representations, and their latent spaces are commonly used as proxies for navigating chemical space. Much less is known about how these models internally arrange discrete chemical identities within those representations. We study this arrangement by making molecular identity explicit and pulling it back through the generative process. Through these pullbacks we probe the regions that generate the same object, exposing the trained model's internal repertoire: a fixed partition that determines which objects (novel or not) the model can produce.\n  Across three molecular generative architectures, we find that this repertoire is arranged into piecewise-constant regions separated by recurring coarse-to-fine boundaries. Its organization depends on the representation probed, the identity convention, decoder stochasticity, and the metric used to compare coordinates. During training, local chemical organization stabilizes while the number of distinct molecular identities represented within each neighborhood continues to change. Internal organization must therefore be characterized, rather than assumed, before a generative space can be treated as chemically navigable.",
+    "url": "https://arxiv.org/abs/2608.06956",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alan Aspuru-Guzik",
+    "key_authors": [
+      "Alan Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "3b43a8ba106b",
+    "title": "DynaCrys: Crystal Generation with Dynamic Space-Group Diffusion",
+    "authors": [
+      "Zhuotao Jin",
+      "Xiaoyun Wang",
+      "Nicholas Brawand",
+      "Roman Zubatyuk",
+      "Atul Thakur",
+      "Eric Qu",
+      "Boris Kozinsky",
+      "Justin Smith"
+    ],
+    "abstract": "arXiv:2608.07401v1 Announce Type: new \nAbstract: The search for new crystalline materials spans an enormous compositional and structural space. Generating candidates in this space requires jointly modeling discrete crystallographic symmetry, elemental composition, and continuous geometry. We introduce DynaCrys, a generative model for crystals in which the space group co-evolves with Wyckoff occupations and elements through a coupled symbolic diffusion process. The structured space-group transitions follow crystallographic group-subgroup relations. As the space group changes, a shared, pretrained symmetry codebook provides both the legality-constrained stochastic decoder and the symmetry-constrained crystal-geometry model with a common representation of the corresponding Wyckoff vocabulary. Across large-scale evaluations using two independent relaxation-and-evaluation engines, DynaCrys achieves best-in-class performance in symmetry-aware discovery of stable, unique, and novel crystals, both overall and under the additional requirement of nontrivial post-relaxation symmetry. It also enables fast sampling while generating structures with consistently low relaxation-induced structural displacements.",
+    "url": "https://arxiv.org/abs/2608.07401",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Boris Kozinsky",
+    "key_authors": [
+      "Boris Kozinsky"
+    ]
+  },
+  {
+    "id": "95fd4988fc33",
+    "title": "Inference-Time Scaling of Diffusion Language Models via Trajectory Refinement",
+    "authors": [
+      "Meihua Dang",
+      "Jiaqi Han",
+      "Minkai Xu",
+      "Kai Xu",
+      "Akash Srivastava",
+      "Stefano Ermon"
+    ],
+    "abstract": "arXiv:2507.08390v5 Announce Type: replace \nAbstract: Discrete diffusion models have recently emerged as strong alternatives to autoregressive language models, matching their performance through large-scale training. However, inference-time control remains relatively underexplored. In this work, we study how to steer generation toward desired rewards without retraining the models. Prior methods typically resample or filter within a single denoising trajectory, optimizing rewards step-by-step without trajectory-level refinement. We introduce particle Gibbs sampling for diffusion language models (PG-DLM), an inference-time algorithm enabling trajectory-level refinement. PG-DLM constructs a Markov chain over full denoising trajectories and applies a conditional sequential Monte Carlo kernel to resample them. By doing so, PG-DLM introduces a new scaling axis, the number of refinement iterations, which is unavailable to prior methods. Increasing iterations remains effective even as gains from adding more parallel samples saturate. Furthermore, PG-DLM enables adaptive compute allocation by performing additional iterations only when needed, leading to further efficiency gains. We derive theoretical guarantees for convergence and variance bounds, and analyze trade-offs across different scaling axes. Empirically, PG-DLM outperforms prior methods across compute budgets on reward-guided generation tasks. On GSM8K, it achieves 90.07% accuracy with 2.9 particles on average and 94.47% accuracy with 24.8 particles on average.",
+    "url": "https://arxiv.org/abs/2507.08390",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 5,
+    "added_date": "2026-08-10",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Stefano Ermon",
+    "key_authors": [
+      "Stefano Ermon"
+    ]
+  },
+  {
+    "id": "5626d5a53bbf",
+    "title": "Using energy decomposition analysis from correlated wavefunction theory to characterize a range of hydrogen, halogen, and tetrel bonds: The relative importance of electrostatics, charge-transfer and polarization.",
+    "authors": [
+      "Hengyuan Shen",
+      "Zhenling Wang",
+      "Kevin Ikeda",
+      "Dong Jun Shin",
+      "Matthias Loipersberger",
+      "Alexander Zech",
+      "Stefan Huber",
+      "Teresa Head-Gordon",
+      "Martin Head-Gordon"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15007238/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Martin Head-Gordon",
+    "key_authors": [
+      "Martin Head-Gordon"
+    ]
+  },
+  {
+    "id": "f29fa84a129c",
+    "title": "Cross-Geometry Transferability Assessment of Universal Machine Learning Interatomic Potentials: From Bulk Materials to Atomic Nanowires",
+    "authors": [
+      "Pedro H. M. Zanineli",
+      "Bruno Focassio",
+      "Gabriel R. Schleder"
+    ],
+    "abstract": "arXiv:2608.06662v1 Announce Type: new \nAbstract: Foundation machine-learning interatomic potentials (MLIPs) enable atomistic simulations at substantially lower computational cost than first-principles methods, but their reliability across structural geometries remains insufficiently understood. Here, we construct a density-functional-theory dataset of ZrO2 configurations spanning bulk, slab, particle, neck, and atomically thin wire environments motivated by an experimentally observed ZrO2 desintering process involving neck thinning and atomic wire formation. We first benchmark 26 pretrained MLIPs and observe pronounced geometry-dependent degradation in zero-shot predictions. Without any training, after only reference-energy alignment, the best zero-shot model (ORB-V3) reaches energy and force root-mean-square errors of 6 meV/atom and 197.3 meV/{\\AA}, respectively, with the largest force errors in neck and wire configurations. We then compare zero-shot inference, fine-tuning, and training from scratch strategies. Fine-tuning yields lower energy and force errors than training from scratch, while both require comparable wall-clock time. Geometry-specific fine-tuning improves in-domain accuracy but frequently produces negative transfer to other structural classes, whereas mixed-geometry fine-tuning reduces cross-geometry errors. Evaluations of elastic and vibrational properties, surface energies, and neck dynamics further show that rankings based on average energy and force errors do not universally predict property-level behavior. These results demonstrate that geometry-diverse target data and independent physical validations are necessary when adapting foundation MLIPs to low-coordination (ionic) nanostructures.",
+    "url": "https://arxiv.org/abs/2608.06662",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.9,
+    "relevance_reason": "Benchmarks 26 universal MLIPs on a DFT dataset and evaluates MD simulations for various ZrO2 geometries, clearly satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "a1a613bb5c52",
+    "title": "Local Structure Dictates Ionic Transport and Mechanical Properties in Glassy Solid Electrolytes for Lithium Batteries",
+    "authors": [
+      "Yong Li",
+      "Tao Du",
+      "Rasmus Christensen",
+      "Timoth\\'ee Jamin",
+      "Zhencai Li",
+      "Qi Zhang",
+      "Xiaoyi Xu",
+      "Kasper Tolborg",
+      "Yuanzheng Yue",
+      "Morten M. Smedskjaer"
+    ],
+    "abstract": "arXiv:2608.06895v1 Announce Type: new \nAbstract: Electrolytes composed of sulfide and halide glasses are promising candidates for all-solid-state lithium batteries owing to their processability, lack of grain boundaries, and relatively high ionic conductivity. Nevertheless, their ionic conductivity and mechanical properties are still not satisfying for the real-world applications. Significant advances in solid electrolytes require a thorough understanding of their microstructures. Here, we reveal the connections among structure, ionic transport properties, and mechanical stability in a series of glassy solid electrolytes by employing molecular dynamics simulations based on a machine learning interatomic potential. Specifically, we explore how the interplay between B-S and P-S networks in glassy Li-S-P-B-I (LSPBI) governs ionic conductivity and deformation behavior. The introduction of P2S5 into a B2S3-based glass induces a critical structural transformation, through which both ionic conductivity and mechanical nano-ductility can be enhanced. For a moderate P2S5 content, incorporated PS4 units depolymerize the rigid boron framework, creating percolative diffusion pathways for fast ionic transport. Concurrently, the flexible P-S-P configurations enable energy dissipation through bond bending, leading to the brittle-to-ductile transition. However, excessive P2S5 increases the fraction of polyphosphates (e.g., P2S6 and P2S7), thereby polymerizing the structural network and ultimately impeding Li+ mobility. Our work thus provides atomistic principles for engineering glass electrolytes with balanced ionic conductivity and mechanical robustness.",
+    "url": "https://arxiv.org/abs/2608.06895",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLIP-based MD simulations of glassy Li-S-P-B-I electrolyte linking structure to transport and mechanical properties, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "1c8152ca8d9b",
+    "title": "Fast Isotropic Li-Ion Diffusion in Zeolitic Imidazolate Framework Glass Electrolytes for Batteries",
+    "authors": [
+      "Yong Li",
+      "Tao Du",
+      "Timoth\\'ee Jamin",
+      "Zhencai Li",
+      "Kasper Tolborg",
+      "Yuanzheng Yue",
+      "Morten M. Smedskjaer"
+    ],
+    "abstract": "arXiv:2608.06902v1 Announce Type: new \nAbstract: All-solid-state lithium batteries require solid electrolytes that combine rapid room-temperature ion transport with mechanical robustness and interfacial compatibility. Zeolitic imidazolate framework (ZIF) glasses, with ZIFs being a sub-set of metal-organic frameworks, offer an attractive yet relatively underexplored platform because they combine an grainboundary-free and amorphous topology with chemically tunable frameworks. Here, we reveal that structural disorder unlocks fast and isotropic lithium diffusion in ZIF glasses. This is realized by using a machine learning interatomic potential to simulate Li+ transport in crystalline and glassy ZIF-4 and ZIF-62. Structural disorder reduces the activation energy for Li+ migration from ~0.35 eV to 0.16 eV and increases the extrapolated room-temperature diffusion coefficient by more than one order of magnitude for ZIF-4 and nearly sevenfold for ZIF-62. Analyses of non-Gaussian dynamics and van Hove correlation functions reveal that Li+ diffusion in crystalline ZIFs occurs via rare, dynamically heterogeneous hopping events among well-defined cages, whereas Li+ diffusion in glassy ZIFs is more homogeneous, continuous, and Fickian-like, benefiting from a wide distribution of coordination geometries and migration barriers. Li+ diffusion in crystalline ZIFs is strongly anisotropic, reflecting that ordered orientations of imidazolate and benzimidazolate rings impose distinct energy barriers along different crystallographic directions. Upon vitrification, these ring orientations become randomized, and hence, the diffusion of Li+ becomes isotropic or near-isotropic. These findings imply that well-designed metal-organic framework glasses are a promising candidate as high-performance solid-state electrolytes.",
+    "url": "https://arxiv.org/abs/2608.06902",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "MLIP-based MD simulations of Li+ diffusion in crystalline and glassy ZIFs, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8d0cfba8eccc",
+    "title": "Density-Functional Excited-State Gradients and Nonadiabatic Couplings on a Consumer GPU from a Contraction-DAG",
+    "authors": [
+      "Rub\\'en Dar\\'io Guerrero"
+    ],
+    "abstract": "arXiv:2608.06536v1 Announce Type: new \nAbstract: Nonadiabatic dynamics needs an excited-state gradient and an interstate nonadiabatic coupling matrix element (NACME) at every nuclear geometry, and a double-hybrid functional's accuracy has been unavailable for the coupling. We report the first analytic derivative NACME for a double-hybrid excited state---deferred in the original hh-TDA method and supplied for hybrids only by Yu \\emph{et al.}---derived, with the hole-hole and particle-particle Tamm--Dancoff (\\hhTDA/\\ppTDA) gradients and NACMEs, as a single reverse-mode transpose of one contraction graph closed under a non-symmetric atomic-orbital-direct $J/K$ kernel. Its double-hybrid excitation energy lowers the vertical-excitation mean absolute deviation from bare-\\hhTDA\\ $0.86$ to $0.47$~eV and removes the $+0.53\\!\\rightarrow\\!+0.05$~eV over-excitation bias, improving seven of ten states while over-correcting the ionic $\\pi\\pi^*$ states---the expected perturbative-doubles failure, reported not trimmed. Every coupling is validated to $\\sim\\!10^{-4}$ against an independent \\emph{literal many-electron wavefunction-overlap} oracle that shares no code path with the method, and is physically meaningful at the ammonia $n\\!\\rightarrow\\!\\sigma^*$ \\emph{covalent} conical intersection, where the \\hhTDA/\\ppTDA manifolds recover the $F\\!-\\!2$ seam and adiabatic linear-response TDDFT gives $\\tau\\!\\equiv\\!0$ by construction. Gradients, NACMEs, and the double-hybrid coupling all run device-resident and AO-direct through one shared Cholesky-decomposed $J/K$ engine within the 8\\,GB of a consumer RTX~4060 (a profile-guided $\\sim\\!10^2\\times$ launch collapse preserving double-precision bit-identity)---placing on a commodity desktop card a correlated excited-state derivative capability that has until now required datacenter hardware.",
+    "url": "https://arxiv.org/abs/2608.06536",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cs.AR",
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Density-functional excited-state gradients and nonadiabatic couplings developed for molecular systems, satisfying (a)-(c) as DFT method development.",
+    "key_authors": []
+  },
+  {
+    "id": "dfc0fd745c87",
+    "title": "Beyond Exactness: Approximation Strategies to the Many-Body Schrödinger Equation for Modern Quantum Chemistry Applications",
+    "authors": [
+      "Chengze Yang"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv-2025-jzv5j/v5",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 5,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Quantum chemistry method development for many-body Schrödinger equation approximations is atomistic simulation methodology, satisfying (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "dc085746da3d",
+    "title": "The Tetrahedron Speaks: A Holistic Benchmark for DFT in Tetrahedral Framework",
+    "authors": [
+      "Mehdi Shahraki"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15004948/v2",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 2,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Benchmarking DFT for tetrahedral frameworks is a clear atomistic simulation method evaluation, satisfying (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "2bc2af26a14d",
+    "title": "CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction",
+    "authors": [
+      "Kaixiang Su",
+      "Hongfei Xue",
+      "Qiang Zhu"
+    ],
+    "abstract": "arXiv:2608.06582v1 Announce Type: new \nAbstract: Flow-based generative models can efficiently produce candidate structures for crystal structure prediction (CSP), but their pretrained objectives do not directly optimize downstream target recovery. Reinforcement-learning post-training offers a flexible solution, yet existing approaches rely primarily on energy rewards and coordinate-only stochastic policies. Predicted energy does not identify the reference polymorph, while reward-driven concentration can reduce the candidate coverage required for Top-N recovery. We introduce CrystalGRPO, a CSP-aligned post-training framework that extends existing ODE-to-SDE policy constructions to the joint coordinate--lattice state. CrystalGRPO combines MACE-predicted energy with a StructureMatcher-based recovery score and provides two operating modes: CrystalGRPO-Q, which prioritizes single-draw recovery, and CrystalGRPO-C, which combines full-trajectory reference regularization with a coverage-aware group advantage to preserve finite-budget target recovery. Across MP-20 and MPTS-52 with PXRDGen and OMatG backbones, both variants reduce one- and twenty-sample RMSE relative to coordinate-only reinforcement in all four backbone--dataset settings. CrystalGRPO-Q consistently improves Top-1, whereas CrystalGRPO-C achieves a higher Top-20 across all settings.",
+    "url": "https://arxiv.org/abs/2608.06582",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.85,
+    "relevance_reason": "CrystalGRPO applies reinforcement learning to flow-based crystal structure generation with MACE-predicted energies and StructureMatcher recovery, involving explicit atomic coordinates and an MLIP, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "b93a63b0bb9d",
+    "title": "Towards an Unbiased Dataset of Cocrystals and Solvates by Crystal Structure Prediction",
+    "authors": [
+      "Jordan A. Dorrell",
+      "Graeme M. Day"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15007227/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.85,
+    "relevance_reason": "Crystal structure prediction using atomistic methods (DFT/MLIPs) satisfies (a), (b), and (c) as an application of atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "67bd3f944660",
+    "title": "Competing Energetics Govern Gas Permeation in Polymer of Intrinsic Microporosity (PIM) Membranes",
+    "authors": [
+      "Jianhao Qian",
+      "Ruoyu Wang",
+      "Menachem Elimelech"
+    ],
+    "abstract": "arXiv:2608.06413v1 Announce Type: new \nAbstract: Polymer membranes, particularly polymers of intrinsic microporosity (PIMs), hold great promise for gas separation applications. However, the long-dominant solution-diffusion model, which treats the membrane as a nonporous homogeneous medium, does not resolve how gas-solid atomic interactions govern molecular transport in intrinsic micropores, limiting rational bottom-up membrane design. In this work, we employ non-equilibrium molecular dynamics simulations to investigate the permeation of various gases (He, H2, CH4, N2, O2, and CO2) through PIM-1 as a representative PIM membrane across a range of temperatures. By analyzing the scaling of gas permeability with molecular mass, we identify a temperature-induced transition in the dominant transport mechanism. We demonstrate that this transition is governed by the competition between gas-wall interaction potential energy and thermal kinetic energy: weak interactions or elevated temperatures facilitate Knudsen-type ballistic transport, whereas strong interactions and lower temperatures favor adsorption-mediated surface diffusion. Furthermore, molecular trajectory analysis at the membrane interface reveals two distinct entry pathways: direct entry through pore openings and surface-diffusion-assisted entry. The surface-diffusion-assisted pathway greatly promotes the entry of strongly interacting gases into the membrane, contributing to higher overall permeability, albeit this enhancement diminishes with increasing temperature. These findings offer a mechanistic picture of gas permeation in PIM-1 and explain the dependence of gas permeation on both gas type and temperature. More broadly, they highlight the importance of adopting a pore-flow perspective to understand gas transport in microporous polymer membranes.",
+    "url": "https://arxiv.org/abs/2608.06413",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Explicit atomistic molecular dynamics simulations of gas permeation through PIM-1 membrane, satisfying (a)-(c) via MD application on a real atomic system.",
+    "key_authors": []
+  },
+  {
+    "id": "a8efedbc5481",
+    "title": "Local lattice dynamics of hcp zinc from EXAFS and machine-learning interatomic potentials",
+    "authors": [
+      "Vitalijs Dimitrijevs",
+      "Pjotrs \\v{Z}guns",
+      "Inga Pudza",
+      "Aleksandr Kalinko",
+      "Alexei Kuzmin"
+    ],
+    "abstract": "arXiv:2608.07081v1 Announce Type: new \nAbstract: The lattice dynamics of hexagonal close-packed (hcp) zinc, a prototypical anisotropic metal, is studied using temperature-dependent Zn K-edge extended X-ray absorption fine structure (EXAFS) spectroscopy combined with atomistic simulations. The reverse Monte Carlo method enable the extraction of mean-square relative displacements (MSRDs) for eight coordination shells, providing a shell-resolved description of thermal motion. The MSRD temperature dependence, analysed using the correlated Einstein model, yields effective interatomic force constants and reveals pronounced anisotropy between in-plane and out-of-plane interactions. This anisotropy is further quantified by the ratio of MSRDs for the first and second coordination shells, which closely matches the anisotropic displacement parameters from diffraction experiments. Molecular dynamics simulations using the CHGNet universal machine-learning interatomic potential show that the original model overestimates thermal disorder, while a fine-tuned version substantially improves agreement with experimental EXAFS spectrum and radial distribution function. Overall, EXAFS-informed analysis is effective for validating and refining machine-learning interatomic potentials.",
+    "url": "https://arxiv.org/abs/2608.07081",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "EXAFS-informed RMC and MLIP MD simulations (including fine-tuning) of hcp Zn lattice dynamics, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "b750570c25c9",
+    "title": "Uncovering Nonadiabatic Dynamics of Plasmonic Metal–Molecular Switch Hybrids with Surface Hopping",
+    "authors": [
+      "Nicolas Jahn",
+      "Evgenii Titov"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15007224/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-08-10",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Surface hopping nonadiabatic dynamics on atomistic systems is an atomistic simulation method and application, satisfying (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "a23250b46663",
+    "title": "Tuning negative thermal expansion in rutile-type difluorides MF<sub>2</sub> (M<img class=\"glyph\" src=\"https://sdfestaticassets-us-east-1.sciencedirectassets.com/shared-assets/16/entities/dbnd\" />Mn, Zn, Ni) based on ionic size effect",
+    "authors": [],
+    "abstract": "Publication date: 5 September 2026\nSource: Computational Materials Science, Volume 274\nAuthor(s): Wenjing Huang, Yuanyuan Li, Dingfeng Yang",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626004957?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "DFT calculations on rutile-type difluorides with explicit atoms and electronic-structure methods satisfy (a)-(c), representing an atomistic simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "0e1dae30ceaa",
+    "title": "Composition-dependent structural evolution, electronic properties, and magnetism of Ni−Pt nanoalloys: implications for adsorption",
+    "authors": [],
+    "abstract": "Publication date: 5 September 2026\nSource: Computational Materials Science, Volume 274\nAuthor(s): Hüseyin Yıldırım",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626005100?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "DFT study of Ni-Pt nanoalloys with explicit atomic structures and electronic/magnetic property calculations satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "07e22e0e9a56",
+    "title": "Ground-State Energy Estimation of HeH$^{+}$, ArH$^{+}$, and H$_2$O via Sample-Based Quantum Diagonalization",
+    "authors": [
+      "Jubin Park",
+      "Chae-Hyun Yoon",
+      "Minkyu Lee",
+      "Myung-Ki Cheoun"
+    ],
+    "abstract": "arXiv:2608.06415v1 Announce Type: new \nAbstract: Accurate ground-state energies are essential for understanding molecular structure, chemical bonding, and reaction energetics in quantum chemistry. In this work, we investigate the ground-state properties of the molecular systems HeH$^+$, ArH$^+$, and H$_2$O using Sample-Based Quantum Diagonalization (SQD), a hybrid quantum-classical framework designed for near-term quantum devices. Unlike variational approaches such as VQE, which require deep parameterized circuits and repeated expectation-value measurements, SQD reconstructs a low-energy determinant subspace directly from measured bitstrings.\n  For the present calculations, bitstrings were generated on IBM quantum hardware using shallow local unitary cluster Jastrow (LUCJ) circuits whose parameters were constructed from the $t_1$ and $t_2$ amplitudes of coupled-cluster singles and doubles (CCSD) calculations based on restricted Hartree--Fock (RHF) references. From these samples, we compute ground-state potential-energy curves of HeH$^+$, ArH$^+$, and H$_2$O with the 6-31G and cc-pVDZ basis sets. For all three systems, the SQD results obtained with the cc-pVDZ basis closely follow the corresponding same-basis CCSD energies and reproduce the equilibrium-region trends of the potential-energy curves. HeH$^+$ and ArH$^+$ were chosen as simple yet astrophysically important molecular-ion benchmarks, while H$_2$O was included as a representative polyatomic molecule to assess the applicability of SQD beyond diatomic ionic systems. At the adopted equilibrium geometries, the deviations from the same-active-space CASCI references are 0.00, 2.51, and 6.34 mHa for HeH$^+$, ArH$^+$, and H$_2$O, respectively.\n  These results demonstrate the feasibility of hardware-assisted SQD for the present benchmark systems and motivate further studies of its accuracy and computational scaling for larger molecular active spaces.",
+    "url": "https://arxiv.org/abs/2608.06415",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Quantum chemistry calculations (SQD, coupled-cluster based) for molecular ground states, using explicit electronic structure of HeH+, ArH+, and H2O, satisfying (a)-(c) as post-HF method development and application.",
+    "key_authors": []
+  },
+  {
+    "id": "b27935121ea8",
+    "title": "A robust and efficient solver for coupled cluster equations",
+    "authors": [
+      "Chanaka D. M. Mudiyanselage",
+      "Kangbo Li",
+      "Fabian M. Faulstich"
+    ],
+    "abstract": "arXiv:2608.06669v1 Announce Type: new \nAbstract: The coupled-cluster (CC) equations are most frequently solved via fixed-point (FP) iterations. However, when formulated in a non-canonical gauge, as in local correlation CC, the FP iteration may converge slowly or even diverge. Practical fixes, such as level-shifting and a direct inversion of iterative subspace (DIIS), often improve the convergence, but remain fundamentally heuristic and gauge dependent. {\\it Yang et al.}~demonstrated that preconditioned Newton--Krylov (PNK) methods provide substantial wall-time advantage for canonical CC. In this work, we generalize the preconditioner to arbitrary gauges by replacing the energy denominator with a gauge-invariant formulation. Combined with Krylov-based approximate Jacobian inversion, the resulting framework removes the need for level-shifting and yields robust and efficient convergence across various gauges and challenging chemical systems. Our numerical results indicate that PNK consistently outperforms carefully optimized FP-based approaches across a range of molecular systems, positioning the proposed PNK method as a promising new standard for solving the CC equations.",
+    "url": "https://arxiv.org/abs/2608.06669",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Coupled-cluster equation solver development, a post-HF method applied to molecular systems, satisfying (a)-(c) as a quantum chemistry method advance.",
+    "key_authors": []
+  },
+  {
+    "id": "414c92fa64c2",
+    "title": "Beyond the Four-Decade DIIS Default:Auxiliary-Curvature Acceleration of Self-Consistent-Field Calculations",
+    "authors": [
+      "Peng Bao",
+      "Qiang Shi"
+    ],
+    "abstract": "arXiv:2608.07354v1 Announce Type: new \nAbstract: Direct inversion in the iterative subspace (DIIS), introduced in 1980, remains the practical default for accelerating Hartree-Fock and Kohn-Sham self-consistent-field (SCF) calculations. Many later methods improve robustness or iteration count, but the near-zero overhead of DIIS makes a broad reduction in total wall time difficult. We introduce AURORA-SCF (auxiliary-curvature unified Riemannian orbital-response acceleration), which evaluates energy and gradient only with the requested target Hamiltonian while obtaining most orbital curvature from an independent valence-STO-3G model. A target-level, transported L-BFGS history corrects the model mismatch; a shifted matrix-free solve, trust region, and geodesic orbital update control the step. In 16 direct CPU RHF pairs spanning 137-1484 atomic orbitals, AURORA-SCF was faster in every case, reducing mean wall time by 26.2% and target J/K builds by 33.3%. In a separate set of 63 converged, energy-matched density-fitted GPU pairs spanning seven molecules, closed- and open-shell formalisms, and HF, PBE, B3LYP, and M06-2X, it was again faster in every included pair, with mean reductions of 26.5% in wall time and 31.9% in target J/K builds. Focused direct CPU and GPU sweeps show mean wall-time reductions of 30-34%. These results establish a specific advance beyond the four-decade DIIS default: transferred, secant-corrected curvature can reduce total SCF wall time, not merely iteration count, without changing the target stationary equations. The same optimization pattern also suggests a route to faster orbital optimization elsewhere in quantum chemistry and to multifidelity optimization across scientific computing.",
+    "url": "https://arxiv.org/abs/2608.07354",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "SCF acceleration method (AURORA-SCF) for Hartree-Fock/Kohn-Sham calculations on molecular systems, satisfying (a)-(c) as a DFT/HF method advance.",
+    "key_authors": []
+  },
+  {
+    "id": "26f7daa5937b",
+    "title": "A Joint Quantum Computing, Neural Network and Embedding Theory Approach for the Derivation of the Universal Functional",
+    "authors": [
+      "Martin J. Uttendorfer",
+      "Daniel Barragan-Yani",
+      "Matthias Sperl",
+      "Marc Landmann"
+    ],
+    "abstract": "arXiv:2512.13138v2 Announce Type: replace-cross \nAbstract: We introduce a novel approach that exploits the intersection of quantum computing, machine learning and reduced density matrix functional theory to leverage the potential of quantum computing to improve simulations of interacting quantum particles. Our method focuses on obtaining the universal functional using a deep neural network trained with quantum algorithms. In addition, we use density matrix embedding theory to strengthen our approach by substantially expanding the space of Hamiltonians for which the obtained functional can be applied without the need for additional quantum resources. Since the obtained universal functional can be reused for any system where the interactions within the embedded fragment are identical, our work demonstrates a way to potentially achieve a cumulative quantum advantage within quantum computing applications for quantum chemistry and condensed matter physics.",
+    "url": "https://arxiv.org/abs/2512.13138",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "quant-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-08-10",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "Derivation of universal functional using quantum computing, ML, and embedding theory; DFT method development, satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "ae54329c82b9",
+    "title": "Optical Anisotropy and Phase Matching in Non-Centrosymmetric Perovskite Oxides from DFT+U and DFT+U+V Functionals",
+    "authors": [
+      "Mohamed S. M. M. Ali (Department of Materials Science",
+      "Engineering",
+      "Wilton E. Scott Institute for Energy Innovation",
+      "Carnegie Mellon University)",
+      "Ismaila Dabo (Department of Materials Science",
+      "Engineering",
+      "Wilton E. Scott Institute for Energy Innovation",
+      "Carnegie Mellon University)"
+    ],
+    "abstract": "arXiv:2608.06759v1 Announce Type: new \nAbstract: Optical anisotropy underpins the operation and performance of a broad range of photonic and quantum technologies. In this work, we critically examine the accuracy of density functional theory approximations with onsite and intersite Hubbard corrections (the DFT+$U$ and DFT+$U$+$V$ functionals) in predicting the anisotropic optical response of the non-centrosymmetric perovskite oxides, such as BaTiO$_3$, LiNbO$_3$, KNbO$_3$, and PbTiO$_3$. It is found that correcting self-interaction errors using DFT+$U$ alone does not capture the optoelectronic response of these materials, often leading to a suppression of their optical anisotropy. While intersite Hubbard interactions restore this anisotropy, the choice of the (inter)atomic orbital manifold that defines the Hubbard correction remains critical to its accuracy. The predictive performance of the resulting, systematically validated DFT+$U$+$V$ functional is achieved at a fraction of the computational cost of hybrid functionals and many-body perturbation theory calculations. As benchmarks, we investigate Zn- and (Bi,Mn)-substituted BaTiO$_3$ solid solutions; the latter exhibit polarization-dependent bandgap narrowing from mid-gap states, substantially enhancing the dichroic ratio and birefringence with promising implications for polarization-sensitive photodetectors and integrated photonics.",
+    "url": "https://arxiv.org/abs/2608.06759",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 10 Aug 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-08-10",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT+U and DFT+U+V functional benchmarking on explicit perovskite crystal structures for optical properties, satisfying (a)-(c).",
+    "key_authors": []
+  }
+]
