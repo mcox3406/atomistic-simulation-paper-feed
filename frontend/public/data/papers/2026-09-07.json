@@ -1,0 +1,493 @@
+[
+  {
+    "id": "5284da7c26af",
+    "title": "Beyond Pairwise Preferences: Listwise Reward-Aware Alignment for Diffusion Models",
+    "authors": [
+      "Austin Wang",
+      "Jiaqi Han",
+      "Stefano Ermon",
+      "Yisong Yue"
+    ],
+    "abstract": "arXiv:2605.26491v2 Announce Type: replace \nAbstract: Preference optimization has emerged as an efficient alternative to online reinforcement learning from human feedback (RLHF) for aligning text-to-image diffusion models. However, existing methods largely reduce supervision to binary pairwise comparisons. This pairwise reduction is limiting when training data naturally contains multiple candidate images for the same prompt, and when continuous reward scores can provide richer information than a single winner-loser label. To address these limitations, we propose Diffusion LAIR, a reward-aware listwise preference optimization method for diffusion models. For each prompt, LAIR converts reward scores across a group of candidate images into centered advantage weights, then optimizes an advantage-weighted regression objective on the implicit reward, defined as the denoising-loss improvement of the current model over a fixed reference model, with a quadratic penalty that regularizes the magnitude of the implicit reward. The resulting objective uses all candidates simultaneously rather than selecting pairs, and remains conservative by explicitly controlling the magnitude of the implicit reward. The LAIR objective admits a bounded closed-form optimum in implicit-reward space, clarifying how the regularization strength controls the magnitude of the preference update. Experiments show that Diffusion LAIR outperforms strong preference optimization baselines on SD1.5 and SDXL across text-to-image generation, compositional generation, and image editing benchmarks.",
+    "url": "https://arxiv.org/abs/2605.26491",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-07",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Stefano Ermon",
+    "key_authors": [
+      "Stefano Ermon"
+    ]
+  },
+  {
+    "id": "031d18159de0",
+    "title": "TAME: Element-wise Mixture-of-Experts Fusion for Reliable and Interpretable Molecular Property Prediction",
+    "authors": [
+      "Robert P. Schiller",
+      "Christoph Weisser",
+      "Klaus-Robert Müller",
+      "Christian Ochsenfeld",
+      "Parastoo Semnani"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15008270/v2",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-09-07",
+    "version": 2,
+    "added_date": "2026-09-07",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Klaus-Robert Müller",
+    "key_authors": [
+      "Klaus-Robert Müller"
+    ]
+  },
+  {
+    "id": "081b170e8a6b",
+    "title": "La Agente \\'Optima: Towards Agentic Self-Driving Laboratories",
+    "authors": [
+      "Marcel M\\\"uller",
+      "Jiaru Bai",
+      "Willi Gottstein",
+      "Abhijoy Mandal",
+      "Mohammad Nazeri",
+      "Elia Savino",
+      "Yanlin Fang",
+      "Sujoy Das",
+      "Sergio Pablo Garc\\'ia Carrillo",
+      "Yeonghun Kang",
+      "Juan B. P\\'erez-S\\'anchez",
+      "Simone Pilon",
+      "Martin Fitzner",
+      "Timothy No\\\"el",
+      "Frank Gu",
+      "Varinia Bernales",
+      "Al\\'an Aspuru-Guzik"
+    ],
+    "abstract": "arXiv:2609.04564v1 Announce Type: cross \nAbstract: Self-driving laboratories (SDLs) combine automated experimentation with adaptive decision-making to accelerate scientific discovery. Their operation nevertheless often depends on human specialists who translate scientific objectives into executable closed-loop campaigns. Specialists adjust them as data and operating conditions change. Here, we present La Agente \\'Optima, an agentic framework that constructs and supervises Bayesian optimization campaigns across computational and experimental systems while maintaining a persistent optimization state. By separating large language model (LLM) reasoning from executed campaigns, \\'Optima runs repetitive optimization loops consistently, returns control to the agent only when progress requires interpretation or campaign revision, and keeps every decision auditable. We evaluate \\'Optima across ablation studies, five digital discovery tasks, and two physical platforms. Throughout, \\'Optima maintained executable campaigns as both the scientific problem and execution environment evolved. In a closed-loop contact angle optimization campaign, \\'Optima identified and corrected a mid-run measurement failure, bringing the contact angle from 71.4 to 67.8 degrees, just above the 64-66 degree range. From this result, \\'Optima correctly inferred that the target was likely unattainable with the available reagents and recommended changing the formulation. In a five-day multi-objective flow-chemistry campaign, \\'Optima increased the yield from 30% to 59% over 23 experiments. Despite substantial inference costs, it cost less and used substantially less starting material than a human-directed campaign, while selecting a more mass-efficient operating point. These results show that LLM-based agents can make rigorous, long-running optimization campaigns accessible to domain scientists without specialist setup, expanding the scope of SDLs.",
+    "url": "https://arxiv.org/abs/2609.04564",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.AI",
+      "cs.MA",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Al\\'an Aspuru-Guzik",
+    "key_authors": [
+      "Al\\'an Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "f472e03aaeef",
+    "title": "A Metadynamics-Based Framework for Free Energy Surface Mapping of Multiparticle Diffusion in Crystals",
+    "authors": [
+      "Shunya Yamada",
+      "Kazuaki Toyoura"
+    ],
+    "abstract": "arXiv:2605.23360v2 Announce Type: replace \nAbstract: We propose two metadynamics (MetaD)-based methodologies for efficiently mapping free energy surfaces (FESs) of multiple interacting carriers diffusing in crystalline solids. Our approaches circumvent the challenges of high-dimensional collective variables (CVs) by employing replica state exchange MetaD and parallel bias MetaD, both of which decompose the high-dimensional CVs into multiple lower-dimensional ones. As a benchmark, we investigate two-dimensional lithium (Li) diffusion in LixTiS2 across a wide range of Li concentrations. The Li jump frequencies estimated from the obtained FESs exhibit concentration- and temperature-dependent trends consistent with previous kinetic Monte Carlo simulations and nuclear magnetic resonance measurements. Our approaches provide a promising framework for capturing the slow dynamics of diffusive carriers that are typically inaccessible to conventional molecular dynamics simulations.",
+    "url": "https://arxiv.org/abs/2605.23360",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-07",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.9,
+    "relevance_reason": "Metadynamics-based enhanced-sampling methods for free-energy surfaces of Li diffusion in crystals are explicit-atomistic simulation satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "2784027c37c7",
+    "title": "Thermodynamics and dynamics of non-compact prismatic dislocation loops simulated using a machine-learning model",
+    "authors": [
+      "Sho Hayakawa",
+      "Sergei L. Dudarev",
+      "Max Boleininger"
+    ],
+    "abstract": "arXiv:2605.10630v2 Announce Type: replace \nAbstract: We explore how the thermodynamic properties and dynamics of a self-interstitial prismatic dislocation loop are affected by microscopic-scale variations in its geometric configuration, an aspect that rarely received attention in literature. We develop a machine-learning (ML) model to predict the formation energy of an arbitrary geometrically complex configuration of a self-interstitial atom dislocation loop. Trained on atomistic simulation data, the ML model achieves high predictive accuracy across a broad range of configurations, with a typical error in the 1% range. From the ML model, we evaluate the density of configurational microstates as a function of loop's formation energy and derive analytical expressions valid in tractable limiting cases. Using statistical mechanics, we derive the configurational free energy, the average energy, and the thermodynamic entropy of a dislocation loop as a function of temperature. We also simulate the dynamics of self-climb of dislocation loops with various geometries and evaluate their diffusion coefficients and effective activation energy for diffusion. Analysis shows that there is a single universal parameter describing the morphological irregularity of the loop configuration in its ground state. This parameter determines the thermodynamic properties of a loop as well as its dynamics, and simulations illustrate how the properties and mobility of a configurationally complex loop vary as functions of the irregularity parameter.",
+    "url": "https://arxiv.org/abs/2605.10630",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Development and application of an ML model for dislocation-loop energies using explicit atomistic training data and dynamics simulations satisfies (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e17965761a85",
+    "title": "Molecular interfacial rheology: Lipid membrane shear viscosity",
+    "authors": [
+      "Zhi-Xun Xu",
+      "Amaresh Sahu"
+    ],
+    "abstract": "arXiv:2609.05373v1 Announce Type: cross \nAbstract: We develop a method to extract the shear viscosity of a lipid membrane from equilibrium molecular dynamics simulations. The method characterizes the rheology of general interfacial systems embedded in three-dimensional media; we term it molecular interfacial rheology. In our simulations the planar bilayer and surrounding water are confined between solid, parallel walls. Following Onsager's regression hypothesis, membrane and water fluctuations are assumed to relax according to the coupled continuum-mechanical equations governing the confined system---which predict that the membrane transverse velocity autocorrelation function (TVACF) decays exponentially, at a rate set by the membrane and water viscosities. The measured TVACF, however, exhibits damped oscillations followed by a slowly decaying tail. We reconcile these behaviors using the Mori--Zwanzig formalism, and extract the wavevector-dependent membrane viscosity from the time-integral of the TVACF. Results from theory and simulations agree over a decade of wavevectors, and extrapolating to long wavelengths yields shear viscosities ranging from 0.064 to 0.18 pN*us/nm across two representative single-component, fluid-phase bilayers. Our results are corroborated by nonequilibrium simulations where a spatially varying in-plane body force is applied to lipid molecules, thus validating the framework of molecular interfacial rheology.",
+    "url": "https://arxiv.org/abs/2609.05373",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.stat-mech",
+      "physics.bio-ph",
+      "physics.flu-dyn"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Equilibrium molecular dynamics simulations of lipid bilayers to extract shear viscosity; satisfies (a)-(c) as atomistic MD methodology/application.",
+    "key_authors": []
+  },
+  {
+    "id": "df5271e26e18",
+    "title": "Glassy dynamics, crossover temperature and density scaling in fragile glass-formers",
+    "authors": [
+      "Ankit Singh",
+      "Vinay Vaibhav",
+      "Swarn Lata Singh",
+      "Yashwant Singh"
+    ],
+    "abstract": "arXiv:2609.05159v1 Announce Type: cross \nAbstract: We investigate the slowing down of dynamics in a glass-forming mixture interacting via an inverse-power-law (IPL) potential using a combination of theory and large-scale molecular dynamics simulations. We measure the static pair-correlation function, configurational entropy, inherent-structure energy, and structural relaxation time. We employ a theoretical framework to calculate the structural relaxation time $\\tau_{\\alpha}$, which is found to be in very good agreement with the simulation results. The theory identifies a local structural order which defines the cooperativity of the relaxation and brings forth a fluctuation induced parameter $\\psi ( T )$ and a crossover temperature $T_a$ that characterize the density and temperature dependence of the glassy dynamics. Furthermore, we determine a crossover temperature using independent dynamical and thermodynamic criteria and compare with the theoretically predicted crossover temperature $T_a$. Relaxation dynamics is shown to obey density-temperature scaling, similar to thermodynamic properties, in terms of a variable $\\Gamma$ formed by an appropriate combination of density and temperature, characteristic of IPL interactions. Finally, we show that, when the excess thermodynamic and dynamic quantities obtained at different densities are plotted as functions of the reduced temperature $T/T_a$ (or $T_a/T$), the data collapse onto master curves with excellent agreement between theory and simulation. These scaling relations provide a unified description of the thermodynamics and dynamics in IPL systems, enabling the prediction of relaxation behavior over a wide range of densities from data at a single state point.",
+    "url": "https://arxiv.org/abs/2609.05159",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Inverse-power-law molecular dynamics simulation of a glass-forming mixture; satisfies (a)-(c) as atomistic MD application.",
+    "key_authors": []
+  },
+  {
+    "id": "5386d86201c5",
+    "title": "A locally ab initio computational framework for arbitrary incommensurate materials interfaces",
+    "authors": [
+      "Drake Niedzielski",
+      "Tom\\'as A. Arias"
+    ],
+    "abstract": "arXiv:2609.05082v1 Announce Type: new \nAbstract: Incommensurate materials interfaces constitute a broad and technologically important class of systems, yet their lack of shared periodicity limits predictive and computationally efficient first-principles electronic-structure methods. Here we introduce a scalable computational framework for constructing locally ab initio electronic Hamiltonians for arbitrary materials interfaces. Our approach exploits the nearsightedness of Wannier Hamiltonian matrix elements, enabling their systematic extrapolation and interpolation across interlayer registries. This strategy yields transferable Hamiltonians that retain first-principles accuracy while bypassing the need for prohibitively large commensurate supercells or Moir\\'e approximations. We validate the framework on quasicrystalline 30{\\deg} twisted bilayer graphene, reproducing experimentally observed spectral features including mirrored Dirac cones and minigaps at avoided crossings arising from generalized interlayer scattering. We further predict quasiperiodic flat-band states in experimentally accessible doping regimes. By enabling predictive electronic-structure calculations across structurally incommensurate interfaces, this framework establishes a practical route to first-principles exploration of emergent interfacial phenomena.",
+    "url": "https://arxiv.org/abs/2609.05082",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.other"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Develops a locally ab initio electronic structure framework using Wannier Hamiltonians for incommensurate interfaces, satisfying (a)-(c) as DFT method development.",
+    "key_authors": []
+  },
+  {
+    "id": "4898f50390de",
+    "title": "GEWUM: General Exploration Workflow for the Utopia of Materials: A Unified Platform for Automated Structure Generation, Selection, and Validation",
+    "authors": [
+      "Jiexi Song",
+      "Aixian She",
+      "Changpeng Song",
+      "Diwei Shi",
+      "Fengyuan Xuan",
+      "Chongde Cao"
+    ],
+    "abstract": "arXiv:2604.21401v2 Announce Type: replace \nAbstract: The fragmented landscape of existing computational tools often hinders the seamless integration of large-scale structure prediction with rigorous stability validation. To address this, we present GEWUM (General Exploration Workflow for the Utopia of Materials), an open-source platform that integrates the Selective Random Structure Search (SRSS) strategy with universal Machine Learning Interatomic Potentials (uMLIPs) to automate and accelerate materials discovery. With native support for SLURM-based HPC clusters, GEWUM unifies the entire workflow from structure generation and diversity-preserving selection to thermodynamic/dynamic stability assessments and property calculations. The platform further incorporates built-in visualization tools, including Sankey diagrams for space-group evolution, violin plots for energy distributions, and t-SNE/UMAP embeddings for structural diversity, enabling intuitive interpretation of screening results. We demonstrate GEWUM through three case studies: low-energy polymorph prediction in Al-Sc-N, identification of a P-62c phase of U3Si5, and high-pressure structure prediction of ThH10 at 150 GPa. Benchmark tests confirm reasonable agreement in thermophysical property predictions.",
+    "url": "https://arxiv.org/abs/2604.21401",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-07",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.85,
+    "relevance_reason": "Automated structure search and validation using universal MLIPs with explicit atomistic simulations satisfies (a)-(c) as a materials-discovery workflow.",
+    "key_authors": []
+  },
+  {
+    "id": "227ec426097e",
+    "title": "Interfacial Accommodation as a Candidate Ductility Pathway in Intermetallic-Rich Alloys",
+    "authors": [
+      "Avik Mahata"
+    ],
+    "abstract": "arXiv:2609.05147v1 Announce Type: new \nAbstract: Heterophase interfaces are increasingly recognized as active participants in plastic deformation, yet quantitative methods for comparing their strain-accommodation capacity remain limited. Here, we present an atomistic framework for quantifying interface-mediated strain accommodation using molecular dynamics simulations. Interface broadening, roughening, and migration are extracted from atomistic trajectories and combined into an Interface Accommodation Index, with a normalized counterpart accounting for differences in initial interface structure. A weighting sensitivity analysis demonstrates that the relative ranking of interfaces is robust to the specific form of the index. The framework is demonstrated for three experimentally motivated interfaces, Al/Al3Ti, Al/Al9M2, and Al9M2/Al3Ti (M = Fe, Co, Ni), under tensile, compressive, and shear loading. Bulk simulations show that Shockley partial dislocations dominate plastic deformation, with alloy chemistry governing the transition toward mixed-character dislocation networks. Tensile loading produces the greatest interface accommodation, while shear produces comparatively limited structural evolution. The Al9M2/Al3Ti interface exhibits both the highest yield resistance and the largest accommodation response, suggesting that intermetallic-intermetallic interfaces can simultaneously sustain load and redistribute strain. These simulations quantify structural accommodation rather than ductility or fracture directly; their connection to macroscopic ductility therefore requires experimental validation. The framework provides a transferable approach for comparing interface accommodation in multiphase alloys and identifies interface chemistry and crystallography as important design variables for damage-tolerant structural materials.",
+    "url": "https://arxiv.org/abs/2609.05147",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Presents an atomistic MD simulation framework to quantify interface-mediated strain accommodation in intermetallic-rich alloys, clearly satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "643e295f1562",
+    "title": "Calculation of DFT Spin-Orbit Spillage with Quantum ESPRESSO",
+    "authors": [
+      "Duy Quan Nguyen",
+      "Paul C. H. Li"
+    ],
+    "abstract": "arXiv:2609.04517v1 Announce Type: new \nAbstract: This work describes the calculation of spin-orbit spillage from a crystal structure. Spin-orbit spillage provides a measure of the likelihood that a material has topological character. The spillage also provides the reference quantity for the machine-learning classifier of Choudhary et al., which predicts whether the spillage exceeds a specified threshold rather than the calculation of its numerical value directly. The complete computation workflow was applied to the insulating compound BaMg2Bi2, yielding a spillage of 2.094 compared with the published VASP spillage of 2.075, corresponding to a difference of 0.9%. The calculation is described in terms of two Quantum ESPRESSO (QE) calculations of spillage performed with and without spin-orbit coupling, the role of relativistic pseudopotentials, and the subsequent wavefunction-overlap analysis. The limitations of the same calculation procedure for semimetals are also examined.",
+    "url": "https://arxiv.org/abs/2609.04517",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "quant-ph"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Electronic Structure",
+    "relevance_score": 0.8,
+    "relevance_reason": "The paper uses DFT (Quantum ESPRESSO) on an explicit crystal structure to compute spin-orbit spillage, satisfying (a)-(c) as an atomistic-simulation application.",
+    "key_authors": []
+  },
+  {
+    "id": "d44347d6182c",
+    "title": "Light alkali metal functionalized two-dimensional C5N monolayers for enhanced hydrogen storage",
+    "authors": [
+      "Gom Dorji",
+      "Sonam Peden",
+      "Syed Faraz Hasan",
+      "Kondo-Francois Aguey-Zinsou",
+      "Tanveer Hussain"
+    ],
+    "abstract": "arXiv:2609.04605v1 Announce Type: new \nAbstract: This work presents a density functional theory (DFT) investigation of a two-dimensional (2D) C5N monolayer functionalized with Li, Na, and K for hydrogen storage. Pristine C5N exhibits weak H2 adsorption, while alkali-metal functionalization significantly enhances its storage capability. The C5N monolayer can stably accommodate up to six metal dopants, with binding energies stronger than the corresponding cohesive energies, indicating resistance to metal aggregation. Ab initio molecular dynamics simulations further confirm the thermal stability of the functionalized systems at 300 K. Charge transfer from the metal dopants to C5N enhances polarization and strengthens H2 adsorption. Each dopant can adsorb up to eight H2 molecules, yielding a maximum of 48 H2 molecules per unit cell and gravimetric storage capacities of 9.42, 8.61, and 7.93 wt% for Li-, Na-, and K-functionalized C5N, respectively. The average H2 adsorption energies of -0.16 to -0.17 eV/H2 indicate moderate interactions suitable for reversible storage. Thermodynamic analysis further demonstrates favourable H2 adsorption/desorption under practical operating conditions, while desorption-temperature, recovery-time, and volumetric analyses support the potential reversibility and storage performance of these systems. Overall, alkali-metal-functionalized C5N emerges as a promising 2D material for efficient and reversible H2 storage.",
+    "url": "https://arxiv.org/abs/2609.04605",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.other"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "The paper combines DFT and ab initio MD simulations on an explicit 2D C5N monolayer for hydrogen storage, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e05dfbbee413",
+    "title": "Energy Eigenstates of Electrons, Magnons and Phonons in Fe$_3$O$_4$ (magnetite), MnFe$_2$O$_4$ (jacobsite), and mixed Mn-Zn ferrites",
+    "authors": [
+      "Deepak Dhariwal",
+      "Michael R. von Spakovsky",
+      "William T. Reynolds Jr"
+    ],
+    "abstract": "arXiv:2601.16374v2 Announce Type: replace \nAbstract: We report first-principles calculations of the electronic structure, magnon excitations, and phonons in magnetite (Fe$_3$O$_4$), jacobsite (MnFe$_2$O$_4$), and mixed manganese-zinc ferrites (Mn$_{x}$,Zn$_{1-x}$)Fe$_2$O$_4$ for representative compositions ($0\\le x \\le 1$) and A/B-site cation arrangements. Electronic structures are computed using density functional theory (DFT) augmented by rotationally invariant DFT+U+J, with on-site Hubbard and Hund's parameters, $U$ and $J$, respectively, determined self-consistently by spin-polarized linear-response perturbations of the chosen correlated subspaces (including, where applied, the ligand $2p$ subspace). A classical Heisenberg spin Hamiltonian is parameterized by mapping DFT+U+J total energies for multiple collinear spin configurations onto nearest-neighbor exchange couplings, which are then used to obtain magnon dispersions and magnon densities of states within linear spin-wave theory. Phonon spectra and densities of states are obtained from finite-displacement force constants and dynamical matrices computed on the same DFT+U+J-relaxed structures. Overall, the workflow provides a consistent, composition- and configuration-aware route to electronic, vibrational, and magnetic excitation spectra across the Mn/Zn ferrite space.",
+    "url": "https://arxiv.org/abs/2601.16374",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT+U+J, spin-wave, and phonon calculations on explicit atomic ferrite structures satisfy (a)-(c), including linear-response parameter determination.",
+    "key_authors": []
+  },
+  {
+    "id": "644d86038095",
+    "title": "Symmetry-protected triplet Weyl complexes",
+    "authors": [
+      "Yun-Yun Bai",
+      "Ke-Xin Pang",
+      "Yan Gao",
+      "Weikang Wu",
+      "Shengyuan A. Yang"
+    ],
+    "abstract": "arXiv:2609.05120v1 Announce Type: new \nAbstract: The Nielsen-Ninomiya theorem dictates that Weyl nodes must appear in pairs of opposite chirality to preserve global charge neutrality. However, in crystals, specific crystalline symmetries can stabilize multi-Weyl nodes, circumventing this pairwise constraint and enabling compensated Weyl complexes with mixed chiral charges. The minimal configuration of this type is a triplet Weyl complex (TWC), comprising exactly three Weyl nodes. Here, we systematically investigate the symmetry conditions required to realize TWCs. By screening all 1651 magnetic space groups (MSGs) in both spinless and spinful systems, we establish that: (i) Only TWCs with charge magnitudes of $\\{1,1,2\\}$ and $\\{1,2,3\\}$ are permitted; (ii) the $\\{1,1,2\\}$ configuration can be realized in 166 spinless MSGs and 70 spinful MSGs; and (iii) the $\\{1,2,3\\}$-TWCs, which has not been reported before, can occur in 10 MSGs for both spinless and spinful cases. We explicitly demonstrate the existence of $\\{1,2,3\\}$-TWC in a tight-binding model. Furthermore, we present the first electronic realization of $\\{1,1,2\\}$-TWC topological semimetal state in the chiral carbon allotrope DZQH-C$_{36}$, in which the three Weyl nodes form a collinear configuration, leading to a characteristic ``S''-shaped surface Fermi arc pattern. Our findings uncover novel topological states featuring mixed chiral charges and provide guidance for exploring their physics in concrete material systems.",
+    "url": "https://arxiv.org/abs/2609.05120",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Electronic Structure",
+    "relevance_score": 0.75,
+    "relevance_reason": "Uses tight-binding and first-principles DFT calculations to predict triplet Weyl complexes in a carbon allotrope, with explicit atoms and electronic structure calculation, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "f613d2bbe0ef",
+    "title": "Structural tuning of reduced exciton mass in layered HOIP compounds: Causation vs. correlation",
+    "authors": [
+      "Isaac R. Burkholder",
+      "Cindy Y. Wong",
+      "Andr\\'e Schleife",
+      "Kameron R. Hansen",
+      "John S. Colton",
+      "Branton J. Campbell"
+    ],
+    "abstract": "arXiv:2609.04558v1 Announce Type: new \nAbstract: Reduced exciton mass ($\\mu$) was recently reported to correlate strongly with a framework distortion in a series of nine single-layer (2D) metal-halide perovskite (HOIP) compounds. Specifically, $\\mu$ was observed to increase in tandem with an alternating PbI4 octahedral tilt about an in-plane axis. In this work, we use group representation theory to decompose the observed framework distortions into displacive symmetry modes of a common high-symmetry parent framework. We find that all nine distorted frameworks involve linear combinations of the same six symmetry modes, which have been reported to contribute to the framework distortions of a wide range of HOIP compounds. We show that these modes have highly correlated impacts on the band structure. To differentiate causation from correlation, we vary the amplitude of each mode independently and use density-functional theory to determine the resulting electronic band structures, from which $\\mu$ is extracted. We find that bond-transverse displacements of the equatorial halide atoms increase $\\mu$, while bond-transverse displacements of the apical halide atoms decrease it. Bond-axis displacements appear to have little or no effect on $\\mu$. Our results demonstrate three new structure-property relationships, revealing a promising new avenue for exciton engineering in layered perovskite materials.",
+    "url": "https://arxiv.org/abs/2609.04558",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "The paper applies DFT calculations to explicit perovskite crystal structures with symmetry-mode analysis to study exciton mass, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "869b6c0d1eea",
+    "title": "Metallic Organometallic and Semiconducting Covalent Phases of Free-Standing $\\gamma$-Graphdiyne Molecular Wires",
+    "authors": [
+      "Antony G. L. Rodrigues",
+      "Guilherme S. L. Fabris",
+      "Bruno Ipaves",
+      "F\\'abio L. L. de Mendon\\c{c}a",
+      "Douglas S. Galv\\~ao",
+      "Marcelo L. Pereira Junior"
+    ],
+    "abstract": "arXiv:2609.04581v1 Announce Type: new \nAbstract: One-dimensional carbon allotropes combining sp and sp2 hybridizations provide a versatile platform for atomically precise quantum wires with tunable electronic, vibrational, and mechanical responses. Recent on-surface synthesis has realized the $\\gamma$-graphdiyne molecular wire on Au(100) in two interconvertible phases sharing an identical aromatic backbone but distinct linkage chemistry: an organometallic intermediate with C-Au-C bridges and a fully covalent product with diacetylenic linkages. While experimental techniques characterize the on-surface periodicity and C$\\equiv$C Raman signatures, the intrinsic properties of the free-standing wires remain inaccessible. Here, we address this gap using hybrid-functional first-principles calculations. The covalent phase is a semiconductor with a direct band gap of 2.02 eV, a polyynic bond-length alternation of 0.117 {\\AA}, and a chain periodicity reproducing experiment within -0.5%. Conversely, the organometallic phase exhibits partial cumulenization and 1D metallic behavior, with spin channels crossing the Fermi level. Both isolated polymers demonstrate dynamic stability with Young's moduli of 995 nN and 861 nN, respectively, where the C-Au-C bridge acts as a soft link absorbing 9.2% of axial deformation at +6% macroscopic strain. Species-resolved vibrational analysis identifies an effective-conjugation-coordinate band at 1408 cm$^{-1}$ for the covalent phase and Au-projected modes below 400 cm$^{-1}$ for the intermediate, offering diagnostic fingerprints for phase discrimination during thermal or chemical conversion.",
+    "url": "https://arxiv.org/abs/2609.04581",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "The paper uses hybrid-functional first-principles calculations on explicit graphdiyne wires for electronic and mechanical properties, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "8be362588a39",
+    "title": "Hydrogen Storage on Transition-Metal-Decorated Nitrogen-Modified Carbon Nanoribbons",
+    "authors": [
+      "Gom Dorji",
+      "Amrutha M",
+      "Brahmananda Chakraborty",
+      "Sonam Peden",
+      "Syed Faraz Hasan",
+      "Shabbir Ahmad Tanveer Hussain"
+    ],
+    "abstract": "arXiv:2609.04623v1 Announce Type: new \nAbstract: Recently synthesized carbon nanoribbons (CNRs) were investigated for hydrogen (H2) storage using first-principles density functional theory calculations. Pristine CNRs exhibited weak H2 adsorption; therefore, the host structure was modified by substituting carbon atoms at the C-H edges with 12 nitrogen atoms, followed by Mn and Y doping to enhance H2 binding. A maximum of five metal atoms could be accommodated on the 12N-CNRs. Electronic structure analysis revealed strong orbital hybridization between the metal atoms and the CNRs, while binding energy calculations confirmed the structural stability of the doped systems. Bader charge analysis further quantified the charge transfer between the metal atoms and the host structure. The average H2 adsorption energies were calculated to be -0.40 eV/H2 for the Mn-doped system and -0.25 eV/H2 for the Y-doped system, which are within the desirable range for reversible hydrogen storage. The maximum theoretical gravimetric storage capacities at 0 K reached 7.48 wt% for the Mn-doped system and 6.55 wt% for the Y-doped system. Under practical conditions of 30 atm and 298.15 K, the storage capacity of the Y-doped system decreased to 6.04 wt%, whereas the Mn-doped system maintained its full capacity of 7.48 wt%. Thermodynamic analysis indicated that H2 adsorption is favored at low temperatures and high pressures, while desorption becomes feasible at elevated temperatures and lower pressures. These results demonstrate that Mn- and Y-doped CNRs satisfy key U.S. Department of Energy requirements for reversible H2 storage and show promise as potential hydrogen storage materials under near-ambient conditions.",
+    "url": "https://arxiv.org/abs/2609.04623",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "The paper employs first-principles DFT calculations on explicit carbon-nanoribbon systems for hydrogen storage, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "f641462f527b",
+    "title": "Anharmonic Lattice Dynamics and Anisotropic Electron-Phonon Coupling in Quasi-1-Dimensional Charge Density Wave Ta2NiSe7",
+    "authors": [
+      "Prithwija Mandal",
+      "S. Nanthini",
+      "Aditya Singh",
+      "Kewal S. Rana",
+      "Dibyendu Dey",
+      "Kanishka Biswas",
+      "Ajay Soni"
+    ],
+    "abstract": "arXiv:2609.05129v1 Announce Type: new \nAbstract: The microscopic origin of charge density wave formation in quasi one dimensional Ta2NiSe7 remains actively debated, particularly regarding the relative contributions of Fermi surface nesting, electron phonon coupling, and lattice instabilities. Here, we combine temperature and orientation dependent polarized Raman spectroscopy with first principles calculations to uncover the anisotropic electronic and lattice interactions governing the CDW state in Ta2NiSe7. Heat capacity and electrical transport measurements identify an incommensurate CDW transition at 61 K. Raman spectroscopy reveals pronounced in plane anisotropy, with e ph coupling strength along intrachain b axis exceeding five times that along interchain c axis, whereas lattice anharmonicity is enhanced by threefold along c axis. First principles calculations identify Ta2 Se octahedral vibrations and Ta Se electronic states near the Fermi level as dominant channels mediating the anisotropic e ph interaction. Exceptionally strong and directional e ph coupling along b axis establishes lattice driven electronic instability as the primary mechanism underlying CDW modulation and highlights the dominance of intrachain interactions in strongly coupled Ta2NiSe7. Despite this strong coupling, the CDW remains incommensurate, indicating that lattice anharmonicity provides an additional degree of freedom. Enhanced anharmonicity along c axis suggests that anisotropic phonon phonon interactions reshape the free energy landscape and contribute to stabilizing incommensurate phase. These findings reveal a cooperative interplay between anisotropic e ph coupling and lattice anharmonicity in governing CDW formation in low dimensional quantum materials.",
+    "url": "https://arxiv.org/abs/2609.05129",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Combines Raman spectroscopy with first-principles DFT calculations for phonons and electron-phonon coupling in Ta2NiSe7, satisfying (a)-(c) as an atomistic electronic structure application.",
+    "key_authors": []
+  },
+  {
+    "id": "a06eb909174e",
+    "title": "Ni-O hybridization as a stabilizer for $s^{\\pm}$ superconductivity in La$_3$Ni$_2$O$_7$: a DFT+RPA study",
+    "authors": [
+      "Lauro B. Braz",
+      "Daniel D. Rivera",
+      "Emmanuel V. C. Lopes",
+      "George B. Martins",
+      "Gustavo M. Dalpian",
+      "Luis G. G. V. Dias da Silva"
+    ],
+    "abstract": "arXiv:2609.05185v1 Announce Type: cross \nAbstract: The superconducting gap symmetry of high-pressure bilayer nickelates remains under debate, with weak- and strong-coupling approaches yielding different pairing tendencies. In this work, we investigate how the weak-coupling treatment of electronic states away from the Fermi level influences magnetic fluctuations and superconductivity in La$_3$Ni$_2$O$_7$. We employ a full-spectrum model based on orthonormalized projections of Kohn-Sham states onto local Ni-$e_g$ orbitals, which preserves the density-functional band structure while redistributing spectral weight over a wide energy range. Compared to a low-energy description, this approach yields enhanced interlayer spin fluctuations and a commensurate magnetic instability. Within a spin-fluctuation framework, these features favor a sign-changing $s^\\pm$ superconducting state, whereas low-energy models tend to stabilize $d$-wave pairing. Our results suggest that interlayer coupling in full-energy models may play an important role in shaping the predicted pairing symmetry of bilayer nickelates.",
+    "url": "https://arxiv.org/abs/2609.05185",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "published": "Mon, 07 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-07",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT+RPA calculations on explicit periodic crystal La3Ni2O7 satisfy (a)-(c) as a first-principles atomistic study of superconductivity.",
+    "key_authors": []
+  }
+]
