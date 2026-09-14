@@ -1,0 +1,472 @@
+[
+  {
+    "id": "4bf1ad7117d7",
+    "title": "RS-CIDER: A non-local machine learning model for approximating screened hybrid functionals",
+    "authors": [
+      "Zhuotao Jin",
+      "Mohamed S. Abdallah",
+      "Boris Kozinsky",
+      "Kyle Bystrom"
+    ],
+    "abstract": "arXiv:2609.13139v1 Announce Type: cross \nAbstract: Screened hybrid functionals such as HSE06 improve the description of band gaps, charge localization, and redox energetics relative to semilocal approximations, but their explicit Hartree-Fock exchange term is computationally costly for large, periodic systems, especially in plane-wave basis set calculations. Here we present RS-CIDER, a machine-learned non-local exchange functional that approximates the short-range Hartree-Fock exchange term in HSE06 by explicitly fitting both ground-state energies and single-particle energy levels. RS-CIDER combines scale-invariant semilocal and non-local density descriptors and can be evaluated self-consistently without explicitly applying the short-range Hartree-Fock exchange operator. RS-CIDER shows close agreement with HSE06 for molecular reaction energies and solid-state band gaps. Further tests across distinct materials show agreement between RS-CIDER and HSE06 for local magnetism, Cu-O phase competition, polaron localization, and neutral-defect energetics. For an Fe olivine, chemistry-specific fine-tuning recovers the HSE06 Li intercalation voltage. A timing benchmark shows that RS-CIDER reduces the measured per-SCF-step wall time by more than an order of magnitude relative to HSE06. Together, these molecular and solid-state results establish RS-CIDER as an efficient self-consistent machine-learned surrogate for HSE06.",
+    "url": "https://arxiv.org/abs/2609.13139",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Boris Kozinsky",
+    "key_authors": [
+      "Boris Kozinsky"
+    ]
+  },
+  {
+    "id": "725b08cb1531",
+    "title": "An ab initio foundation model of wavefunctions that accurately describes chemical bond breaking",
+    "authors": [
+      "Adam Foster",
+      "Zeno Sch\\\"atzle",
+      "P. Bern\\'at Szab\\'o",
+      "Lixue Cheng",
+      "Jonas K\\\"ohler",
+      "Gino Cassella",
+      "Nicholas Gao",
+      "Jiawei Li",
+      "Frank No\\'e",
+      "Jan Hermann"
+    ],
+    "abstract": "arXiv:2506.19960v2 Announce Type: replace \nAbstract: Reliable description of bond breaking remains a major challenge for quantum chemistry due to the multireference character of the electronic structure in dissociating species. Multireference methods in particular suffer from large computational cost, which under the normal paradigm has to be paid anew for each system at a full price, ignoring commonalities in electronic structure across molecules. Quantum Monte Carlo with deep neural networks uniquely offers to exploit such commonalities by pretraining transferable wavefunction models, but all such attempts were so far limited in scope. Here, we bring this paradigm to fruition with Orbformer, a transferable wavefunction model pretrained on 22,000 equilibrium and dissociating structures that can be fine-tuned on unseen molecules reaching an accuracy-cost ratio rivalling classical multireference methods. On established benchmarks as well as more challenging bond dissociations and Diels-Alder reactions, Orbformer is the only method that consistently converges to chemical accuracy (1 kcal/mol). This work turns the idea of amortizing the cost of solving the Schr\\\"odinger equation over many molecules into a practical approach in quantum chemistry.",
+    "url": "https://arxiv.org/abs/2506.19960",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Frank No\\'e",
+    "key_authors": [
+      "Frank No\\'e"
+    ]
+  },
+  {
+    "id": "34c2496cb439",
+    "title": "El Agente Quntur: A research collaborator agent for quantum chemistry",
+    "authors": [
+      "Juan B. P\\'erez-S\\'anchez",
+      "Yunheng Zou",
+      "Jorge A. Campos-Gonzalez-Angulo",
+      "Marcel M\\\"uller",
+      "Ignacio Gustin",
+      "Andrew Wang",
+      "Han Hao",
+      "Tsz Wai Ko",
+      "Changhyeok Choi",
+      "Eric S. Isbrandt",
+      "Mohammad Ghazi Vakili",
+      "Hanyong Xu",
+      "Chris Crebolder",
+      "Varinia Bernales",
+      "Al\\'an Aspuru-Guzik"
+    ],
+    "abstract": "arXiv:2602.04850v3 Announce Type: replace \nAbstract: Quantum chemistry is a foundational enabling tool for the fields of chemistry, materials science, computational biology and others. Despite of its power, the practical application of quantum chemistry simulations remains in the hands of qualified experts due to methodological complexity, software heterogeneity, and the need for informed interpretation of results. To bridge the accessibility gap for these tools and expand their reach to chemists with broader backgrounds, we introduce El Agente Quntur, a hierarchical, multi-agent AI system designed to operate not merely as an automation tool but as a research collaborator for computational quantum chemistry. Quntur was designed following three main strategies: i) elimination of hard-coded procedural policies in favour of reasoning-driven decisions, ii) construction of general and composable actions that facilitate generalization and efficiency, and iii) implementation of guided deep research to integrate abstract quantum-chemical reasoning across subdisciplines and a detailed understanding of the software's internal logic and syntax. Although instantiated in ORCA, these design principles are applicable to research agents more generally and easily expandable to additional quantum chemistry packages and beyond. Quntur supports the full range of calculations available in ORCA 6.0 and reasons over software documentation and scientific literature to plan, execute, adapt, and analyze in silico chemistry experiments following best practices. We discuss the advances and current bottlenecks in agentic systems operating at the research level in computational chemistry, and outline a roadmap toward a fully autonomous end-to-end computational chemistry research agent.",
+    "url": "https://arxiv.org/abs/2602.04850",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Al\\'an Aspuru-Guzik",
+    "key_authors": [
+      "Al\\'an Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "d440220ac48b",
+    "title": "Protect Your Score: Contact Tracing With Differential Privacy Guarantees",
+    "authors": [
+      "Rob Romijnders",
+      "Christos Louizos",
+      "Yuki M. Asano",
+      "Max Welling"
+    ],
+    "abstract": "arXiv:2312.11581v3 Announce Type: replace-cross \nAbstract: The pandemic in 2020 and 2021 had enormous economic and societal consequences, and studies show that contact tracing algorithms can be key in the early containment of the virus. While large strides have been made towards more effective contact tracing algorithms, we argue that privacy concerns currently hold deployment back. The essence of a contact tracing algorithm constitutes the communication of a risk score. Yet, it is precisely the communication and release of this score to a user that an adversary can leverage to gauge the private health status of an individual. We pinpoint a realistic attack scenario and propose a contact tracing algorithm with differential privacy guarantees against this attack. The algorithm is tested on the two most widely used agent-based COVID19 simulators and demonstrates superior performance in a wide range of settings. Especially for realistic test scenarios and while releasing each risk score with epsilon=1 differential privacy, we achieve a two to ten-fold reduction in the infection rate of the virus. To the best of our knowledge, this presents the first contact tracing algorithm with differential privacy guarantees when revealing risk scores for COVID19.",
+    "url": "https://arxiv.org/abs/2312.11581",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Max Welling",
+    "key_authors": [
+      "Max Welling"
+    ]
+  },
+  {
+    "id": "7e2a00759d04",
+    "title": "Extreme-Scale Linear-Scaling Kohn-Sham DFT at 100 Million Atoms: Bridging Quantum Simulations and Experiments",
+    "authors": [
+      "Qimen Xu",
+      "Yu Zhang",
+      "Dixing Ni",
+      "Lei Gao",
+      "Guangnan Feng",
+      "Qinrui Zheng",
+      "Jianting Liu",
+      "Haitian Lu",
+      "Zhaopeng Jia",
+      "Wei Xue",
+      "Shriram Chandran",
+      "Torsten Hoefler",
+      "Haohuan Fu",
+      "Yutong Lu"
+    ],
+    "abstract": "arXiv:2609.13115v1 Announce Type: cross \nAbstract: Kohn-Sham density functional theory (DFT) remains the workhorse of ab initio materials simulation, yet cubic computational and quadratic memory scaling have confined calculations to a few hundred to thousands of atoms, spanning only nanometers, far below experimentally relevant length scales. We introduce XLSDFT, a linear-scaling DFT framework based on divide-and-conquer decomposition of the one-particle density matrix and Chebyshev-filtered subspace iteration, achieving linear computational and memory scaling while retaining DFT accuracy. Deployed on the LineShine exascale supercomputer, XLSDFT reduces computational complexity by orders of magnitude, enabling unprecedented DFT scale: a 200-million-atom silicon crystal, twentyfold beyond the prior record. Our implementation achieves 96.6% weak-scaling efficiency and sustained 157.9 Pflop/s (FP64) for a 100-million-atom scaling study. We further simulate an 11-million-atom all-solid-state battery interface of unprecedented complexity, 1,000 times beyond prior DFT for such systems, revealing how lithium metal reacts with the solid electrolyte at atomic resolution, in quantitative agreement with spectroscopy experiments.",
+    "url": "https://arxiv.org/abs/2609.13115",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.CE",
+      "cs.DC",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.92,
+    "relevance_reason": "Linear-scaling Kohn-Sham DFT method development applied to 100-million-atom and 11-million-atom explicit atomistic systems (battery interface) directly advances ab initio atomistic simulation methodology, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "6952901d28e9",
+    "title": "Economised path integrals",
+    "authors": [
+      "Zezhu Zeng",
+      "David E. Manolopoulos"
+    ],
+    "abstract": "arXiv:2607.06414v4 Announce Type: replace \nAbstract: The Hessian of the ring polymer spring potential in the standard Trotter path integral is a $P\\times P$ symmetric circulant matrix with a centroid eigenvalue of zero. All such matrices commute and are diagonalised by the same bead to normal mode transformation matrix, and their eigenvalues contain $\\lceil P/2\\rceil-1$ degenerate pairs by symmetry. However, this still leaves some freedom to improve on the Trotter approximation: one can optimise the remaining $\\lfloor P/2\\rfloor$ independent non-zero normal mode frequencies to fit the exact quantum mechanical radii of gyration of harmonic ring polymers with frequencies in the range $0\\le\\omega\\le\\omega_{\\rm max}$, where $\\omega_{\\rm max}$ is the maximum physical frequency in the problem of interest. The optimisation involves solving a simple least squares problem for the optimum (economised or \"Eco\") internal mode frequencies. The remainder of the calculation then proceeds in the same way as a Trotter path integral calculation. An example application to hexagonal ice shows that the convergence of the Eco path integral is comparable to that of the 4th order Suzuki-Chin path integral, but with purely 2nd order Trotter effort. There is no need to calculate the projected Hessians that arise in the Suzuki-Chin method by finite differences, there is no need to develop any new estimators for observables, and once the Eco frequencies have been calculated the implementation of the Eco path integral involves changing just a few lines of a Trotter path integral code. To provide a more impressive example we have implemented the Eco method in GPUMD and used it to converge the (negative) thermal expansion coefficient and the constant pressure heat capacity of MOF-5 with a machine-learned neuroevolution potential.",
+    "url": "https://arxiv.org/abs/2607.06414",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 4,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Development of 'economised' path-integral (ring-polymer) frequencies in place of Trotter/Suzuki-Chin discretization, applied to hexagonal ice: explicit atoms (a), path-integral MD methodology (b), and a genuine methodological advance validated on a real system (c).",
+    "key_authors": []
+  },
+  {
+    "id": "12b7e9b8f388",
+    "title": "Pseudo-hybrid density functional ACBN0 for Hubbard $U$ correction in a numeric atom-centered orbital basis",
+    "authors": [
+      "Svetlana A. Artiukova",
+      "Ilia M. Odud",
+      "Sergey V. Levchenko"
+    ],
+    "abstract": "arXiv:2609.12198v1 Announce Type: new \nAbstract: We present a formulation and implementation of the Agapito-Curtarolo-Buongiorno Nardelli (ACBN0) pseudo-hybrid density functional in a numeric atom-centered orbital basis. The method is realized in the all-electron, full-potential electronic-structure package FHI-aims. The implementation uses a L\\\"owdin-orthogonalized projector, which improved the stability of the self-consistent ACBN0 iterations for the tested systems. For a benchmark set of materials including metal oxides and nitrides, ACBN0 with the fully localized limit (FLL) as the double-counting treatment reduces the aggregate band gap errors relative to the Perdew-Burke-Ernzerhof (PBE) and strongly constrained and appropriately normed (SCAN) functionals, reaching an accuracy comparable to the Heyd-Scuseria-Ernzerhof functional (HSE06). For six bulk transition metal oxides calculated with the same numerical settings, an HSE06 iteration is approximately 13-33 times as expensive as the corresponding ACBN0@PBE iteration with Petukhov mixing. The applicability of the localized-basis implementation to low-dimensional systems is demonstrated by calculations of adsorption and the oxygen evolution reaction (OER) overpotential on a $\\beta$-NiOOH(001) surface. On regularized SCAN (rSCAN) relaxed structures, single point ACBN0 based on rSCAN (ACBN0@rSCAN) with the ``tight'' numerical settings reduces the mean absolute deviation of the reaction-step energies from HSE06 and shifts the estimated overpotential toward the HSE06 and Perdew-Burke-Ernzerhof hybrid (PBE0) reference results.",
+    "url": "https://arxiv.org/abs/2609.12198",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "DFT method development: implementation of the ACBN0 pseudo-hybrid DFT+U functional in FHI-aims with benchmark band-gap and OER-surface calculations, satisfying (a) explicit atoms, (b) DFT+U method development, and (c) methodological advance.",
+    "key_authors": []
+  },
+  {
+    "id": "b28a382c7420",
+    "title": "Causality in Liquid Water as a Hallmark of Emergent Glassy Dynamics",
+    "authors": [
+      "Leon Huet",
+      "Vittorio Del Tatto",
+      "Debarshi Banerjee",
+      "Alessandro Laio",
+      "Ali A. Hassanali"
+    ],
+    "abstract": "arXiv:2604.19491v2 Announce Type: replace \nAbstract: In molecular liquids such as water, time-delayed influences between microscopic or mesoscopic variables are typically probed using time-correlation functions, which are symmetric under detailed balance and therefore blind to dynamical asymmetries. Here, we characterize water's dynamics using a causal inference metric that captures asymmetric couplings between collective variables. Analyzing equilibrium molecular dynamics simulations at ambient conditions and in the high-density liquid (HDL) regime of supercooled water, we uncover pronounced asymmetries in the couplings between orientational and translational degrees of freedom across multiple time and length scales. At room temperature, rotational modes exert a modest directional influence on translational dynamics. In contrast, in the supercooled HDL regime, translational motions emerge as the primary drivers of the dynamics, suggesting facilitation-like relaxation mechanisms characteristic of glassy systems. These results reveal a qualitative reorganization of dynamical couplings across thermodynamic conditions, implying that molecular liquids at thermal equilibrium can exhibit an emergent directionality in their fluctuation couplings. As a consequence, our analysis reveals that external perturbations acting on specific degrees of freedom can induce a stronger arrow of time in the causal relations between translational and orientational modes.",
+    "url": "https://arxiv.org/abs/2604.19491",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Equilibrium classical molecular dynamics of liquid water analyzed with causal-inference metrics: explicit-atom simulation (a), MD (b), and an application that extracts physics of translational/orientational couplings in water (c).",
+    "key_authors": []
+  },
+  {
+    "id": "5f74848198ee",
+    "title": "Functionalization-Driven Charge Redistribution Enabling Ultra-High-Capacity V2B MBene Anode for Li/Na ion batteries: A First-Principles study",
+    "authors": [
+      "Shaiokh Bin Abi",
+      "Ahmed Zubair"
+    ],
+    "abstract": "arXiv:2609.12166v1 Announce Type: new \nAbstract: Amid increasing global demand for clean, sustainable energy, the search for novel electrode materials has emerged as a crucial link to advancing future energy storage technologies. Here, we explored the potential of N-functionalized 2D MBene V2BN2 as anode materials for Li- and Na-ion batteries using first-principles calculations. Phonon dispersion and ab initio molecular dynamics calculations were employed to assess the dynamic and thermal stability of the material. The intrinsic metallic properties of V2BN2 were revealed through electronic band structures and density of states analyses. Importantly, Bader charge analysis demonstrates substantial charge redistribution upon Li/Na adsorption, leading to stronger ion-substrate interactions compared to the pristine counterpart. This redistribution plays a decisive role in enhancing Li/Na ion adsorption and stabilizing ion accommodation. Furthermore, owing to favorable multilayer adsorption of Li and Na ions, V2BN2 exhibited high theoretical specific capacities of 1524 and 762 mAh/g, as well as low open circuit voltages of 0.73 and 0.23 V for Li and Na, respectively. In addition, the energy barriers were calculated to be 0.49 and 0.29 eV for Li- and Na-ion transport, respectively, indicating rapid ion transport and excellent rate capability. These results indicate that V2BN2 holds significant potential as an anode material for next-generation rechargeable ion batteries.",
+    "url": "https://arxiv.org/abs/2609.12166",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "DFT study of N-functionalized V2B MBene anodes including ab initio molecular dynamics for thermal stability, phonon dispersion, Bader charge analysis, and NEB migration barriers: explicit atoms (a), DFT/AIMD/NEB (b), and a materials application with energetic predictions (c).",
+    "key_authors": []
+  },
+  {
+    "id": "5d39810aa6c3",
+    "title": "$Ab$ $initio$ Study of Substitutional Defects in Li$_{3}$OCl Solid Electrolyte for Li-ion Batteries",
+    "authors": [
+      "Carson D. Ziemke",
+      "Naveed Naemi",
+      "Ha M. Nguyen",
+      "Anthony Dorhauer",
+      "Carlos Garcia",
+      "Narendirakumar Narayanan",
+      "Yangchuan Xin",
+      "John Gahl",
+      "Thomas W. Heitmann",
+      "Carlos Wexler"
+    ],
+    "abstract": "arXiv:2609.12300v1 Announce Type: new \nAbstract: Improving ion transport in solid electrolytes and cathode coatings remains a key challenge for all-solid-state Li-ion batteries because their room-temperature ionic conductivity is still substantially lower than that of liquid electrolytes. In our previous combined experimental and theoretical study, we showed that thermal neutron irradiation enables defect engineering in LiBO$_2$ through the transmutation of $^6$Li and $^{10}$B, generating lattice vacancies that enhance ionic conductivity. Here, we examine whether this approach can be extended to Li$_3$OCl, a representative antiperovskite solid electrolyte. Using density functional theory, we investigate substitutional defects at Li sites involving B, He, and H, associated with B doping and the neutron-capture reactions $^{6}\\mathrm{Li}+n\\rightarrow\\,^{3}\\mathrm{H}+\\alpha$ and $^{10}\\mathrm{B}+n\\rightarrow\\,^{7}\\mathrm{Li}+\\alpha+\\gamma$. We evaluate defect formation energetics, the resulting structural distortions, and compare these substitutional defects with other mono-, di-, and trication substitutions at Li sites. Our results show that substitutional defects associated with neutron irradiation provide a feasible route to tune the defect chemistry of antiperovskite solid electrolytes and support neutron-driven defect engineering as a strategy for developing advanced materials for high-performance all-solid-state Li-ion batteries.",
+    "url": "https://arxiv.org/abs/2609.12300",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Ab initio DFT study of substitutional defects (B, He, H) in the Li3OCl solid electrolyte, computing defect formation energetics and structural distortions, satisfying (a) explicit atoms and (b)/(c) DFT application to a material system.",
+    "key_authors": []
+  },
+  {
+    "id": "d97b01da223a",
+    "title": "Ultrastrong Au-Te bonding drives disorder in monolayer ZrTe$_5$ on gold",
+    "authors": [
+      "Konr\\'{a}d Kandrai",
+      "Zolt\\'{a}n Tajkov",
+      "P\\'{e}ter Kun",
+      "Levente Tapaszt\\'{o}",
+      "J\\'{a}nos Koltai",
+      "P\\'{e}ter Nemes-Incze"
+    ],
+    "abstract": "arXiv:2609.12836v1 Announce Type: new \nAbstract: Monolayer ZrTe$_5$ is predicted to host a large-gap quantum spin Hall phase, motivating efforts to isolate single layers of the material. Gold-assisted exfoliation produces clean monolayers of many chalcogen-terminated van der Waals crystals, but the strong Te-Au bond may compete with the bonding network of the ZrTe$_5$ layer itself. Across tens of samples, low-temperature scanning tunneling microscopy on gold-exfoliated flakes shows a disordered monolayer surface in the overwhelming majority of cases, while thicker flakes preserve the characteristic quasi-one-dimensional chain structure. \\emph{Ab initio} calculations of the ZrTe$_5$/Au(111) interface reproduce this asymmetry and resolve its mechanism: the Te atoms facing the gold chemisorb, rupturing the weak zigzag Te-Te bonds that cross-link the ZrTe$_3$ chains, turning the discrete bond-length spectrum of the crystal into a continuous one, while the chains persist as distorted units. Charge analysis shows the signature of covalent Te-Au bonding with a modest transfer that hole-dopes the monolayer; in the bilayer, the distortion and the doping stay confined to the layer contacting the gold, and the chemisorption and disorder each preclude the predicted quantum spin Hall phase. The same quasi-covalent Te-Au bond may perturb the contact layer of other gold-exfoliated Te-terminated crystals, particularly those with weakly connected intralayer networks.",
+    "url": "https://arxiv.org/abs/2609.12836",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Ab initio DFT calculations of the ZrTe5/Au(111) interface reproducing Te-Au chemisorption, bond rupture and doping, satisfying (a) explicit atoms, (b) DFT, and (c) application to a real material interface.",
+    "key_authors": []
+  },
+  {
+    "id": "f6efa6bd7f08",
+    "title": "Assessing the magnetic states and the accuracy of first-principles Hubbard corrections for the battery cathode Li$_x$CoO$_2$ ($x=0,1$)",
+    "authors": [
+      "Valentina Sanella",
+      "Cristiano Malica",
+      "Alberto Carta",
+      "Maria Andolfatto",
+      "Nicola Marzari",
+      "Livia Giordano",
+      "Iurii Timrov"
+    ],
+    "abstract": "arXiv:2609.12984v1 Announce Type: new \nAbstract: Li$_x$CoO$_2$ is a prototypical layered cathode material for Li-ion batteries, yet its accurate description from first principles remains challenging because of self-interaction errors, weak interlayer interactions, and a complex magnetic energy landscape. Here, we present a systematic investigation of the structural, electronic, magnetic, and electrochemical properties of Li$_x$CoO$_2$ ($x=0,1$) using density-functional theory augmented with self-consistent Hubbard corrections and long-range van der Waals interactions, together with a systematic exploration of possible magnetic states. The on-site interactions on Co-$3d$ and O-$2p$ states, as well as inter-site Co-O interactions, are determined from first principles using linear-response theory in the framework of density-functional perturbation theory, with L\\\"owdin-orthogonalized atomic orbitals employed as Hubbard projectors. For LiCoO$_2$, the inclusion of Hubbard corrections provides an accurate description of the structural properties, while the electronic structure is very sensitive to the choice of Hubbard projectors. In particular, frontier Wannier-function projectors substantially improve the description of the occupied electronic states compared with localized atomic orbitals. For CoO$_2$, we demonstrate that a systematic exploration of the magnetic energy landscape is essential to identify the lowest-energy low-spin ground state. However, the resulting Hubbard-corrected electronic structure is insulating, consistent with the prediction of the HSE06 hybrid functional, but in contrast to the experimentally observed metallic behavior. Structural relaxation further drives the system toward a different metallic solution with an electronic configuration inconsistent with low-spin Co$^{4+}$ character. Despite these limitations, the calculated intercalation voltages agree well with experiment, with deviations as small as 2%.",
+    "url": "https://arxiv.org/abs/2609.12984",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Systematic DFT+U/Hubbard-correction study of Li_xCoO2 with explicit atoms, linear-response DFT perturbation theory and Hubbard projectors: (a) satisfied, (b) DFT/DFT+U method development satisfied, (c) advances the accuracy of first-principles Hubbard corrections for a real material.",
+    "key_authors": []
+  },
+  {
+    "id": "130ca18fefa6",
+    "title": "A viable and accurate route to GW simulations of metals and doped semiconductors",
+    "authors": [
+      "Giacomo Sesti",
+      "Alberto Guandalini",
+      "Andrea Ferretti",
+      "Pino D'Amico",
+      "Claudia Cardoso",
+      "Massimo Rontani",
+      "Daniele Varsano"
+    ],
+    "abstract": "arXiv:2508.06930v2 Announce Type: replace \nAbstract: In this work we present an efficient and fully ab-initio approach for the calculation of the screened Coulomb potential, specifically designed for two dimensional (2D) and three dimensional (3D) metals and suitable to evaluate $GW$ corrections. While quasiparticle renormalization effects are typically negligible in bulk metals, 2D metals may exhibit semiconductor-like features, such as sizeable renormalization of quasiparticle energies induced by Coulomb interaction, which follow from the suppression of screening due to the reduced dimensionality, Although this effect can in principle be described by the $GW$ method, apart from a few pioneering exceptions, such calculations have been hampered by sampling requirements exceeding feasibility. We demonstrate that the combination of interpolation and extrapolation schemes together with the accounting of dynamical effects is pivotal to the correct handling of the intraband polarizability in the long wavelength limit. As an application, we report the gap renormalization of selected doped 2D-semiconductors in excellent agreement with ARPES measurements.",
+    "url": "https://arxiv.org/abs/2508.06930",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Development of an ab initio screening/interpolation approach for GW quasiparticle corrections in 2D/3D metals with explicit atomic and electronic structure: (a) satisfied, (b) GW/BSE method development satisfied, (c) advances many-body perturbation-theory methodology for real materials.",
+    "key_authors": []
+  },
+  {
+    "id": "071f96afa638",
+    "title": "Strain-tunable nodal lines inducing large anomalous Nernst effect in topological magnet $\\mathrm{C}{\\mathrm{o}}_{3}\\mathrm{S}{\\mathrm{n}}_{2}{\\mathrm{S}}_{2}$",
+    "authors": [
+      "Kojun Nishimura",
+      "Susumu Minami",
+      "Sota Hogaki",
+      "Takahiro Shimada"
+    ],
+    "abstract": "Author(s): Kojun Nishimura, Susumu Minami, Sota Hogaki, and Takahiro Shimada\nTransverse thermoelectric generation based on the anomalous Nernst effect (ANE) in topological magnets attracted attention because of the potential applications in novel thermoelectric devices. However, realizing engineering applications requires elucidating the enhancement mechanism of the ANE and …\n[Phys. Rev. Materials 10, 094201] Published Thu Sep 10, 2026",
+    "url": "http://link.aps.org/doi/10.1103/cb6c-xmkv",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-09-10T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "The paper uses first-principles DFT calculations on explicit atomic structures (a,b) to predict strain-tunable anomalous Nernst effect (c), placing it in scope.",
+    "key_authors": []
+  },
+  {
+    "id": "d86187ccbf7b",
+    "title": "Accelerating Periodic Coupled Cluster and Algebraic Diagrammatic Construction Theories With Frozen Natural Orbitals",
+    "authors": [
+      "Ning-Yuan Chen",
+      "James D. Serna",
+      "Alexander Yu. Sokolov"
+    ],
+    "abstract": "arXiv:2609.13098v1 Announce Type: new \nAbstract: We present a unified frozen natural orbital (FNO) framework for periodic Gaussian-orbital post-Hartree-Fock calculations with explicit k-point sampling. The approach includes conventional ground-state FNOs together with state-specific (SS-FNO) and state-averaged (SA-FNO) variants constructed from perturbative one-particle density matrices. We implement these approximations for periodic Moller-Plesset perturbation theory, algebraic diagrammatic construction, and equation-of-motion coupled cluster methods in the PySCF software package and benchmark them for correlation energies, equations of state, fundamental band gaps, and quasiparticle band structures of semiconductors and insulators. FNO truncation reproduces canonical results with small errors while substantially reducing computational cost. SS-FNO enables accurate large-basis band-gap calculations, including quadruple-zeta results, whereas SA-FNO efficiently compresses the virtual space for multi-state band-structure calculations. Combined with basis-set and thermodynamic-limit extrapolations, the framework provides a practical route to high-accuracy correlated calculations in periodic systems.",
+    "url": "https://arxiv.org/abs/2609.13098",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Frozen natural orbital approximations for periodic post-HF methods (MP2, ADC, EOM-CC) in solids: explicit atomic/periodic systems (a), post-Hartree-Fock methodology (b), and a genuine method/benchmark advance for periodic correlated calculations (c) are all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "72d698a6e744",
+    "title": "First application of the transcorrelated method to noncovalent interactions: The A24 dataset",
+    "authors": [
+      "Johannes Hauskrecht",
+      "Stephanie Lambie",
+      "Evelin Martine Corvid Christlmaier",
+      "Thomas Schraivogel",
+      "Daniel Kats",
+      "Ali Alavi"
+    ],
+    "abstract": "arXiv:2609.13018v1 Announce Type: new \nAbstract: We present the first application of transcorrelated (TC) coupled-cluster (CC) theory to noncovalent interactions within the xTC approximation. The method is assessed for the A24 dataset of hydrogen-bonded, mixed and pure dispersion bound dimers. The xTC interaction energies are computed at the CCSD, DCSD, and CCSD(T) levels in aug-cc-pVDZ (AVDZ), aug-cc-pVTZ (AVTZ) basis sets, and are compared with both canonical and explicitly correlated F12 methods. Because non-covalent interaction energies rely on delicate error cancellation between dimers and monomers, we optimize the TC Jastrow factor for each dimer, and reuse the same parameters for the corresponding monomer calculations. This shared-parameter strategy reduces stochastic optimization noise which would otherwise dominate the interaction energies. The results show that the xTC-CCSD(T)/AVTZ method performs extremely well for the hydrogen-bonded systems, with a mean-absolute error of only 0.007 kcal/mol in the interaction energies, with respect to the benchmark values generated with CCSD(T)/CBS + $\\Delta$CCSDT(Q) + core corrections. For pure dispersion bound systems the errors are slightly larger (0.055 kcal/mol), leading to an overall MAE of 0.030 kcal/mol for the entire dataset. Adding a $\\Delta$MP2 correction to the xTC-CCSD(T)/AVDZ brings these results close to AVTZ quality and provides a practical route toward larger noncovalent systems. A decomposition of the xTC interaction energy into a mean-field and correlation contribution shows that part of the correlation contribution is systematically shifted by the TC method to the mean-field contribution. This physically appealing feature indicates that the TC method has great potential for the quantitative description of noncovalent interactions, and opens a new route for high-accuracy quantum chemistry to be applied to systems of biological and soft-matter interest.",
+    "url": "https://arxiv.org/abs/2609.13018",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 14 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.76,
+    "relevance_reason": "Transcorrelated coupled-cluster (CCSD/DCSD/CCSD(T)) method development benchmarked on the A24 noncovalent dimer dataset: explicit atoms (a), post-Hartree-Fock electronic structure method (b), and clear methodological advance assessed on real atomic systems (c), though no dynamics or forces are computed.",
+    "key_authors": []
+  },
+  {
+    "id": "1dfb5847c008",
+    "title": "Tunable magnetic frustration in the Cu-Ru based double-perovskite ${\\mathrm{La}}_{2\\text{−}x}{\\mathrm{Sm}}_{x}{\\mathrm{CuRuO}}_{6}$ ($x=0$, 1, 2) oxides",
+    "authors": [
+      "Soumya Ghorai",
+      "Samir Rom",
+      "Irina Shamova",
+      "N. K. Karn",
+      "Tamanna Kumari",
+      "A. K. Shukla",
+      "Sanjoy Kr Mahatha",
+      "O. Volkova",
+      "Nitesh Kumar",
+      "Tanusri Saha Dasgupta",
+      "Setti Thirupathaiah"
+    ],
+    "abstract": "Author(s): Soumya Ghorai, Samir Rom, Irina Shamova, N. K. Karn, Tamanna Kumari, A. K. Shukla, Sanjoy Kr Mahatha, O. Volkova, Nitesh Kumar, Tanusri Saha Dasgupta, and Setti Thirupathaiah\nIn this study, we investigate the structural, magnetic, and electronic properties of the copper-ruthenate-based oxide double perovskite ${\\mathrm{La}}_{2\\text{−}x}{\\mathrm{Sm}}_{x}{\\mathrm{CuRuO}}_{6}$ ($x$ = 0, 1, 2), synthesized by the solid-state reaction method. X-ray diffraction analysis reveal…\n[Phys. Rev. B 114, 144407] Published Tue Sep 08, 2026",
+    "url": "http://link.aps.org/doi/10.1103/2486-76v5",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-09-08T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-09-14",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "The paper likely combines synthesis with first-principles DFT calculations on explicit atomic structures (a,b) to explain magnetic and electronic properties (c), so it is in scope for atomistic simulation.",
+    "key_authors": []
+  }
+]
