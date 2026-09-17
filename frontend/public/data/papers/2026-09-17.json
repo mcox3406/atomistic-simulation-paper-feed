@@ -1,0 +1,532 @@
+[
+  {
+    "id": "c1dcce871585",
+    "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+    "authors": [
+      "Jinli Hu",
+      "Ross M. Clarke",
+      "Yichuan Zhang",
+      "Jos\\'e Miguel Hern\\'andez-Lobato"
+    ],
+    "abstract": "arXiv:2609.18842v1 Announce Type: cross \nAbstract: The scaling laws hold that a language model grows more capable with more parameters and more training data, and Mixture-of-Experts (MoE) architectures have ridden these laws to remarkable results, activating only a fraction of an enormous stored parameter bank for each token. That success is built on static pretraining data. A deployed model faces a different world, where much of the data that would make it more useful is not in its training set but in the live interaction it is currently handling, such as the facts a user supplies or the corrections they give. A conventional model cannot learn from this data, because its weights are frozen after training. Instead, the knowledge and behaviour supplied at run time are placed in the prompt, by retrieval or instruction, and re-read on every request only to be discarded once the request ends. We ask how an architecture could learn from live interaction by writing it into its weights. Taking inspiration from MoE, we propose the \\textbf{Infinite-Parameter LLM}. A compact hypernetwork turns the data given at run time into a low-rank modulation of a shared base network, so the feed-forward weights are generated from live data rather than stored in a fixed bank. Where prior weight generators read the context once and freeze, we carry a Bayesian belief over the generator's latent code and update it online, so the effective weight is re-derived from that evolving belief as the session proceeds rather than fixed after one read. The stored footprint stays fixed, yet the weights the model can compile are effectively infinite. For the knowledge and behaviour supplied at run time, carrying them in the weights rather than the prompt is amortized in compute, frees the context window, persists across turns, and can generalise better than in-context use. We specify an evaluation protocol that tests exactly this against in-context learning and retrieval.",
+    "url": "https://arxiv.org/abs/2609.18842",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Jos\\'e Miguel Hern\\'andez-Lobato",
+    "key_authors": [
+      "Jos\\'e Miguel Hern\\'andez-Lobato"
+    ]
+  },
+  {
+    "id": "9de6347a80da",
+    "title": "Melting Behavior and Phase Stability of CaO from Neural Network Potentials: a Molecular Dynamics Study",
+    "authors": [
+      "Francesca Menescardi",
+      "Stefano de Gironcoli"
+    ],
+    "abstract": "arXiv:2605.14793v2 Announce Type: replace \nAbstract: We investigate the melting behavior of calcium oxide (CaO) under extreme conditions, a problem that remains poorly constrained due to experimental limitations despite its relevance for geophysical and technological applications. We develop a Machine Learning Interatomic Potential (MLIP) for CaO with PANNA 2.0 and the LATTE descriptor, training it on a dataset of $\\sim$12,000 configurations including solid, liquid, interfacial, and void-containing structures, extracted from ab-initio molecular dynamics data employing PBEsol exchange-correlation functional. We perform large-scale molecular dynamics simulations to compute the melting temperature at ambient pressure using both the void-nucleated melting (VNM) and two-phase coexistence (TPC) methods, obtaining $T_m=3055\\pm11$ K and $T_m=2847\\pm15$ K, respectively.\\\\ We calculate an enthalpy of fusion of $\\Delta H_f\\sim73$ kJ/mol, in agreement with thermodynamic assessments and ab initio calculations. We also reproduce the thermal expansion and obtain a volume increase of $\\sim$29% at Tm, consistent with the corresponding decrease in density extracted from spatially resolved number density profiles. Finally, we calculate the high-pressure melting curve of CaO up to 20 GPa, providing one of the very few computational determinations of this quantity to date. The results confirm that the overheating ratio $\\eta$ is not constant under pressure, increasing from 17% at ambient pressure to 24% at 20 GPa, confirming previous findings and ruling out the assumption of a fixed overheating ratio. Our results establish MLIP-based simulations as a robust and efficient framework for investigating phase stability in ionic oxides and provide new insight into the melting behavior of CaO under extreme conditions.",
+    "url": "https://arxiv.org/abs/2605.14793",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.95,
+    "relevance_reason": "Develops a PANNA/LATTE machine-learned interatomic potential trained on ab initio MD data (a,b) and performs large-scale MD to compute CaO melting temperatures, enthalpy of fusion, and the high-pressure melting curve (c), squarely in scope.",
+    "key_authors": []
+  },
+  {
+    "id": "af995a09fc47",
+    "title": "Revisiting nuclear quantum effects on the mechanism of electrochemical reduction of CO at Cu(111) surface",
+    "authors": [],
+    "abstract": "The initial hydrogenation step of *CO on Cu(111) dictates product selectivity in electrochemical CO2 reduction, yet its mechanism remains controversial. Here, at an acidic aqueous Cu(111) interface, we systematically compute the free energy profiles for *CHO and *COH formation via multiple pathways, including direct *H transfer, water-assisted shuttling, and proton-coupled electron transfer (PCET), using machine learning force fields to enable statistical sampling within a grand canonical constrained path integral hybrid Monte Carlo framework that incorporates constant electrode potential, explicit solvation, and nuclear quantum effects (NQEs). At the investigated potential of U = −0.4 V vs SHE and 300 K, *COH does not remain a stable intermediate within the present explicit-solvent Cu(111) model and spontaneously dissociates into *CO and solvated H3O+. For *CHO formation, solvated protons are identified as the primary hydrogen source, predominantly proceeding via the PCET pathway. Surface-adsorbed *H atoms can also reduce *CO, but only through a two-step water-assisted shuttling mechanism rather than concerted transfer. Incorporating NQEs, the activation free energy of the PCET step exhibits a 30% reduction (by 0.12 eV) relative to the quantum barrier, indicating a non-negligible difference in the estimated reaction rate. This work highlights the synergistic importance of explicit solvation, constant-potential conditions, and NQEs in modeling electrochemical interfaces.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/11/114703/3404605/Revisiting-nuclear-quantum-effects-on-the",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 16 Sep 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.93,
+    "relevance_reason": "Machine-learned force fields driving grand canonical constrained path-integral hybrid Monte Carlo for free-energy profiles at a solvated Cu(111) electrochemical interface, clearly satisfying (a), (b), and (c) with MLIP development/application.",
+    "key_authors": []
+  },
+  {
+    "id": "0720d9d3c577",
+    "title": "ADAPT: Lightweight, Long-Range Machine Learning Force Fields Without Graphs",
+    "authors": [
+      "Evan Dramko",
+      "Yihuang Xiong",
+      "Yizhi Zhu",
+      "Geoffroy Hautier",
+      "Thomas Reps",
+      "Christopher Jermaine",
+      "Anastasios Kyrillidis"
+    ],
+    "abstract": "arXiv:2509.24115v2 Announce Type: replace-cross \nAbstract: Point defects play a central role in driving the properties of materials. First-principles methods are widely used to compute defect energetics and structures, including at scale for high-throughput defect databases. However, these methods are computationally expensive, making machine-learning force fields (MLFFs) an attractive alternative for accelerating structural relaxations. Most existing MLFFs are based on graph neural networks (GNNs), which can suffer from oversmoothing, oversquashing, and poor representation of long-range interactions. Both of these issues are especially of concern when modeling point defects. To address these challenges, we introduce the \\textit{Accelerated Deep Atomic Potential Transformer} (ADAPT), an MLFF that replaces graph representations with a direct coordinates-in-space formulation and explicitly considers all pairwise atomic interactions. Atoms are treated as tokens, with a Transformer encoder modeling their interactions. Applied to a dataset of silicon point defects, ADAPT achieves a roughly 22% reduction in force and a roughly 40 percent reduction in energy prediction error relative to a state-of-the-art GNN-based model, while requiring only a fraction of the computational cost.",
+    "url": "https://arxiv.org/abs/2509.24115",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "math.OC"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Introduces ADAPT, a non-graph Transformer machine-learned interatomic potential trained on silicon point defects; (a) explicit atoms, (b) MLIP development/benchmarking, (c) advances MLFF methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "9fe25e2a8782",
+    "title": "Grain boundary migration across compositional complexity: A molecular dynamics study from binary alloys to high-entropy alloys",
+    "authors": [],
+    "abstract": "Publication date: Available online 16 September 2026\nSource: Acta Materialia\nAuthor(s): Kohei Shiotani, Tomoaki Niiyama, Tomotsugu Shimokawa",
+    "url": "https://www.sciencedirect.com/science/article/pii/S135964542600861X?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Acta Materialia",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Molecular dynamics study of grain-boundary migration from binary to high-entropy alloys, clearly satisfying explicit atoms, MD methodology, and atomistic application.",
+    "key_authors": []
+  },
+  {
+    "id": "849982059933",
+    "title": "From barrier to dislocation source and transmitter: atomistic insights into the inverse effect of semi-coherent interfaces during nanoindentation of BCC metal bilayers",
+    "authors": [
+      "Soumia Hamdani",
+      "Rebecca Janisch",
+      "Saad Abdeslam",
+      "Alexander Hartmaier"
+    ],
+    "abstract": "Semi-coherent interfaces are widely recognized as effective barriers to dislocation motion and are therefore considered as a key strengthening element in metallic multilayers. However, whether this role remains unchanged under different nano-indentation loading directions is still largely unexplored. Using molecular dynamics simulations, this work demonstrates that the mechanical response of semi-coherent bcc interfaces is fundamentally governed by the indented layer. By simply reversing the indentation direction in Fe/V bilayers, the interface undergoes a remarkable transition from a dislocation barrier to an active dislocation source and transmitter. This transition is driven by the decomposition of the pre-existing misfit dislocations into mobile 1/2 dislocations within the V substrate, while the indented Fe layer remains elastically deformed. As a result, interface-mediated plasticity induces pronounced softening when the Fe layer thickness falls below a critical value, in contrast to the strengthening observed for the V/Fe bilayer. The same deformation mechanisms are identified in Ta–W bilayers, demonstrating that the observed inverse interface effect is not material-specific but represents a general characteristic of bcc semi-coherent interfaces. These findings provide a new atomistic framework for understanding and tailoring the mechanical response of multilayered materials through interface engineering.",
+    "url": "https://iopscience.iop.org/article/10.1088/1361-651X/ae9f7a",
+    "pdf_url": null,
+    "source": "Modelling Simul. Mater. Sci. Eng.",
+    "categories": [],
+    "published": "2026-09-16T23:00:00Z",
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Classical molecular dynamics simulations of nanoindentation in Fe/V and Ta-W bcc bilayers using an interatomic potential, satisfying (a) explicit atoms, (b) MD with a classical force field, and (c) application to dislocation-interface mechanics.",
+    "key_authors": []
+  },
+  {
+    "id": "347e830f2c9d",
+    "title": "Moment-informed force rescaling for random-batch Langevin dynamics",
+    "authors": [
+      "Xingguo Wu",
+      "Yangshuai Wang",
+      "Zhenli Xu"
+    ],
+    "abstract": "arXiv:2609.18389v1 Announce Type: cross \nAbstract: Random-batch methods accelerate molecular dynamics by replacing full interaction sums with stochastic force estimators. In Langevin simulations, however, random-batch force errors can cause artificial heating and distort equilibrium and dynamical observables, especially for small batch sizes or under weak thermostat coupling. Moreover, the magnitude of these errors can vary across particles. We introduce moment-informed force rescaling for random-batch list (Mi-RBL) and random-batch Ewald (Mi-RBE) methods. A lagged average of each particle's sampled-force intensity sets an isotropic gain before the current batch is sampled, changing the random-batch force magnitude without changing its direction. The formal finite-time analysis quantifies the bias--variance tradeoff, and an estimate of the steady-state kinetic-temperature error predicts the scaling of the kinetic error with time step and thermostat friction. In the coexistence, binary-mixture, and electrolyte tests, Mi-RBL and Mi-RBE reduce kinetic errors and more closely reproduce the mean-square displacement, radial distribution function, and charge density profiles of the reference solutions. Mi-RBE also reduces the growth rate of the kinetic error with the time step by more than half and retains the predicted dependence on thermostat friction. The tested rescaling strength decreases with increasing batch size, and the particlewise update retains $O(N)$ complexity for fixed batch size.",
+    "url": "https://arxiv.org/abs/2609.18389",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph",
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Develops random-batch force rescaling for Langevin molecular dynamics on explicit particles (a: explicit atoms/interactions; b: MD; c: advances MD methodology), validated on coexistence, binary-mixture and electrolyte simulations.",
+    "key_authors": []
+  },
+  {
+    "id": "1ab448862966",
+    "title": "Conditions for the Emergence of Spontaneous Phonon Frequency Combs from Anharmonic Potentials",
+    "authors": [
+      "Jayakrishnan SS",
+      "Mayanak K Gupta",
+      "Dipanshu Bansal"
+    ],
+    "abstract": "arXiv:2609.17707v1 Announce Type: new \nAbstract: Phononic frequency combs have been demonstrated experimentally and theoretically in the kHz-MHz regime under nonlinear driving; however, their spontaneous formation in the GHz-THz regime remains rare. We investigate the spontaneous formation of frequency combs in van der Waals solid CrGeTe$_3$, where combs of spacing $\\sim$2 cm$^{-1}$ were experimentally proposed to occur in a flat phonon mode but are now reported to originate from isotopic distribution. Our spectral energy density calculations using machine-learning-augmented molecular dynamics simulations show comb-like features with reduced spacings of $\\sim$0.1 and 0.6 cm$^{-1}$ in the same mode at 50 and 200 K. However, the spacings of the comb-like features are comparable to the phonon linewidth, making precise identification of the frequency comb challenging. From a comprehensive analysis of different modes of CrGeTe$_3$, we identified two conditions to distinctively observe the combs beyond the experimental resolution: (i) an intramolecular or isolated mode with reasonably large third- or higher-order anharmonicity from phonon self-interaction and (ii) limited phonon scattering channels. Our analysis of other van der Waals solids highlighted that these conditions are met for the nearly flat intramolecular $E_{2g}$ and $A_{2u}$ phonon modes of WSe$_2$. The detailed calculations showed the formation of a spontaneous frequency comb with spacings of 1.7 and 0.67 cm$^{-1}$ from coherent superposition of four and five-phonon eigenstates in the $E_{2g}$ and $A_{2u}$ phonon modes, respectively. Available Raman scattering data of the $E_{2g}$ mode in the literature provide preliminary, if not conclusive, evidence of comb formation. Our findings offer a deeper understanding and open avenues for engineering long-lived phononic frequency combs for various practical applications.",
+    "url": "https://arxiv.org/abs/2609.17707",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.other"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Machine-learning-augmented molecular dynamics of CrGeTe3 and WSe2 computing spectral energy density, satisfying (a) explicit atoms, (b) MLIP-driven MD, and (c) application to phonon physics.",
+    "key_authors": []
+  },
+  {
+    "id": "f6ef624faf7c",
+    "title": "Van der Waals interactions in supercritical water under Earth's mantle conditions",
+    "authors": [
+      "Jiajia Huang",
+      "Rui Hou",
+      "Ding Pan"
+    ],
+    "abstract": "arXiv:2609.18183v1 Announce Type: new \nAbstract: The properties of water under high pressure and high temperature (HP-HT) are critical in multiple geochemical processes in deep Earth. Ab initio molecular dynamics (AIMD) is a promising approach to study water under extreme conditions without any empirical parameters. However, the accuracy of AIMD simulations is determined by the exchange-correlation (XC) functional including the dispersion correction used in density functional theory calculations. While van der Waals (vdW) interactions are well known to be critically important for water under ambient conditions, the influence of the dispersion correction on the properties of HP-HT water as found in Earth's mantle remains largely unexplored. To address this, we carried out AIMD simulations for supercritical water at 1, 5, and 10 GPa, and 1000 K. We compared PBE, PBE-D3, RPBE-D3, and SCAN functionals, where D3 means Grimme's D3 dispersion correction. We compared the structural, diffusion, and vibrational properties of water as computed with these XC functionals. Overall, the discrepancies between the functionals are reduced under extreme P-T conditions relative to ambient conditions. PBE and PBE-D3 exhibit higher proton-transfer rates than RPBE-D3 and SCAN, suggesting that while vdW interactions do not significantly affect the water structure under extreme conditions, the oxygen-hydrogen bond strength does influence proton transfer. Our results provide molecular-level insight into water in Earth's mantle and offer valuable guidance for selecting appropriate XC functionals in AIMD simulations of aqueous solutions under extreme conditions.",
+    "url": "https://arxiv.org/abs/2609.18183",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph",
+      "physics.geo-ph"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Runs ab initio molecular dynamics of supercritical water at mantle P-T conditions comparing PBE, PBE-D3, RPBE-D3, and SCAN functionals; (a) explicit atoms, (b) AIMD/DFT, (c) applies it to learn about HP-HT water structure, diffusion and proton transfer.",
+    "key_authors": []
+  },
+  {
+    "id": "64494ffca704",
+    "title": "Information Thresholds in Adaptive Quantum Control of Nonadiabatic Molecular Dynamics:",
+    "authors": [
+      "Oluwatoni Sobande",
+      "Oluwatoni. E Sobande"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15008942/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-09-16",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Nonadiabatic molecular dynamics is explicit atomistic simulation, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "40f10fa13f4c",
+    "title": "A kind of pinky promise: Chain interlocking in the guanidine-II riboswitch observed in atomistic simulations and network analysis",
+    "authors": [],
+    "abstract": "Riboswitches are dynamic RNA structures that regulate gene expression in response to ligand binding. The guanidine-II riboswitch consists of two hairpin loops, connected by a flexible linker, which can dimerize in the presence of a cognate ligand. Both processes, ligand binding and dimerization, are governed by the first three bases of each of the tetraloops, while the role of the extrahelical fourth base of the tetraloop, conserved to a purine, is less well understood. An influence of base identity in this position on ligand binding affinity and cooperativity has been shown in experiment, but no molecular-level explanation of this influence has yet been attempted. To investigate the interactions underlying this observation, we performed molecular dynamics simulations of the guanidine-II riboswitch with varied base identity of these extrahelical bases. The simulations show base-identity dependence in the formation of a recently described conformational change that involves the extrahelical bases and interlocks both hairpins. Tuning an established network-analysis-based approach to be sensitive to delicate changes in hydrogen bonding patterns enables us to classify the conformational states involved and show how base identity affects interlocking stability. These interactions may underpin the influence of the extrahelical bases on the structural equilibrium of the riboswitch and suggest a rationale for base-identity preference at this position.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/11/115101/3404608/A-kind-of-pinky-promise-Chain-interlocking-in-the",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 16 Sep 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Explicit classical molecular dynamics simulations of the guanidine-II riboswitch with hydrogen-bond network analysis, satisfying (a), (b), and (c) as an MD application to a biomolecular system.",
+    "key_authors": []
+  },
+  {
+    "id": "77d2bed17408",
+    "title": "Distinct tubulin C-terminal tails control the efficiency of a microtubule severing machine",
+    "authors": [],
+    "abstract": "Microtubule severing enzymes of the AAA+ family are essential regulators of cytoskeletal remodeling, extracting subunits from microtubules through Adenosine triphosphate (ATP)-driven conformational changes. Among them, katanin assembles into hexameric structures and binds the negatively charged carboxy-terminal tails (CTTs) of tubulin through its central pore. Experimental studies have shown that different CTT isotypes can act as either inhibitors or non-inhibitors of katanin-mediated severing, with increased CTT hydrophobicity associated with reduced inhibition. However, the molecular basis underlying this selective behavior remains poorly understood. Here, we employed molecular dynamics simulations and quantitative analysis combining principal component analysis, clustering, distance distribution analysis, and contact tracing to investigate how natural tubulin CTTs (beta5, beta4b, and beta3) and engineered CTTs (beta5-A+Y, beta5-cterm, beta5-midpoint, and poly-E) influence katanin structure and dynamics in spiral and ring conformations. We found that inhibitory CTTs form stronger interactions with the terminal protomers and increase flexibility in the inner protomers, resulting in coordinated motions associated with pore narrowing. In contrast, non-inhibitory CTTs preferentially interact with inner protomers, disrupting interprotomer coordination and weakening the collective interaction of the hexamer with the substrate. Analyses of the engineered constructs revealed that inhibitory behavior is governed primarily by the spatial distribution of acidic residues rather than the overall charge. In addition, using a fully modeled H. sapiens ring katanin structure, we identified species-specific responses of different CTT isotypes. These findings provide insight into how tubulin CTT sequence organization regulates substrate recognition and pore dynamics and, therefore, severing efficiency, leading to predictive design of CTTs with a desired action on katanin.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/11/115102/3404607/Distinct-tubulin-C-terminal-tails-control-the",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Wed, 16 Sep 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Molecular dynamics simulations combined with PCA/clustering/contact analysis to study katanin-tubulin C-terminal tail interactions, satisfying (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "5d301c9aeb39",
+    "title": "Surface chemistry investigation of an additively manufactured Al-Mg-Si-Zr alloy: Studies from experiments and first-principles simulation",
+    "authors": [
+      "Zhengqing Wei",
+      "Philip Grimm",
+      "Inna Plyushchay",
+      "Volker Hoffmann",
+      "Nebahat Bulut",
+      "Lutfi Caglar Ege",
+      "Julia Kristin Hufenbach",
+      "Sibylle Gemming"
+    ],
+    "abstract": "arXiv:2609.17876v1 Announce Type: new \nAbstract: The surface chemistry of additively manufactured aluminum alloys plays a critical role in corrosion resistance and joining with external materials. In this work, the near-surface elemental composition of a laser powder bed fusion (PBF-LB/M) processed Al-Mg-Si-Zr alloy was characterized by glow discharge optical emission spectroscopy GDOES depth profiling. The measurements reveal pronounced Mg enrichment within the near-surface region extending to approximately 10 {\\mu}m, consistent with the characteristic scale of surface roughness, together with an increase in oxygen concentration, whereas Al, Si, and Zr approach stable bulk-like levels at greater depths. To understand this observation on the atomic scale, first-principles calculations based on density functional theory (DFT) were performed on low-index Al surfaces. The calculated results show a strong thermodynamic driving force for Mg surface segregation, with diffusion energy differences ranging from approximately -0.30 eV to -0.41 eV, while Zr exhibits a pronounced preference for remaining in the bulk matrix. Vacancy migration calculations further demonstrate that full structural relaxation substantially reduces the migration barrier for Mg to below that of Si, which makes Mg diffusion kinetically highly favorable. Moreover, the presence of adsorbed surface oxygen dramatically promotes the tendency of Mg to diffuse toward the surface, which lowers the diffusion energy difference of Mg to as much as -3.0 eV. This promotes the formation of a locally reconstructed Mg-O-Al coordinated precursor structure accompanied by localized electron transfer shown by an electron localization function analysis.",
+    "url": "https://arxiv.org/abs/2609.17876",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Uses DFT first-principles calculations on explicit Al surface slabs to study Mg segregation and vacancy migration, satisfying (a) explicit atoms, (b) DFT/geometry optimization/energy barriers, and (c) application to alloy surface chemistry.",
+    "key_authors": []
+  },
+  {
+    "id": "9adab25cedf9",
+    "title": "Nitrogen based electride superconductor Nb5Ir3N under pressure: multifunctional physical properties from DFT based first-principles investigation",
+    "authors": [
+      "M. Abdul Hadi Shah",
+      "J. H. Abir",
+      "S. H. Naqib"
+    ],
+    "abstract": "arXiv:2609.18113v1 Announce Type: new \nAbstract: Discovery and study of superconducting electrides have opened new avenues in condensed matter physics, driven by their intriguing multifunctional features spanning ambient and high-pressure regimes. This work investigates the ternary nitride superconductor Nb5Ir3N under pressure ranging from 0 to 20 GPa via density functional theory based simulations. Estimated structural parameters agree well with the available data, confirming their reliability and supporting the validity of this analysis. Negative formation enthalpy, together with evaluated elastic constants and phonon spectra, confirm the structural, thermodynamic, mechanical, and dynamical stability of Nb5Ir3N over the entire pressure range. Pressure dependent elastic constants and polycrystalline elastic moduli are investigated. The compound is categorized as ductile in light of estimated mechanical indices. Elastic anisotropy factors indicate that Nb5Ir3N remains anisotropic, with the degree of anisotropy gradually decreasing as pressure increases. Electronic band structure and density of states are calculated with and without spin orbit coupling to investigate its influence on the electronic structure. Calculated optical response reveals substantial intraband contributions in the low energy region, intense ultraviolet absorption, and strong reflectivity. The spectra exhibit optical anisotropy and a broadening at higher pressures. Pressure induced superconducting features are also discussed qualitatively.",
+    "url": "https://arxiv.org/abs/2609.18113",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.supr-con"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Performs DFT-based first-principles simulations on explicit Nb5Ir3N atomic structures under pressure, including structural, phonon, elastic, and electronic calculations, satisfying (a) explicit atoms, (b) DFT, and (c) application to material properties.",
+    "key_authors": []
+  },
+  {
+    "id": "597c37895b49",
+    "title": "Enabling Polaritonic Electronic Structure Theory for Psi4: The psi4-cbo package",
+    "authors": [
+      "Thomas Schnappinger",
+      "Markus Kowalewski"
+    ],
+    "abstract": "arXiv:2609.17711v1 Announce Type: new \nAbstract: We present psi4-cbo, an open-source extension of the Psi4 program for simulations within the cavity Born-Oppenheimer Approximation (CBOA). By treating the cavity photon mode on the same footing as the nuclear coordinates, \\texttt{psi4-cbo} incorporates light-matter coupling into standard electronic structure workflows. These workflows include self-consistent field calculations, response theory, analytic gradients, joint Hessians, and geometry optimization. The package is designed for reproducibility and is documented with working examples for its main workflows. To evaluate the approximations inherent to the CBOA framework, we use an exact \\gls{qedfci} reference. Resolving the correlation energy into electron-electron and electron-photon channels enables us to precisely determine the point at which the CBOA becomes quantitatively sufficient. Additionally, we highlight that, since self-consistent treatments dress the cavity modes, satisfying experimental resonance conditions is method-dependent. As a practical application, we investigate the chromophore acrolein under vibrational strong coupling and detail how to locate resonances on the dressed photon modes rather than the bare molecular bands.",
+    "url": "https://arxiv.org/abs/2609.17711",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Method development for cavity Born-Oppenheimer electronic structure (SCF, analytic gradients, joint Hessians) with geometry optimization on explicit molecular systems (acrolein): (a) satisfied, (b) satisfied via DFT-level electronic structure/geometry optimization, (c) satisfied by advancing the method and its implementation in Psi4.",
+    "key_authors": []
+  },
+  {
+    "id": "f9685e7c6325",
+    "title": "Electronic Origins of Elastic Behavior in Rocksalt, Zinc-Blende and Wurtzite 3d Transition-Metal Nitrides",
+    "authors": [
+      "Jesus Ca\\~nas",
+      "Oliver Ambacher"
+    ],
+    "abstract": "arXiv:2609.18365v1 Announce Type: new \nAbstract: We present a comprehensive ab-initio study of the elastic properties of the IV-period transition metal nitrides, highlighting the correlation between their mechanical behavior and electronic structure. By analyzing the electronic density of states, we reveal how the occupation of bonding or antibonding orbitals determines the evolution of elastic properties along the period. Furthermore, we examine trends across different crystal structures, specifically comparing rocksalt, zincblende and wurtzite phases, to uncover how variations in crystal symmetry and atomic coordination influence their elastic properties.",
+    "url": "https://arxiv.org/abs/2609.18365",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Presents an ab-initio DFT study of elastic properties of transition-metal nitrides using explicit atomic structures and electronic-structure calculations, satisfying (a) explicit atoms, (b) DFT, and (c) application to materials elasticity trends.",
+    "key_authors": []
+  },
+  {
+    "id": "aae30fcdb5eb",
+    "title": "Data-driven massive reaction networks reveal mechanistic pathways underlying catalytic CO<sub>2</sub> hydrogenation",
+    "authors": [
+      "Anand M. Verma",
+      "Shivam Chaturvedi",
+      "Swastik Paul",
+      "Srinibas Nandi",
+      "Rahul Sheshanarayana",
+      "Kotni Santhosh",
+      "G. Valavarasu",
+      "Ambedkar Dukkipati",
+      "Chuandayani Gunawan Gwie",
+      "Pei Ying Moo",
+      "Chun Qi Joy Ng",
+      "Amol Amrute",
+      "Ananth Govind Rajan"
+    ],
+    "abstract": "Nature Communications, Published online: 17 September 2026; doi:10.1038/s41467-026-77080-4\nModeling complex heterogeneous catalytic networks with DFT alone is too expensive. Combining DFT with machine learning and elementary reaction enumeration, the proposed framework enables kinetic modeling of thousands of elementary reactions for CO2 reduction on copper, successfully validating experimentally observed trends.",
+    "url": "https://www.nature.com/articles/s41467-026-77080-4",
+    "pdf_url": null,
+    "source": "Nature Communications",
+    "categories": [],
+    "published": "2026-09-17",
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Combines DFT energies for elementary reactions on Cu with machine learning and microkinetic enumeration of CO2 hydrogenation, an explicit-atom DFT application satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "5c26e21e5fd1",
+    "title": "Effect of matrix constraint and boundary conditions on the buckling behavior of carbon nanotubes in polyethylene",
+    "authors": [],
+    "abstract": "Publication date: 25 October 2026\nSource: Computational Materials Science, Volume 275\nAuthor(s): Masaomi Nishimura",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626005999?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Buckling of carbon nanotubes embedded in polyethylene is studied via classical molecular mechanics/MD with an explicit atomistic CNT-polymer model, satisfying (a) explicit atoms, (b) MD/force-field simulation, and (c) mechanical property application.",
+    "key_authors": []
+  },
+  {
+    "id": "3442497255ec",
+    "title": "Machine learning kinetics from molecular dynamics data",
+    "authors": [
+      "Jonathan Weare",
+      "Aaron R. Dinner"
+    ],
+    "abstract": "arXiv:2609.17736v1 Announce Type: cross \nAbstract: Most molecular transitions occur on timescales far beyond direct molecular dynamics simulations. The committor, the probability that a configuration reaches a product state before a reactant state, is a central kinetic statistic, providing a mechanism-independent reaction coordinate and a foundation for transition path theory and the calculation of rates. This review surveys modern approaches for estimating the committor and related kinetic statistics from molecular simulations, with an emphasis on self-supervised methods that learn solutions of their defining dynamical equations rather than relying on labeled shooting data. We develop a common operator viewpoint connecting generator-based partial differential equations, variational principles, Markov state models, dynamical Galerkin approximation, and neural networks. Empirical and theoretical evidence points to the efficiency of these methods. We provide theoretical and practical guidance for realizing their full potential in applications, including strategies for treating non-Markovian effects and for sampling. We conclude by identifying opportunities for further research, including connections to reinforcement learning and generative modeling.",
+    "url": "https://arxiv.org/abs/2609.17736",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.stat-mech",
+      "cs.LG",
+      "physics.chem-ph",
+      "physics.data-an"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Review of machine-learned committor/kinetics estimators (Markov state models, dynamical Galerkin approximation, neural networks) from molecular dynamics data: (a) satisfied for the underlying atomistic trajectories, (b) satisfied via MD-derived free-energy/kinetics and enhanced-sampling methodology, (c) satisfied by surveying and guiding methods for extracting kinetics from simulations.",
+    "key_authors": []
+  },
+  {
+    "id": "341ef67f45fd",
+    "title": "Nonempirical Time-Dependent Density Functional Theory Framework for Nonlocal Exchange--Correlation Potentials",
+    "authors": [
+      "Zhandos A. Moldabekov",
+      "Michele Pavanello",
+      "Thomas D. Gawne",
+      "Jan Vorberger",
+      "Tobias Dornheim"
+    ],
+    "abstract": "arXiv:2609.18584v1 Announce Type: cross \nAbstract: Advanced, orbital-dependent exchange--correlation (XC) functionals can significantly improve the description of electronic structural properties, but they substantially worsen spectral properties that are computed within standard linear-response time-dependent density functional theory frameworks. This is not a failure of the underlying Kohn-Sham states, but due to a formal inconsistency in the treatment of the dynamic density response when the non-locality of the XC potential is not taken into account consistently on the level of the full off-diagonal density matrix. To avoid these complexities, we present a non-empirical additive correction $\\Delta f_\\textnormal{xc}(\\mathbf{q},\\omega)$ to the dynamic XC kernel that re-enforces the exact f-sum rule of the non-local KS Hamiltonian within TDDFT. Comparing our new results against a representative set of accurate experimental measurements (ambient aluminum, silicon and carbon, as well as heated and compressed aluminum) reveals a dramatic improvement in all cases without any additional computational cost. The corresponding extension to the open-source GPAW code is made freely available online. We further investigate the implications of non-local pseudopotentials and show that the non-locality has an important, physically motivated effect that is indispensable to capture the correct plasmon dispersion in lieu of full all-electron simulations. In addition to being important for the estimation of a plethora of dynamic and spectral properties, our work constitutes an important step towards a universal XC functional that can be used to estimate all kinds of observables with high accuracy. Finally, we outline the potential utility of our framework for the development of advanced non-local XC functionals, and suggest a new way to rigorously verify non-local pseudopotentials against experimental measurements of collective excitations.",
+    "url": "https://arxiv.org/abs/2609.18584",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "DFT method development (non-empirical dynamic XC kernel correction for TDDFT in solids like Al, Si, C), satisfying (b) DFT development and (c) method advance, with explicit periodic atomic systems (a).",
+    "key_authors": []
+  },
+  {
+    "id": "2e5e0e13b14b",
+    "title": "Direct observation of phonon mode with an antisymmetric Raman tensor",
+    "authors": [
+      "Shangfei Wu",
+      "Shang Ren",
+      "Kai Du",
+      "Xianghan Xu",
+      "Sang-Wook Cheong",
+      "David Vanderbilt",
+      "Girsh Blumberg"
+    ],
+    "abstract": "arXiv:2609.18332v1 Announce Type: new \nAbstract: Phonon angular momentum, characterized by circular or elliptical motion of atoms, plays a decisive role in diverse phenomena, ranging from the phonon Hall effect, phonon magnetic moment, Einstein-de Haas effect, Weyl phonons, and driven chiral phonons. The phonon modes with an antisymmetric Raman tensor, which carry an intrinsic phonon angular momentum in a pseudovector symmetry channel, have been overlooked in the past in the chiral phonon community. Here, we report the detection of this type of phonon mode using polarization-resolved Raman spectroscopy. We observe a phonon at 266cm$^{-1}$ in the antiferromagnetic chiral phase of Cr$_2$O$_3$ in the $A_2$-pseudovector symmetry channel. This $A_2$ mode's frequency and the elliptical motion are captured by first-principles phonon calculations, which treat both lattice and spins on an equal footing as 'slow' degrees of freedom. This mode gets Raman activity due to the presence of Cr vacancies in Cr$_2$O$_3$ that locally break the twofold rotational symmetry perpendicular to the threefold axis. Our results provide a new way to detect the novel symmetry-forbidden $A_2$ phonon modes with an antisymmetric Raman tensor in a pseudovector symmetry channel.",
+    "url": "https://arxiv.org/abs/2609.18332",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Uses first-principles phonon calculations on explicit Cr2O3 atomic structures treating lattice and spins to analyze an A2 phonon mode, satisfying (a) explicit atoms, (b) DFT/phonon calculations, and (c) application to understand phonon angular momentum.",
+    "key_authors": []
+  },
+  {
+    "id": "a60b7395d51b",
+    "title": "An Atlas and Design Rules for Single- and Dual-Atom Alloys",
+    "authors": [
+      "Fabian Berger",
+      "Yicheng Wang",
+      "E. Charles H. Sykes",
+      "Angelos Michaelides"
+    ],
+    "abstract": "arXiv:2609.19087v1 Announce Type: new \nAbstract: A long-standing goal across heterogeneous catalysis, materials science, and condensed matter physics is to design alloys with prescribed local atomic arrangements. Recent experiments show that dilute trimetallic alloys unlock chemistries inaccessible to bimetallics, but realizing this potential requires knowing which dopant structures form across an enormous compositional space. Using density functional theory screening, we construct an atlas spanning transition metal single- and dual-atom alloys in Cu and Ag surfaces, which we validate by scanning tunneling microscopy. The stability follows an electron count: dopants pair most strongly when their combined d-electron count approaches ten. Host metal and surface facet can be used to tune the resulting active site motifs, while size mismatch and spin explain variations around this trend. We further introduce a reactor-anchor concept, in which one dopant anchors a second, otherwise bulk-segregating dopant at the surface. Together, these results establish design principles for engineering alloys with targeted active site structures.",
+    "url": "https://arxiv.org/abs/2609.19087",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Uses density functional theory screening on explicit surface atomic structures (a,b) to map single- and dual-atom alloy stability and derive design rules validated by STM (c), qualifying as DFT-driven atomistic materials discovery.",
+    "key_authors": []
+  },
+  {
+    "id": "fb4dfcd6f435",
+    "title": "Load balancing for adaptive-precision interatomic potentials in materials science",
+    "authors": [
+      "David Immel",
+      "Godehard Sutmann"
+    ],
+    "abstract": "arXiv:2609.18604v1 Announce Type: new \nAbstract: For atomistic molecular dynamics simulations, we consider a recently developed hybrid coupling between the highly accurate machine learning (ML)-based atomic cluster expansion (ACE) interaction model and a less precise (but about 1-2 orders faster) EAM potential, in order to leverage the performance bottleneck of pure ML potentials in a parallel computing environment. This spatial-temporal adaptivity has the potential for a speedup of more than an order of magnitude, that would be lost without a dynamic load-balancing strategy that becomes critical due to fluctuating potential contributions. We compare the load-balancing strategies of LAMMPS with load-balancing methods provided by the library ALL in adaptive-precision EAM-ACE simulations of a copper nanoindentation. For a regular-grid domain decomposition, the modified tensor method of the ALL library, which conserves the simplicity and transferability of the tensor method, significantly reduces the imbalance factor of the force calculation from 3.0 to 1.7 compared to the native load-balancing method of LAMMPS. A nearly perfectly balanced system with an imbalance factor close to 1.0 can be reached by load balancing an irregular grid of domains with the recursive bisectioning method of LAMMPS and with ALL's histogram method for a staggered grid of domains. Load balancing a staggered grid with ALL is found to be significantly faster than load balancing an irregular grid with the bisectioning method of LAMMPS, but the communication costs during a regular timestep are lower for the irregular grid of domains, as a lower surface-by-volume ratio of the domains is reached. Furthermore, we suggest a strategy to find the ideal load-balancing frequency for adaptive-precision simulations.",
+    "url": "https://arxiv.org/abs/2609.18604",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 17 Sep 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-09-17",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Develops load-balancing strategies for adaptive-precision EAM-ACE interatomic-potential MD simulations in LAMMPS (copper nanoindentation); (a) explicit atoms, (b) MLIP/classical force-field MD, (c) advances simulation methodology (parallel efficiency of MD).",
+    "key_authors": []
+  }
+]
