@@ -1,0 +1,65 @@
+[
+  {
+    "id": "b9506bb4f73f",
+    "title": "Complete Neural Electronic Initialization Accelerates Materials DFT",
+    "authors": [
+      "Felix {\\AE}rtebjerg",
+      "Jonas Elsborg",
+      "Arghya Bhowmik"
+    ],
+    "abstract": "arXiv:2609.21759v2 Announce Type: replace-cross \nAbstract: We present the first complete machine learning method for accelerating plane-wave density functional theory (DFT) in materials under the projector augmented wave (PAW) formalism. We formalize seven criteria that a Complete Neural Electronic Initializer must satisfy for practical end-to-end PAW DFT acceleration. Applying these to prior work reveals two structure-dependent components, augmentation occupancies and spin initialization, whose absence prevents existing acceleration methods from providing complete reference-free initialization. We show that omitting these components can eliminate or reverse the acceleration obtained via models that only predict the smooth valence density. We satisfy the missing requirements by introducing AugNet, a general equivariant model for PAW augmentation occupancies, and the first general spin density model for materials, which predicts the smooth spin-difference density and spin-difference PAW augmentation occupancies using predicted magnetic moments to constrain the global magnetic state. Combined with existing valence density models, our full method satisfies all seven criteria and forms a fully reference-free electronic initializer for materials DFT, requiring no electronic quantities from a converged target calculation. We show that perfect initialization could cut PAW DFT wall time by 40-52%, and our method recovers up to 62% of this saving, reducing end-to-end DFT wall time by up to ~25% on unseen structures while preserving converged energies.",
+    "url": "https://arxiv.org/abs/2609.21759",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "published": "Sat, 26 Sep 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-09-26",
+    "category": "Electronic Structure",
+    "relevance_score": 0.88,
+    "relevance_reason": "Equivariant ML models (AugNet) predicting PAW augmentation occupancies and spin density to initialize plane-wave DFT: explicit atoms (a), DFT methodology (b), and direct acceleration of DFT atomistic simulation (c) all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "7640baa99262",
+    "title": "Chemical-scale force responses across G-quadruplex topologies via machine learning",
+    "authors": [],
+    "abstract": "G-quadruplexes (GQs) are four-stranded DNA structures formed by guanine-rich sequences and can act as regulatory impediments in gene expression. The core of GQ consists of stacked layers of Hoogsteen-paired guanine bases (G-tetrads), which can arise from various topologies adopted by the backbone strands of guanine tracts (G-tracts). The polymorphic nature of GQs presents significant challenges for therapeutic targeting. An as-yet-addressed question is how, if at all, chemical moieties of different G-tetrads and G-tracts mediate distinct mechanical strengths such that the strands and layers display nonuniform mechanical resistance. As a first attempt toward a quantitative understanding of this fundamental problem, we generalize the recently developed structure-mechanics statistical learning framework. The method transforms an all-atom molecular dynamics trajectory into Hookean spring coefficients between base, ribose, backbone, and metal-ion moieties, which allows a chemical-scale comparison of mechanical heterogeneity across GQ topologies. A recurring theme that emerges from this analysis is the cross-influence among chemical moieties. Contacts with loops may cooperatively strengthen base stacking in one strand while leading to compensatory weakening in another. Importantly, end-capping of intra-molecular GQs with small-molecule stabilizers is shown to induce system-wide and topology-specific variations in chemical-scale mechanical properties. Strong stabilizer–GQ interactions may compete with base–metal ion coordination or base stacking and reduce their strengths. However, a weakly bound stabilizer can trigger loop reorganization, which in turn leads to new interactions that enhance structural stability. Our analysis of chemical-scale mechanical heterogeneity thus provides a generalizable framework that could be applicable to understanding more complicated inter-molecular GQs and their responses to small-molecule modulations.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/12/125103/3405272/Chemical-scale-force-responses-across-G-quadruplex",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Fri, 25 Sep 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-09-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "All-atom molecular dynamics trajectories of G-quadruplexes are analyzed into Hookean spring coefficients, using explicit atomic systems and MD methodology applied to a real biomolecular problem; satisfies (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "11b674b312c6",
+    "title": "Topological states, Fermi-surface nesting, and possible charge-density-wave tendencies in MoNiP and WNiP",
+    "authors": [
+      "Nishi P. Hazarika",
+      "Sonali S. Pradhan",
+      "V. Kanchana"
+    ],
+    "abstract": "Author(s): Nishi P. Hazarika, Sonali S. Pradhan, and V. Kanchana\nIn the rapidly evolving field of quantum materials, compounds hosting exotic electronic and topological states have attracted considerable attention owing to their potential applications in spintronics and quantum technologies. Using comprehensive first-principles calculations, we investigate the su…\n[Phys. Rev. Materials 10, 094203] Published Wed Sep 23, 2026",
+    "url": "http://link.aps.org/doi/10.1103/89mt-hgxw",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-09-23T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-09-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Comprehensive first-principles DFT calculations on real MoNiP and WNiP crystals; satisfies (a)-(c) as a materials-specific atomistic simulation study.",
+    "key_authors": []
+  }
+]
