@@ -1,0 +1,430 @@
+[
+  {
+    "id": "a6b582d94d52",
+    "title": "From Plato to Aristotle: Toward a General Theory of Representation Hypotheses",
+    "authors": [
+      "Dai Shi",
+      "Andi Han",
+      "Xiaoyu Li",
+      "Luke Thompson",
+      "Jos\\'e Miguel Hern\\'andez-Lobato"
+    ],
+    "abstract": "arXiv:2610.20286v1 Announce Type: new \nAbstract: The Platonic Representation Hypothesis (PRH) holds that increasingly capable models converge toward a common representation. However, recent studies have shown different views on aligning representations via their neighborhoods, spanning trees, and distances. We show that these views can differ because the alignment criteria behind them sit at different points of one lattice, and we formalize this explanation as the Lattice Representation Hypothesis (LRH). Under the LRH, the convergence claimed by the PRH is agreement at the top of the lattice, whereas its evidence comes from neighbor overlap, a criterion near the bottom. The Aristotelian Representation Hypothesis (ARH) restricts convergence to local neighborhoods because calibration keeps the growth of neighbor overlap with model size but largely removes that of centered kernel alignment. We show that this removal can come from calibrating a maximum over layers, so global convergence remains open. Back into Plato's Cave (BPC) infers coarse shared structure from the collapse of neighbor overlap on larger evaluation sets, whereas we trace it at least partly to a fixed number of neighbors covering shorter distances. We show that the spanning-tree overlap used by Structure over Geometry (SOG) mostly repeats one-nearest-neighbor overlap. The LRH also extends to independently trained models, whose training procedure and objective decide the criteria met reliably across runs. We prove this claim for the training procedure in a linear autoencoder and for the objective in a finite contrastive Gibbs model. Experiments on dozens of pretrained vision and language models and thousands of runs of both theoretical models support these conclusions. We hope this work paves the way toward a general theory of representation hypotheses, with a framework to analyze them and compare their evidence. Project page: https://eethanshi.github.io/LRH",
+    "url": "https://arxiv.org/abs/2610.20286",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Jos\\'e Miguel Hern\\'andez-Lobato",
+    "key_authors": [
+      "Jos\\'e Miguel Hern\\'andez-Lobato"
+    ]
+  },
+  {
+    "id": "ae572f121885",
+    "title": "Risk-Controlled DFT Selection for Machine-Learned Interatomic Potentials",
+    "authors": [
+      "Kun Ryu",
+      "Yeo Jin Jung",
+      "Shyue Ping Ong",
+      "Claire Donnat",
+      "Ying Shirley Meng"
+    ],
+    "abstract": "arXiv:2610.19630v1 Announce Type: cross \nAbstract: Automated materials discovery requires evaluating large pools of candidate configurations, with density functional theory (DFT) as a major throughput bottleneck. Pretrained machine-learned interatomic potentials (MLIPs) approximate DFT cheaply, but their errors vary by orders of magnitude across configurations, making it difficult to decide when to trust the MLIP predictions and when to fall back to DFT. We frame this decision as a risk-controlled selection problem and solve it within a conformal risk control (CRC) framework. Each configuration is mapped from atomic numbers and Cartesian coordinates to a fixed geometric descriptor, which a lightweight predictor uses to estimate an MLIP-DFT disagreement score in energy, average force, and maximum force. CRC then calibrates this score into a selection threshold for DFT labeling such that the MLIP error on the unselected configurations, which keep their MLIP labels, stays below a user-chosen fraction $\\alpha$ of the expected error. Under an identical guarantee across eight dataset-MLIP pairs, our predictor routes 7% and 14% fewer configurations to DFT at $\\alpha=0.3$ than committee baselines. Because committee disagreement overlooks errors the MLIPs share, our gains are largest when the DFT labels and MLIP training data differ in DFT functional and basis set, and narrow when the two agree. Without model access, the structure-only predictor also ranks errors as well as the target MLIP's latent representation and outperforms widely used descriptors such as Smooth Overlap of Atomic Positions (SOAP) and Atom-Centered Symmetry Functions (ACSF).",
+    "url": "https://arxiv.org/abs/2610.19630",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Shyue Ping Ong",
+    "key_authors": [
+      "Shyue Ping Ong"
+    ]
+  },
+  {
+    "id": "0058ece9dba1",
+    "title": "Fluctuation-driven multi-step charge density wave melting in monolayer TiSe$_2$",
+    "authors": [
+      "Luka Beni\\'c",
+      "Dino Novko",
+      "Ivor Lon\\v{c}ari\\'c"
+    ],
+    "abstract": "arXiv:2604.20355v2 Announce Type: replace \nAbstract: The exact microscopic origin, symmetry, and thermal melting mechanism of the charge density wave (CDW) phase in TiSe$_2$ remain intensely debated, particularly regarding chiral structural order and multi-step phase transitions. Using large-scale molecular dynamics driven by an accurate machine-learning interatomic potential, we resolve the finite-temperature structural dynamics of the monolayer TiSe$_2$. We demonstrate that CDW melting deviates from conventional mean-field second-order behavior, undergoing a two-step process characterized by an extended fluctuation region ($200-250$ K) with proliferating domain walls, phase decoherence, component-selective melting, and an overdamped soft optical phonon. Furthermore, anisotropic long-wavelength thermal fluctuations spontaneously stabilize an asymmetric $3Q$ CDW order with $P1$ symmetry. These findings provide a unified microscopic framework for fluctuation-driven transitions in 2D quantum materials, demonstrating that the complex CDW physics of TiSe$_2$ is captured entirely via non-perturbative electron-phonon and phonon-phonon interactions.",
+    "url": "https://arxiv.org/abs/2604.20355",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Large-scale molecular dynamics driven by a machine-learned interatomic potential to resolve CDW melting in monolayer TiSe2, squarely satisfying (a)-(c) as MLIP-driven simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "6cf4b23e7ac3",
+    "title": "LAO+: Focused, Multi-Replica Accelerated Orthogonal Sampling for Robust Binding Free Energy Predictions",
+    "authors": [
+      "Narjes Ansari",
+      "Florent H\\'edin",
+      "J\\'er\\^ome H\\'enin",
+      "Jean-Philip Piquemal",
+      "Louis Lagard\\`ere"
+    ],
+    "abstract": "arXiv:2610.20436v1 Announce Type: new \nAbstract: We introduce Lambda-ABF-OPES+ ($\\text{LAO+}$), a multi-replica framework for absolute binding free energy (ABFE) calculations that accelerates both the alchemical transformation and the slow ``orthogonal'' motions coupled to it. At the core of $\\text{LAO+}$ is a partitioned $\\lambda$-dynamics scheme that concentrates sampling on the abrupt rehydration of the binding pocket, the main bottleneck of ligand decoupling, while Hamiltonian replica exchange relays configurations along the entire alchemical path. This drives a fourfold gain in convergence speed for the rate-limiting leg over our previous $\\text{LAO}$ method, which was itself up to ninefold faster than Lambda-ABF, an overall gain of up to $\\sim$36-fold. Applied to 28 protein--ligand complexes across five targets, $\\text{LAO+}$ achieves a root-mean-square error of 0.83~kcal~mol$^{-1}$ and a correlation of 0.87 with experiment from only 63~ns of sampling per ligand. Moreover, dedicated reservoir replicas accelerate any slow degree of freedom that can be described by a collective variable. We demonstrate this by recovering hidden protein and ligand conformational states, for example in T4 lysozyme, BRD4 and JNK1. Together, these advances make accurate ABFE calculations practical for drug discovery.",
+    "url": "https://arxiv.org/abs/2610.20436",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "LAO+ is a multi-replica alchemical free-energy method (lambda-dynamics, ABF/OPES, Hamiltonian replica exchange) for absolute binding free energies in protein-ligand systems: (a) yes, (b) yes (MD/free-energy sampling), (c) yes (advances an enhanced-sampling method and applies it), a core free-energy methodology paper.",
+    "key_authors": []
+  },
+  {
+    "id": "2b5c8748011b",
+    "title": "Benchmarking of fast and interpretable UF machine learning potentials",
+    "authors": [],
+    "abstract": "Publication date: January 2027\nSource: Computational Materials Science, Volume 276\nAuthor(s): Pawan Prakash, Sam Dong, Richard Hennig",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626006312?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Benchmarking fast interpretable machine-learned interatomic potentials directly satisfies (a)-(c) by developing and validating MLIP methodology for atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "2ac52d87a26e",
+    "title": "Off-the-Shelf ReaxFF Parameter Sets Underestimate O–O Bond Strengths in Organic Peroxides: A Static and Kinetic Benchmark for Thermal-Hazard Assessment",
+    "authors": [
+      "Seihwan Kim"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15010540/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-15",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Static and kinetic benchmarking of ReaxFF parameter sets for O-O bond strengths in organic peroxides is classical reactive force-field validation on explicit atomic systems, directly satisfying (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "f72c2c9cde89",
+    "title": "High-Harmonic Generation Probes Quantum Nuclear Fluctuations in Liquid Water",
+    "authors": [
+      "George Trenins",
+      "Nicolas Tancogne-Dejean",
+      "Angana Mondal",
+      "Angel Rubio",
+      "Hans Jakob W\\\"orner",
+      "Aaron Kelly",
+      "Ofer Neufeld",
+      "Mariana Rossi"
+    ],
+    "abstract": "arXiv:2610.19967v1 Announce Type: new \nAbstract: Nuclear quantum effects are essential for an accurate description of the hydrogen-bonded structure of liquid water, yet their spectroscopic signatures can be subtle and difficult to measure. Moreover, probing these effects in solution on femtosecond timescales (or below) is an open challenge that is pivotal for optical control of hydrogen bonds and ultrafast spectroscopy of proton transfer. Here, we combine path-integral molecular dynamics with real-time time-dependent density-functional theory to explore high-harmonic generation (HHG) in liquid water from first principles, rigorously accounting for quantum nuclear delocalisation. Relative to classical-nuclei simulations, quantum sampling suppresses the harmonic yield around certain harmonics by up to an order of magnitude, inducing local structural minima. By analysing the ab initio simulations and reproducing the key effects with a simplified model Hamiltonian, we trace the physical origins of the interference minima to the broadening of valence-band states induced by hydrogen-bond fluctuations, a mechanism expected to generalise to other hydrogen-bonded structures. Our work shows that nuclear quantum effects are indispensable for capturing ultrafast electronic dynamics in liquids, and demonstrates the power of liquid HHG spectroscopy for attosecond probing of nuclear fluctuations.",
+    "url": "https://arxiv.org/abs/2610.19967",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Path-integral molecular dynamics combined with real-time TDDFT for liquid water satisfies (a) explicit atoms, (b) PIMD/ab initio MD methodology, and (c) applies it to understand nuclear quantum effects in hydrogen bonding.",
+    "key_authors": []
+  },
+  {
+    "id": "15aa9e859c67",
+    "title": "Memory-resolved prediction of ligand residence times on the minutes timescale",
+    "authors": [
+      "Hossein Batebi",
+      "Lucas Tepper",
+      "Roland R. Netz"
+    ],
+    "abstract": "arXiv:2610.20271v1 Announce Type: cross \nAbstract: AI-enabled computational drug discovery is advancing rapidly in predicting molecular structures, binding poses and affinities, but ligand dissociation kinetics remain harder to access. Bound-state residence time, important for biological response and kinetic selectivity, is not fixed by equilibrium affinity but depends on the dissociation free-energy landscape and dissipative friction effects. Here, we show that restrained umbrella-sampling trajectories can be used to calculate residence times on the minutes timescale. Time-resolved coordinate fluctuations yield friction profiles that incorporate non-Markovian effects on dissociation kinetics. Combining them with the free-energy profile, we predict a residence time of $\\tau_{\\rm res}$ = 275 s for the adenosine A$_{2A}$ receptor with ZM241385 (comparable to the experimental value of 125 s) and reproduce the experimental ranking of wild type and two receptor mutants. For HSP90 with compound 18 and RNase S with the S15 peptide, we predict $\\tau_{\\rm res}$ = 2,169 s and 2,259 s (experimental values are 833 s and 2,439 s). Neglecting memory effects on residence kinetics overestimates $\\tau_{\\rm res}$ by factors of 2.6 to 29.",
+    "url": "https://arxiv.org/abs/2610.20271",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.bio-ph",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Uses restrained umbrella-sampling MD trajectories with explicit-atom ligand-receptor systems to compute dissociation free-energy landscapes and memory-resolved friction, satisfying (a) explicit atoms, (b) free-energy/enhanced-sampling MD methods, and (c) application to binding kinetics.",
+    "key_authors": []
+  },
+  {
+    "id": "fb66fb72078a",
+    "title": "KRAS recognition by Src: Mechanistic insights from Molecular Dynamics Simulations",
+    "authors": [
+      "Lu, H.",
+      "Xu, H.",
+      "Marti, J.",
+      "Ma, B.",
+      "FARAUDO, J."
+    ],
+    "abstract": "c-Src, the first identified oncogene, and Ras, one of the most frequently mutated proteins in human cancers, can activate each other to promote tumorigenesis. Recent experimental work has found that c-Src can recognize and phosphorylate both GTP-bound and GDP-bound forms of KRas, as well as GTP-bound NRas and GDP-bound HRas. The molecular mechanisms underlying this specific recognition remain unknown. We leverage molecular simulation tools (eg. Molecular dynamics and Markov State Models analysis) to model a Src-KRas interaction in solution to identify the mechanisms underlying the c-Src recognition of the G12D mutant of KRas4B-G12D, the most prevalent in humans. We found that the most populated states of nucleotide-bound KRas maintain more open and dynamic switch regions, facilitating easier access of c-Src to the phosphorylation sites of KRas (Tyr32 for GTP-bound KRas and Tyr64 for GDP-bound KRas). We further identify two c-Src specific regions (residues 340-359 and 453-473), along with putative recognition hotspots at Leu347, Asp348, Lys351, Gly459, Arg460, and Val461, that may contribute to the stabilization of phosphorylation-competent KRas conformations. c-Src selectively recognizes and engages specific macrostates of KRas, which may constitute privileged targets for the rational design of peptide-based inhibitors.",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.17.712316v3",
+    "pdf_url": null,
+    "source": "bioRxiv",
+    "categories": [
+      "biophysics"
+    ],
+    "published": "2026-10-14",
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Explicit-atom molecular dynamics plus Markov State Model analysis of KRas/Src recognition satisfies (a) atomic representation, (b) MD methodology, and (c) mechanistic application.",
+    "key_authors": []
+  },
+  {
+    "id": "fcb3dd8a28bc",
+    "title": "Chemical partitioning of electronic transport and four-phonon limited heat conduction in $\\mathrm{Mg}{A}_{2}{Z}_{4}$ monolayers",
+    "authors": [
+      "Qiong Meng",
+      "Chuan-Lu Yang",
+      "Xiaohu Li",
+      "Yuliang Liu",
+      "Wenkai Zhao",
+      "Feng Gao"
+    ],
+    "abstract": "Author(s): Qiong Meng, Chuan-Lu Yang, Xiaohu Li, Yuliang Liu, Wenkai Zhao, and Feng Gao\nIdentifying high-performance thermoelectrics in chemically related two-dimensional materials requires understanding how different sublattices separately regulate electronic transport, phonon softening, and anharmonic heat conduction. Here, we use $\\mathrm{Mg}{A}_{2}{Z}_{4}$ monolayers as a model mat…\n[Phys. Rev. Materials 10, 105201] Published Tue Oct 13, 2026",
+    "url": "http://link.aps.org/doi/10.1103/tfck-9l46",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-10-13T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "First-principles DFT calculations of electronic transport and phonon-limited heat conduction in MgA2Z4 monolayers (a, b, c satisfied).",
+    "key_authors": []
+  },
+  {
+    "id": "6b2e094b158f",
+    "title": "A basis-set-free reference for the exact exchange-energy density and functional development",
+    "authors": [
+      "Alastair J. A. Price"
+    ],
+    "abstract": "arXiv:2610.19031v1 Announce Type: new \nAbstract: The exact local exchange-energy density, obtained from the Slater potential of the Hartree-Fock exchange hole, is a central ingredient of Becke's B05 and B13 functionals and of many other local hybrids. It is usually evaluated in a Gaussian basis, so the local quantity retains a pointwise basis-set incompleteness error. We describe here a basis-set-free numerical code that solves the Kohn-Sham problem on real-space grids for atoms, diatomics, and polyatomics, and returns the exact local exchange-energy density together with the density, its derivatives, the kinetic-energy density, and the reverse Becke-Roussel hole quantities. Reconstructed from the published record of Becke's non-public NUMOL code, AXEL reproduces numerical atomic references through krypton, scalar-relativistic uranium orbital energies, and Becke's diatomic spectroscopic constants. We then extend the original local-density numerical framework to generalized-gradient and hybrid functionals. Comparisons with the independent adaptive-multiwavelet code MRChem give sub-millihartree agreement for Hartree-Fock and PBE0. The same calculations agree with large Gaussian-basis references to a similar level of accuracy. Atom-centred eXact Electronic Limit (AXEL) is intended as both a basis-set-free numerical reference and a platform for exchange-hole-based density-functional development.",
+    "url": "https://arxiv.org/abs/2610.19031",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Basis-set-free real-space Kohn-Sham DFT code for exact exchange-energy density and functional development on atoms/diatomics/polyatomics satisfies (a) explicit atoms, (b) DFT method development, and (c) advances DFT functionals.",
+    "key_authors": []
+  },
+  {
+    "id": "90457d3926b3",
+    "title": "Symmetry-selected extreme shear compliance in a stable carbon monolayer",
+    "authors": [
+      "J. W. Gonz\\'alez",
+      "M. Pachecho",
+      "J. D. Correa"
+    ],
+    "abstract": "arXiv:2610.19168v1 Announce Type: new \nAbstract: Solids that are stiff to most loads and extremely compliant to one are normally built, not found. That internal atomic relaxation lowers elastic constants is textbook; what has remained untested is whether it can be driven far enough to separate the elastic scales of a crystal by an order of magnitude while leaving it mechanically stable. Density functional theory calculations of the complete in-plane elastic tensor of four non-hexagonal carbon monolayers sharing a square lattice metric show that it can: their longitudinal stiffnesses agree to within a factor of two while their shear constants span more than a factor of fifty. Twin T-graphene, previously reported as elastically isotropic from normal strains alone, is the extreme case, with $C_{66}=3.03$~N\\,m$^{-1}$, nearly fifty times below graphene, at an axial stiffness typical of semiconducting monolayers, and a soft Kelvin eigenvalue a factor of $29$ below the others while the Born criteria hold. Symmetry confines the strain-induced relaxation to the $B_{2g}$ sector, a counter-torsion of the carbon sublayers about the short mid-plane bonds that removes $96\\%$ of the clamped-ion shear stiffness with almost no bond stretching and leaves the semiconducting gap intact. Transverse acoustic phonons, finite-temperature dynamics, and large-deformation simulations show that the channel survives beyond the harmonic, zero-temperature limit. Because the selection rule is a point-group statement rather than a chemical one, it yields a screening criterion for other crystals and other strain components.",
+    "url": "https://arxiv.org/abs/2610.19168",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT calculations of the full elastic tensor of carbon monolayers plus finite-temperature molecular dynamics satisfies (a) explicit atoms, (b) DFT/MD methods, and (c) reveals symmetry-selected shear compliance.",
+    "key_authors": []
+  },
+  {
+    "id": "78f8a5d5c548",
+    "title": "Correlation-enhanced electron-phonon coupling in FeSe/${\\mathrm{SrTiO}}_{3}$ at a magic angle",
+    "authors": [
+      "Qiang Zou",
+      "Antik Sihi",
+      "Basu Dev Oli",
+      "Huimin Zhang",
+      "Mercè Roig",
+      "Daniel Agterberg",
+      "Michael Weinert",
+      "Lian Li",
+      "Subhasish Mandal"
+    ],
+    "abstract": "Author(s): Qiang Zou, Antik Sihi, Basu Dev Oli, Huimin Zhang, Mercè Roig, Daniel Agterberg, Michael Weinert, Lian Li, and Subhasish Mandal\nHere, the authors combine first-principles dynamical mean-field theory (DMFT), epitaxial materials design, angle-resolved photoemission spectroscopy, and scanning tunneling microscopy/spectroscopy to show that superconductivity in monolayer FeSe/SrTiO3 is maximized at a magic FeSe4 tetrahedral angle. They demonstrate that strong electronic correlations, captured by DMFT, substantially enhance electron-phonon coupling within the FeSe layer and produce a superconducting dome. These findings reveal the microscopic origin of enhanced superconductivity and suggest a route for engineering higher-temperature superconductors.\n[Phys. Rev. B 114, 225123] Published Wed Oct 14, 2026",
+    "url": "http://link.aps.org/doi/10.1103/whx6-mq31",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-10-14T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles DFT plus dynamical mean-field theory (an in-scope embedding/electronic-structure method) applied to explicit-atom FeSe/SrTiO3, satisfying (a) explicit atoms, (b) DFT/DMFT, and (c) material application, combined with ARPES/STM validation.",
+    "key_authors": []
+  },
+  {
+    "id": "754ad021394f",
+    "title": "Kinetic energy functional constructed from exact gradient expansion of second order in uniform gas limit",
+    "authors": [
+      "Abhishek Bhattacharjee",
+      "Hemanadhan Myneni",
+      "Manoj K. Harbola",
+      "Prasanjit Samal"
+    ],
+    "abstract": "Author(s): Abhishek Bhattacharjee, Hemanadhan Myneni, Manoj K. Harbola, and Prasanjit Samal\nOrbital-free density functional theory (OFDFT) has reemerged as a viable alternative to Kohn-Sham DFT, driven by recent advances in kinetic energy density functionals (KEDFs). Nonlocal KEDFs have significantly extended OFDFT's applicability, particularly for bulk solids, but their high computational…\n[Phys. Rev. B 114, 225201] Published Wed Oct 14, 2026",
+    "url": "http://link.aps.org/doi/10.1103/grbr-7gwt",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-10-14T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Development of a kinetic energy density functional for orbital-free DFT, a genuine DFT method-development contribution (b) addressing atomistic electronic-structure calculations (a), satisfying (c) by advancing the methodology.",
+    "key_authors": []
+  },
+  {
+    "id": "d0d0bdadb417",
+    "title": "High-throughput computational discovery of multi-component Ni-rich cathodes with suppressed lattice breathing and delayed H2–H3 transition",
+    "authors": [],
+    "abstract": "Publication date: January 2027\nSource: Computational Materials Science, Volume 276\nAuthor(s): Tien Quang Nguyen, Nobuyuki Zettsu, Michihisa Koyama",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626006798?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "High-throughput computational discovery of Ni-rich cathodes with lattice-breathing and H2-H3 transition control likely uses DFT/atomistic structure optimization or energetics, satisfying (a)-(c) as DFT-driven materials discovery.",
+    "key_authors": []
+  },
+  {
+    "id": "f4b9601666cf",
+    "title": "Rh<sup>3+</sup> stabilized in KRh@MFI catalyses regioselective hydroformylation",
+    "authors": [
+      "Minjie Zhao",
+      "Reisel Millán",
+      "Alina Skorynina",
+      "Laura Simonelli",
+      "Miguel Lopez Haro",
+      "José Juan Calvino",
+      "Patricia Concepción",
+      "Avelino Corma"
+    ],
+    "abstract": "Nature, Published online: 14 October 2026; doi:10.1038/s41586-026-11136-9\nDFT investigations combined with spectroscopic and catalytic studies of disrupted subnanometric Rh2O3 clusters show that Rh+ centres in a zeolite-based catalyst are blocked with N-containing molecules, whereas Rh3+ sites are stabilized, allowing hydroformylation reactions with enhanced regioselectivity and efficiency.",
+    "url": "https://www.nature.com/articles/s41586-026-11136-9",
+    "pdf_url": null,
+    "source": "Nature",
+    "categories": [],
+    "published": "2026-10-14",
+    "version": null,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "DFT investigations of Rh3+ centers in a zeolite catalyst compute energies for explicit atomic structures, satisfying (a), (b), and (c) as a DFT application to a catalytic material system.",
+    "key_authors": []
+  },
+  {
+    "id": "10a8dc45ad6d",
+    "title": "$GW$ reduced density matrix from iterated linearized Dyson equation",
+    "authors": [
+      "Fabien Bruneval",
+      "Erik Verzijl",
+      "Arno F\\\"orster",
+      "Mauricio Rodriguez-Mayorga"
+    ],
+    "abstract": "arXiv:2607.15695v2 Announce Type: replace \nAbstract: Iterating the Dyson equation with the static part of the self-energy leads to a concise and possibly improved expression of the one-body reduced density matrix from any self-energy approximation. Here we apply the procedure to Hedin's $GW$ approximation. The non-iterated $GW$ based density matrix was already known to yield accurate density matrices for molecular systems. We show that the Dyson-equation-based procedure is equivalent to the so-called variational Z-vector approach applied to the Random-Phase approximation energy functional, but only in the case of a Hartree-Fock mean-field starting point. When a generalized Kohn-Sham scheme is employed instead, the two approaches differ. By comparing the density matrix for a benchmark set of 34 small molecules to coupled-cluster reference values, we conclude that the iterated Dyson equation indeed produces improved density matrices for molecular systems. Interestingly, we observe that the excitation rank of the reference coupled-cluster matters much and that the inclusion of triple excitations (CCSDT) quantitatively changes the conclusions of the benchmark as compared to single and double excitations coupled-cluster (CCSD).",
+    "url": "https://arxiv.org/abs/2607.15695",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "GW density-matrix method development via iterated linearized Dyson equation benchmarked against CCSD/CCSDT for small molecules satisfies (a) atomistic electronic structure and (b)/(c) post-Hartree-Fock/GW method development.",
+    "key_authors": []
+  },
+  {
+    "id": "985545775afe",
+    "title": "Neural-Network Solutions to Real-Space Charge Density and Generalization",
+    "authors": [
+      "Yuxuan Zeng",
+      "Tong Xie",
+      "Taoyuze Lv",
+      "Zhicheng Zhong"
+    ],
+    "abstract": "arXiv:2609.14906v4 Announce Type: replace \nAbstract: The Hohenberg-Kohn theorem establishes that, in principle, the ground state (GS) charge density contains all GS information of a many-electron system, such that all GS observables can be expressed as functionals of the GS charge density. Conventional Kohn-Sham density functional theory requires iterative solution of the self-consistent-field equations at substantial computational cost, motivating the development of deep learning surrogates for electronic structure calculations and, in turn, accelerating computer-aided materials design. Here, we propose AIDEN, an Atomic-Interaction Density Equivariant Network for solving real-space charge density. AIDEN separates the element-dependent one-center density from environment-induced density redistribution and represents the latter through complementary atom- and edge-centered tensor correlations. A continuous low-rank Gaussian decoder then reconstructs the density at arbitrary spatial coordinates while reusing atomic encodings independently of the evaluation grid. AIDEN achieves state-of-the-art accuracy on periodic crystal benchmarks while remaining competitive for molecular systems, and further demonstrates zero-shot transferability across several structurally distinct out-of-distribution case studies. Furthermore, AIDEN provides substantially faster inference than both baseline models and full SCF calculations, enabling efficient charge density reconstruction for large-scale electronic structure calculations.",
+    "url": "https://arxiv.org/abs/2609.14906",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "published": "Thu, 15 Oct 2026 00:00:00 -0400",
+    "version": 4,
+    "added_date": "2026-10-15",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "AIDEN is an equivariant neural network that solves real-space charge density for periodic crystals and molecules, i.e. DFT/electronic-structure method development on explicit atomic structures: (a) yes (explicit atoms), (b) yes (DFT surrogate), (c) yes (advances a DFT-adjacent method), though it targets charge density reconstruction rather than dynamics.",
+    "key_authors": []
+  }
+]
