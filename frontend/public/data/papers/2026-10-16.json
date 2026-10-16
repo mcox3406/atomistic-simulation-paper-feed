@@ -1,0 +1,590 @@
+[
+  {
+    "id": "5ef00190cef5",
+    "title": "Data-Driven Optimization of Seminumerical Exchange for SIMD CPUs",
+    "authors": [
+      "Jesse DiCenso",
+      "Henryk Laqua",
+      "Martin Head-Gordon"
+    ],
+    "abstract": "arXiv:2610.21075v1 Announce Type: new \nAbstract: We present a seminumerical exchange algorithm (SNK) based on the sn-LinK method [Laqua et al., J. Chem. Theory Comput. 16, 1456 (2020)], optimized for modern multi-core central processing units with single instruction multiple data vector instructions and report its implementation into the Q-Chem quantum chemistry program. Vectorization and memory management strategies for the Boys function and 3-center-1-electron (3c1e) integral kernels are given. Several new considerations are made in the computation of the 3c1e integrals: the Head-Gordon Pople horizontal recurrence relations, same-center optimizations, and multishell optimizations, all implemented symbolically employing the SymPy symbolic algebra library and exported as optimized C++ code leveraging common-sub-expression elimination (CSE) optimization techniques. A general scheme for choosing optimal integral kernels is developed through rigorous timing benchmarks. The resulting implementation is tested against traditional 4c2e exchange for several systems and basis sets, showing 1-2 orders of magnitude speedups for systems of practically relevant sizes (100-500 atoms, 2000-10000 basis functions). For smaller molecules, comparisons are also made against the more efficient occ-RI-K method showing a break-even point around 50-100 atoms beyond which SNK dramatically outperforms due to its superior sub-quadratic (between linear and quadratic) time complexity as well as its effectively negligible memory demand.",
+    "url": "https://arxiv.org/abs/2610.21075",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "quant-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Martin Head-Gordon",
+    "key_authors": [
+      "Martin Head-Gordon"
+    ]
+  },
+  {
+    "id": "90c9c5a3b267",
+    "title": "Hierarchical universal open structure dataset for atomistic modeling",
+    "authors": [
+      "Sofiia Chorna",
+      "Cesare Malosso",
+      "Jonathan Schmidt",
+      "Michele Ceriotti"
+    ],
+    "abstract": "arXiv:2610.21771v1 Announce Type: new \nAbstract: Atomic-scale simulations have been transformed by machine-learning models that predict the properties of atomistic structures with the accuracy of quantum calculations, but at a small fraction of the cost. These models have increased dramatically in generality, thanks to the availability of synthetic datasets of ever-increasing size and scope. The proliferation of datasets, with properties often computed using different levels of electronic-structure approximation, is problematic, as there is often overlap between different datasets, and strong correlations between structures obtained with short molecular dynamics trajectories or geometry optimization. To address these problems, we introduce a protocol to stratify a dataset into a hierarchy of nested subsets, subsampling from the coarsest to the finest resolution based on an \"ecumetric\" built to reflect the latent space representation of several popular universal machine-learning interatomic potentials. We then use this approach to combine most of the open structural datasets currently available, consolidating them into MAD-COSMO, a well-organized collection of almost 1.7 billion structures, whose $2^{24}$ most diverse members form the MAD-CORE stratified coreset, which can be easily used for all sorts of tasks, from exploratory experiments to the training of foundation models at scale. We envision that this collection will guide and help coordinate future efforts, focusing them on the most relevant and/or undersampled regions of chemical and structural space, and that it will be further extended to incorporate the outcomes of the collective work of this community.",
+    "url": "https://arxiv.org/abs/2610.21771",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Michele Ceriotti",
+    "key_authors": [
+      "Michele Ceriotti"
+    ]
+  },
+  {
+    "id": "09629524183b",
+    "title": "Grain-Size Dependence of Thermal and Electrical Properties in (Cr,Mo,Ta,V,W)C1-{\\delta} High-Entropy Carbide Ceramics",
+    "authors": [
+      "Ali Sarikhani",
+      "Gregory E. Hilmas",
+      "David W. Lipke",
+      "Douglas E. Wolfe",
+      "Stefano Curtarolo",
+      "Shen J. Dillon",
+      "William G. Fahrenholtz"
+    ],
+    "abstract": "arXiv:2610.20864v1 Announce Type: new \nAbstract: Thermal and electrical transport in high-entropy carbides can be influenced by grain-boundary scattering, but the relevant microstructural regime remains uncertain. Here, near-fully dense $(Cr,Mo,Ta,V,W)C_{1-{\\delta}}$ ceramics were densified by spark plasma sintering at 1750-1950 {\\deg}C, producing average grain sizes from 9.3 $\\pm$ 4.9 to 28.8 $\\pm$ 15.3 $\\mu$m while retaining the rock-salt phase. Heat capacities were measured experimentally and estimated by the Neumann-Kopp law with the latter used to calculate thermal conductivity. Thermal conductivity values were in the range of 6.8-7.1 W $m^{-1}$ $K^{-1}$ at room temperature, but showed no systematic dependence on grain size within the investigated range. Room-temperature electrical resistivity values were in the range of 151.9 to 177.0 $\\mu{\\Omega}$ cm and likewise showed no grain-size dependence. The electron contribution to room-temperature thermal conductivity was estimated to be approximately 58-68% of total thermal conductivity as estimated using the Wiedemann-Franz law and the theoretical Lorenz number. The results indicated that processing-induced grain coarsening did not produce clearly resolvable transport-property changes under the conditions investigated leading to the conclusion that intrinsic disorder and defect chemistry may exert stronger influences on properties.",
+    "url": "https://arxiv.org/abs/2610.20864",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Stefano Curtarolo",
+    "key_authors": [
+      "Stefano Curtarolo"
+    ]
+  },
+  {
+    "id": "1a9423b8aa23",
+    "title": "Defining and Generating Compositional Structure",
+    "authors": [
+      "Eric Elmoznino",
+      "Tejas Kasetty",
+      "Blaise Ag\\\"uera y Arcas",
+      "Yoshua Bengio",
+      "Guillaume Lajoie"
+    ],
+    "abstract": "arXiv:2610.20922v1 Announce Type: cross \nAbstract: Compositional structure is pervasive in nature and across scales: atoms combine into molecules, molecules into cells, and cells into organisms, while further compositional hierarchies appear within each level. More broadly, compositionality, the reuse and recombination of parts into novel structures, is a fundamental source of interesting complexity in both natural and artificial systems. Yet despite its importance, and despite our apparent ease in recognizing it, mathematical accounts capturing what we intuitively mean by compositional structure remain limited. Here, we fill this gap by formalizing a simple idea: compositional structure emerges when parts, considered together, reveal shared structure that is not captured when those parts are modeled separately. We express this idea using algorithmic information theory, the mathematics of information and compression, which provides a natural way to identify structure in arbitrary data without specifying in advance what that structure must look like. Applied across scales, our definition informs where and how compositional structure emerges within an object. Using tractable approximations, we then invert the framework to generate compositional objects: we specify the desired form of their compositional structure without prescribing their particular content, and optimize directly over strings and images. The resulting objects exhibit readily recognizable hierarchical reuse and part-whole organization, suggesting that the definition captures compositional structure rather than merely complexity, regularity, or shared information. Finally, we discuss implications for machine learning, including a new perspective on depth in neural architectures and principles for constructing compositional data curricula capable of supporting open-ended learning.",
+    "url": "https://arxiv.org/abs/2610.20922",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.AI",
+      "cs.IT",
+      "cs.LG",
+      "math.IT"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Yoshua Bengio",
+    "key_authors": [
+      "Yoshua Bengio"
+    ]
+  },
+  {
+    "id": "25e2e3e539b8",
+    "title": "Whole-Enzyme Reactive Free-Energy Simulations with a Universal Machine Learning Interatomic Potential: Catalytic Mechanism and Mutational Effects of PETase",
+    "authors": [
+      "Masataka Yamauchi",
+      "Makoto Sato"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15004671/v2",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-15",
+    "version": 2,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.95,
+    "relevance_reason": "Reactive free-energy simulations of whole PETase enzyme using a universal machine-learned interatomic potential — satisfies (a) explicit atoms, (b) MLIP-based MD plus free-energy methods, and (c) mechanistic/mutational insight, squarely in the MLIP+enhanced-sampling core of the lab.",
+    "key_authors": []
+  },
+  {
+    "id": "463914517294",
+    "title": "Directed impulsive molecular dynamics reveal energy-routing pathways of bond cleavage in TATB",
+    "authors": [
+      "Guanchen Dong",
+      "Xiaona Huang",
+      "Yuxuan Chen",
+      "Linghua Tan",
+      "Guangcheng Yang",
+      "Rui Su",
+      "Lin Wang",
+      "Pengfei Guan"
+    ],
+    "abstract": "arXiv:2610.21637v1 Announce Type: new \nAbstract: Responses of energetic materials to external stimuli involve more than uniform thermalization. Understanding directional energy redistribution is essential for structural and ignition design. Here, we use TATB as an example to construct a vibrationally faithful machine-learning potential from only 4,630 configurations. To resolve the elusive nonequilibrium energy flow, we develop directed impulsive molecular dynamics, a statistically controlled protocol that repeatedly deposits equal kinetic energy along selected vibrational modes. By amplifying mode-specific responses while tracking the ensuing nonequilibrium evolution, this approach turns energy redistribution into a directly traceable routing process. We find that initial bond cleavage depends strongly on the initially excited mode, rather than being determined by bond-cleavage barriers alone. Specifically, modes that readily trigger reaction efficiently channel energy towards a bond cleavage coordinate, whereas modes that are less effective at inducing break divert energy into soft-like modes or trap it in modes from which energy flow is inefficient.",
+    "url": "https://arxiv.org/abs/2610.21637",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.92,
+    "relevance_reason": "Directed impulsive molecular dynamics on TATB using a vibrationally faithful machine-learned interatomic potential trained on 4,630 configurations, satisfying (a) explicit atoms, (b) MLIP development plus MD, and (c) an energetic/mechanistic application.",
+    "key_authors": []
+  },
+  {
+    "id": "ffca7bd574f6",
+    "title": "Energy Flow Shapes the Decomposition Dynamics of a Reactive Atmospheric Intermediate",
+    "authors": [
+      "Mitradip Das",
+      "Cangtao Yin",
+      "M. Meuwly"
+    ],
+    "abstract": "arXiv:2610.21259v1 Announce Type: new \nAbstract: The unimolecular dynamics of Criegee intermediates depend strongly on their internal energy, which can differ substantially between nascent atmospheric species and laboratory-prepared reactants. Here, the decomposition dynamics of {\\it anti-}CH$_3$CHOO are investigated using molecular dynamics simulations on a neural network-based potential energy surface under thermal and mode-selective vibrational excitation. Simulations were performed at internal energies representative of those released during ozonolysis (chemical/thermal preparation, TP) or following vibrational excitation (VibEx) along the CH-stretching mode with two or three quanta, as can be done in laboratory studies. These excitation conditions strongly affect reaction yields and kinetics, with VibEx promoting passage across the initial cyclization barrier. For TP, 35 kcal/mol of internal energy are required to form molecular products, whereas for VibEx, 27 kcal/mol are sufficient. Although TP and VibEx ensembles access largely the same fragmentation pathways with comparable relative yields, the absolute product yields, characteristic timescales, and kinetic behavior differ substantially. Methyldioxirane is found to be a kinetic trap along the pathway. The resulting molecular-level description of {\\it anti-}CH$_3$CHOO decomposition provides guidance for interpreting experiments and contributes to a broader understanding of energy-dependent Criegee-intermediate dynamics.",
+    "url": "https://arxiv.org/abs/2610.21259",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.ao-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Molecular dynamics simulations of anti-CH3CHOO decomposition on a neural-network potential energy surface; explicit atoms (a), MLIP-driven MD (b), and an application revealing energy-dependent kinetics (c) all hold.",
+    "key_authors": []
+  },
+  {
+    "id": "c8455c985082",
+    "title": "Partially reactive force field for the UiO-66 metal-organic framework",
+    "authors": [
+      "Akanksha Nawani (Sorbonne Universit\\'e",
+      "CNRS",
+      "Physicochimie des Electrolytes et Nanosyst\\`emes Interfaciaux",
+      "PHENIX",
+      "Paris",
+      "France)",
+      "Rocio Semino (Sorbonne Universit\\'e",
+      "CNRS",
+      "Physicochimie des Electrolytes et Nanosyst\\`emes Interfaciaux",
+      "PHENIX",
+      "Paris",
+      "France)"
+    ],
+    "abstract": "arXiv:2605.19808v2 Announce Type: replace-cross \nAbstract: UiO-66 is the most widely studied metal-organic framework, on account of its structural tunability given by its capacity of sustaining high amounts of point defects in its structure. Its synthesis mechanism is largely unknown, with only a few works mostly focused on the formation of the Zr-oxide cluster. In this work, a partially reactive force field to model UiO-66, nb-UiO-FF, is introduced. This force field incorporates node--ligand reactivity via a Morse potential and the introduction of dummy atoms to reproduce the anisotropic charge distribution of the Zr atoms in the node. nb-UiO-FF reproduces structural features of both UiO-66 and its isoreticular analog UiO-67 as well as framework stability with or without defects, activated or filled with N,N-dimethylformamide or ethanol. Defect generation and node--ligand binding energies are comparable with density functional theory values. The force field is further employed within a molecular dynamics scheme to study the early stages of solvothermal node--ligand binding. Species with structures corresponding to motifs present in UiO-66 are observed, along with other metastable species. This force field enables studying the self-assembly of UiO-66, as well as the formation of its point defects.",
+    "url": "https://arxiv.org/abs/2605.19808",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Introduces a partially reactive classical force field (nb-UiO-FF) with Morse node-ligand reactivity and dummy atoms, validated against DFT and used in MD to study UiO-66 self-assembly, satisfying (a) explicit atoms, (b) force-field development plus MD, and (c) method advance plus application.",
+    "key_authors": []
+  },
+  {
+    "id": "9f59d8bee7d3",
+    "title": "Grain Boundary Anisotropy and Its Influence on Helium Bubble Nucleation, Growth, and Decohesion in Polycrystalline Iron",
+    "authors": [
+      "Yang Zhang",
+      "Peter Hatton",
+      "Blas P. Uberuaga",
+      "Jason R. Trelewicz"
+    ],
+    "abstract": "arXiv:2509.07197v2 Announce Type: replace \nAbstract: The accumulation of helium bubbles at grain boundaries (GBs) critically degrades the mechanical integrity of structural materials in nuclear reactors. While GBs act as sinks for radiation-induced defects, their inherent structural anisotropy leads to complex helium bubble evolution behaviors that remain poorly understood. This work integrates accelerated molecular dynamics simulations and a novel atomic-scale metric, the flexibility volume (V_f), to establish the interplay between GB character, helium segregation, and bubble growth mechanisms in body-centered cubic iron. We demonstrate that V_f, which incorporates both local atomic volume and vibrational properties, qualitatively predicts deformation propensity. Our results reveal that the atomic-scale segregation energy landscape dictates initial helium clustering and subsequent bubble morphology, with low-energy channels in tilt {\\Sigma}5 boundary facilitating one-dimensional migration while isolated deep traps in twist {\\Sigma}13 boundary promote larger, rounder bubble morphology. Critically, besides gradual bubble growth via trap mutation mechanism, we identify two distinct stress-relief mechanisms: loop punching in anisotropic tilt {\\Sigma}5 boundary and interfacial decohesion in twist {\\Sigma}11 boundary, with the dominant pathway determined by the interplay between bubble morphology and local mechanical softness. This study establishes a fundamental connection between GB crystallographic and energetical anisotropy and helium bubble evolution, providing critical insights for designing radiation-tolerant microstructures.",
+    "url": "https://arxiv.org/abs/2509.07197",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Accelerated molecular dynamics simulations of helium bubbles at grain boundaries in bcc iron; satisfies (a) explicit atoms, (b) MD methodology, and (c) application to radiation damage mechanisms.",
+    "key_authors": []
+  },
+  {
+    "id": "c7601e3e84b6",
+    "title": "Development and applications of an extended modified embedded-atom method interatomic potential for binary Ni-V alloys",
+    "authors": [
+      "Mengwan Li",
+      "Tao Liu",
+      "Binglun Yin",
+      "Xiaoxiao Ma",
+      "Che Fan",
+      "Xun-Li Wang",
+      "Zhaoxuan Wu"
+    ],
+    "abstract": "Author(s): Mengwan Li, Tao Liu, Binglun Yin, Xiaoxiao Ma, Che Fan, Xun-Li Wang, and Zhaoxuan Wu\nRecent experiments show a binary Ni-V face-centered cubic (FCC) solid solution alloy possessing superior strength and work hardenability exceeding extant multiprincipal element alloys with an FCC solid solution structure. The outstanding mechanical properties can be attributed to V solid solution st…\n[Phys. Rev. Materials 10, 103606] Published Thu Oct 15, 2026",
+    "url": "http://link.aps.org/doi/10.1103/jljs-ldv5",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-10-15T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Development and application of an extended MEAM classical interatomic potential for binary Ni-V alloys, including force-field fitting and atomistic simulations; (a) explicit atoms, (b) classical force-field/MD methodology, and (c) force-field development are all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "11a68d4554b8",
+    "title": "Universal Dynamic Scaling for Sub-Yield Aging and Over-Yield Rejuvenation in A Cyclically Driven Metallic Glass",
+    "authors": [
+      "Nannan Ren",
+      "Hongfei Zhang",
+      "Rui Wan",
+      "Pengfei Guan",
+      "Limin Wang",
+      "Baoshuang Shang"
+    ],
+    "abstract": "arXiv:2610.21625v1 Announce Type: cross \nAbstract: Whether sub-yield aging and over-yield rejuvenation in cyclically deformed amorphous solids share a common physical origin or arise from distinct microscopic mechanisms remains a fundamental yet unresolved debate. Using molecular dynamics simulations of a metallic glass, we resolve this duality by uncovering a unified dynamic clock that dictates energy landscape navigation across both regimes. We show that the transition between regimes reflects a fundamental shift in energy injection pathways: (i) In the over-yield regime, rejuvenation is driven as a first-order response to macroscopic plastic shear work derived from Herschel-Bulkley non-linear rheological scaling. (ii) In contrast, this macroscopic work scaling fails in the sub-yield regime, where early-stage energy landscape elevation and subsequent cyclic aging are instead governed by second-order localized elastic stress fluctuations acting as a mechanical catalyst and noise source, respectively. Intense high-rate agitation increases the escape probability from deeper potential energy minima, thereby suppressing the retention efficiency of structural relaxation. By identifying these localized fluctuations as the primary origin of rate-attenuated sub-yield relaxation, we establish an exact scaling identity relating the relaxation attenuation exponent to the stress fluctuation exponent. This work directly bridges non-linear rheology with stress fluctuation dynamics, providing a unified framework to predict and manipulate structural evolution in amorphous solids.",
+    "url": "https://arxiv.org/abs/2610.21625",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Classical molecular dynamics on explicit atoms of a metallic glass under cyclic loading; satisfies (a) explicit atomic representation, (b) MD methodology, and (c) application to understand aging/rejuvenation.",
+    "key_authors": []
+  },
+  {
+    "id": "bcb3148ca128",
+    "title": "Transfer seeding reveals divergent activation ensembles across tyrosine kinases",
+    "authors": [
+      "Zhu, Y.",
+      "Degiacomi, M. T.",
+      "Mey, A. S. J. S.",
+      "Singh, S."
+    ],
+    "abstract": "Protein kinase activation involves coordinated rearrangements of conserved regulatory elements, including the Asp--Phe--Gly (DFG) motif and activation loop (A-loop), but whether tyrosine kinases follow a universal activation mechanism remains unclear. This motivates the need for a common protocol to generate comparable conformational ensembles despite uneven experimental structural coverage across kinases. Here we combine over 8.3 milliseconds of distributed unbiased molecular dynamics simulations with Markov state models (MSMs) to compare the conformational landscapes of the ABL, EGFR and MET kinase domains. To expand conformational coverage while retaining unbiased dynamics, we use a transfer seeding strategy that steers AlphaFold2 models derived from homologous templates to sample MET conformational states absent from available experimental databases. Our MSMs resolve metastable conformations not represented in the experimental structural set, including low-population DFG-inter intermediates along the MET activation pathway. We find that activation pathways are kinase-specific rather than universal. A-loop rearrangements contribute to the rate-limiting steps in ABL and MET, whereas EGFR is rate limited by a local rearrangement of the DFG motif. Building on established DFG geometry nomenclature, ensemble level characterization of the A-loop further distinguishes metastable conformations that share the same DFG geometry and reveal kinase-specific differences in phosphosite accessibility along their activation landscapes. Our results provide a systematic framework for comparative kinase ensemble characterization, integrating DFG geometry with A-loop and other regulatory elements to resolve kinase-specific states and the atomic-resolution structural rearrangements underlying their interconversion.",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.26.734786v2",
+    "pdf_url": null,
+    "source": "bioRxiv",
+    "categories": [
+      "biophysics"
+    ],
+    "published": "2026-10-15",
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Distributed unbiased molecular dynamics and Markov state models on explicit protein kinase atoms, applying MD to compare activation ensembles; satisfies (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "074b9130ba5d",
+    "title": "Site-Selective Gaussian Accelerated Molecular Dynamics and Its Integration with Replica-Exchange Methods",
+    "authors": [
+      "Hiraku Oshima"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15010586/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-16",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Development of site-selective Gaussian accelerated molecular dynamics integrated with replica exchange — satisfies (a) explicit atomic systems, (b) enhanced-sampling MD methodology, and (c) advances enhanced-sampling methods.",
+    "key_authors": []
+  },
+  {
+    "id": "80217cfdc454",
+    "title": "Are Molecular Foundation Models Ready for Free Energy Simulations?",
+    "authors": [
+      "Nils Gönnheimer",
+      "Karsten Reuter",
+      "Johannes T. Margraf"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15010593/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-16",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Benchmarking molecular foundation models (MLIPs) for free-energy simulations — satisfies (a) explicit atomic systems, (b) MLIP evaluation with MD/free-energy methods, and (c) directly assesses MLIP transferability for simulation, the lab's core.",
+    "key_authors": []
+  },
+  {
+    "id": "c14e80c69bb5",
+    "title": "Hydroxyl-terminated carbosilane dendrimer films at water–toluene and water–air interfaces",
+    "authors": [],
+    "abstract": "We report a fully atomistic molecular dynamics study of fourth-generation amphiphilic carbosilane dendrimers adsorbed at water–toluene and water–air interfaces across a wide range of surface densities. The dendrimers, featuring a tetrafunctional silicon core, trifunctional =Si(CH3)– branching units, and terminal hydroxyl groups, adopt a characteristic “umbrella” conformation at low coverage, with hydrophilic termini anchored in water and the hydrophobic core aligned with the nonpolar phase. Interfacial chemistry fundamentally modulates this architecture: favorable toluene–core interactions promote core swelling and homogeneous lateral dispersion, whereas the sharp hydrophobic mismatch at the water–air interface drives dendrimer aggregation. Lateral compression induces a systematic transition from flattened, anisotropic conformations to more isotropic, near-spherical geometries, accompanied by redistribution of hydrogen bonds from dendrimer–water to intra- and interdendrimer contacts. Under strong confinement, steric crowding and transient interdendrimer hydrogen bonding lead to dynamic arrest, with lateral diffusion suppressed by orders of magnitude. These findings establish a unified molecular picture of how surface density and solvent compatibility jointly control conformation, interactions, and mobility in amphiphilic dendrimer monolayers, providing design principles for tunable interfacial materials with tailored mechanical and transport properties.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/15/154701/3406575/Hydroxyl-terminated-carbosilane-dendrimer-films-at",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Thu, 15 Oct 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.87,
+    "relevance_reason": "Fully atomistic molecular dynamics of carbosilane dendrimers at water–toluene and water–air interfaces satisfies (a) explicit atoms, (b) classical MD, and (c) an application study of interfacial structure, H-bonding, and diffusion.",
+    "key_authors": []
+  },
+  {
+    "id": "ce903ac12386",
+    "title": "Constrained Nuclear-Electronic Orbital Time-Dependent Density Functional Theory for Excited-State Dynamics with Nuclear Quantum Effects",
+    "authors": [
+      "Yiwen Wang",
+      "Zehua Chen",
+      "Xi Xu",
+      "Yang Yang"
+    ],
+    "abstract": "arXiv:2610.21120v1 Announce Type: new \nAbstract: Nuclear quantum effects can strongly influence excited-state processes involving light nuclei, yet their inclusion in practical molecular dynamics remains challenging. We develop constrained nuclear-electronic orbital time-dependent density functional theory (CNEO-TDDFT), which incorporates quantum-nuclear delocalization into full-dimensional effective excited-state potential energy surfaces while retaining the formal structure and computational scaling of conventional TDDFT. Analytic gradients are also developed, enabling efficient on-the-fly excited-state dynamics. CNEO-TDDFT substantially improves excited-state vibrational frequencies involving hydrogen motion and reduces the root-mean-square deviation from experiment from 113 cm$^{-1}$ to 26 cm$^{-1}$. For excited-state proton transfer in 10-hydroxybenzo[h]quinoline (HBQ), CNEO-TDDFT yields a characteristic transfer time of 14.0 fs, compared with 25.5 fs from conventional TDDFT, consistent with the experimentally inferred ultrafast timescale of 12$\\pm$6 fs. These results establish CNEO-TDDFT as an accurate and efficient framework for excited-state dynamics with nuclear quantum effects.",
+    "url": "https://arxiv.org/abs/2610.21120",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "CNEO-TDDFT development with analytic gradients enabling on-the-fly excited-state molecular dynamics (proton transfer in HBQ); explicit atoms (a), DFT-based dynamics (b), and a genuine method advance plus application (c) are all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "8ddba677b516",
+    "title": "From Algebraic Completeness to Orbit Separation: Recursive Separating Invariants for Global Neural Network Potential Energy Surfaces",
+    "authors": [
+      "Yiping Hao",
+      "Jing Lou",
+      "Bina Fu",
+      "Dong H. Zhang"
+    ],
+    "abstract": "arXiv:2610.21700v1 Announce Type: new \nAbstract: Permutationally invariant polynomials (PIPs) provide a systematically improvable, symmetry-preserving representation for global potential energy surfaces (PESs), but their high computational cost as neural network descriptors limits applications to large molecular systems. Fundamental invariants (FIs), which form an algebraically complete generating set, substantially reduce the number of descriptors and enable neural network PESs for larger systems. However, PES evaluation remains computationally expensive as molecular size and complexity increase. Here, we introduce recursive separating invariants (RSIs), shifting the descriptor design principle from algebraic completeness to orbit separation. RSIs are constructed systematically through correlation order and recursion depth, providing a more computationally efficient representation. Benchmarks on reactive and nonreactive systems demonstrate that RSI-based neural network (RSI-NN) PESs achieve approximately an order-of-magnitude faster evaluation than their FI-NN counterparts, with system-dependent prediction accuracy that is comparable in several cases. These results establish orbit separation as a promising principle for developing efficient symmetry-preserving descriptors for global neural network PESs.",
+    "url": "https://arxiv.org/abs/2610.21700",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Development of recursive separating invariant descriptors for global neural-network potential energy surfaces with benchmarks on reactive/nonreactive systems; explicit atoms (a), MLIP descriptor development for PES (b), and a methodological advance (c) are satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "c97aff3f9f20",
+    "title": "Simulated Solvation Dynamics of a Photoexcited Organic Molecule and the Associated Time-Resolved X-ray Scattering Signal",
+    "authors": [
+      "Simon Petry",
+      "Magn\\'us Kristinsson",
+      "Asmus O. Dohn",
+      "Klaus B. M{\\o}ller",
+      "Elli Selenius",
+      "Gianluca Levi"
+    ],
+    "abstract": "arXiv:2610.22147v1 Announce Type: new \nAbstract: Solvation shell reorganization is a key component of the dynamics after photoexcitation of a solvated molecule, especially for charge-transfer excitation in polar solvents. These structural dynamics can be directly observed with time-resolved X-ray solution scattering (TR-XSS) experiments. However, disentangling the scattering signal of solvation-shell reorganization can be challenging, especially for systems containing only light atoms. Here, nonequilibrium molecular dynamics simulations of a hemithioindigo chromophore in acetonitrile are used to investigate the solvation dynamics upon photoinduced charge transfer as well as vibrational excitation and cooling, and to characterize the corresponding time-resolved X-ray scattering signals. It is found that charge transfer induces rapid reorientation of the first solvation shell (0.15-0.2 ps) followed by slower reorientational and solvent redistribution within and between shells (1-2 ps). An analysis of the volume around the solute excluded to the solvent reveals an initial contraction of the solvation shell, followed by transient rebound within the first 0.4 ps, and then slower contraction. Instantaneous vibrational excitation expands the excluded volume, reaching a maximum near 0.4 ps, followed by contraction during cooling with biexponential relaxation. Low-q features in both the calculated solute-solvent and solvent-solvent scattering signals reflect rearrangements within the first solvation shell and redistribution across shells, while higher-q solute-solvent features more closely follow local first-shell restructuring. These results show that TR-XSS can provide information on both local solvent rearrangements and redistribution across solvation shells and demonstrate that interpreting the scattering signals requires accounting for changes in solvent packing induced by vibrational heating and cooling of the solute.",
+    "url": "https://arxiv.org/abs/2610.22147",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Nonequilibrium molecular dynamics of a photoexcited hemithioindigo chromophore in acetonitrile with time-resolved X-ray scattering signals; explicit atoms (a), MD (b), and an application to solvation-shell dynamics (c) are all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "d3e0b30eedea",
+    "title": "Bond-informed search for ordered configurations in multi-principal element alloys",
+    "authors": [
+      "Gaurav Arora",
+      "Alex Tai",
+      "Rodrigo Freitas",
+      "David Cereceda"
+    ],
+    "abstract": "arXiv:2610.21718v1 Announce Type: new \nAbstract: Ordered configurations in multi-principal element alloys (MPEAs) control their local structure and influence a broad range of mechanical and thermodynamic properties. Yet they are notoriously difficult to identify. Locating low-energy ordered candidates requires exploring a configurational space that grows combinatorially with the number of elements, and Monte Carlo searches driven by density-functional theory (DFT) need a new electronic-structure calculation at every trial step. Here we introduce MECx (Minimum Energy Configuration eXplorer), a framework that guides Monte Carlo searches with a surrogate energy model trained on configurations stratified in bond-count space. Applied to ternary, quaternary, and quinary BCC alloys using compact training sets of 100 DFT-labeled configurations, MECx identifies ordered configurations with lower energies than those found by direct DFT-based Monte Carlo within practical computational limits. These configurations exhibit distinct pair-specific ordering, including B2- and B32-like motifs, and undergo progressive disordering as temperature increases. The MPEA-trained models also transfer to selected binary subsystems without retraining. The resulting ordered configurations agree with those obtained by direct DFT-based Monte Carlo and produce experimentally distinguishable superlattice reflections in simulated neutron diffraction patterns.",
+    "url": "https://arxiv.org/abs/2610.21718",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Monte Carlo search over atomic configurations in multi-principal element alloys guided by a DFT-trained surrogate energy model, satisfying (a) explicit atoms, (b) MC on atoms with DFT labels, and (c) configurational/disordering prediction with simulated diffraction validation.",
+    "key_authors": []
+  },
+  {
+    "id": "418e6b475ce2",
+    "title": "Novel high-pressure silicon allotrope with quartz topology from first principles",
+    "authors": [
+      "Samir F. Matar",
+      "Vladimir L. Solozhenko"
+    ],
+    "abstract": "arXiv:2610.21683v1 Announce Type: new \nAbstract: A novel silicon allotrope, qtz Si, with quartz topology is proposed and investigated alongside four known allotropes (dia Si-I, lon Si-IV, bsn Si-II, and gsi Si-III) using first-principles density functional theory. qtz Si is found to exhibit the smallest atom-averaged volume (18.06 A3), highest density (2.582 g/cm3), highest bulk modulus (98 GPa), and highest maximum phonon frequency (16 THz) among the five, while showing the lowest shear modulus (37 GPa). All five allotropes are confirmed to satisfy the Born stability criteria and to display positive phonon frequencies throughout the Brillouin zone, i.e., they are mechanically and dynamically stable. Electronic structure calculations show that qtz Si is a semimetal with a vanishing gap, whereas dia Si and lon Si are semiconductors, and bsn and gsi allotropes are weakly metallic. Energy-volume equations of state place gsi and qtz 0.11-0.15 eV/atom above dia, bsn, and lon, consistent with their identification as high-pressure or metastable phases.",
+    "url": "https://arxiv.org/abs/2610.21683",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Fri, 16 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles DFT crystal-structure prediction and stability analysis (phonons, Born criteria, equations of state) of a new quartz-topology silicon allotrope, satisfying (a) explicit atoms, (b) DFT, and (c) DFT-driven structure prediction.",
+    "key_authors": []
+  },
+  {
+    "id": "45e86e1ead82",
+    "title": "Oxygen deficiency and valency reconstruction in multiferroic V-doped ${\\mathrm{HfO}}_{2}$",
+    "authors": [
+      "Vincenzo Fiorentini"
+    ],
+    "abstract": "Author(s): Vincenzo Fiorentini\nThe interplay of oxygen deficiency and vanadium multiple valency in the candidate multiferroic V-doped $Pca{2}_{1}$ hafnia ${\\mathrm{HfO}}_{2}$ is studied by first-principles calculations. Low-lying V majority gap states accept electrons from oxygen-vacancy donors, reducing their formation energy, a…\n[Phys. Rev. Materials 10, 104412] Published Thu Oct 15, 2026",
+    "url": "http://link.aps.org/doi/10.1103/dfcj-rb7w",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-10-15T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "First-principles (DFT) calculations on explicit V-doped HfO2 atomic structures to study defect/valency energetics satisfy (a) explicit atoms, (b) DFT method, and (c) application to a material system.",
+    "key_authors": []
+  },
+  {
+    "id": "b7b399949cb7",
+    "title": "Accelerating and scaling on-lattice Solid-On-Solid kinetic Monte Carlo simulations using an autoregressive Conditional Variational Autoencoder",
+    "authors": [],
+    "abstract": "Publication date: January 2027\nSource: Computational Materials Science, Volume 276\nAuthor(s): Luis Henkelmann, Johannes T. Margraf, Fridolin Röder",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626006282?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "On-lattice kinetic Monte Carlo with an ML surrogate represents atomic lattice configurations and accelerates atomic-scale simulation, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "90303740c5df",
+    "title": "Active matter model implementation in LAMMPS: a coherent fix active framework of ten active self-propulsion mechanisms",
+    "authors": [
+      "Ram Chand",
+      "Saqia Bukhari"
+    ],
+    "abstract": "We implement an active matter extension to the classical molecular dynamics code large-scale atomic/molecular massively parallel simulator (LAMMPS). Our implemented fix, fix active, is a single-command LAMMPS package that supports ten different active-matter models in one computational environment. In a previous implementation, and probably only in the work by Dias (2021 arXiv: 2102.10399), active Brownian particles (ABPs) were realised by combining several built-in LAMMPS commands, but our implementation is significantly broader, including active Ornstein–Uhlenbeck particles (AOUP), Chiral ABP, run-and-tumble particles, Vicsek-type alignment, active rods, spinners with odd viscosity, inertial ABP (IABP), systems with motility-induced phase separation (MIPS), and active nematics with topological defects. All ten models are implemented as distinct kernels behind a uniform keyword-driven fix active interface; no kernel reuses another model’s update routine. Notably, our method does not require any modification of the LAMMPS source code: the model is selected by a single keyword in the standard input script. In this release the active force is applied in the -plane, so collective validations are reported in two dimensions; the framework is otherwise dimension-agnostic and the underlying scaffolding (per-atom angle and quaternion storage, MPI exchange, ghost-atom orientation communication) is in place for a future fully three-dimensional update. Each model has been carefully compared with analytical predictions where they exist: the errors in ABP, AOUP, Chiral ABP, run-and-tumble and IABP mean-square displacement measurements are small, of order a few per cent; the spinner Hall angle is consistent with theory to within less than ; and collective behaviour, such as MIPS clustering, the Vicsek order–disorder transition and active-nematic turbulence, is correctly reproduced in qualitative comparison with the literature. The per-atom orientation is registered for MPI exchange, ghost forward-communication and atom-sort callbacks, so the implementation remains correct under spatial domain decomposition. The framework provides a major benefit over existing simulation tools, enabling comparative studies of disparate active-matter processes systematically and within a single, tested codebase.",
+    "url": "https://iopscience.iop.org/article/10.1088/1361-651X/aeaa0a",
+    "pdf_url": null,
+    "source": "Modelling Simul. Mater. Sci. Eng.",
+    "categories": [],
+    "published": "2026-10-15T23:00:00Z",
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Implementation of ten active-matter models as a LAMMPS fix is genuine classical molecular dynamics tool development on explicit particles with per-atom orientation/quaternion storage, satisfying (a) explicit-particle representation, (b) MD methodology, and (c) advancement of a simulation method.",
+    "key_authors": []
+  },
+  {
+    "id": "50e4a9129ced",
+    "title": "Inverse materials design via joint generation of crystal structures and local electronic descriptors",
+    "authors": [
+      "Ibuki Okuda",
+      "Izumi Takahara",
+      "Teruyasu Mizoguchi"
+    ],
+    "abstract": "npj Computational Materials, Published online: 15 October 2026; doi:10.1038/s41524-026-02322-4\nInverse materials design via joint generation of crystal structures and local electronic descriptors",
+    "url": "https://www.nature.com/articles/s41524-026-02322-4",
+    "pdf_url": null,
+    "source": "npj Computational Materials",
+    "categories": [],
+    "published": "2026-10-15",
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Generative model jointly producing 3D crystal structures with local electronic descriptors — satisfies (a) explicit atomic configurations and (b) likely DFT-based energetic validation of generated structures, matching the generative-CSP-with-potential anchor.",
+    "key_authors": []
+  },
+  {
+    "id": "4d5c6baf1315",
+    "title": "Clarifying moderate and nearly isotropic lattice thermal transport in metastable δ-Ga<sub>2</sub>O<sub>3</sub>",
+    "authors": [],
+    "abstract": "Publication date: January 2027\nSource: Computational Materials Science, Volume 276\nAuthor(s): Fangwei Yang, Xu Li, Xiaoxin Yang, Hailiang Duan, Wentao Wang, Zhenghao Qiu, Haoran Sun, Gang Yang",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626006907?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-10-16",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Phonon/lattice thermal transport in Ga2O3 computed from first-principles DFT force constants and Boltzmann transport, satisfying (a) explicit atoms and (b) DFT-based simulation of vibrational/thermal properties.",
+    "key_authors": []
+  }
+]
