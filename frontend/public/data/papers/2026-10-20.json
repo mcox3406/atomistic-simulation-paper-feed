@@ -1,0 +1,518 @@
+[
+  {
+    "id": "d99c1128be25",
+    "title": "Quantum-Accurate Vibrational and Conformational Dynamics from Small Molecules to Proteins with Machine-Learned Force Fields",
+    "authors": [
+      "Sergio Su\\'arez-Dou",
+      "Miguel Gallegos",
+      "Kyunghoon Han",
+      "Florian N. Br\\\"unig",
+      "Joshua T. Berryman",
+      "Alexandre Tkatchenko"
+    ],
+    "abstract": "arXiv:2601.09845v3 Announce Type: replace \nAbstract: Biomolecular thermodynamics and spectroscopy depend on relative conformer energies, local curvatures, and collective dipole fluctuations on the potential-energy surface. Conventional molecular mechanics force fields enable large-scale simulations, but their fixed functional forms can misrepresent infrared intensities, mode character, and environment-dependent vibrational response. Here we assess general-purpose machine-learned force fields across small molecules, finite-temperature infrared spectra, gas-phase peptides, and monomeric, oligomeric, and solvated protein assemblies. To enable this analysis, we introduce QVib, a dataset of 293 molecules and 1365 conformers, together with peptide amide-band benchmarks and p53 oligomerization-domain models, to evaluate vibrational transferability from DFT references to experimental spectra. Across these systems, machine-learned force fields substantially improve over molecular mechanics in reproducing DFT-level forces, vibrational frequencies, densities of states, mode eigenvectors, conformational energetics, and experimental infrared spectra. Among models with explicit long-range electrostatics, SO3LR provides the most favourable accuracy-cost balance for the biomolecular systems considered. These results show that machine-learned force-field dynamics can recover collective, environment-dependent vibrational landscapes at near-DFT fidelity, enabling spectroscopically validated biomolecular simulations at force-field-like cost.",
+    "url": "https://arxiv.org/abs/2601.09845",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.bio-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alexandre Tkatchenko",
+    "key_authors": [
+      "Alexandre Tkatchenko"
+    ]
+  },
+  {
+    "id": "aecec76d13a7",
+    "title": "A fast summation method for the DFT-D3 dispersion correction",
+    "authors": [
+      "Victoria Valeeva",
+      "Cheuk Hin Ho",
+      "Mario Geiger",
+      "Franco Pellegrini",
+      "G\\'abor Cs\\'anyi",
+      "Emine Kucukbenli",
+      "Christoph Ortner"
+    ],
+    "abstract": "arXiv:2607.15103v3 Announce Type: replace \nAbstract: The DFT-D3 dispersion correction is routinely added to machine learning force fields (MLFFs) trained on dispersion-deficient functionals such as PBE. Its environment-dependent pair coefficients, however, break the atom-centered separability that fast summation methods require, forcing practitioners either to truncate D3 or to accept a substantial slowdown. We introduce FourierD3, a method that uses a functional low-rank decomposition to restore this separability and enable particle-mesh evaluation in $O(N\\log N)$ time without a real-space cutoff on the dispersion sum.",
+    "url": "https://arxiv.org/abs/2607.15103",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: G\\'abor Cs\\'anyi, Christoph Ortner",
+    "key_authors": [
+      "G\\'abor Cs\\'anyi",
+      "Christoph Ortner"
+    ]
+  },
+  {
+    "id": "e9f29c46aa55",
+    "title": "On the Selectivity of Generative Models in Structure-Based Drug Design",
+    "authors": [
+      "Ella Miray Rajaonson",
+      "Jungyoon Lee",
+      "William Chau",
+      "Alan Aspuru-Guzik",
+      "Benjamin Sanchez-Lengeling",
+      "Dominique Beaini",
+      "Kirill Neklyudov",
+      "Marta Skreta"
+    ],
+    "abstract": "arXiv:2610.24124v1 Announce Type: new \nAbstract: Designing small-molecule drugs that selectively bind to a target protein while avoiding unintended interactions with other proteins is essential for reducing side effects that contribute substantially to clinical attrition. Although structure-based drug design (SBDD) has advanced rapidly with deep learning, most generative models still optimize binding to a single target and disregard selectivity due to limited training data and unknown off-target interactions. Motivated by this gap, we introduce SELECTBENCH, a comprehensive benchmark assessing the selectivity of generative SBDD models. SELECTBENCH provides three curated evaluation tasks reflecting different real-world drug discovery scenarios: literature-based case studies, safety screening panels used in pharmaceutical development, and large-scale structure-based evaluation sets. We further introduce a suite of metrics to quantify selectivity and conduct a systematic evaluation of nine representative SBDD models, including methods explicitly trained for selectivity and widely-used inference-time guidance techniques. Our results show that even selectivity-trained models achieve only modest off-target discrimination and inference-time guidance provides limited gains, underscoring the need for method improvement. SELECTBENCH provides both a characterization of where current generative SBDD stands on selectivity and an open, extensible platform to accelerate progress. The benchmark is available at https://github.com/lovetaro/selectbench.",
+    "url": "https://arxiv.org/abs/2610.24124",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alan Aspuru-Guzik",
+    "key_authors": [
+      "Alan Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "c4c81c596ff7",
+    "title": "Distribution-Based Regularization for Reward Fine-Tuning Diffusion and Flow Models",
+    "authors": [
+      "Romeo Passaro",
+      "Jeongjae Lee",
+      "Jong Chul Ye",
+      "Michael M. Bronstein",
+      "Yoshua Bengio",
+      "Alexander Tong",
+      "Danyal Rehman"
+    ],
+    "abstract": "arXiv:2610.24897v1 Announce Type: new \nAbstract: Reward fine-tuning is an effective way to adapt pretrained diffusion and flow-matching models to downstream objectives, but aggressive optimization often leads to mode collapse and distributional drift. Existing methods attempt to control this drift with reverse-KL regularization, implemented as an $\\ell_2$ penalty on the velocity field; however, this functions by indirectly constraining sampling dynamics rather than directly acting on the generated distribution. To address this, we propose DFR (Distributional Functional Rewards), which augments the task reward with a distribution-dependent, per-sample reward that acts explicitly on the generated distribution. Formally, we generalize the KL-regularized objective from expected rewards, which are linear in the model's distribution, to convex functionals of it. The first variation of this objective defines an effective, distribution-dependent reward that directly penalizes deviation from the pretrained distribution. This formulation yields additive per-sample rewards for the Fr\\'echet distance (FD), maximum mean discrepancy (MMD), and DreamSim diversity, recovering several recently proposed rewards as special cases. Across various text-to-image fine-tuning tasks, DFR matches the peak reward of KL-tuned baselines while increasing diversity by up to 29% at equal or lower drift.",
+    "url": "https://arxiv.org/abs/2610.24897",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Yoshua Bengio",
+    "key_authors": [
+      "Yoshua Bengio"
+    ]
+  },
+  {
+    "id": "914f104654a8",
+    "title": "SPRINT: Stochastic Performative Prediction With Variance Reduction",
+    "authors": [
+      "Tian Xie",
+      "Ding Zhu",
+      "Jia Liu",
+      "Mahdi Khalili",
+      "Xueru Zhang"
+    ],
+    "abstract": "arXiv:2509.17304v3 Announce Type: replace \nAbstract: Performative prediction (PP) is an algorithmic framework for optimizing machine learning (ML) models where the model's deployment affects the distribution of the data it is trained on. Compared to traditional ML with fixed data, designing algorithms in PP converging to a stable point -- known as a stationary performative stable (SPS) solution -- is more challenging than the counterpart in conventional ML tasks due to the model-induced distribution shifts. While considerable efforts have been made to find SPS solutions using methods such as repeated gradient descent (RGD) and greedy stochastic gradient descent (SGD-GD), most prior studies assumed a strongly convex loss until a recent work established $O(1/\\sqrt{T})$ convergence of SGD-GD to SPS solutions under smooth, non-convex losses. However, this latest progress is still based on the restricted bounded variance assumption in stochastic gradient estimates and yields convergence bounds with a non-vanishing error neighborhood that scales with the variance. This limitation motivates us to improve convergence rates and reduce error in stochastic optimization for PP, particularly in non-convex settings. Thus, we propose a new algorithm called stochastic performative prediction with variance reduction (SPRINT) and establish its convergence to an SPS solution at a rate of $O(1/T)$. Notably, the resulting error neighborhood is independent of the variance of the stochastic gradients. Experiments on multiple real datasets with non-convex models demonstrate that SPRINT outperforms SGD-GD in both convergence rate and stability.",
+    "url": "https://arxiv.org/abs/2509.17304",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 3,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Tian Xie",
+    "key_authors": [
+      "Tian Xie"
+    ]
+  },
+  {
+    "id": "6c16a7e6a2a8",
+    "title": "A GRACE Interatomic Potential for W--Ta Systems: Application to Ta Segregation and Pinning of Shear-Coupled Grain-Boundary Migration",
+    "authors": [
+      "Omar Hussein",
+      "Laurent Capolungo",
+      "Danny Perez"
+    ],
+    "abstract": "arXiv:2610.24432v1 Announce Type: new \nAbstract: Tungsten-tantalum alloys are promising plasma-facing materials for fusion reactors, but simulations of their coupled defect, mechanical, and microstructural evolution require an interatomic potential that remains accurate across diverse atomic environments. We develop a transferable W-Ta potential within the GRaph Atomic Cluster Expansion (GRACE) framework. The primary training dataset was generated automatically by maximizing information entropy in an atomically relevant feature space, avoiding manual enumeration of the structures and processes required for specific downstream applications. Extensive validation demonstrates a consistent description of unary and binary phase stability, elasticity, phonons, high-pressure response, surfaces, point defects, dislocation energetics, transformation pathways, alloy thermodynamics, and melting behavior.\n  As a demonstration, the potential is applied to Ta segregation and shear-coupled migration of a $\\Sigma5(120)$ W GB. Simulations reveal strongly site-selective segregation: Ta preferentially occupies a small subset of crystallographically distinct atomic rows. Under shear, segregated Ta impedes disconnection-mediated grain boundary migration. The de-pinning stress initially increases with Ta concentration but plateaus as the dominant pinning environment becomes saturated, while increasing temperature weakens both segregation and pinning. These results establish a broadly validated W-Ta potential and demonstrate how automated entropy-maximized data generation can produce transferable atomistic models capable of resolving mechanisms not explicitly targeted during training.",
+    "url": "https://arxiv.org/abs/2610.24432",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn",
+      "physics.atm-clus",
+      "physics.comp-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.95,
+    "relevance_reason": "Develops and extensively validates a GRACE machine-learned interatomic potential for W-Ta and applies it in MD simulations of segregation and grain-boundary migration, cleanly satisfying (a), (b) MLIP development, and (c) application.",
+    "key_authors": []
+  },
+  {
+    "id": "4fcf79adaa1b",
+    "title": "Challenging Atomistic Foundation Models on Disordered Carbons",
+    "authors": [
+      "Joseph Hart",
+      "Samuel G. H. Brookes",
+      "Fabian L. Thiemann",
+      "Christoph Schran"
+    ],
+    "abstract": "arXiv:2610.26701v1 Announce Type: new \nAbstract: Foundation machine-learned interatomic potentials (MLIPs) promise broad transferability, yet their out-of-domain reliability is hard to establish. Here, we use pure and O/H-containing disordered carbon spanning multiple phases, competing hybridisations and porous frameworks to stress-test six popular foundation MLIPs. We first screen all six on density functional theory (DFT) energy and force errors and binding curves, then subject four to melt-quench-anneal molecular dynamics and evaluate the resulting structural observables. Binding curves and O/H-containing trajectories reveal unphysical extrapolation and dynamical failures that low DFT energy and force errors fail to reveal. Of the models tested, MACE-MH-1 is the most consistently robust, with low DFT errors and stable MD. Despite differing architectures, OMAT-based models share structural biases, highlighting the importance of training coverage. All four models generate structures of nanoporous carbon that reproduce the principal experimental and specialised carbon potential signatures. Incorporating O/H leaves short-range order largely unchanged but shifts pore-size distributions towards larger pores. These results emphasise the need for application-specific validation and extend molecular dynamics modelling of nanoporous carbon towards experimentally realistic structures.",
+    "url": "https://arxiv.org/abs/2610.26701",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.93,
+    "relevance_reason": "Benchmarks six foundation MLIPs against DFT and runs melt-quench-anneal MD on disordered carbons, clearly satisfying (a) explicit atoms, (b) MLIP benchmarking/MD, and (c) application to carbon structure.",
+    "key_authors": []
+  },
+  {
+    "id": "08f99c6e2cd5",
+    "title": "Microscopic origin of polytype-dependent melting in SiC revealed by machine-learning molecular dynamics",
+    "authors": [],
+    "abstract": "Predicting how crystal structure influences high-temperature stability remains a key challenge in materials modeling and design. Silicon carbide (SiC), one of the most thermally and chemically stable materials known, provides an ideal system for studying this problem because its many polytypes preserve similar local tetrahedral bonding while differing in long-range stacking geometry. To determine the impact of polytype structure on the high-temperature stability of SiC, we combine phase-coexistence machine-learning molecular dynamics with finite-temperature phonon analysis, enabled by a fine-tuned MACE interatomic potential that accurately describes crystalline, high-temperature, and disordered configurations across multiple SiC polytypes. We identify a clear stability ordering, 3C > 2H > 9R, reflected consistently in structural disordering, interlayer sliding, and finite-temperature phonon spectra. Across all polytypes, melting initiates through the formation of short C–C contacts and carbon-rich local regions, followed by a progressive loss of tetrahedral Si–C connectivity. The reduced stability of the long-period 9R polytype is associated with a denser manifold of low-frequency transverse-acoustic modes arising from its stacking periodicity and associated zone folding, which broaden and soften further at high temperature. These modes can provide additional low-energy channels for thermally activated lateral bilayer motion, consistent with the larger sliding amplitudes observed in 9R and their positive correlation with local structural disorder.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/15/154703/3406738/Microscopic-origin-of-polytype-dependent-melting",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Mon, 19 Oct 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.92,
+    "relevance_reason": "A fine-tuned MACE machine-learned interatomic potential is used in phase-coexistence molecular dynamics and phonon analysis of SiC polytypes, satisfying (a) explicit atoms, (b) MLIP/MD, and (c) application to melting stability.",
+    "key_authors": []
+  },
+  {
+    "id": "337adf89e79e",
+    "title": "Reticulating Local Dynamics in Three-Dimensional Covalent Organic Frameworks",
+    "authors": [
+      "Francesco Tavani",
+      "Saber Mirzaei",
+      "M. Saeed Mirzaei",
+      "Jian Yin",
+      "Yen-hsu Lin",
+      "Caden Myers",
+      "Cheng-Hung Lin",
+      "AM Milinda Abeykoon",
+      "Simon J. L. Billinge",
+      "Omar M. Yaghi"
+    ],
+    "abstract": "arXiv:2610.24418v1 Announce Type: new \nAbstract: In covalent organic frameworks (COFs), the geometry of the building units predetermines the structure of the framework, yet comparable design principles relating the COF linkers to the local motions that govern guest adsorption and diffusion as well as mechanical response have remained beyond reach. Here, we combine synchrotron X-ray pair distribution function (PDF) analysis with molecular dynamics (MD) simulations accelerated by machine learning interatomic potentials to resolve and compare the local dynamics of two three-dimensional imine-linked COFs, chosen to differ in the geometry and rigidity of one of their two building units. Both are constructed from the same 4-connected square planar linker, $4,4',4'',4'''$-(pyrene-1,3,6,8-tetrayl)tetraaniline (PyTTA), reticulated with the 12-connected nanographene hexakis{[3,5-bis($p$-formylphenyl)-4,6-dimethoxyphenyl]}hexabenzocoronene to give COF-412, {[(HBC-LA$_{12}$)(PyTTA)$_3$]}$_{\\mathit{imine}}$, and with the 6-connected triptycene 2,3,6,7,14,15-hexakis(4-formylphenyl)triptycene to give COF-564, {[(Trip-CHO)$_2$(PyTTA)$_3$]}$_{\\mathit{imine}}$. The PDF-MD approach resolves the amplitude, the time scale, and the spatial extent of the motion of all COF linkers, separating the limited libration of the fused aromatic cores from the larger reorientational tilts of the pendant aryl rings they carry and from the translation of whole linkers within the net. The simulations further reveal that exchanging the nanographene- for the triptycene-based linker tunes the equilibrium tilt and the positional probability density of PyTTA, raising the tilt amplitude of its linker partner, and, notably, strengthens the coupling between the translations of neighbouring linkers. This approach provides a blueprint for understanding local dynamical properties in COFs, and shows them to be selectable through the choice of building unit and amenable to design.",
+    "url": "https://arxiv.org/abs/2610.24418",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Combines synchrotron PDF with machine-learning-interatomic-potential-accelerated molecular dynamics to resolve local linker dynamics in 3D COFs, directly satisfying (a) explicit atomistic frameworks, (b) MLIP-driven MD, and (c) application to materials behavior.",
+    "key_authors": []
+  },
+  {
+    "id": "d08f3d636596",
+    "title": "Understanding compression-extension error asymmetry in universal machine-learning interatomic potentials",
+    "authors": [
+      "Hongwei Du",
+      "Dingyang Lv",
+      "Boyan Zhang",
+      "Yu Ren",
+      "Feng Yu",
+      "Xin He",
+      "Bonan Zhu",
+      "Yongda Huang",
+      "Jiahui Liu",
+      "Yongheng Li",
+      "Siqi Shi",
+      "Jianjun Liu",
+      "Ziheng Lu",
+      "Hong Wang"
+    ],
+    "abstract": "arXiv:2610.24514v1 Announce Type: new \nAbstract: Universal machine-learning interatomic potentials are increasingly used across diverse materials, yet their reliability under directional deformation remains unclear. We compare compression and extension along paired deformation paths from the same parent structures for eleven pretrained potentials. The benchmark comprises 1,963 Materials Project trajectory (MPtrj) parents and 1,286 experimental-source MinX-Eq parents at six strain magnitudes from 1% to 10%. Density-functional theory provides references for isotropic, uniaxial and biaxial loading in MPtrj and isotropic loading in MinX-Eq. At $\\pm 10\\%$, every model has a larger median force error under compression, with pooled isotropic compression-to-extension ratios of 2.12 and 3.30 for MPtrj and MinX-Eq. Decomposing error growth into DFT force-scale growth and relative-error evolution shows that relative errors decrease on both branches, faster under compression in MPtrj but slower under compression in MinX-Eq. Force-scale matching moves the error ratios toward unity, although MinX-Eq retains a compression-side excess across models. Radial and SOAP analyses place compressed structures at shorter separations and farther from public reference pools, while readout-associated model features show larger compression-side displacements. These results distinguish stronger physical responses from changes in relative predictive accuracy and provide a basis for assessing universal potentials in deformation simulations.",
+    "url": "https://arxiv.org/abs/2610.24514",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Benchmarks eleven universal machine-learned interatomic potentials against DFT forces under compression/extension deformation paths using explicit atomistic structures, satisfying (a), (b) MLIP benchmarking, and (c) methodological insight for potential reliability.",
+    "key_authors": []
+  },
+  {
+    "id": "2cc52781bd1a",
+    "title": "Instability-driven segregation of V group transition metals on HEB$_2$ grain boundaries influencing enhanced mechanical properties",
+    "authors": [
+      "Daniil Alekseev",
+      "Viktor S. Baidyshev",
+      "Alexander G. Kvashnin"
+    ],
+    "abstract": "arXiv:2610.25295v1 Announce Type: new \nAbstract: Five metals share a common sublattice in the (Hf,Ta,Ti,Nb,Zr)B$_2$ (HEB$_2$). Most high-entropy materials are produced as polycrystalline materials in the form of sintered ceramics. The question of which metal species are located at grain boundaries is still unknown. Here, we calculated the grain-boundary energy $\\gamma_{GB}$ of four types of boundaries in five binary diborides and HEB$_2$ using density functional theory (DFT). We analyzed the bonding at these boundaries using COHP and sampled cation segregation at six boundaries of HEB$_2$, ordered and general, using Monte Carlo / molecular dynamics with a MACE potential that was fine-tuned for this system. According to our results $\\gamma_{GB}$ splits by group: the group V diborides NbB$_2$ and TaB$_2$ form boundaries with about half the energy of the group IV at three of the four types of GBs, ranging from 0.8 to 2.7 compared to 2.5--4.8~J/m$^2$. COHP shows a significant difference at the Fermi level, namely the Me--B bonds of NbB$_2$ and TaB$_2$ are antibonding at Fermi energy ($E_F$) in the bulk but bonding at the GB, while their integrated strength hardly changes. In HEB$_2$ the segregation follows a similar pattern: Nb and Ta are enriched at five of the six grain boundaries, including general boundaries, up to 23--35~at.\\% at 2000~K, although the size of the atoms would favor Zr and Hf in the expanded sites. A segregated $\\Sigma 193$ grain boundary can withstand 26 against 20~GPa for a random boundary in tension at 300~K. The grain boundaries of HEB$_2$ are composed of group V metals, as suggested by the boundary energies of binaries compounds and their bonding at the Fermi level. Grain boundaries of the (Hf,Ta,Ti,Nb,Zr)B$_2$ preferentially include Nb and Ta. This lowers the grain boundary energy and strengthens the boundaries. This consists of the lower boundary energy and changes Fermi level bonding in NbB$_2$ and TaB$_2$.",
+    "url": "https://arxiv.org/abs/2610.25295",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "DFT grain-boundary calculations combined with Monte Carlo/molecular dynamics using a fine-tuned MACE MLIP for HEB2 segregation; (a)-(c) are all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "da06c55dff42",
+    "title": "NEP-kappa 2.0: A unified framework for phonon transport and nonequilibrium thermalization with machine-learning interatomic potentials",
+    "authors": [
+      "Shixian Liu",
+      "Bin Liu",
+      "Fei Yin",
+      "Gang Wang",
+      "Yiming Dong",
+      "Yangjun Qin",
+      "Alexandra V. Kosyakova",
+      "Qiang Xian",
+      "Alexander A. Barinov",
+      "Ke Xu",
+      "Gang Zhang"
+    ],
+    "abstract": "arXiv:2610.25477v1 Announce Type: new \nAbstract: We present NEP-kappa 2.0, a unified framework that integrates density-functional theory, material-specific machine-learning interatomic potentials, and pretrained force models for advanced phonon calculations. A common workflow enables harmonic lattice dynamics, quasi-harmonic and stochastic self-consistent phonon treatments, three- and four-phonon transport, Wigner population--coherence transport, and time-dependent phonon dynamics. Applications to 3C-SiC, BAs, and Cs$_2$AgInCl$_6$ demonstrate consistent force-model comparisons, finite-temperature renormalization, higher-order scattering, and intermode coherence. Beyond steady-state transport, mode-resolved simulations of selectively excited 3C-SiC reveal that half of the injected optical-phonon energy reaches acoustic modes within approximately 3.75 ps, primarily through one-optical--two-acoustic scattering. Acoustic branches exhibit response times differing by a factor of five, with competing scattering channels producing a transient energy overshoot. Channel-resolved entropy production and persistent nonthermal occupations distinguish interbranch energy redistribution from intrabranch thermalization. The framework connects equilibrium phonon transport with microscopic nonequilibrium energy dynamics.",
+    "url": "https://arxiv.org/abs/2610.25477",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "NEP-kappa 2.0 integrates DFT-trained MLIPs for phonon transport and nonequilibrium thermalization; (a)-(c) are satisfied through MLIP-driven atomistic simulation and framework development.",
+    "key_authors": []
+  },
+  {
+    "id": "20545764f365",
+    "title": "Machine Learning-Assisted Discovery of Carbon-Related Defect Formation Mechanisms in Diamond",
+    "authors": [
+      "Grace Huang",
+      "Christopher Fivecoat",
+      "Xun Xu",
+      "Mengen Wang"
+    ],
+    "abstract": "arXiv:2610.26301v1 Announce Type: new \nAbstract: Diamond is an important host material for functional defects such as solid-state spin qubits. During the defect creation by irradiation and subsequent thermal annealing, carbon-related defects, including vacancies and interstitials, are generated and can migrate to form new defect complexes. To investigate this kinetically driven process and reveal the formation mechanisms of the di-interstitials and di-vacancies in the neutral charge state, we fine-tuned a universal machine learning interatomic potential using a small dataset generated from density functional theory calculations. We obtained a barrier of 1.84 eV for mono-interstitial migration and found that two initially separated mono-interstitials only need to overcome a lower barrier to form di-interstitial configurations. Beyond the training data, the MLIP also identified the formation pathway for an additional di-interstitial configuration and a stepwise divacancy dissociation mechanism. These results reveal migration-assisted defect complex formation mechanisms and demonstrate how targeted MLIP training can identify reaction pathways.",
+    "url": "https://arxiv.org/abs/2610.26301",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Fine-tunes a universal MLIP on DFT data and uses it to map defect migration/di-interstitial pathways, satisfying (a) explicit atoms, (b) MLIP/atomistic simulation, and (c) application to defect mechanisms.",
+    "key_authors": []
+  },
+  {
+    "id": "8aadfcca1979",
+    "title": "Martini 3 Coarse-Grained Models for Steroid Hormones",
+    "authors": [
+      "Tâmela Zamboni Madaloz",
+      "Karin dos Santos",
+      "Fatmegyul Mustan",
+      "Fernando Neiva Nunes",
+      "Guilherme Razzera",
+      "Manuel N. Melo"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15002998/v2",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-19",
+    "version": 2,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Development of Martini 3 coarse-grained force-field parameters for steroid hormones, i.e., bead-based models with atomistic mapping and parameterization for CG MD — satisfies (a), (b), and (c) as classical force-field/CG-MD development.",
+    "key_authors": []
+  },
+  {
+    "id": "aa9bb409f2dc",
+    "title": "Atomic-level study of dose-dependent lattice thermal conductivity degradation in irradiated tungsten",
+    "authors": [
+      "Mary K Chessey",
+      "Jos\\'e Julio Guti\\'errez Moreno",
+      "Sajjan Singh Mehta",
+      "Paolo Settembri",
+      "Arda Erbasan",
+      "Dominik Freinberger",
+      "Marina Garc\\'ia Romero",
+      "Mervi J Mantsinen"
+    ],
+    "abstract": "arXiv:2610.26502v1 Announce Type: new \nAbstract: Plasma-facing components (PFCs) in future fusion reactors must withstand extreme environments, making tungsten (W) a prime candidate material due to its high thermal conductivity, high melting temperature, low sputtering yield, low tritium absorption. However, neutron irradiation introduces complex nanostructural defects that severely degrade these critical properties. In this work, we use Non-Equilibrium Molecular Dynamics (NEMD) simulations coupled with the Creation Relaxation Algorithm (CRA) to investigate the lattice thermal conductivity (kappa) of W across a wide range of irradiation doses. Systems treated with different doses up to 1.8 canonical displacements per atom (cdpa) were simulated to generate and study diverse defect structures, including vacancies and self-interstitial atom (SIA) clusters. By correlating spatially-resolved temperature gradients with local defect concentrations, we show that even small changes in defect type and distribution significantly affect thermal transport. We employ Machine Learning (ML) models to develop a quantitative relationship between the defect features and the resulting thermal conductivity degradation. The ML analysis identifies vacancy density as the dominant structural factor controlling thermal transport. We found a significant, nonlinear suppression of kappa with increasing defect density. Predictive multi-defect mapping built upon our ML model resolved a step-like degradation transition at a critical vacancy threshold of 0.05 at.%, beyond which phonon scattering completely saturated and capped the maximum relative lattice thermal conductivity degradation at approximately 30 at.%. This integrated simulation and ML approach provides a powerful, predictive framework for quantifying the complex relationship between structure and thermal conductivity in irradiated fusion materials.",
+    "url": "https://arxiv.org/abs/2610.26502",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Runs NEMD with a creation-relaxation algorithm on irradiated tungsten and correlates defect structures with thermal conductivity, satisfying (a) explicit atoms, (b) MD, and (c) application to materials transport.",
+    "key_authors": []
+  },
+  {
+    "id": "99ef69088ed5",
+    "title": "Vacancy and Helium-Cluster Thermomigration in Tungsten",
+    "authors": [
+      "Sanad Alturk",
+      "Enrique Martinez"
+    ],
+    "abstract": "arXiv:2610.26667v1 Announce Type: new \nAbstract: Strong thermal gradients in tungsten plasma-facing components can bias the migration of irradiation-induced defects and thereby alter their redistribution, interaction, and retention. Here, we extend an atomistic jump-statistics framework previously developed for hydrogen to quantify the thermomigration of a single vacancy and interstitial He$_1$--He$_4$ clusters in body-centered-cubic tungsten. Non-equilibrium molecular-dynamics simulations performed over several thermal gradients are used to determine the directional jump ratio, while geometrically derived projected jump lengths convert the fitted directional-bias coefficient into the heat-of-transport coefficient $Q^*=\\alpha kT^2$, where $k$ is the Boltzmann constant, $T$ the temperature, and $\\alpha$ a constant. All investigated defects exhibit negative values of $\\alpha$, corresponding to net migration toward the hot region. He$_4$ has the largest response, $\\alpha=-2.2457\\times10^{-2}$ K$^{-1}$, followed closely by the vacancy, whereas He$_3$ exhibits the weakest response despite its intermediate cluster size. Independent constant-temperature simulations over 1000--1600 K show that He$_3$ is also the least mobile cluster and has the largest effective migration energy, $E_m^{\\mathrm{eff}}=0.271$ eV. In contrast, He$_4$ is more mobile than He$_3$ and has the smallest effective migration energy, 0.087 eV. Agreement between the He$_3$ concentration profile predicted from the jump statistics and that obtained from a long molecular-dynamics trajectory provides an independent validation of the method. These results show that thermomigration cannot be inferred from cluster size, diffusivity, or migration energy alone and provide defect-specific heat-of-transport parameters for higher-length-scale models of tungsten under fusion-relevant thermal gradients.",
+    "url": "https://arxiv.org/abs/2610.26667",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.plasm-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Performs non-equilibrium MD and jump-statistics analysis of vacancy/He-cluster thermomigration in tungsten, satisfying (a) explicit atoms, (b) MD, and (c) application to defect transport.",
+    "key_authors": []
+  },
+  {
+    "id": "61e90d4922d1",
+    "title": "Athermal energy release and glide of interstitial Frank loops triggered by a supersonic solitary wave in L12 Pt3Al: a molecular dynamics comparison with vacancy loops",
+    "authors": [
+      "A S Kochkin",
+      "M D Starostenkov",
+      "K A Tenikov"
+    ],
+    "abstract": "Molecular dynamics is used to establish how the sign of the Burgers vector controls the interaction of a Frank dislocation loop with a supersonic solitary wave train in L12 Pt3Al. Interstitial loops (b = + a/3〈111〉, radius R = 8, 12 and 16 Å) are exposed to the same [001] wave source, in the same 1.15-million-atom cell, as the vacancy loops of our previous study, so the two signs are compared one to one. Neither sign scatters the wave appreciably (normalised transmission 0.98–1.02 over A = 0.18–0.50 Å). The energy balance behaves differently. Vacancy loops absorb a little energy, +0.6 to +4.5 eV, growing with both R and A. The R = 16 Å interstitial loop does the opposite on another scale entirely: arrival of the wave front at t ≈ 11.5 ps triggers an avalanche-like relaxation that releases 50–58 eV (0.41–0.48 eV per inserted atom, about 1.1 J m−2) almost independently of amplitude, while the faulted ring is rebuilt 32–39 Å away within its 〈110〉 glide prism by a conservative mechanism. At R = 8 Å the strongest wave partially unfaults the loop (Frank → perfect), and R = 12 Å loops remain stable weak absorbers. Three further radii place the change of role between 14 and 16 Å. Detectors 60–300 Å away record the released energy leaving at 4.6 km s−1, and the 20 Å analysis region captures only 69% of the potential-energy drop, so the quoted release is a lower bound. At 300 K piston heating masks the calorimetric signature, but the enhanced downstream displacement survives. The Burgers-vector sign thus switches a dislocation loop between two roles: an accumulator of wave energy and a wave-triggered emitter of stored energy. The asymmetry is geometric, whereas the absolute energies and the threshold radius are specific to the potential employed.",
+    "url": "https://iopscience.iop.org/article/10.1088/1361-651X/aeadb9",
+    "pdf_url": null,
+    "source": "Modelling Simul. Mater. Sci. Eng.",
+    "categories": [],
+    "published": "2026-10-19T23:00:00Z",
+    "version": null,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "This is a classical molecular dynamics study of interstitial Frank loops in Pt3Al with explicit atoms and a force-field-driven simulation, satisfying (a), (b), and (c).",
+    "key_authors": []
+  },
+  {
+    "id": "78366dbc0c50",
+    "title": "Intermolecular Packing and Cooperative Stabilization in Nucleotide Monophosphate Crystals",
+    "authors": [
+      "Parimala Devi Duraisamy",
+      "Raghunathan Ramakrishnan"
+    ],
+    "abstract": "arXiv:2610.26068v1 Announce Type: new \nAbstract: We examine the known polymorphs of cytidine 5$^\\prime$-monophosphate (CMP) using dispersion-corrected density functional theory. The monoclinic phase is predicted to be the most stable, lying 1.76 and 3.00 kcal/mol per molecular unit below the orthorhombic and triclinic forms, respectively. Monoclinic CMP contains a ribose-based H-bonding motif along the crystallographic $\\vec{b}$ direction, comprising alternating intra- and intermolecular interactions, motivating an investigation of cooperative stabilization along this pathway. We employ chain-of-molecules (COM) and chain-of-slabs (COS) models to quantify the direction- and size-dependent stabilization and extend the analysis to the corresponding 5$^\\prime$-monophosphates of thymidine, uridine, adenosine, and guanosine. Successive dimer-addition energies reveal the strongest size-dependent cooperative stabilization along the $\\vec{b}$ direction, whereas growth along $\\vec{a}$ and $\\vec{c}$ exhibits substantially weaker size dependence. Among the nucleotides examined, adenosine 5$^\\prime$-monophosphate shows the strongest chain-growth stabilization in the COM model, whereas the uridine variant shows the strongest stabilization in the COS model. Guanosine 5$^\\prime$-monophosphate exhibits the weakest response in both models. Minimal-basis iterative stockholder (MBIS) analysis further supports molecular polarization along the growing assemblies. These results demonstrate how nucleobase identity and the surrounding crystal environment modulate direction-dependent cooperative stabilization associated with extended hydrogen-bond networks.",
+    "url": "https://arxiv.org/abs/2610.26068",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "physics.bio-ph"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "Dispersion-corrected DFT study of explicit nucleotide crystal polymorphs and chain-growth energetics, satisfying (a) explicit atoms, (b) DFT/geometry energetics, and (c) application to crystal packing and cooperative stabilization.",
+    "key_authors": []
+  },
+  {
+    "id": "683570065511",
+    "title": "Generative marginal learning for finite-size molecular simulation with application to stress calculation",
+    "authors": [
+      "Cheng Yuan"
+    ],
+    "abstract": "arXiv:2610.25105v1 Announce Type: new \nAbstract: We propose generative marginal learning (GML), a framework for equilibrium sampling and local observable estimation in molecular simulations. By training a conditional diffusion model on large-system simulations, GML learns the marginal distribution of a retained region, enabling configuration generation without explicitly simulating the surrounding environment or imposing periodic boundary conditions on the retained region. We derive a marginal effective potential and the associated conditional mean-force identity, which provide the basis for both denoising and force-alignment training. As an application, we estimate the spatially averaged Irving--Kirkwood stress near a vacancy defect. Numerical results demonstrate that GML substantially improves pair structure and local stress accuracy compared with small periodic molecular dynamics simulations, mitigating finite-size effects in calculating local molecular observables.",
+    "url": "https://arxiv.org/abs/2610.25105",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Tue, 20 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "The paper develops a conditional diffusion/generative marginal sampler tied to an effective potential and mean-force identity for molecular simulation, applied to local stress near a vacancy, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "549e104fb7dd",
+    "title": "Transformer-based structural identification in molecular dynamics simulations",
+    "authors": [],
+    "abstract": "Publication date: January 2027\nSource: Computational Materials Science, Volume 276\nAuthor(s): Aoi Watanabe, Ryuhei Sato, Yasushi Shibuta",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626006919?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-10-20",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Transformer-based structural identification is applied to molecular dynamics trajectories, satisfying (a) explicit atoms and (b) MD, and (c) by advancing MD trajectory analysis.",
+    "key_authors": []
+  }
+]
