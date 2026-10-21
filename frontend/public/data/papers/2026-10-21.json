@@ -1,0 +1,383 @@
+[
+  {
+    "id": "8a44ebc25b1d",
+    "title": "Large Deviations in Stochastic Dynamics: A Hamiltonian Perspective",
+    "authors": [
+      "Lorenzo Cirigliano",
+      "William D. Pi\\~{n}eros",
+      "Anna Poggialini",
+      "Grant M. Rotskoff",
+      "Eric Vanden-Eijnden"
+    ],
+    "abstract": "arXiv:2610.27179v1 Announce Type: cross \nAbstract: These lecture notes present an introduction to large deviations in stochastic dynamical systems, adapted from a lecture series given at the Les Houches school ``Large Deviations: Theory and Applications'' in July 2024. The exposition develops the theory through a unified methodology: WKB analysis of backward Kolmogorov equations, which reveals the Hamiltonian structure underlying all large deviation principles considered here. We treat three asymptotic regimes systematically. First, the small-noise limit for stochastic differential equations and the large-volume limit for Markov jump processes, where the Large Deviation Principle emerges from the Law of Large Numbers through progressively finer characterizations of fluctuations. Second, the long-time limit combined with small noise, yielding the quasipotential formalism for metastability and transition rates in both equilibrium and nonequlibrium systems. Third, the long-time limit at finite noise, connecting to spectral methods via tilted generators and enabling reduction of multiscale systems.We survey computational approaches including minimum action methods, their geometric variants for quasipotential calculations, and neural network techniques. The Schl\\\"{o}gl model of chemical bistability serves as a running example, illustrating both scalar and spatially extended settings. Appendices provide self-contained background on stochastic calculus and Markov jump processes.",
+    "url": "https://arxiv.org/abs/2610.27179",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "math.PR",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Eric Vanden-Eijnden",
+    "key_authors": [
+      "Eric Vanden-Eijnden"
+    ]
+  },
+  {
+    "id": "3bab9ca1de5e",
+    "title": "Non-uniform grids to accelerate electron-phonon coupling calculations for superconductivity",
+    "authors": [
+      "Kang Wang",
+      "Siyu Chen",
+      "Sun-Woo Kim",
+      "Kieran Bozier",
+      "Chris Pickard",
+      "Bartomeu Monserrat"
+    ],
+    "abstract": "arXiv:2610.27718v1 Announce Type: cross \nAbstract: Efficient and accurate evaluation of electron-phonon interactions is essential for predictive superconductivity calculations, but dense Brillouin zone sampling requirements pose a major computational bottleneck. To overcome this, we introduce an accelerated, highly scalable framework that combines a double delta truncation scheme with non-uniform Farey grids in both $\\mathbf{k}$ and $\\mathbf{q}$ space. The truncation strategy significantly reduces computational cost by restricting integration to states satisfying energy constraints near the Fermi level, while the Farey grids dynamically resolve sampling errors from localized scattering and stabilize convergence. Applied to elemental aluminium and several high-pressure hydrides, this combined methodology reduces computational cost by up to two orders of magnitude and yields electron-phonon coupling constants and superconducting critical temperatures Tc typically within about 5% of full-grid benchmarks. This approach overcomes sampling bottlenecks associated with dense uniform grids, making accurate, low-cost predictions of superconductivity in complex quantum materials feasible.",
+    "url": "https://arxiv.org/abs/2610.27718",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Electronic Structure",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Chris Pickard",
+    "key_authors": [
+      "Chris Pickard"
+    ]
+  },
+  {
+    "id": "c83ded0ebdbb",
+    "title": "Discovery of Nanomolar CDK2 Inhibitors Using Boltz-2",
+    "authors": [
+      "Sven M. Papidocha",
+      "Yoshihiro Ogura",
+      "Jiahe Ren",
+      "Mikhail Saykin",
+      "Stuart Green",
+      "Varinia Bernales",
+      "Alán Aspuru-Guzik"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15010755/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-21",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Alán Aspuru-Guzik",
+    "key_authors": [
+      "Alán Aspuru-Guzik"
+    ]
+  },
+  {
+    "id": "8e46198bf414",
+    "title": "runner 2.0 : A software suite for high-dimensional neural network potentials",
+    "authors": [],
+    "abstract": "We present runner 2.0, the “Ruhr University Neural Network energy representation,” a highly optimized software suite for training and evaluating high-dimensional neural network potentials (HDNNPs) of the second, third, and fourth generations. Long-range electrostatics and charge equilibration (QEq) for the description of non-local charge transfer in fourth-generation (4G) HDNNPs are accelerated by quasi-linear-scaling plane wave methods, reducing QEq computational complexity from O(N3) to O(N⁡log2⁡N) such that linear or quasi-linear scaling is achieved across all HDNNP generations. An optimized memory management strategy eliminates the training overhead traditionally associated with long-range interactions, allowing 4G-HDNNPs to be trained with the same efficiency as their local counterparts. Developed in modern Fortran (2003/2008 standards), combined with a hybrid Message Passing Interface (MPI)/Open Multi-Processing (OpenMP) parallelization scheme, runner 2.0 has been designed to run efficiently in any central processing unit (CPU) environment, from cost-effective local workstations to massive high-performance computing (HPC) clusters. Its modular library architecture facilitates straightforward binding to external simulation software; native interfaces to the Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS) and the atomic simulation environment (ASE) provide full access to all its features, including built-in committee-based uncertainty quantification. The high efficiency and scalability of the runner 2.0 ecosystem are demonstrated through detailed benchmarks.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/15/152502/3406837/runner-2-0-A-software-suite-for-high-dimensional",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-10-21",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.92,
+    "relevance_reason": "Development of runner 2.0, a software suite for training and evaluating high-dimensional neural network potentials with LAMMPS/ASE interfaces — clearly satisfies (a)-(c) as MLIP development.",
+    "key_authors": []
+  },
+  {
+    "id": "66c61ba87025",
+    "title": "Low-rank approximation of Moment Tensor Potential enables reducing training set size without loss of accuracy",
+    "authors": [
+      "Anna Bondarenko",
+      "Nikita Rybin",
+      "Maxim Rakhuba",
+      "Ivan S. Novikov"
+    ],
+    "abstract": "arXiv:2609.07372v2 Announce Type: replace \nAbstract: In this study, we implement a low-rank approximation of Moment Tensor Potential (MTP) based on the tensor train (TT) decomposition. The implemented tensor-factorized MTP (TFMTP) and the original MTP model are actively trained via a MaxVol-based algorithm during molecular dynamics simulations of a four-component molten salt mixture, LiF-NaF-KF (FLiNaK), and geometry optimizations of a five-component equiatomic Mo-Nb-Ta-W-V random alloy. We demonstrate that under a 1.5-fold compression, TFMTP requires two times fewer configurations for fitting than the original MTP model, while maintaining an indistinguishable level of accuracy. These actively trained MTP and TFMTP models are further used to evaluate the density and viscosity of FLiNaK at temperatures ranging from 600 to 1200 K, as well as the elastic constants and bulk modulus of the Mo-Nb-Ta-W-V alloy at zero temperature. For both atomic systems, the differences in physical properties predicted by MTP and TFMTP are negligible.",
+    "url": "https://arxiv.org/abs/2609.07372",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-21",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops a tensor-train low-rank Moment Tensor Potential and actively trains/validates it in MD of molten FLiNaK and geometry optimization of a refractory alloy, satisfying (a)-(c) as clear MLIP development.",
+    "key_authors": []
+  },
+  {
+    "id": "b864ebde1675",
+    "title": "Metadynamics for Vacancy Dynamics in Crystals",
+    "authors": [
+      "Kazuaki Toyoura",
+      "Shunya Yamada"
+    ],
+    "abstract": "arXiv:2604.09007v5 Announce Type: replace \nAbstract: We propose a metadynamics-based (MetaD-based) approach to construct the free energy surface (FES) for vacancy dynamics in crystals. In this approach, the vacancy FES can be constructed without explicitly defining a unique vacancy coordinate by introducing a set of parameters that strongly govern the FES, which is enabled by parallel bias MetaD with partitioned families (PB-MetaDPF). In addition, the proposed approach is made more efficient and effective by multihill strategy that exploits crystallographic symmetry. We demonstrate the validity and efficacy of the proposed approach by its applications to self-diffusion and impurity diffusion via monovacancies and divacancies in metallic and ionic crystals.",
+    "url": "https://arxiv.org/abs/2604.09007",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 5,
+    "added_date": "2026-10-21",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.9,
+    "relevance_reason": "PB-MetaDPF metadynamics constructs vacancy free-energy surfaces in atomistic crystals, clearly satisfying (a), (b), and (c) as an enhanced-sampling method and application.",
+    "key_authors": []
+  },
+  {
+    "id": "19aee2af0758",
+    "title": "Ammonia-Hydrogen Phase Equilibria in Planetary Envelopes from First-Principles-Based Machine-Learning Molecular Dynamics",
+    "authors": [
+      "Akash Gupta",
+      "Austin Guo",
+      "Jie Deng"
+    ],
+    "abstract": "arXiv:2610.27136v1 Announce Type: cross \nAbstract: Ammonia and hydrogen are major constituents of planets within and beyond the solar system, yet how they interact in planetary envelopes is poorly known. We perform large-scale two-phase coexistence simulations of the ammonia-hydrogen system from 500 to 4000 K and 0.1 to 100 GPa, driven by machine-learning interatomic potentials trained on density functional theory calculations. From these we map the compositions of coexisting hydrogen-rich and ammonia-rich phases, and the critical curve that separates conditions of complete miscibility from those of phase separation. The critical temperature increases with pressure, from 500 K at 0.1 GPa to 2000 K near 30 GPa, and we find no phase separation at 3000 and 4000 K up to 100 GPa. The slope of the critical curve decreases substantially between 0.3 and 30 GPa, and the curve nearly flattens above about 30 GPa and 2000 K, where molecules begin to give way to atomic species. The coexistence curves are asymmetric with an ammonia-rich critical composition. For the expected envelope compositions, the phase boundary lies close to, and intersects, published thermal profiles of Uranus and Neptune, implying ammonia may be raining out in these planets today. In contrast, in warm sub-Neptunes such as TOI-270 d, ammonia and hydrogen are likely miscible in all proportions. Together with previous studies, our results suggest that silicates, water and ammonia separate from hydrogen in sequence as planets cool, with implications for their compositional, thermal and structural evolution.",
+    "url": "https://arxiv.org/abs/2610.27136",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "astro-ph.EP",
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.chem-ph",
+      "physics.geo-ph"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Trains machine-learning interatomic potentials on DFT and runs large-scale two-phase coexistence MD of NH3-H2, fully satisfying (a) explicit atoms, (b) MLIP development/application plus MD, and (c) application to planetary phase equilibria.",
+    "key_authors": []
+  },
+  {
+    "id": "ef278342afb1",
+    "title": "Dynamic Anionic Speciation and Proton Transfer in Choline/Geranic Acid Mixtures Revealed by Machine-Learned Molecular Dynamics",
+    "authors": [
+      "Mikel Loizate",
+      "Hadrián Montes-Campos",
+      "Jon Zubeltzu",
+      "Elena Formoso",
+      "Luis M. Varela",
+      "Elixabete Rezabal"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15010772/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-21",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Machine-learned molecular dynamics of choline/geranic acid mixtures satisfies (a) explicit atoms, (b) MLIP-driven MD, and (c) application to speciation and proton-transfer chemistry.",
+    "key_authors": []
+  },
+  {
+    "id": "a1cf002f5212",
+    "title": "Growth mechanisms of body-centered cubic and quasi-crystalline Ta",
+    "authors": [],
+    "abstract": "Compared with the growth of periodic crystals, the growth of aperiodic quasi-crystals remains elusive in many respects, particularly regarding their underlying growth mechanisms. Here, we perform molecular dynamics simulations to investigate the growth behavior of the body-centered cubic phase and the quasi-crystalline metastable phase in tantalum (Ta). The results show that both phases can be described by a diffusion-limited growth model, yet they exhibit fundamentally distinct atomistic mechanisms. The crystalline phase grows via a continuous mechanism, in which atoms can simultaneously propagate across multiple unit cells on a rough interface. In contrast, the quasi-crystalline metastable phase grows through a screw dislocation-mediated mechanism on a smooth interface, where atomic attachment is restricted to approximately a single unit cell. As a result, the growth rate of quasi-crystals is several times slower than that of crystals under comparable conditions. The distinct growth mechanisms of crystals and quasi-crystals are closely related to the type and characteristics of the locally ordered atomic species at their respective interfaces. These findings offer new physical insights into the correlation between crystal and quasi-crystal growth mechanisms and provide a fresh perspective on the underlying origin of the remarkable glass-forming ability of elemental Ta.",
+    "url": "https://pubs.aip.org/aip/jcp/article/165/15/154501/3406856/Growth-mechanisms-of-body-centered-cubic-and-quasi",
+    "pdf_url": null,
+    "source": "J. Chem. Phys.",
+    "categories": [],
+    "published": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "version": null,
+    "added_date": "2026-10-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Classical molecular dynamics simulations of bcc and quasicrystalline Ta growth with atomistic interface analysis — satisfies (a) explicit atoms, (b) MD, and (c) application to growth mechanisms.",
+    "key_authors": []
+  },
+  {
+    "id": "64223524ee77",
+    "title": "Improved GAFF Force Field for Fused Ring Non‐Fullerene Acceptors With 1,1‐Dicyanomethylene‐3‐Indanone Based End Groups",
+    "authors": [
+      "Konstantinos Kordos",
+      "Dimitrios G. Papageorgiou"
+    ],
+    "abstract": "Journal of Computational Chemistry, Volume 47, Issue 28, October 30, 2026.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.70527?af=R",
+    "pdf_url": null,
+    "source": "J. Comp. Chem.",
+    "categories": [],
+    "published": "Tue, 20 Oct 2026 03:21:09 -0700",
+    "version": null,
+    "added_date": "2026-10-21",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.85,
+    "relevance_reason": "Development of an improved GAFF classical force field for fused-ring non-fullerene acceptors is genuine classical force-field parameterization for atomistic MD, satisfying (a) explicit atoms, (b) force-field development, and (c) method advance.",
+    "key_authors": []
+  },
+  {
+    "id": "490001e5a7ef",
+    "title": "Improving Molecular Dynamics of Aqueous Electrolytes through Data-Driven Sensitivity-Guided GFN2-xTB Reparameterization",
+    "authors": [
+      "Tatiana Nikolaeva",
+      "Heather J. Kulik",
+      "Christopher J. Stein"
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.26434/chemrxiv.15010774/v1",
+    "pdf_url": null,
+    "source": "ChemRxiv",
+    "categories": [],
+    "published": "2026-10-21",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Electronic Structure",
+    "relevance_score": 0.85,
+    "relevance_reason": "Data-driven reparameterization of GFN2-xTB for aqueous electrolyte MD satisfies (a) explicit atoms and (b) semi-empirical/tight-binding method development driving MD, with (c) advanced via improved force accuracy in simulations.",
+    "key_authors": []
+  },
+  {
+    "id": "e0af23fc2ec1",
+    "title": "Effective Atom Theory: Gradient-Driven Materials Design",
+    "authors": [
+      "Justin Tahmassebpur",
+      "Cristob\\'al M\\'endez",
+      "Brandon Li",
+      "Boris Barron",
+      "H\\'ector Abru\\~na",
+      "Peter Frazier",
+      "Tom\\'as Arias"
+    ],
+    "abstract": "arXiv:2509.07180v2 Announce Type: replace \nAbstract: We introduce Effective Atom Theory (EAT), which embeds discrete atomic identities into a continuous differentiable space. During optimization, sites pass through temporary effective mixtures, then are driven to fully discrete, physically realizable atoms. This enables gradient-based optimization in DFT and MLIPs, yielding orders-of-magnitude acceleration over discrete methods. EAT recovers the exact ground state of NaCl in a 128 atom cell, reconstructs the Cu-Pd phase diagram, optimizes high-entropy oxides for oxygen evolution, and discovers bonding topologies as demonstrated for SrTiO3.",
+    "url": "https://arxiv.org/abs/2509.07180",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-21",
+    "category": "Materials Discovery & High-Throughput",
+    "relevance_score": 0.85,
+    "relevance_reason": "Effective Atom Theory performs gradient-based geometry optimization of discrete atomic identities inside DFT/MLIP energy evaluations, satisfying (a), (b), and (c) as an atomistic crystal-structure and materials-design method.",
+    "key_authors": []
+  },
+  {
+    "id": "c19f090bddbf",
+    "title": "Gel-Chemistry-Controlled Heavy-Metal Transport and Retention in Cementitious Gel Nanopores: A Molecular Dynamics Study",
+    "authors": [
+      "Weiqiang Chen",
+      "Qiyao He",
+      "Kai Gong"
+    ],
+    "abstract": "arXiv:2605.11604v2 Announce Type: replace \nAbstract: Cementitious materials are widely used for hazardous-waste encapsulation, yet molecular mechanisms governing heavy-metal ion retention across gel chemistries remain insufficiently resolved. Previous MD studies have focused on individual gel systems and pore-averaged metrics, limiting direct comparison across gel chemistries. Here, classical molecular dynamics simulations were used to investigate adsorption-controlled mobility of Pb2+, Ba2+, and Cs+ in nanopores of C-S-H, C-(N)-A-S-H, and N-A-S-H gels. Combining pore-averaged and spatially resolved diffusivity, residence-time analysis, ion-density profiles, 2D adsorption maps, radial distribution functions, coordination analysis, and interfacial binding-strength descriptors establishes a framework linking gel surface chemistry to mobility suppression while distinguishing local mobility from spatial ion partitioning effects on pore-averaged transport. Ion mobility is reduced in all gel nanopores relative to bulk, but the extent and mechanism vary strongly with gel chemistry. C-(N)-A-S-H with higher interfacial Al/Si substitution exhibits the strongest retention, driven by ion accumulation around Al-linked oxygen species via an ion-exchange-like mechanism with charge-balancing Na+. C-S-H immobilizes ions primarily through surface hydroxyl oxygens and Ca-mediated linkages, whereas N-A-S-H exhibits more distributed binding environments. Pb2+ and Ba2+ show broadly similar immobilization mechanisms, whereas Cs+ exhibits more gel-dependent interactions with silicate and aluminosilicate oxygen sites. A relative total binding strength (rTBS) descriptor shows a strong positive correlation with ion immobilization across gel types, ion species, and pore sizes. These results clarify gel- and ion-specific retention mechanisms and link interfacial binding strength to pore-averaged mobility suppression in idealized cementitious nanopores.",
+    "url": "https://arxiv.org/abs/2605.11604",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Classical molecular dynamics of Pb2+/Ba2+/Cs+ in C-S-H and aluminosilicate gel nanopores, satisfying (a) explicit atoms, (b) classical MD, and (c) mechanistic insight into ion retention.",
+    "key_authors": []
+  },
+  {
+    "id": "806e67d7d825",
+    "title": "Multiscale Modeling of Zr Corrosion: Predicting Microstructures of Oxide Films",
+    "authors": [
+      "K. Starkey",
+      "L. Kahle",
+      "M. Christensen",
+      "V. Eyert",
+      "A. El-Azab",
+      "C. B. Geller",
+      "A. P. Shivprasad",
+      "E. Wimmer"
+    ],
+    "abstract": "arXiv:2610.28493v1 Announce Type: new \nAbstract: A first-principles-informed multiscale modeling approach is reported for oxide formation during corrosion of zirconium. The present simulations reproduce the columnar corrosion film microstructure and grain size distribution seen in micrographs of oxidized Zr surfaces. This structural feature emerges from a hexagonal ZrO layer adjacent to the $\\alpha$-Zr/ZrO$_{2-x}$ interface, which is dynamically stabilized by continuous heterogeneous grain nucleation and grain boundary mass diffusion. This ZrO layer is identified as a significant oxygen diffusion barrier and a potential contributor to sub-parabolic pretransition corrosion kinetics. The simulations also reproduce the undulatory nature of the metal/oxide interface, leading to regions with tensile stress components capable of nucleating cracks, despite the overall state of compressive hydrostatic stress within the oxide film. First principles density functional theory (DFT) computations of fundamental ZrO$_x$ properties were combined with molecular dynamics simulations using a machine-learned potential based on a DFT training set to provide extensive input to an advanced phase field model for oxide formation and its microstructure, as implemented in the new MedeA PhaseField module. The phase field simulations reported herein incorporated computed stoichiometry-dependent thermochemical data, anisotropic elastic properties, interface energies, bulk and grain boundary mass transport processes, multiphase heterogeneous grain nucleation, and strain energy-dependent phase stabilities.",
+    "url": "https://arxiv.org/abs/2610.28493",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "DFT plus machine-learned-potential molecular dynamics coupled to phase-field modeling of Zr oxide; (a) explicit atoms, (b) DFT/MD/MLP, and (c) application to corrosion microstructure are satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "83f3d3040961",
+    "title": "Decoding Transient X-ray Absorption Spectra of Acetylacetone With Multireference Algebraic Diagrammatic Construction Theory",
+    "authors": [
+      "Bennett W. Clark",
+      "Donna H. Odhiambo",
+      "Haden Dickerson",
+      "Alexander Yu. Sokolov"
+    ],
+    "abstract": "arXiv:2608.09747v2 Announce Type: replace \nAbstract: Time-resolved X-ray absorption spectroscopy (TR-XAS) offers an element- and site-specific probe of coupled electronic and nuclear dynamics, but its interpretation requires methods that can treat multiconfigurational excited states across nonequilibrium nuclear ensembles. Here, we report time-resolved simulations of the acetylacetone (AcAc) transient X-ray absorption spectra by combining surface-hopping dynamics from complete active space second-order perturbation theory with multireference algebraic diagrammatic construction (MR-ADC). The simulated 20-200 fs spectra show a good agreement with experimental measurements and reveal that the TR-XAS response is governed by continuously evolving distributions of molecular geometries on the singlet potential energy surfaces (S2 and S1). In particular, absorption at 279.5-281.5 eV is enhanced for transient, nearly symmetric proton-sharing configurations, whereas the 284-286 eV profile reflects geometry-dependent C1s excitations modulated by proton transfer, bond alternation, and ring opening. For the long-time T_1 spectrum (7-10 ps), the principal features near 281.4 and 283.8 eV are assigned to central C 1s excitations into low-lying triplet pi-orbitals. Together, our simulations provide a more complete mechanistic picture of AcAc photorelaxation by directly linking ultrafast carbon K-edge signals to proton transfer, skeletal reorganization, internal conversion, and triplet formation.",
+    "url": "https://arxiv.org/abs/2608.09747",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Wed, 21 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-21",
+    "category": "Electronic Structure",
+    "relevance_score": 0.75,
+    "relevance_reason": "Combines CASPT2 surface-hopping nonadiabatic dynamics with MR-ADC to simulate transient X-ray absorption of acetylacetone, satisfying (a) explicit atoms, (b) post-HF/ab initio dynamics, and (c) mechanistic application.",
+    "key_authors": []
+  },
+  {
+    "id": "c38913d9ef76",
+    "title": "Intrinsic defects and $4d/5d$ transition metal defects in ${\\mathrm{Cr}}_{2}{\\mathrm{O}}_{3}$: Pathways for enhancing the Néel temperature",
+    "authors": [
+      "Xuecong Wang",
+      "Sai Mu"
+    ],
+    "abstract": "Author(s): Xuecong Wang and Sai Mu\nFirst-principles calculations are employed to explore avenues to increase the Néel temperature $({T}_{\\mathrm{N}})$ of the magnetoelectric antiferromagnet ${\\mathrm{Cr}}_{2}{\\mathrm{O}}_{3}$ through doping. Employing the hybrid functional method, we calculate the formation energy of intrinsic defect…\n[Phys. Rev. Materials 10, 104413] Published Mon Oct 19, 2026",
+    "url": "http://link.aps.org/doi/10.1103/bdrw-y6tl",
+    "pdf_url": null,
+    "source": "Phys. Rev. Materials",
+    "categories": [],
+    "published": "2026-10-19T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-21",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Hybrid-functional DFT calculations of intrinsic and 4d/5d transition-metal defect formation energies in Cr2O3 for tuning Neel temperature satisfy (a) explicit atomic supercells, (b) DFT, and (c) application to a real material system.",
+    "key_authors": []
+  }
+]
