@@ -1,0 +1,308 @@
+[
+  {
+    "id": "7cc91e910549",
+    "title": "Aligning Large Language Models with Human Feedback: Mathematical Foundations and Algorithm Design",
+    "authors": [
+      "Siliang Zeng",
+      "Luca Viano",
+      "Chenliang Li",
+      "Jiaxiang Li",
+      "Volkan Cevher",
+      "Markus Wulfmeier",
+      "Stefano Ermon",
+      "Alfredo Garcia",
+      "Mingyi Hong"
+    ],
+    "abstract": "arXiv:2610.31862v1 Announce Type: new \nAbstract: This article provides an introduction to the mathematical foundations and algorithmic frameworks used to align Large Language Models (LLMs) with human intentions, preferences, and values. We discuss standard alignment techniques, such as fine-tuning (SFT), reinforcement learning with human feedback (RLHF), and direct preference optimization (DPO). We also explore the theoretical underpinnings of learning from human preferences, drawing connections to inverse reinforcement learning (IRL) and discrete choice models. We present state-of-the-art algorithms in a tutorial style, discuss their advantages and limitations, and offer insights into practical implementation. Our exposition is intended to serve as a comprehensive resource for researchers and practitioners, providing both a foundational understanding of alignment methodologies and a framework for developing more robust and scalable alignment techniques.",
+    "url": "https://arxiv.org/abs/2610.31862",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Stefano Ermon",
+    "key_authors": [
+      "Stefano Ermon"
+    ]
+  },
+  {
+    "id": "93f9726d8cb1",
+    "title": "Combining Simulations and Spectroscopy to Design Protective Coatings on Sulfide Solid Electrolytes",
+    "authors": [
+      "Zhiyi Wang",
+      "Leonie Braks",
+      "Michele Ceriotti",
+      "Ali Coskun",
+      "Hanna T\\\"urk",
+      "Davide Tisi"
+    ],
+    "abstract": "arXiv:2610.32905v1 Announce Type: new \nAbstract: Sulfide solid electrolytes are attractive for all-solid-state batteries because of their high Li-ion conductivity and favorable processability, but their practical use is limited by electrochemical instability and moisture-induced degradation. Molecular surface coatings offer a scalable strategy to improve humidity tolerance and interfacial stability, yet there is limited understanding of the molecular-level factors governing surface interactions. By combining large-scale atomistic simulations enabled by a machine-learning potential with targeted experiments, we present a comprehensive framework for designing molecular coatings on Li$_6$PS$_5$Cl (LPSCl). Using a PET-MAD interatomic potential fine-tuned on an r$^2$SCAN reference dataset covering LPSCl surfaces, molecular adsorbates, and their interactions, we model surface adsorption of carboxylic (CA), sulfonic (SA), and phosphonic (PA) acids with alkyl chains of varying lengths and the interaction of these coated surfaces with water at finite temperature. The simulations show that lithiated head groups generally exhibit more favorable adsorption energies. Impedance spectroscopy shows that the lithiated coatings maintain 40--55\\% of the initial ionic conductivity after powder processing. While adsorption strength is largely controlled by head-group chemistry and lithiation state, coating morphology depends primarily on alkyl-chain length and surface coverage. In particular, long-chain lithiated carboxylates form dense, brush-like hydrophobic layers that reduce water access to reactive Li surface sites, with protection setting in at a coating thickness of approximately 0.8 nm. Consistent with these predictions, longer carboxylate chains suppress H$_2$S evolution more effectively. Because thicker coatings also hinder Li-ion transport, intermediate chain lengths offer the best balance between moisture protection and ionic conductivity.",
+    "url": "https://arxiv.org/abs/2610.32905",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 1.0,
+    "relevance_reason": "Key author: Michele Ceriotti",
+    "key_authors": [
+      "Michele Ceriotti"
+    ]
+  },
+  {
+    "id": "f0a81d4bde20",
+    "title": "Contrastive Regularization of Machine Learning Potentials",
+    "authors": [
+      "Dimitrios Tzivrailis",
+      "Georgios Sotiropoulos",
+      "Alberto Rosso",
+      "Eiji Kawasaki"
+    ],
+    "abstract": "arXiv:2606.31660v2 Announce Type: replace \nAbstract: Machine learning models are increasingly trained as regressors and then deployed as generators, from language models to learned simulators. In this setting, accuracy on held-out data says little about the distribution a model produces when it is sampled. We study this problem where the correct distribution is fixed by first principles, in machine learning interatomic potentials (MLIPs) trained by minimizing the mean squared error (MSE) on density functional theory (DFT) energies and forces, then used to run molecular simulations. The MSE never constrains the Boltzmann distribution that the potential defines, so an MLIP can match held-out DFT data and still drift, when sampled, into spurious minima that corrupt its thermodynamics. Building on the variational principle of statistical physics, we introduce Contrastive Regularized MSE (CRMSE), a post-training step in which the potential acts as its own energy-based model and learns to reproduce the distribution it generates, without any new DFT data. On molecules from the MD17 benchmark, CRMSE restores physical sampling and recovers DFT free-energy profiles, while keeping energy and force errors within chemical accuracy. Our results suggest that a model meant to be sampled must be trained on the distribution it produces, not only for pointwise accuracy.",
+    "url": "https://arxiv.org/abs/2606.31660",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-26",
+    "category": "MLIPs & Foundation Models",
+    "relevance_score": 0.9,
+    "relevance_reason": "Introduces contrastive regularized MSE post-training for MLIPs and validates it with MD on MD17 recovering DFT free-energy profiles, satisfying (a), (b) MLIP development and MD, and (c) methodology advance.",
+    "key_authors": []
+  },
+  {
+    "id": "851ba20952b2",
+    "title": "Low-variance force estimators for nuclear quantum mean forces",
+    "authors": [
+      "Venkat Kapil"
+    ],
+    "abstract": "arXiv:2610.32652v1 Announce Type: new \nAbstract: Quantum equilibrium structure can be sampled using classical molecular dynamics with a learned effective potential for a single path-integral replica, but the primitive mean-force estimates obtained from path-integral molecular dynamics with that replica held fixed are noisy. We derive a scaled-gradient estimator with zero sampling variance for a one-dimensional harmonic oscillator and an estimated 4.7--57.5-fold reduction in constrained-sampling time for the molecular tests. The resulting potentials can be trained on these forces like standard machine-learning interatomic potentials and yield stable production simulations from which quantum expectation values of position-dependent observables are obtained as classical ensemble averages.",
+    "url": "https://arxiv.org/abs/2610.32652",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "Molecular Dynamics & Sampling",
+    "relevance_score": 0.9,
+    "relevance_reason": "Derives low-variance constrained path-integral MD force estimators used to train machine-learned interatomic potentials, clearly satisfying (a) explicit atoms, (b) path-integral MD plus MLIP training, and (c) advancing an enhanced-sampling/MLIP method.",
+    "key_authors": []
+  },
+  {
+    "id": "735d8969a1fa",
+    "title": "Unifying Low-Frequency Raman and Infrared Signatures across Perovskites",
+    "authors": [
+      "Ethan Berger",
+      "Erik Fransson",
+      "Apinya Ngoipala",
+      "Lucas Svensson",
+      "Priyanka Deswal",
+      "Mehmet Baskurt",
+      "Paul Erhart",
+      "Julia Wiktor"
+    ],
+    "abstract": "arXiv:2610.31830v1 Announce Type: new \nAbstract: Perovskites have been studied for a wide range of applications, from oxide-based ferroelectrics to halide-perovskite photovoltaics. Despite their diverse functionalities, these materials share strong lattice anharmonicity arising from structural instabilities such as polar off-centering and octahedral tilting. These anharmonic distortions strongly influence the low-frequency vibrational response and can be observed in infrared (IR) and Raman spectra. However, low-frequency IR and Raman signatures are typically investigated separately, hindering the development of a unified understanding of vibrational spectroscopy across perovskite classes. In this work, we use machine-learning-based molecular dynamics to simulate the IR and Raman spectra of oxide perovskites (SrTiO$_3$ and BaTiO$_3$), halide perovskites (CsPbBr$_3$, CsSnBr$_3$, and CsGeBr$_3$) and double halide perovskites (Cs$_2$AgAlBr$_6$ and Cs$_2$AgBiBr$_6$). By comparing materials exhibiting polar, tilt-driven and mixed instabilities, we find that polar off-centering leads to enhanced low-frequency IR and dielectric responses, whereas nonpolar modes, particularly octahedral tilting, are associated with Raman central peaks. The strength of the low-frequency features also depends on how strongly the underlying modes couple to polarization or dielectric susceptibility. Finally, we show that the dynamics of these instabilities play an important role, with slow polar reorientations shifting the dielectric response to very low frequencies and overdamped tilting modes producing persistent Raman central peaks. These results establish a unified framework connecting low-frequency IR and Raman spectra to the symmetry, coupling and dynamics of their underlying anharmonic lattice instabilities.",
+    "url": "https://arxiv.org/abs/2610.31830",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Machine-learning-potential-driven molecular dynamics of several perovskites used to compute IR and Raman spectra satisfies (a) explicit atoms, (b) MLIP-based MD, and (c) application of atomistic simulation to spectroscopy.",
+    "key_authors": []
+  },
+  {
+    "id": "180a45d6c425",
+    "title": "On the Spontaneous Structural Reconstructions of Chalcogen-Depleted MoS$_2$, MoSe$_2$, and Janus MoSSe Monolayers",
+    "authors": [
+      "Bruno Ipaves",
+      "Guilherme S. L. Fabris",
+      "Raphael B. Oliveira",
+      "Pulickel M. Ajayan",
+      "Marcelo L. Pereira Junior",
+      "Douglas S. Galv\\~ao"
+    ],
+    "abstract": "arXiv:2610.32712v1 Announce Type: new \nAbstract: Removing one chalcogen layer from a transition-metal dichalcogenide monolayer leaves an undercoordinated sheet that reconstructs as the remaining chalcogen atoms cross the metal plane. Here, we combine \\textit{ab initio} and reactive molecular dynamics (MD) simulations of depleted MoS$_2$, MoSe$_2$, and Janus MoSSe, examining each remaining chalcogen on two parent lattices, to show that the remaining chalcogen type determines the structural reconstruction, with only a minor influence from the parent lattice. In \\textit{ab initio} trajectories of the Janus-derived sheets, Se crosses the Mo plane already at 300~K, whereas S stays in place at 300~K and the sheet reconstructs only at 900~K. With a free in-plane cell, the crossings precede an anisotropic lattice contraction, which therefore results from the structural reconstruction. Reactive MD simulations of 50~nm sheets show that, when S remains, the Mo lattice stays crystalline in nanometric domains that disappear with time and temperature, with pores/holes at 900~K. In contrast, when Se remains, the Mo lattice loses crystalline order within the first picosecond, and 36--39\\% of the Se atoms cross at every temperature. In a depleted lateral MoS$_2$/MoSe$_2$ heterostructure, both modes coexist in one sheet, each half reconstructing like its single-chalcogen counterpart, suggesting chalcogen patterning as a route to define crystalline and disordered regions in a single monolayer.",
+    "url": "https://arxiv.org/abs/2610.32712",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "The authors run ab initio molecular dynamics and reactive force-field MD of chalcogen-depleted MoS2/MoSe2/MoSSe monolayers to characterize structural reconstructions, satisfying (a) explicit atoms, (b) AIMD plus reactive MD, and (c) application of atomistic simulation to a materials question.",
+    "key_authors": []
+  },
+  {
+    "id": "de621a8f8b52",
+    "title": "CO2-Induced Shifts in the Confined Phase Transformation of CH4 in Metal-Organic Frameworks",
+    "authors": [
+      "Anthony Dorhauer",
+      "Bartosz Mazur",
+      "Bogdan Kuchta",
+      "Carlos Wexler"
+    ],
+    "abstract": "arXiv:2610.32918v1 Announce Type: cross \nAbstract: A sharp increase in gas uptake over a narrow pressure range can occur for fluids confined in nanoporous materials such as metal-organic frameworks (MOFs), reflecting a transformation between distinct adsorption states, often accompanied by the existence of metastable states. Understanding how co-adsorbed species modify this behavior is important for predicting and optimizing gas storage and separation. Here, we investigate the effect of CO2 on the adsorption transformation of confined CH4 in rigid IRMOF-1 and IRMOF-8. Transition-Matrix Monte Carlo (TMMC) simulations were performed for systems containing 0-75 and 0-150 CO2 molecules in IRMOF-1 and IRMOF-8, respectively. While the addition of CO2 decreases the maximum CH4 uptake, consistent with competition for pore space, remarkably, the presence of CO2 significantly shifts the discontinuity in the CH4 adsorption isotherm to substantially lower pressures relative to the pure CH4 system. This promotion of the high-density CH4 phase at lower pressures demonstrates that CO2 substantially alters the thermodynamic landscape governing confined CH4 through changes in both fluid-fluid and fluid-framework interactions. These results establish CO2 as a thermodynamic modifier of confined CH4 behavior and suggest that controlled co-adsorption provides a means of tuning adsorption transformations in nanoporous materials.",
+    "url": "https://arxiv.org/abs/2610.32918",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.85,
+    "relevance_reason": "Transition-matrix Monte Carlo simulations of CH4/CO2 in IRMOF-1 and IRMOF-8 with explicit atomic and framework interactions satisfy (a), (b) Monte Carlo on atomic configurations, and (c) application to confined-fluid thermodynamics.",
+    "key_authors": []
+  },
+  {
+    "id": "7f58f22cb3c2",
+    "title": "AtomMOF: All-Atom Flow Matching for MOF-Adsorbate Structure Prediction",
+    "authors": [
+      "Nayoung Kim",
+      "Honghui Kim",
+      "Sihyun Yu",
+      "Minkyu Kim",
+      "Seongsu Kim",
+      "Sungsoo Ahn"
+    ],
+    "abstract": "arXiv:2602.07351v2 Announce Type: replace \nAbstract: Metal-organic frameworks (MOFs) are promising materials for applications such as direct air capture, where performance depends on how adsorbates bind within the framework. Accurately predicting MOF-adsorbate configurations is therefore important for screening candidate materials. However, traditional approaches are computationally expensive and require a known host structure, while existing generative models rely on rigid-body assumptions and do not explicitly model adsorbates. We introduce AtomMOF, a scalable all-atom flow-matching model that jointly predicts MOF-adsorbate structures from discrete building blocks and adsorbates. Built on a Diffusion Transformer with a building block-based pairwise attention bias, AtomMOF operates in an unconstrained all-atom space and exhibits clear scaling behavior. To improve the structural validity of flexible all-atom models, we also propose Feynman-Kac (FK) steering with machine-learned interatomic potentials (MLIPs). On the BW dataset, AtomMOF achieves a 58.17% relative increase in match rate and a 31.84% relative reduction in RMSD compared with prior work. MLIP-guided steering further improves validity by 28.7% and reduces formation energy error by 86.5%. On ODAC25, AtomMOF generates adsorption configurations faster than GCMC and, when combined with MLIP relaxation, identifies lower-energy configurations than those in the reference dataset.",
+    "url": "https://arxiv.org/abs/2602.07351",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-26",
+    "category": "Generative & Geometric ML for Atoms",
+    "relevance_score": 0.8,
+    "relevance_reason": "All-atom flow-matching generative model that outputs explicit 3D MOF-adsorbate configurations (a) and is tied to and validated by MLIP steering/relaxation and GCMC/formation-energy comparisons (b, c), placing it at the generative-3D-plus-potential-validation tier.",
+    "key_authors": []
+  },
+  {
+    "id": "dddb3a0254a7",
+    "title": "Poly(vinylidene fluoride) under finite electric displacement fields: a removable $\\alpha\\!\\to\\!\\delta$ reorientation barrier and a persistent first-order $\\delta\\!\\to\\!\\beta$ conformational change",
+    "authors": [
+      "Shaohui Qiu",
+      "Jacob C. Dean",
+      "Rajagopalan Thiruvengadathan",
+      "Ramanujam Brahmadesam Thoopul Srinivasa Raghava"
+    ],
+    "abstract": "arXiv:2610.31926v1 Announce Type: new \nAbstract: The $\\alpha$, $\\delta$, and $\\beta$ phases of PVDF are interconverted by electrical poling and mechanical drawing, yet the thermodynamics under a controlled electrical boundary condition has not been established from first principles. We evaluate the zero-temperature free energy at fixed electric displacement $D$ from van der Waals density-functional calculations along two constrained coordinates in a common 24-atom cell: a tilt of the gauche C--C bonds that maps antipolar $\\alpha$ onto polar $\\delta$ (cell change $<1\\%$), and a backbone torsion that straightens TG$^+$TG$^-$ chains into all-trans $\\beta$ (chain-repeat strain $10.6\\%$). As $D$ increases from 0 to $0.30$~C\\,m$^{-2}$, the lowest homogeneous free energy switches from $\\alpha$ to $\\delta$ at $D_{c1}=0.046$~C\\,m$^{-2}$ and from $\\delta$ to $\\beta$ at $D_{c2}=0.157$~C\\,m$^{-2}$. At $T=0$ with domain-wall energy neglected, a $\\delta$ multidomain state lies $14.3$~meV per cell below homogeneous $\\alpha$ at every $D$. A $\\Gamma$-point harmonic estimate suggests that vibrations reverse this ordering at room temperature. $\\delta$ and $\\beta$ coexist for $0.11<0.21$~C\\,m$^{-2}$ at $E^*=0.69$~GV\\,m$^{-1}$, independent of the screening constant. The tilt barrier falls from $0.66$~eV per cell at $D=0$ to $17$~meV at $D=0.30$~C\\,m$^{-2}$ (below $k_BT$ at $300$~K), while the torsion barrier remains $0.66$~eV at $D_{c2}$ and $0.34$~eV at $D=0.30$~C\\,m$^{-2}$, so $\\delta\\to\\beta$ stays first order. Much of the difference traces to the path effective charge ($0.28e$ for the tilt, $0.18e$ for the torsion). Scaling shows the tilt barrier would survive with the torsion charge; the smaller torsion charge accounts for about half the barrier it retains. The landscape accounts for why a field produces $\\delta$ and why $\\beta$ is reached by drawing, and suggests that raising that charge could let a field alone produce $\\beta$.",
+    "url": "https://arxiv.org/abs/2610.31926",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 1,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "van der Waals DFT total-energy scans along constrained tilt/torsion coordinates in a 24-atom PVDF cell to map free energy vs electric displacement and barriers — satisfies (a) explicit atoms, (b) DFT geometry/energy evaluation, (c) application to phase stability.",
+    "key_authors": []
+  },
+  {
+    "id": "6cda4c75be66",
+    "title": "Intrinsic defects and 4d/5d transition metal defects in Cr$_2$O$_3$: pathways for enhancing the N\\'eel temperature",
+    "authors": [
+      "Xuecong Wang",
+      "Sai Mu"
+    ],
+    "abstract": "arXiv:2506.10883v2 Announce Type: replace \nAbstract: First-principles calculations are employed to explore avenues to increase the N\\'eel temperature ($T_{\\mathrm{N}}$) of the magnetoelectric antiferromagnet Cr$_2$O$_3$ through doping. Employing the hybrid functional method, we calculate the formation energy of intrinsic defects and transition metal dopants (Mo, W, Nb, Ta, Zr, and Hf) to assess their likelihood of formation. Intrinsic defect calculations indicate that Cr interstitials and oxygen vacancies dominate under Cr-rich conditions, whereas Cr vacancies prevail under O-rich conditions. Notably, under Cr-rich conditions, the Fermi level can be pinned slightly above mid-gap due to the formation of Cr interstitials and oxygen vacancies. Additionally, we identify a split Cr vacancy configuration that is more energetically stable than a normal Cr vacancy in corundum Cr$_2$O$_3$. To assess the influence of dopants on $T_{\\mathrm{N}}$ of Cr$_2$O$_3$, we calculate the enhancement of the exchange energy for the spin at the dopant site or at an adjacent Cr site using the supercell method.Our study identifies isovalent Mo and W substitutions at Cr sites as the most promising candidates for increasing the N\\'eel temperature because of impurity-mediated enhancement of the exchange interaction for half-filled bands. Formation-energy calculations indicate that Mo and W substitutions at Cr sites form more readily under Cr-rich conditions and that a Fermi level near or slightly above midgap stabilizes the desirable neutral charge states of the Mo and W defects. This is assisted by the formation of intrinsic Cr interstitials and O vacancies under Cr-rich conditions. These findings offer a route to utilize defects for higher $T_{\\mathrm{N}}$and enhanced performance of Cr$_2$O$_3$ in magnetoelectric devices and provide useful guidance for future experimental studies.",
+    "url": "https://arxiv.org/abs/2506.10883",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Hybrid-functional DFT supercell calculations of defect/dopant formation energies and exchange coupling in Cr2O3 explicitly represent atoms (a), use DFT total-energy methodology (b), and apply it to learn about a material system (c), though it is a static defect-energetics study rather than dynamics.",
+    "key_authors": []
+  },
+  {
+    "id": "9652d424ea3f",
+    "title": "Revealing Charge Transfer in Defect-Engineered 4Hb-TaS2",
+    "authors": [
+      "Siavash Karbasizadeh",
+      "Wooin Yang",
+      "Wonhee Ko",
+      "Haidong Zhou",
+      "An-Ping Li",
+      "Tom Berlijn",
+      "Sai Mu"
+    ],
+    "abstract": "arXiv:2603.24486v2 Announce Type: replace \nAbstract: We present a comprehensive first-principles investigation of defects in 4$H_b$-TaS$_2$. In this layered transition metal dichalcogenide, charge transfer between alternating Mott-insulating 1T and metallic 1H layers gives rise to exotic quantum phases such as the Kondo effect and topological superconductivity. Motivated by recent defect manipulation in 4$H_b$-TaS$_2$ via STM, we address their microscopic nature and impact on interlayer charge transfer. To this end, we systematically analyze over 90 defects using large-scale density functional theory (DFT) calculations. Our analysis identifies 1H sulfur vacancies, Ta-on-S antisites, and Ta interstitials as the most likely origins of the commonly observed defects, with Ta-on-S antisites producing the strongest charge-transfer modulation. Our extensive dataset, compiled from STM simulations, defect formation energies, work functions, and charge transfer, establishes a foundational resource for future theoretical and experimental studies on defect engineering in 4$H_b$-TaS$_2$.",
+    "url": "https://arxiv.org/abs/2603.24486",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 26 Oct 2026 00:00:00 -0400",
+    "version": 2,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Large-scale DFT calculations of 90+ defects in 4Hb-TaS2 with formation energies and STM simulations explicitly treat atoms (a), use DFT (b), and are applied to understand interlayer charge transfer (c), satisfying all three criteria.",
+    "key_authors": []
+  },
+  {
+    "id": "457c17726a08",
+    "title": "Anatomy of spin-orbit torques in monolayer ${\\mathrm{Fe}}_{3}{\\mathrm{GeTe}}_{2}$ and ${\\mathrm{Fe}}_{3}{\\mathrm{GaTe}}_{2}$: Insights from atomistic and momentum-space decompositions",
+    "authors": [
+      "Gusthavo M. S. Brizolla",
+      "Stepan S. Tsirkin",
+      "Yaroslav Zhumagulov",
+      "Jaroslav Fabian"
+    ],
+    "abstract": "Author(s): Gusthavo M. S. Brizolla, Stepan S. Tsirkin, Yaroslav Zhumagulov, and Jaroslav Fabian\nSpin–orbit torque (SOT) enables electrical magnetization control in spintronic devices. Here, the authors calculate SOT in monolayer Fe3GeTe2 and Fe3GaTe2, van der Waals ferromagnets with perpendicular magnetic anisotropy and no reliance on heavy atoms for strong spin–orbit coupling. Horizontal mirror symmetry forbids conventional in-plane spin accumulation for out-of-plane magnetization, while tilting the magnetization enables a strongly angle-dependent response. Combining density functional theory, Wannier interpolation, and Kubo formalism, they map the torque across the magnetization sphere. They reveal hidden torques on mirror-related Fe atoms up to 30 times the net torque, whose cancellation could be lifted through van der Waals engineering.\n[Phys. Rev. B 114, 204424] Published Thu Oct 22, 2026",
+    "url": "http://link.aps.org/doi/10.1103/1v68-qwcl",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-10-22T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-10-26",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "Uses DFT, Wannier interpolation, and Kubo formalism to calculate spin-orbit torques in monolayer Fe3GeTe2/Fe3GaTe2; (a) explicit atoms, (b) DFT electronic-structure calculation, and (c) application to a material are satisfied.",
+    "key_authors": []
+  }
+]
