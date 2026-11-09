@@ -1,0 +1,357 @@
+[
+  {
+    "id": "23c5f8ba4bc9",
+    "title": "Strain-Dependent Ionic Transport in Li3YCl6 Solid Electrolytes",
+    "authors": [
+      "Wei-Fan Huang",
+      "Jin Dai",
+      "Jiahui Pan",
+      "Mingjian Wen"
+    ],
+    "abstract": "arXiv:2605.05603v2 Announce Type: replace \nAbstract: Solid-state batteries require electrolytes that sustain high ionic conductivity under the mechanical environment of a functioning cell. Lattice strain, arising from stack pressure, lattice mismatch at interfaces, and more importantly electrochemical cycling, can either enhance or suppress Li$^+$ transport in solid electrolytes, yet how it couples to the underlying diffusion mechanism in Li3YCl6 remains poorly understood. Using Li3YCl6 halide superionic conductor, we address this with large-scale molecular dynamics simulations driven by an Atomic Cluster Expansion (ACE) machine learning interatomic potential trained on first-principles data. The ACE model faithfully reproduces experimental and ab initio structural, mechanical, and transport properties of Li3YCl6. Extending the simulations to high temperature reveals a crossover from predominantly one-dimensional hopping at low temperature toward diffusion through a connected three-dimensional pathway network at high temperature. Strain substantially modulates diffusivity: tensile strain enhances it while compressive strain suppresses it. Free-breakpoint model selection resolves two Arrhenius regimes for most strain states, and the fitted $T_c$ varies nonmonotonically with strain. Strain modifies the effective activation energies and the accessibility of diffusion pathways in a temperature-dependent manner. These results quantify the strain sensitivity of ionic conductivity and diffusion pathways in Li3YCl6 solid-state electrolytes.",
+    "url": "https://arxiv.org/abs/2605.05603",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 2,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.95,
+    "relevance_reason": "Trains an Atomic Cluster Expansion MLIP on first-principles data and runs large-scale MD of strain-dependent Li+ transport in Li3YCl6, cleanly satisfying (a)-(c) as MLIP development plus applied simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "43eaa23e3c18",
+    "title": "Fortuitous Cancellation of Competing Effects in the Free Energy of Water Autoionization: Long-Range Electrostatics, System Size, and Nuclear Quantum Effects",
+    "authors": [
+      "Samuel Varner",
+      "Yinan Xu",
+      "Yezhi Jin",
+      "Gustavo R. P\\'erez-Lemus",
+      "Pablo F. Zubieta Rico",
+      "Zhiying Yi",
+      "Joan M. Montes de Oca",
+      "Paul F. Nealey",
+      "Seth B. Darling",
+      "Zhen-Gang Wang",
+      "Juan J. de Pablo"
+    ],
+    "abstract": "arXiv:2611.08874v1 Announce Type: new \nAbstract: Few molecular processes are more fundamental to chemistry than the autoionization of water, whose equilibrium constant, $K_w \\approx 10^{-14}$, underlies acid-base equilibria and the chemistry of life. Yet the molecular origins of the free energy cost of forming and separating ions remain incompletely understood. Efforts to explain it have been limited by the difficulty of modeling water reactivity in sufficient detail. Here we combine machine learning interatomic potentials (MLIPs) with spectral adaptive biasing force enhanced sampling to connect proton transfer and water wire configurations to the underlying free energy landscape. We identify competing influences of long-range electrostatics, system size, temperature, and nuclear quantum motion on the predicted ionization thermodynamics. The free energy surface extends from neutral water to ions separated beyond the solvent-separated ion pair (SSIP). It reveals a transition state in which a proton is shared between the second and third molecules of a three-membered water wire. The contact ion pair is unstable and the SSIP only weakly metastable, so determining pK$_w$ requires sampling longer wires. Long-range electrostatics raise the free energy at ion separations beyond $3\\,\\mathrm{\\mathring{A}}$. Models with comparable force errors give substantially different free energy profiles in this region. Increasing system size lowers the calculated pK$_w$, while nuclear quantum effects bring it closer to experiment and reproduce the higher pK$_w$ of D$_2$O relative to H$_2$O. These results establish a baseline for interpreting thermodynamic results from MLIP simulations in which charged and polar groups react and diffuse in finite cells. Our analysis also explains how cancellation among competing effects can yield ionization constants close to experiment even when simulations omit several physical contributions.",
+    "url": "https://arxiv.org/abs/2611.08874",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 1,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Combines MLIP-driven molecular dynamics with spectral adaptive biasing force free-energy sampling of proton transfer in water; explicit atoms (a), free-energy/enhanced sampling plus MLIP use (b), and mechanistic application (c) are all satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "4c6a741b6955",
+    "title": "Active learning and explicit electrostatics enable accurate modeling of electrolytes",
+    "authors": [
+      "Olga Chalykh",
+      "Mikhail Polovinkin",
+      "Dmitry Korogod",
+      "Nikita Rybin",
+      "Alexander Shapeev"
+    ],
+    "abstract": "arXiv:2510.03479v4 Announce Type: replace \nAbstract: Machine learning interatomic potentials (MLIPs) combine near-ab initio accuracy with the computational efficiency of classical force fields, making them promising tools for modeling molecular liquids and electrolytes. Their predictive accuracy depends strongly on the diversity of the training set, while the explicit treatment of electrostatics is increasingly recognized as an important factor in improving their performance. In this work, we assess the impact of incorporating explicit electrostatics and environment-dependence of atomic charges by comparing short-ranged Moment Tensor Potentials (MTPs) with electrostatics-augmented MTPs, including fixed-charge and environment-dependent charge models. To this end, we employ D-optimality-based active learning (AL) to train short-ranged MTPs and extend the AL procedure, previously unavailable for long-range electrostatics-augmented MTPs, to these models, enabling largely automated generation of diverse training sets for pure ethylene carbonate (EC) and ethyl methyl carbonate (EMC), their mixtures, and LiPF6 solutions. For EC, EMC, and their mixtures, electrostatics-augmented MTPs achieve accuracy comparable to or better than that of their short-ranged counterparts while requiring fewer machine-learned parameters. For LiPF6 solutions, however, a notable improvement in accuracy is achieved only with environment-dependent charges, which also enhance stability in large-scale molecular dynamics simulations, unlike the fixed-charge model. The resulting short-ranged MTPs and environment-dependent-charge models reproduce experimental densities with mean absolute deviations of 0.2-6% and ionic conductivities with deviations of 11-15%, while capturing the experimentally observed temperature dependence of conductivity.",
+    "url": "https://arxiv.org/abs/2510.03479",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 4,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Trains and benchmarks electrostatics-augmented Moment Tensor Potentials with D-optimality active learning for electrolyte molecular dynamics; explicitly an MLIP development/transferability study with atomistic validation (a)-(c) satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "ddd1b2edad33",
+    "title": "Predicting accurate solid-state thermodynamics is easier than you think",
+    "authors": [
+      "Lorenzo Bastonero",
+      "Gabriel Joalland",
+      "Chiara Cignarella",
+      "Lorenzo Monacelli",
+      "Nicola Marzari"
+    ],
+    "abstract": "arXiv:2604.25756v2 Announce Type: replace \nAbstract: Materials underpin modern technologies, from energy harvesting, storage, and conversion to information and communication technologies. Their functionality is often governed by the interplay between competing phases, and thermodynamic behavior shapes microscopic properties and ultimately determines technological performance; for instance, the light absorption of inorganic metal-halide perovskites in solar cells. Accurately predicting crystal thermodynamics, however, remains a major challenge for computational approaches because strong anharmonic effects require extensive sampling of the potential energy surface. Here, we present an on-the-fly Bayesian framework, combined with the stochastic self-consistent harmonic approximation, for learning first-principles potentials. This approach enables the prediction of thermodynamic properties over a broad temperature range with first-principles accuracy while requiring training on only a few atomic configurations. A relevant finding is that the majority of the required structures are obtained from a single inexpensive dataset generation step, demonstrating that the relevant physics for accurately predicting solid-state thermodynamics is encoded in a few physically meaningful configurations. We investigate the thermodynamic and dynamical properties of Li$_2$O, $\\alpha$--CsPbI$_3$, and $\\delta$--CsPbI$_3$, requiring only 44, 256, and 50 total-energy calculations, respectively. Notably, we show that this framework accurately captures the extreme thermal expansion of \\ce{Li2O}, and the phase diagram of CsPbI$_3$ with a predicted transition temperature within 20 K of experiment. More broadly, the method presented opens an interesting route toward accelerated materials engineering under realistic conditions for a wide range of technologically relevant applications, including batteries, photovoltaics, and memristors.",
+    "url": "https://arxiv.org/abs/2604.25756",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn",
+      "physics.comp-ph"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 2,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops an on-the-fly Bayesian learning framework coupled to SSCHA to train first-principles interatomic potentials for anharmonic thermodynamics of Li2O and CsPbI3 — MLIP development applied to real atomistic systems, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "da9abbae5413",
+    "title": "Compact SO(3) Equivariant Atomistic Foundation Models via Structural Pruning",
+    "authors": [
+      "Chen Wang",
+      "Siyu Hu",
+      "Guangming Tan",
+      "Weile Jia"
+    ],
+    "abstract": "arXiv:2605.08885v2 Announce Type: replace \nAbstract: SO(3) equivariant graph neural networks have become the dominant paradigm for atomistic foundation models, achieving high accuracy and data efficiency by building rotational symmetry directly into the architecture. Yet the computational cost of their higher-order tensor operations creates a tough trade-off between model accuracy and inference efficiency. In this paper, we propose a structural pruning method for SO(3) equivariant atomistic foundation models to bridge this accuracy-efficiency gap. The pruning is applied along the channel and order dimensions, with each irreducible representation kept or removed as a complete block, thereby retaining SO(3) equivariance. Starting from a large checkpoint, the pruned model substantially reduces the inference cost while retaining higher accuracy than an independently trained small model. The pruned MACE-MP model outperforms the official from-scratch trained small model on 7 of 9 metrics on the Matbench Discovery leaderboard. In terms of efficiency, compressed MACE-MP and MACE-OFF models contain 1.5$\\times$ to 4$\\times$ fewer parameters and require 2.5$\\times$ to 4$\\times$ less pre-training compute than training a small model from scratch. For downstream applications, fine-tuning the pruned model reduces energy and force errors by 70.1% and 34.4% compared to training task-specific models from scratch across eight representative downstream datasets. We demonstrate that the method generalizes to other SO(3) equivariant architectures (SevenNet, eSCN) and can be combined with quantization and knowledge distillation for further gains.",
+    "url": "https://arxiv.org/abs/2605.08885",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 2,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "The paper develops structural pruning for SO(3)-equivariant atomistic foundation models such as MACE-MP and MACE-OFF, benchmarking energy and force errors, so it satisfies (a) explicit atomistic representations, (b) MLIP development/benchmarking, and (c) advancing MLIP efficiency for atomistic simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "7edcc2641c92",
+    "title": "SimPoly: Simulation of polymers with machine learning force fields derived from first principles",
+    "authors": [
+      "Gregor N. C. Simm",
+      "Jean Hélie",
+      "Hannes Schulz",
+      "Yicheng Chen",
+      "Guillem Simeon",
+      "Anna Kuzina",
+      "Ernesto Martinez-Baez",
+      "Piero Gasparotto",
+      "Gabriele Tocci",
+      "Chi Chen",
+      "Yatao Li",
+      "Lixue Cheng",
+      "Zun Wang",
+      "Bichlien H. Nguyen",
+      "Jake A. Smith",
+      "Lixin Sun"
+    ],
+    "abstract": "Nature Communications, Published online: 09 November 2026; doi:10.1038/s41467-026-78736-x\nThe authors develop a machine learning force field trained only on quantum-chemical data that can reproduce measured key polymer properties such as densities and glass transition temperatures.",
+    "url": "https://www.nature.com/articles/s41467-026-78736-x",
+    "pdf_url": null,
+    "source": "Nature Communications",
+    "categories": [],
+    "published": "2026-11-09",
+    "version": null,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.9,
+    "relevance_reason": "Develops a quantum-chemistry-trained machine-learned force field and applies it to polymer simulations, clearly satisfying (a) explicit atoms, (b) MLIP development, and (c) property prediction via simulation.",
+    "key_authors": []
+  },
+  {
+    "id": "86489d9c6e41",
+    "title": "Jackknife-conformal uncertainty for linear ACE potentials: calibrated forces and silicon properties compared with Bayesian and POPS baselines",
+    "authors": [
+      "James R. Kermode"
+    ],
+    "abstract": "arXiv:2611.08678v1 Announce Type: new \nAbstract: Machine-learned interatomic potentials are misspecified, so Bayesian posterior variances understate their errors. For linear atomic cluster expansion (ACE) potentials we derive calibrated uncertainties from one misspecification-robust parameter covariance, the delete-one-configuration jackknife. Scaled by one conformal quantile from a held-out part of the training set, it gives per-atom force uncertainties close to their target coverage on held-out silicon data and on cracks left out of the fit; screw dislocations left out are under-covered by the smaller of the two models. With one scale fitted to the forces of a held-out test split, the same parameter distribution is propagated to 21 properties of silicon, from elastic constants to defect and surface energies, by implicit differentiation through each relaxation and by committees, and is tested against density functional theory (DFT) without tuning on any property. For a smaller and a larger model the intervals cover most properties, and the larger model's are about 4 times tighter. The Bayesian posterior with one calibrated scale has the wrong shape: it covers fewer properties and has far lower joint evidence. Pointwise optimal parameter sets (POPS), once their hypercube is numerically defined, performs comparably on the properties, but its per-atom force regions are not calibrated to a target (0.95 and 0.84 at a nominal 0.90). Where the jackknife fails is relaxed point defects, whose training cells are all hot snapshots: a bias that every configuration shares is invisible to a jackknife, but it can be measured from the training labels, and as a discrepancy term, devised after the property results were seen, it brings the coverage close to nominal.",
+    "url": "https://arxiv.org/abs/2611.08678",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 1,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Derives calibrated jackknife-conformal uncertainty for linear atomic cluster expansion potentials, validating force coverage and propagating to DFT-computed silicon properties; clearly MLIP development/benchmarking with atomistic energetics, satisfying (a)-(c).",
+    "key_authors": []
+  },
+  {
+    "id": "e62678d3907f",
+    "title": "Inverse design of superconductors and semiconductors with differentiable foundation models",
+    "authors": [
+      "Crist\\'obal M\\'endez",
+      "Justin Tahmassebpur",
+      "Tom\\'as A. Arias"
+    ],
+    "abstract": "arXiv:2611.09572v1 Announce Type: new \nAbstract: Designing a crystal for a target property requires choosing its elements, stoichiometry, and atomic structure together, yet gradients exist only for the continuous structural variables. We introduce differentiable Equiformer fast effective-atom theory (DEFEAT), which lets a pretrained EquiformerV3 foundation model accept continuous species weights and site occupancies without retraining on fractional data, thereby enabling gradient-based materials optimization. Gradients from fine-tuned property models and a machine-learned energy penalty then guide updates to composition, atom count, atomic positions, and lattice vectors in a single optimization. In a search for phonon-mediated superconductors, density-functional perturbation theory on 45 structurally novel designs gives isotropic Allen-Dynes critical temperatures above 10 K for 39; the highest is 24.0 K for ZrTiNb2CN3, and H4LiPd3 (23.2 K) lies on the static DFT hull. In searches for photovoltaic absorbers, SCAN calculations confirm ten novel crystal structures with band gaps within 20% of a 1.34 eV target on their respective raw or empirically corrected scales, all within 70 meV/atom of the DFT hull, and show that the systematic gap error of the training functional propagates into the designs unless the objective corrects for it. Quasiharmonic free energies from machine-learned potentials further show that finite-temperature competition with solid phases can reorder candidates relative to the static hull.",
+    "url": "https://arxiv.org/abs/2611.09572",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.supr-con"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 1,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.88,
+    "relevance_reason": "Differentiable Equiformer foundation model with MLIP/DFT/SCAN validation generates and optimizes explicit crystal structures, satisfying (a)-(c) for MLIP-driven inverse design.",
+    "key_authors": []
+  },
+  {
+    "id": "702fee733fcd",
+    "title": "Equivariant Spherical Transformer for Efficient Molecular Modeling",
+    "authors": [
+      "Junyi An",
+      "Xinyu Lu",
+      "Yunfei Shi",
+      "Peijia Lin",
+      "Licheng Xu",
+      "Qianwei Tang",
+      "Chao Qu",
+      "Fenglei Cao",
+      "Yuan Qi"
+    ],
+    "abstract": "arXiv:2505.23086v4 Announce Type: replace \nAbstract: Equivariant Graph Neural Networks (GNNs) have significantly advanced the modeling of 3D molecular structure by leveraging group representations. However, message passing built only from exactly equivariant operations can have restricted practical expressiveness at a fixed representation degree. We introduce the Equivariant Spherical Transformer (EST), a plug-and-play module that applies Transformer attention to spherical spatial representations obtained from group representations. EST explicitly mixes information across sampled orientations, unlike prior orientation-wise spherical operations, while retaining a strong approximate equivariant inductive bias through near-uniform spherical sampling. As demonstrated by our experiments on challenging benchmarks like OC20, MPtrj and QM9, EST-based models achieve state-of-the-art performance. For the complex molecular systems within OC20, small models empowered by EST can outperform some larger models and those using additional data. We characterize the ideal closed-domain condition under which the continuous operation is exactly equivariant and empirically quantify the finite-sampling accuracy--equivariance--memory trade-off used in practice.",
+    "url": "https://arxiv.org/abs/2505.23086",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 4,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.82,
+    "relevance_reason": "EST is an equivariant spherical Transformer for 3D molecular modeling benchmarked on OC20, MPtrj, and QM9, so explicit atoms (a), atomistic energy/force modeling or MLIP-relevant benchmarking (b), and method advancement (c) are satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "755e5384755a",
+    "title": "Cavity-QED Molecular Dynamics: An eT-i-PI Interface for Ab Initio Cavity Born-Oppenheimer Dynamics and Joint Nuclear-Photon Path-Integral Sampling",
+    "authors": [
+      "Giuseppe Cassone"
+    ],
+    "abstract": "arXiv:2611.09667v1 Announce Type: new \nAbstract: Simulating molecules in quantum electrodynamic (QED) cavities requires a consistent description of electronic response, nuclear motion, and electromagnetic-field fluctuations. Here, I present Cavity-QED Molecular Dynamics, an interface connecting eT and i-PI for atomistic simulations of finite molecular systems coupled to a single photon mode. The code evaluates a self-consistent cavity Born-Oppenheimer Hartree-Fock (CBO-HF) energy surface and supports classical-nuclei dynamics under canonical (NVT) and microcanonical (NVE) ensembles, as well as canonical joint nuclear-photon path-integral sampling including nuclear quantum effects (NQEs). A fixed-displacement gradient correction provides nuclear and photon forces consistent with the same energy surface as the photon coordinate evolves independently. OpenMP threading, concurrent bead evaluations, and analysis utilities support practical simulations. Water-monomer benchmarks assess both dynamical propagation and equilibrium sampling. Energy-derivative checks and NVE timestep tests demonstrate consistent force evaluation and integration, while path integral molecular dynamics (PIMD) simulations with PILE-L thermostatting reproduce analytic finite-bead photon second moments, including their centroid and internal contributions, within sampling uncertainties. At the tested parameters, cavity coupling produces a small but statistically resolved increase in photon fluctuations, while changes in mean molecular geometry remain within sampling uncertainty. The resulting Cavity-QED Molecular Dynamics framework enables controlled investigations of how coupled quantum fluctuations of matter and the electromagnetic field influence molecular equilibrium properties within the CBO-HF approximation, providing a foundation for future studies of cavity-modified hydrogen bonding, vibrational spectra, and molecular polaritonic phenomena.",
+    "url": "https://arxiv.org/abs/2611.09667",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 1,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Presents a code interface for ab initio cavity Born-Oppenheimer molecular dynamics and joint nuclear-photon path-integral MD with force validation; explicit atoms in MD (a), MD/PIMD method development (b), and method advance plus water-monomer benchmarks (c) all hold.",
+    "key_authors": []
+  },
+  {
+    "id": "1a9b22138cc6",
+    "title": "Broadband molecular dynamics simulation of confined Brownian motion",
+    "authors": [
+      "Quentin Thomas",
+      "Clara Mefo Sop",
+      "Maxime Lavaud",
+      "Yacine Amarouchene",
+      "Thomas Salez",
+      "Pascal Damman"
+    ],
+    "abstract": "arXiv:2606.24291v2 Announce Type: replace-cross \nAbstract: Molecular dynamics with an explicit solvent resolves the hydrodynamic response of a Brownian colloid in bulk and near a rigid wall over acoustic, inertial, and diffusive time scales. Bulk spectra establish a continuum reference and reveal departures associated with discrete-solvent dynamics. Under confinement, thermal spectra provide a measurement of the space-dependent added mass, while velocity autocorrelations determine space-dependent, anisotropic hydrodynamic memory and diffusion. All together, these measurements connect the enhanced added mass and reduced mobility near a wall, and probe the discrete-continuum crossover.",
+    "url": "https://arxiv.org/abs/2606.24291",
+    "pdf_url": null,
+    "source": "arXiv",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.stat-mech",
+      "physics.flu-dyn"
+    ],
+    "published": "Mon, 09 Nov 2026 00:00:00 -0500",
+    "version": 2,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.8,
+    "relevance_reason": "Classical molecular dynamics with explicit solvent simulating Brownian colloid hydrodynamics near a wall — satisfies (a) explicit atoms, (b) MD, and (c) applies MD to learn about solvent-mediated dynamics.",
+    "key_authors": []
+  },
+  {
+    "id": "a71dc65a39c2",
+    "title": "Work-function transferability in asymmetric MXene slabs: The role of the carbide core",
+    "authors": [],
+    "abstract": "Publication date: 15 January 2027\nSource: Computational Materials Science, Volume 277\nAuthor(s): M.M. Khalilloev, B.O. Jabbarova",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0927025626007652?dgcid=rss_sd_all",
+    "pdf_url": null,
+    "source": "Comp. Mat. Sci.",
+    "categories": [],
+    "published": null,
+    "version": null,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.78,
+    "relevance_reason": "Periodic DFT study of work-function transferability in explicit MXene slabs; (a) explicit atoms, (b) DFT, and (c) applied materials insight are satisfied.",
+    "key_authors": []
+  },
+  {
+    "id": "1043b7fadf1f",
+    "title": "Linear isotope effect on the superconducting critical temperature in chalcogen superhydrides",
+    "authors": [
+      "Si-Yuan Liu",
+      "Pei-Ying Huo",
+      "Ao Zhang",
+      "Fei Li",
+      "Yan-Hui Liu",
+      "Wei-Zhou Jiang"
+    ],
+    "abstract": "Author(s): Si-Yuan Liu, Pei-Ying Huo, Ao Zhang, Fei Li, Yan-Hui Liu, and Wei-Zhou Jiang\nThe isotope effect in superconductors can be influenced by electronic structure features such as flat bands and Van Hove singularities, providing a pathway for tuning superconducting properties. Using first-principles calculations within the framework of conventional electron-phonon coupling in the …\n[Phys. Rev. B 114, 254506] Published Fri Nov 06, 2026",
+    "url": "http://link.aps.org/doi/10.1103/dk6c-1rhb",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-11-06T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "First-principles DFT electron-phonon calculations on explicit superhydride crystal structures satisfy (a)-(c), although the work is an application rather than a DFT method-development paper.",
+    "key_authors": []
+  },
+  {
+    "id": "e3e5c69cfc36",
+    "title": "First-principles cumulant approach to the vibronic structure of spin defects",
+    "authors": [
+      "Jinsoo Park",
+      "Yu Jin",
+      "Arpan Kundu",
+      "Jorge O. Sofo",
+      "Giulia Galli"
+    ],
+    "abstract": "Author(s): Jinsoo Park, Yu Jin, Arpan Kundu, Jorge O. Sofo, and Giulia Galli\nSpin defects are promising building blocks for quantum technologies, but predicting how atomic vibrations reshape their electronic spectra remains challenging. Here, the authors employ a first-principles cumulant Green’s function approach that captures repeated phonon emission and absorption. For the negatively charged nitrogen-vacancy center in diamond, quantum zero-point motion produces multiphonon satellites spanning 400 meV even at zero temperature. The satellite energies and intensities depend strongly on spin and orbital character, revealing how individual defect states interact with the surrounding lattice.\n[Phys. Rev. B 114, L291402] Published Thu Nov 05, 2026",
+    "url": "http://link.aps.org/doi/10.1103/7xrx-2fd2",
+    "pdf_url": null,
+    "source": "Phys. Rev. B",
+    "categories": [],
+    "published": "2026-11-05T10:00:00+00:00",
+    "version": null,
+    "added_date": "2026-11-09",
+    "category": "Atomistic Applications",
+    "relevance_score": 0.75,
+    "relevance_reason": "A first-principles cumulant Green's function approach using phonons for the NV center in diamond represents an explicit atomistic defect system and advances a DFT/first-principles method, satisfying (a)-(c).",
+    "key_authors": []
+  }
+]
